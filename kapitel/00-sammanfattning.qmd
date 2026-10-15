@@ -4,7 +4,7 @@ pagetitle: "Sammanfattning"
 subtitle: ""
 author: "Göteborgs Stad,<br>Stadsledningskontoret"
 date: last-modified
-date-format: "D MMMM YYYY"
+date-format: "[XXXX]"
 language:
   title-block-author-single: "Utgivare"
   title-block-published: "Publicerad"
