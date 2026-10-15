@@ -1,0 +1,27 @@
+.socio-card .knn-controls { margin: 12px 0; gap: 12px 24px; }
+.socio-card .knn-export > button > svg:first-child { display: block; }
+.socio-card .knn-controls select { width: 100%; max-width: 100%; min-height: 32px; padding: 5px 24px 5px 8px; font-size: 12px; }
+.socio-card .knn-controls label { width: min(100%, 280px); min-width: 0; font-size: 12px; }
+.socio-card { position: relative; }
+.socio-card .socio-view-switch { margin: 0; }
+.socio-card .socio-view-switch button { min-height: 32px; border: 0; border-bottom: 2px solid transparent; border-radius: 0; background: transparent; padding: 7px 0; color: #1f1f1f; font-size: 12px; }
+.socio-card .socio-view-switch button:hover { border-bottom-color: #d1d9dc; }
+.socio-card .socio-view-switch button[aria-selected="true"] { border-bottom-color: #3f5564; font-weight: 700; }
+.socio-card [hidden] { display: none !important; }
+.socio-boxplot { width: 100%; overflow-x: auto; }
+.socio-boxplot svg { display: block; width: 100%; min-width: 620px; height: auto; }
+.socio-boxplot [data-box], .socio-boxplot [data-outlier] { cursor: pointer; outline: none; }
+.socio-boxplot [data-box]:hover .socio-box, html.keyboard-navigation .socio-boxplot [data-box]:focus-visible .socio-box { stroke-width: 3; }
+.socio-boxplot [data-outlier]:hover, html.keyboard-navigation .socio-boxplot [data-outlier]:focus-visible { stroke-width: 3; }
+.socio-box-values { overflow-x: auto; }
+.socio-box-values table { min-width: 620px; }
+.socio-card .leaflet-tooltip { padding: 8px 10px; max-width: 260px; white-space: normal; font: 12px/1.5 "Open Sans", Arial, sans-serif; color: #1f1f1f; background: #fff; }
+.socio-card .leaflet-tooltip strong { display: block; }
+.socio-card .leaflet-interactive:focus { outline: none; }
+html.keyboard-navigation .socio-card .leaflet-interactive:focus-visible { stroke: #1f1f1f; stroke-width: 3px; }
+.socio-card .knn-legend { line-height: 1.5; }
+.socio-card .socio-values { overflow-x: auto; }
+#socio-summary .lycko-table table { min-width: 560px; }
+#socio-summary th:nth-child(2), #socio-summary td:nth-child(2) { text-align: left; }
+#socio-summary th[scope="row"] { font-weight: 400; }
+.socio-card .socio-values table { min-width: 460px; }

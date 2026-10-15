@@ -1,0 +1,1799 @@
+{
+  "year": 2026,
+  "populationYear": 2026,
+  "variables": ["Socioekonomisk indelning", "Andel med ekonomiskt bistånd och/eller arbetslös", "Andel med eftergymnasial utbildning", "Andel barn i hushåll med låg inkomststandard", "Andel hyresrätter i bostadsbeståndet", "Tillgänglighetsmått", "Disponibel hushållinkomst per konsumtionsenhet", "Absolut index", "Relativt index"],
+  "values": {
+    "101": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 5.7,
+      "Andel med eftergymnasial utbildning": 67.9,
+      "Andel barn i hushåll med låg inkomststandard": 4.4,
+      "Andel hyresrätter i bostadsbeståndet": 73.1,
+      "Tillgänglighetsmått": 3.7,
+      "Disponibel hushållinkomst per konsumtionsenhet": 323973,
+      "Absolut index": 28.2,
+      "Relativt index": 48.4
+    },
+    "102": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 3.5,
+      "Andel med eftergymnasial utbildning": 68.3,
+      "Andel barn i hushåll med låg inkomststandard": 2.9,
+      "Andel hyresrätter i bostadsbeståndet": 62.6,
+      "Tillgänglighetsmått": 3.6,
+      "Disponibel hushållinkomst per konsumtionsenhet": 307958,
+      "Absolut index": 28.4,
+      "Relativt index": 46
+    },
+    "103": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 3.9,
+      "Andel med eftergymnasial utbildning": 68.4,
+      "Andel barn i hushåll med låg inkomststandard": 4.1,
+      "Andel hyresrätter i bostadsbeståndet": 60.1,
+      "Tillgänglighetsmått": 3.6,
+      "Disponibel hushållinkomst per konsumtionsenhet": 336908,
+      "Absolut index": 26.5,
+      "Relativt index": 45.9
+    },
+    "104": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 4.6,
+      "Andel med eftergymnasial utbildning": 69.9,
+      "Andel barn i hushåll med låg inkomststandard": 4.1,
+      "Andel hyresrätter i bostadsbeståndet": 84.8,
+      "Tillgänglighetsmått": 3.7,
+      "Disponibel hushållinkomst per konsumtionsenhet": 322979,
+      "Absolut index": 27.4,
+      "Relativt index": 46.8
+    },
+    "105": {
+      "Socioekonomisk indelning": 5,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 2.3,
+      "Andel med eftergymnasial utbildning": 74.8,
+      "Andel barn i hushåll med låg inkomststandard": 1.8,
+      "Andel hyresrätter i bostadsbeståndet": 36.3,
+      "Tillgänglighetsmått": 4,
+      "Disponibel hushållinkomst per konsumtionsenhet": 371549,
+      "Absolut index": 21.3,
+      "Relativt index": 39.8
+    },
+    "106": {
+      "Socioekonomisk indelning": 5,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 2.8,
+      "Andel med eftergymnasial utbildning": 76.1,
+      "Andel barn i hushåll med låg inkomststandard": 0.4,
+      "Andel hyresrätter i bostadsbeståndet": 53.2,
+      "Tillgänglighetsmått": 3.8,
+      "Disponibel hushållinkomst per konsumtionsenhet": 473057,
+      "Absolut index": 12.8,
+      "Relativt index": 34.5
+    },
+    "107": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 3.7,
+      "Andel med eftergymnasial utbildning": 65.8,
+      "Andel barn i hushåll med låg inkomststandard": 3.6,
+      "Andel hyresrätter i bostadsbeståndet": 83.5,
+      "Tillgänglighetsmått": 4.3,
+      "Disponibel hushållinkomst per konsumtionsenhet": 369220,
+      "Absolut index": 24.5,
+      "Relativt index": 44.6
+    },
+    "108": {
+      "Socioekonomisk indelning": 5,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 1.9,
+      "Andel med eftergymnasial utbildning": 70.2,
+      "Andel barn i hushåll med låg inkomststandard": 2.4,
+      "Andel hyresrätter i bostadsbeståndet": 63,
+      "Tillgänglighetsmått": 4.2,
+      "Disponibel hushållinkomst per konsumtionsenhet": 386543,
+      "Absolut index": 21.3,
+      "Relativt index": 40.3
+    },
+    "109": {
+      "Socioekonomisk indelning": 5,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 2,
+      "Andel med eftergymnasial utbildning": 73.9,
+      "Andel barn i hushåll med låg inkomststandard": 3,
+      "Andel hyresrätter i bostadsbeståndet": 36,
+      "Tillgänglighetsmått": 4.3,
+      "Disponibel hushållinkomst per konsumtionsenhet": 439258,
+      "Absolut index": 16.4,
+      "Relativt index": 37.5
+    },
+    "110": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 1.8,
+      "Andel med eftergymnasial utbildning": 73.4,
+      "Andel barn i hushåll med låg inkomststandard": 3.8,
+      "Andel hyresrätter i bostadsbeståndet": 67.3,
+      "Tillgänglighetsmått": 3.7,
+      "Disponibel hushållinkomst per konsumtionsenhet": 337047,
+      "Absolut index": 24.7,
+      "Relativt index": 42.5
+    },
+    "111": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 1.8,
+      "Andel med eftergymnasial utbildning": 75.1,
+      "Andel barn i hushåll med låg inkomststandard": 6.8,
+      "Andel hyresrätter i bostadsbeståndet": 64.2,
+      "Tillgänglighetsmått": 4.1,
+      "Disponibel hushållinkomst per konsumtionsenhet": 340183,
+      "Absolut index": 24.8,
+      "Relativt index": 43.9
+    },
+    "112": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 3.9,
+      "Andel med eftergymnasial utbildning": 65.5,
+      "Andel barn i hushåll med låg inkomststandard": 4.3,
+      "Andel hyresrätter i bostadsbeståndet": 87.8,
+      "Tillgänglighetsmått": 4.2,
+      "Disponibel hushållinkomst per konsumtionsenhet": 323072,
+      "Absolut index": 28.4,
+      "Relativt index": 47.3
+    },
+    "113": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 3.8,
+      "Andel med eftergymnasial utbildning": 76,
+      "Andel barn i hushåll med låg inkomststandard": 4.3,
+      "Andel hyresrätter i bostadsbeståndet": 63,
+      "Tillgänglighetsmått": 3.7,
+      "Disponibel hushållinkomst per konsumtionsenhet": 328467,
+      "Absolut index": 25.3,
+      "Relativt index": 44.4
+    },
+    "114": {
+      "Socioekonomisk indelning": 5,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 2.6,
+      "Andel med eftergymnasial utbildning": 65.4,
+      "Andel barn i hushåll med låg inkomststandard": 2.3,
+      "Andel hyresrätter i bostadsbeståndet": 59.3,
+      "Tillgänglighetsmått": 4.4,
+      "Disponibel hushållinkomst per konsumtionsenhet": 491686,
+      "Absolut index": 14.4,
+      "Relativt index": 37.4
+    },
+    "115": {
+      "Socioekonomisk indelning": 5,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 2.3,
+      "Andel med eftergymnasial utbildning": 67.3,
+      "Andel barn i hushåll med låg inkomststandard": 4.2,
+      "Andel hyresrätter i bostadsbeståndet": 54.5,
+      "Tillgänglighetsmått": 4.4,
+      "Disponibel hushållinkomst per konsumtionsenhet": 440032,
+      "Absolut index": 18.4,
+      "Relativt index": 40.2
+    },
+    "116": {
+      "Socioekonomisk indelning": 5,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 2.8,
+      "Andel med eftergymnasial utbildning": 68.5,
+      "Andel barn i hushåll med låg inkomststandard": 3.3,
+      "Andel hyresrätter i bostadsbeståndet": 43.4,
+      "Tillgänglighetsmått": 4.1,
+      "Disponibel hushållinkomst per konsumtionsenhet": 434710,
+      "Absolut index": 18.4,
+      "Relativt index": 40
+    },
+    "117": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 2.6,
+      "Andel med eftergymnasial utbildning": 63.2,
+      "Andel barn i hushåll med låg inkomststandard": 4.3,
+      "Andel hyresrätter i bostadsbeståndet": 63.2,
+      "Tillgänglighetsmått": 4,
+      "Disponibel hushållinkomst per konsumtionsenhet": 379198,
+      "Absolut index": 24.3,
+      "Relativt index": 44.2
+    },
+    "118": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 3.2,
+      "Andel med eftergymnasial utbildning": 61.7,
+      "Andel barn i hushåll med låg inkomststandard": 3.5,
+      "Andel hyresrätter i bostadsbeståndet": 59.2,
+      "Tillgänglighetsmått": 4.1,
+      "Disponibel hushållinkomst per konsumtionsenhet": 395407,
+      "Absolut index": 23.3,
+      "Relativt index": 43.9
+    },
+    "201": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 3.4,
+      "Andel med eftergymnasial utbildning": 61.3,
+      "Andel barn i hushåll med låg inkomststandard": 4.6,
+      "Andel hyresrätter i bostadsbeståndet": 73.9,
+      "Tillgänglighetsmått": 3.9,
+      "Disponibel hushållinkomst per konsumtionsenhet": 345666,
+      "Absolut index": 27.6,
+      "Relativt index": 47.1
+    },
+    "202": {
+      "Socioekonomisk indelning": 5,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 2.3,
+      "Andel med eftergymnasial utbildning": 72.2,
+      "Andel barn i hushåll med låg inkomststandard": 2.9,
+      "Andel hyresrätter i bostadsbeståndet": 43.9,
+      "Tillgänglighetsmått": 4,
+      "Disponibel hushållinkomst per konsumtionsenhet": 377406,
+      "Absolut index": 21.7,
+      "Relativt index": 40.9
+    },
+    "203": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 4.4,
+      "Andel med eftergymnasial utbildning": 67.7,
+      "Andel barn i hushåll med låg inkomststandard": 2.3,
+      "Andel hyresrätter i bostadsbeståndet": 41.4,
+      "Tillgänglighetsmått": 3.8,
+      "Disponibel hushållinkomst per konsumtionsenhet": 368432,
+      "Absolut index": 23.9,
+      "Relativt index": 43.9
+    },
+    "204": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 3,
+      "Andel med eftergymnasial utbildning": 66.7,
+      "Andel barn i hushåll med låg inkomststandard": 4.9,
+      "Andel hyresrätter i bostadsbeståndet": 79.9,
+      "Tillgänglighetsmått": 3.3,
+      "Disponibel hushållinkomst per konsumtionsenhet": 344147,
+      "Absolut index": 26.4,
+      "Relativt index": 45.7
+    },
+    "205": {
+      "Socioekonomisk indelning": 5,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 1.6,
+      "Andel med eftergymnasial utbildning": 74.7,
+      "Andel barn i hushåll med låg inkomststandard": 1.2,
+      "Andel hyresrätter i bostadsbeståndet": 32.9,
+      "Tillgänglighetsmått": 3.7,
+      "Disponibel hushållinkomst per konsumtionsenhet": 534812,
+      "Absolut index": 8.2,
+      "Relativt index": 31.6
+    },
+    "206": {
+      "Socioekonomisk indelning": 5,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 1.6,
+      "Andel med eftergymnasial utbildning": 73.9,
+      "Andel barn i hushåll med låg inkomststandard": 1.7,
+      "Andel hyresrätter i bostadsbeståndet": 42,
+      "Tillgänglighetsmått": 4,
+      "Disponibel hushållinkomst per konsumtionsenhet": 496620,
+      "Absolut index": 11.5,
+      "Relativt index": 33.8
+    },
+    "207": {
+      "Socioekonomisk indelning": 5,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 1.6,
+      "Andel med eftergymnasial utbildning": 77.1,
+      "Andel barn i hushåll med låg inkomststandard": 1.7,
+      "Andel hyresrätter i bostadsbeståndet": 36.2,
+      "Tillgänglighetsmått": 3.8,
+      "Disponibel hushållinkomst per konsumtionsenhet": 429436,
+      "Absolut index": 16,
+      "Relativt index": 35.9
+    },
+    "208": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 2.2,
+      "Andel med eftergymnasial utbildning": 68.5,
+      "Andel barn i hushåll med låg inkomststandard": 3.1,
+      "Andel hyresrätter i bostadsbeståndet": 66.5,
+      "Tillgänglighetsmått": 3.8,
+      "Disponibel hushållinkomst per konsumtionsenhet": 365516,
+      "Absolut index": 23.6,
+      "Relativt index": 42.4
+    },
+    "209": {
+      "Socioekonomisk indelning": 5,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 1.9,
+      "Andel med eftergymnasial utbildning": 70.5,
+      "Andel barn i hushåll med låg inkomststandard": 3.2,
+      "Andel hyresrätter i bostadsbeståndet": 38,
+      "Tillgänglighetsmått": 3.9,
+      "Disponibel hushållinkomst per konsumtionsenhet": 432487,
+      "Absolut index": 17.8,
+      "Relativt index": 38.7
+    },
+    "210": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 2.6,
+      "Andel med eftergymnasial utbildning": 68.5,
+      "Andel barn i hushåll med låg inkomststandard": 4.1,
+      "Andel hyresrätter i bostadsbeståndet": 53.2,
+      "Tillgänglighetsmått": 3.8,
+      "Disponibel hushållinkomst per konsumtionsenhet": 360650,
+      "Absolut index": 24.3,
+      "Relativt index": 43.6
+    },
+    "211": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 5.6,
+      "Andel med eftergymnasial utbildning": 59.6,
+      "Andel barn i hushåll med låg inkomststandard": 3.9,
+      "Andel hyresrätter i bostadsbeståndet": 59.4,
+      "Tillgänglighetsmått": 3.5,
+      "Disponibel hushållinkomst per konsumtionsenhet": 347352,
+      "Absolut index": 28.3,
+      "Relativt index": 49.1
+    },
+    "212": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 3.2,
+      "Andel med eftergymnasial utbildning": 70.3,
+      "Andel barn i hushåll med låg inkomststandard": 4.1,
+      "Andel hyresrätter i bostadsbeståndet": 57.9,
+      "Tillgänglighetsmått": 3.5,
+      "Disponibel hushållinkomst per konsumtionsenhet": 334614,
+      "Absolut index": 26.1,
+      "Relativt index": 44.9
+    },
+    "301": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 4.9,
+      "Andel med eftergymnasial utbildning": 60,
+      "Andel barn i hushåll med låg inkomststandard": 5.6,
+      "Andel hyresrätter i bostadsbeståndet": 54.9,
+      "Tillgänglighetsmått": 3.8,
+      "Disponibel hushållinkomst per konsumtionsenhet": 313460,
+      "Absolut index": 31.1,
+      "Relativt index": 50.9
+    },
+    "302": {
+      "Socioekonomisk indelning": 5,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 2,
+      "Andel med eftergymnasial utbildning": 66.7,
+      "Andel barn i hushåll med låg inkomststandard": 0.8,
+      "Andel hyresrätter i bostadsbeståndet": 24,
+      "Tillgänglighetsmått": 3.2,
+      "Disponibel hushållinkomst per konsumtionsenhet": 388362,
+      "Absolut index": 21.6,
+      "Relativt index": 40.1
+    },
+    "303": {
+      "Socioekonomisk indelning": 2,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 11.3,
+      "Andel med eftergymnasial utbildning": 41.4,
+      "Andel barn i hushåll med låg inkomststandard": 13.6,
+      "Andel hyresrätter i bostadsbeståndet": 77.7,
+      "Tillgänglighetsmått": 3.4,
+      "Disponibel hushållinkomst per konsumtionsenhet": 254018,
+      "Absolut index": 44,
+      "Relativt index": 69.3
+    },
+    "304": {
+      "Socioekonomisk indelning": 1,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 12.4,
+      "Andel med eftergymnasial utbildning": 37.1,
+      "Andel barn i hushåll med låg inkomststandard": 19.9,
+      "Andel hyresrätter i bostadsbeståndet": 80.2,
+      "Tillgänglighetsmått": 3.3,
+      "Disponibel hushållinkomst per konsumtionsenhet": 250898,
+      "Absolut index": 47.2,
+      "Relativt index": 75.7
+    },
+    "305": {
+      "Socioekonomisk indelning": 1,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 10.6,
+      "Andel med eftergymnasial utbildning": 32.9,
+      "Andel barn i hushåll med låg inkomststandard": 18,
+      "Andel hyresrätter i bostadsbeståndet": 75.5,
+      "Tillgänglighetsmått": 3.1,
+      "Disponibel hushållinkomst per konsumtionsenhet": 244874,
+      "Absolut index": 47.8,
+      "Relativt index": 74.1
+    },
+    "306": {
+      "Socioekonomisk indelning": 1,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 13.7,
+      "Andel med eftergymnasial utbildning": 30.4,
+      "Andel barn i hushåll med låg inkomststandard": 17.4,
+      "Andel hyresrätter i bostadsbeståndet": 88.4,
+      "Tillgänglighetsmått": 3.1,
+      "Disponibel hushållinkomst per konsumtionsenhet": 232800,
+      "Absolut index": 50,
+      "Relativt index": 77.7
+    },
+    "402": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 5.2,
+      "Andel med eftergymnasial utbildning": 60.3,
+      "Andel barn i hushåll med låg inkomststandard": 6.2,
+      "Andel hyresrätter i bostadsbeståndet": 58,
+      "Tillgänglighetsmått": 4.1,
+      "Disponibel hushållinkomst per konsumtionsenhet": 341201,
+      "Absolut index": 29.1,
+      "Relativt index": 50.3
+    },
+    "403": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 4.2,
+      "Andel med eftergymnasial utbildning": 54.9,
+      "Andel barn i hushåll med låg inkomststandard": 3.3,
+      "Andel hyresrätter i bostadsbeståndet": 44.3,
+      "Tillgänglighetsmått": 3.7,
+      "Disponibel hushållinkomst per konsumtionsenhet": 342321,
+      "Absolut index": 29.4,
+      "Relativt index": 48.7
+    },
+    "404": {
+      "Socioekonomisk indelning": 6,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 2.4,
+      "Andel med eftergymnasial utbildning": 63.4,
+      "Andel barn i hushåll med låg inkomststandard": 1.2,
+      "Andel hyresrätter i bostadsbeståndet": 4.1,
+      "Tillgänglighetsmått": 3.1,
+      "Disponibel hushållinkomst per konsumtionsenhet": 417286,
+      "Absolut index": 20.4,
+      "Relativt index": 40.3
+    },
+    "405": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 4.7,
+      "Andel med eftergymnasial utbildning": 48.9,
+      "Andel barn i hushåll med låg inkomststandard": 4.5,
+      "Andel hyresrätter i bostadsbeståndet": 27.7,
+      "Tillgänglighetsmått": 3.1,
+      "Disponibel hushållinkomst per konsumtionsenhet": 342411,
+      "Absolut index": 31.3,
+      "Relativt index": 51.5
+    },
+    "406": {
+      "Socioekonomisk indelning": 4,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 1.8,
+      "Andel med eftergymnasial utbildning": 44.3,
+      "Andel barn i hushåll med låg inkomststandard": 1.4,
+      "Andel hyresrätter i bostadsbeståndet": 9.5,
+      "Tillgänglighetsmått": 1.8,
+      "Disponibel hushållinkomst per konsumtionsenhet": 409891,
+      "Absolut index": 25.7,
+      "Relativt index": 44.9
+    },
+    "407": {
+      "Socioekonomisk indelning": 4,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 2.4,
+      "Andel med eftergymnasial utbildning": 47.4,
+      "Andel barn i hushåll med låg inkomststandard": 2.2,
+      "Andel hyresrätter i bostadsbeståndet": 5.5,
+      "Tillgänglighetsmått": 2.8,
+      "Disponibel hushållinkomst per konsumtionsenhet": 368088,
+      "Absolut index": 28.5,
+      "Relativt index": 47.1
+    },
+    "408": {
+      "Socioekonomisk indelning": 4,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 2.3,
+      "Andel med eftergymnasial utbildning": 42,
+      "Andel barn i hushåll med låg inkomststandard": 0.9,
+      "Andel hyresrätter i bostadsbeståndet": 9.2,
+      "Tillgänglighetsmått": 1.2,
+      "Disponibel hushållinkomst per konsumtionsenhet": 396153,
+      "Absolut index": 27.3,
+      "Relativt index": 46.2
+    },
+    "409": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 3.2,
+      "Andel med eftergymnasial utbildning": 58.3,
+      "Andel barn i hushåll med låg inkomststandard": 2.5,
+      "Andel hyresrätter i bostadsbeståndet": 39.6,
+      "Tillgänglighetsmått": 2.9,
+      "Disponibel hushållinkomst per konsumtionsenhet": 364116,
+      "Absolut index": 26.4,
+      "Relativt index": 45.5
+    },
+    "410": {
+      "Socioekonomisk indelning": 2,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 7.5,
+      "Andel med eftergymnasial utbildning": 47.3,
+      "Andel barn i hushåll med låg inkomststandard": 6.2,
+      "Andel hyresrätter i bostadsbeståndet": 67.4,
+      "Tillgänglighetsmått": 3.3,
+      "Disponibel hushållinkomst per konsumtionsenhet": 317140,
+      "Absolut index": 34.8,
+      "Relativt index": 56.7
+    },
+    "412": {
+      "Socioekonomisk indelning": 2,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 7.2,
+      "Andel med eftergymnasial utbildning": 41.5,
+      "Andel barn i hushåll med låg inkomststandard": 9.1,
+      "Andel hyresrätter i bostadsbeståndet": 50.8,
+      "Tillgänglighetsmått": 3.3,
+      "Disponibel hushållinkomst per konsumtionsenhet": 299327,
+      "Absolut index": 38.3,
+      "Relativt index": 60.6
+    },
+    "413": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 5.8,
+      "Andel med eftergymnasial utbildning": 47,
+      "Andel barn i hushåll med låg inkomststandard": 6.7,
+      "Andel hyresrätter i bostadsbeståndet": 32.4,
+      "Tillgänglighetsmått": 3.3,
+      "Disponibel hushållinkomst per konsumtionsenhet": 312351,
+      "Absolut index": 34.9,
+      "Relativt index": 55.7
+    },
+    "414": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 5.2,
+      "Andel med eftergymnasial utbildning": 53,
+      "Andel barn i hushåll med låg inkomststandard": 3.5,
+      "Andel hyresrätter i bostadsbeståndet": 72.1,
+      "Tillgänglighetsmått": 3.8,
+      "Disponibel hushållinkomst per konsumtionsenhet": 327116,
+      "Absolut index": 31.3,
+      "Relativt index": 50.9
+    },
+    "415": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 6,
+      "Andel med eftergymnasial utbildning": 60.2,
+      "Andel barn i hushåll med låg inkomststandard": 7,
+      "Andel hyresrätter i bostadsbeståndet": 56.8,
+      "Tillgänglighetsmått": 4.2,
+      "Disponibel hushållinkomst per konsumtionsenhet": 318048,
+      "Absolut index": 31.3,
+      "Relativt index": 52.6
+    },
+    "416": {
+      "Socioekonomisk indelning": 5,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 2.3,
+      "Andel med eftergymnasial utbildning": 64.5,
+      "Andel barn i hushåll med låg inkomststandard": 3.4,
+      "Andel hyresrätter i bostadsbeståndet": 19.3,
+      "Tillgänglighetsmått": 3.7,
+      "Disponibel hushållinkomst per konsumtionsenhet": 462576,
+      "Absolut index": 17.1,
+      "Relativt index": 39.4
+    },
+    "417": {
+      "Socioekonomisk indelning": 5,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 1.8,
+      "Andel med eftergymnasial utbildning": 72.7,
+      "Andel barn i hushåll med låg inkomststandard": 4,
+      "Andel hyresrätter i bostadsbeståndet": 36.8,
+      "Tillgänglighetsmått": 3.9,
+      "Disponibel hushållinkomst per konsumtionsenhet": 390849,
+      "Absolut index": 20.7,
+      "Relativt index": 40.4
+    },
+    "501": {
+      "Socioekonomisk indelning": 6,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 1,
+      "Andel med eftergymnasial utbildning": 72.1,
+      "Andel barn i hushåll med låg inkomststandard": 0.7,
+      "Andel hyresrätter i bostadsbeståndet": 5.3,
+      "Tillgänglighetsmått": 3,
+      "Disponibel hushållinkomst per konsumtionsenhet": 469585,
+      "Absolut index": 13.7,
+      "Relativt index": 34.2
+    },
+    "502": {
+      "Socioekonomisk indelning": 6,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 1.8,
+      "Andel med eftergymnasial utbildning": 75.5,
+      "Andel barn i hushåll med låg inkomststandard": 0.8,
+      "Andel hyresrätter i bostadsbeståndet": 3.6,
+      "Tillgänglighetsmått": 2.8,
+      "Disponibel hushållinkomst per konsumtionsenhet": 656536,
+      "Absolut index": 6.8,
+      "Relativt index": 26
+    },
+    "503": {
+      "Socioekonomisk indelning": 6,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 1.4,
+      "Andel med eftergymnasial utbildning": 75.5,
+      "Andel barn i hushåll med låg inkomststandard": 1.2,
+      "Andel hyresrätter i bostadsbeståndet": 24.6,
+      "Tillgänglighetsmått": 3.3,
+      "Disponibel hushållinkomst per konsumtionsenhet": 486804,
+      "Absolut index": 11.7,
+      "Relativt index": 33.3
+    },
+    "504": {
+      "Socioekonomisk indelning": 6,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 1.4,
+      "Andel med eftergymnasial utbildning": 78.5,
+      "Andel barn i hushåll med låg inkomststandard": 0.4,
+      "Andel hyresrätter i bostadsbeståndet": 4.4,
+      "Tillgänglighetsmått": 3.2,
+      "Disponibel hushållinkomst per konsumtionsenhet": 480329,
+      "Absolut index": 11.3,
+      "Relativt index": 32.3
+    },
+    "505": {
+      "Socioekonomisk indelning": 4,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 1.8,
+      "Andel med eftergymnasial utbildning": 61.6,
+      "Andel barn i hushåll med låg inkomststandard": 2.8,
+      "Andel hyresrätter i bostadsbeståndet": 11.1,
+      "Tillgänglighetsmått": 0.7,
+      "Disponibel hushållinkomst per konsumtionsenhet": 391252,
+      "Absolut index": 23.1,
+      "Relativt index": 42.4
+    },
+    "506": {
+      "Socioekonomisk indelning": 6,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 1.2,
+      "Andel med eftergymnasial utbildning": 67.7,
+      "Andel barn i hushåll med låg inkomststandard": 0.9,
+      "Andel hyresrätter i bostadsbeståndet": 3.2,
+      "Tillgänglighetsmått": 3.1,
+      "Disponibel hushållinkomst per konsumtionsenhet": 440901,
+      "Absolut index": 17.1,
+      "Relativt index": 36.9
+    },
+    "507": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 2.9,
+      "Andel med eftergymnasial utbildning": 50.3,
+      "Andel barn i hushåll med låg inkomststandard": 5.4,
+      "Andel hyresrätter i bostadsbeståndet": 35.3,
+      "Tillgänglighetsmått": 3.5,
+      "Disponibel hushållinkomst per konsumtionsenhet": 316235,
+      "Absolut index": 32.8,
+      "Relativt index": 51.2
+    },
+    "508": {
+      "Socioekonomisk indelning": 2,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 5.7,
+      "Andel med eftergymnasial utbildning": 43.6,
+      "Andel barn i hushåll med låg inkomststandard": 9,
+      "Andel hyresrätter i bostadsbeståndet": 86.9,
+      "Tillgänglighetsmått": 3.6,
+      "Disponibel hushållinkomst per konsumtionsenhet": 308988,
+      "Absolut index": 36.6,
+      "Relativt index": 58.2
+    },
+    "509": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 3.5,
+      "Andel med eftergymnasial utbildning": 67.4,
+      "Andel barn i hushåll med låg inkomststandard": 5.1,
+      "Andel hyresrätter i bostadsbeståndet": 34.6,
+      "Tillgänglighetsmått": 3.8,
+      "Disponibel hushållinkomst per konsumtionsenhet": 317314,
+      "Absolut index": 28.5,
+      "Relativt index": 47.3
+    },
+    "510": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 3.1,
+      "Andel med eftergymnasial utbildning": 57.7,
+      "Andel barn i hushåll med låg inkomststandard": 4.8,
+      "Andel hyresrätter i bostadsbeståndet": 53.3,
+      "Tillgänglighetsmått": 3.8,
+      "Disponibel hushållinkomst per konsumtionsenhet": 316543,
+      "Absolut index": 30.8,
+      "Relativt index": 49.1
+    },
+    "511": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 5.7,
+      "Andel med eftergymnasial utbildning": 62.6,
+      "Andel barn i hushåll med låg inkomststandard": 4.5,
+      "Andel hyresrätter i bostadsbeståndet": 85.8,
+      "Tillgänglighetsmått": 3.6,
+      "Disponibel hushållinkomst per konsumtionsenhet": 306549,
+      "Absolut index": 30.9,
+      "Relativt index": 50.6
+    },
+    "512": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 4.8,
+      "Andel med eftergymnasial utbildning": 63.9,
+      "Andel barn i hushåll med låg inkomststandard": 7.4,
+      "Andel hyresrätter i bostadsbeståndet": 69.1,
+      "Tillgänglighetsmått": 4.1,
+      "Disponibel hushållinkomst per konsumtionsenhet": 306444,
+      "Absolut index": 31.1,
+      "Relativt index": 51.3
+    },
+    "513": {
+      "Socioekonomisk indelning": 2,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 9.6,
+      "Andel med eftergymnasial utbildning": 37.4,
+      "Andel barn i hushåll med låg inkomststandard": 9.2,
+      "Andel hyresrätter i bostadsbeståndet": 94,
+      "Tillgänglighetsmått": 3.8,
+      "Disponibel hushållinkomst per konsumtionsenhet": 261063,
+      "Absolut index": 42.9,
+      "Relativt index": 65.6
+    },
+    "514": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 3.5,
+      "Andel med eftergymnasial utbildning": 63.9,
+      "Andel barn i hushåll med låg inkomststandard": 5.8,
+      "Andel hyresrätter i bostadsbeståndet": 17.4,
+      "Tillgänglighetsmått": 3.7,
+      "Disponibel hushållinkomst per konsumtionsenhet": 306766,
+      "Absolut index": 30.4,
+      "Relativt index": 49.1
+    },
+    "515": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 5.1,
+      "Andel med eftergymnasial utbildning": 54.4,
+      "Andel barn i hushåll med låg inkomststandard": 6.3,
+      "Andel hyresrätter i bostadsbeståndet": 57.5,
+      "Tillgänglighetsmått": 3.7,
+      "Disponibel hushållinkomst per konsumtionsenhet": 330558,
+      "Absolut index": 31.4,
+      "Relativt index": 52.2
+    },
+    "517": {
+      "Socioekonomisk indelning": 2,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 9.1,
+      "Andel med eftergymnasial utbildning": 50.4,
+      "Andel barn i hushåll med låg inkomststandard": 10.6,
+      "Andel hyresrätter i bostadsbeståndet": 82.3,
+      "Tillgänglighetsmått": 3.8,
+      "Disponibel hushållinkomst per konsumtionsenhet": 272565,
+      "Absolut index": 39,
+      "Relativt index": 62.3
+    },
+    "518": {
+      "Socioekonomisk indelning": 2,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 8.4,
+      "Andel med eftergymnasial utbildning": 42.5,
+      "Andel barn i hushåll med låg inkomststandard": 8.4,
+      "Andel hyresrätter i bostadsbeståndet": 59.6,
+      "Tillgänglighetsmått": 3.5,
+      "Disponibel hushållinkomst per konsumtionsenhet": 293558,
+      "Absolut index": 38.6,
+      "Relativt index": 61.2
+    },
+    "519": {
+      "Socioekonomisk indelning": 6,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 1.8,
+      "Andel med eftergymnasial utbildning": 63.8,
+      "Andel barn i hushåll med låg inkomststandard": 0.3,
+      "Andel hyresrätter i bostadsbeståndet": 17.4,
+      "Tillgänglighetsmått": 3.1,
+      "Disponibel hushållinkomst per konsumtionsenhet": 430405,
+      "Absolut index": 18.9,
+      "Relativt index": 38.5
+    },
+    "520": {
+      "Socioekonomisk indelning": 2,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 9.9,
+      "Andel med eftergymnasial utbildning": 36.7,
+      "Andel barn i hushåll med låg inkomststandard": 10.3,
+      "Andel hyresrätter i bostadsbeståndet": 82,
+      "Tillgänglighetsmått": 3.7,
+      "Disponibel hushållinkomst per konsumtionsenhet": 263237,
+      "Absolut index": 43.3,
+      "Relativt index": 66.6
+    },
+    "521": {
+      "Socioekonomisk indelning": 6,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 1.2,
+      "Andel med eftergymnasial utbildning": 71.1,
+      "Andel barn i hushåll med låg inkomststandard": 1.2,
+      "Andel hyresrätter i bostadsbeståndet": 4.3,
+      "Tillgänglighetsmått": 2.7,
+      "Disponibel hushållinkomst per konsumtionsenhet": 504984,
+      "Absolut index": 11.3,
+      "Relativt index": 33.4
+    },
+    "522": {
+      "Socioekonomisk indelning": 2,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 6.6,
+      "Andel med eftergymnasial utbildning": 52.5,
+      "Andel barn i hushåll med låg inkomststandard": 10.8,
+      "Andel hyresrätter i bostadsbeståndet": 60.7,
+      "Tillgänglighetsmått": 3.6,
+      "Disponibel hushållinkomst per konsumtionsenhet": 290942,
+      "Absolut index": 36.5,
+      "Relativt index": 58.8
+    },
+    "523": {
+      "Socioekonomisk indelning": 5,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 3.3,
+      "Andel med eftergymnasial utbildning": 62.6,
+      "Andel barn i hushåll med låg inkomststandard": 2.8,
+      "Andel hyresrätter i bostadsbeståndet": 43.1,
+      "Tillgänglighetsmått": 3.2,
+      "Disponibel hushållinkomst per konsumtionsenhet": 396305,
+      "Absolut index": 22.9,
+      "Relativt index": 43.3
+    },
+    "524": {
+      "Socioekonomisk indelning": 6,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 1.4,
+      "Andel med eftergymnasial utbildning": 73.6,
+      "Andel barn i hushåll med låg inkomststandard": 0.7,
+      "Andel hyresrätter i bostadsbeståndet": 7.1,
+      "Tillgänglighetsmått": 2.6,
+      "Disponibel hushållinkomst per konsumtionsenhet": 579012,
+      "Absolut index": 7.1,
+      "Relativt index": 29.4
+    },
+    "525": {
+      "Socioekonomisk indelning": 6,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 1.3,
+      "Andel med eftergymnasial utbildning": 71.2,
+      "Andel barn i hushåll med låg inkomststandard": 1.7,
+      "Andel hyresrätter i bostadsbeståndet": 13,
+      "Tillgänglighetsmått": 2.5,
+      "Disponibel hushållinkomst per konsumtionsenhet": 467904,
+      "Absolut index": 14.4,
+      "Relativt index": 35.4
+    },
+    "601": {
+      "Socioekonomisk indelning": 1,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 13.6,
+      "Andel med eftergymnasial utbildning": 27.7,
+      "Andel barn i hushåll med låg inkomststandard": 19,
+      "Andel hyresrätter i bostadsbeståndet": 87.2,
+      "Tillgänglighetsmått": 3.2,
+      "Disponibel hushållinkomst per konsumtionsenhet": 232178,
+      "Absolut index": 51.1,
+      "Relativt index": 79.4
+    },
+    "602": {
+      "Socioekonomisk indelning": 1,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 17,
+      "Andel med eftergymnasial utbildning": 27.7,
+      "Andel barn i hushåll med låg inkomststandard": 24.4,
+      "Andel hyresrätter i bostadsbeståndet": 77.8,
+      "Tillgänglighetsmått": 3.1,
+      "Disponibel hushållinkomst per konsumtionsenhet": 240266,
+      "Absolut index": 52.6,
+      "Relativt index": 85.7
+    },
+    "603": {
+      "Socioekonomisk indelning": 2,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 9.8,
+      "Andel med eftergymnasial utbildning": 31.5,
+      "Andel barn i hushåll med låg inkomststandard": 12.6,
+      "Andel hyresrätter i bostadsbeståndet": 85.7,
+      "Tillgänglighetsmått": 3.4,
+      "Disponibel hushållinkomst per konsumtionsenhet": 251917,
+      "Absolut index": 46,
+      "Relativt index": 69.8
+    },
+    "604": {
+      "Socioekonomisk indelning": 2,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 11.1,
+      "Andel med eftergymnasial utbildning": 34.9,
+      "Andel barn i hushåll med låg inkomststandard": 14.3,
+      "Andel hyresrätter i bostadsbeståndet": 44.9,
+      "Tillgänglighetsmått": 3.8,
+      "Disponibel hushållinkomst per konsumtionsenhet": 283176,
+      "Absolut index": 43.5,
+      "Relativt index": 70
+    },
+    "605": {
+      "Socioekonomisk indelning": 4,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 7,
+      "Andel med eftergymnasial utbildning": 38.4,
+      "Andel barn i hushåll med låg inkomststandard": 6.2,
+      "Andel hyresrätter i bostadsbeståndet": 5.2,
+      "Tillgänglighetsmått": 3.2,
+      "Disponibel hushållinkomst per konsumtionsenhet": 306927,
+      "Absolut index": 37.7,
+      "Relativt index": 58.9
+    },
+    "606": {
+      "Socioekonomisk indelning": 1,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 14.4,
+      "Andel med eftergymnasial utbildning": 27.1,
+      "Andel barn i hushåll med låg inkomststandard": 22.3,
+      "Andel hyresrätter i bostadsbeståndet": 79.7,
+      "Tillgänglighetsmått": 3.3,
+      "Disponibel hushållinkomst per konsumtionsenhet": 226594,
+      "Absolut index": 52.4,
+      "Relativt index": 82.7
+    },
+    "609": {
+      "Socioekonomisk indelning": 4,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 5.7,
+      "Andel med eftergymnasial utbildning": 41.3,
+      "Andel barn i hushåll med låg inkomststandard": 2.2,
+      "Andel hyresrätter i bostadsbeståndet": 5.5,
+      "Tillgänglighetsmått": 2.4,
+      "Disponibel hushållinkomst per konsumtionsenhet": 352814,
+      "Absolut index": 32.1,
+      "Relativt index": 52.3
+    },
+    "610": {
+      "Socioekonomisk indelning": 4,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 3.2,
+      "Andel med eftergymnasial utbildning": 51.5,
+      "Andel barn i hushåll med låg inkomststandard": 1.9,
+      "Andel hyresrätter i bostadsbeståndet": 5.6,
+      "Tillgänglighetsmått": 2.3,
+      "Disponibel hushållinkomst per konsumtionsenhet": 385675,
+      "Absolut index": 26.2,
+      "Relativt index": 45.8
+    },
+    "611": {
+      "Socioekonomisk indelning": 4,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 2.8,
+      "Andel med eftergymnasial utbildning": 45.2,
+      "Andel barn i hushåll med låg inkomststandard": 2.5,
+      "Andel hyresrätter i bostadsbeståndet": 9.9,
+      "Tillgänglighetsmått": 1.7,
+      "Disponibel hushållinkomst per konsumtionsenhet": 389258,
+      "Absolut index": 27.6,
+      "Relativt index": 47.3
+    },
+    "612": {
+      "Socioekonomisk indelning": 1,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 13.7,
+      "Andel med eftergymnasial utbildning": 28.5,
+      "Andel barn i hushåll med låg inkomststandard": 18.9,
+      "Andel hyresrätter i bostadsbeståndet": 91.6,
+      "Tillgänglighetsmått": 3.2,
+      "Disponibel hushållinkomst per konsumtionsenhet": 233324,
+      "Absolut index": 50.8,
+      "Relativt index": 79.2
+    },
+    "613": {
+      "Socioekonomisk indelning": 1,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 18.8,
+      "Andel med eftergymnasial utbildning": 25.3,
+      "Andel barn i hushåll med låg inkomststandard": 16.6,
+      "Andel hyresrätter i bostadsbeståndet": 81.7,
+      "Tillgänglighetsmått": 2.9,
+      "Disponibel hushållinkomst per konsumtionsenhet": 223673,
+      "Absolut index": 52.5,
+      "Relativt index": 83.6
+    },
+    "701": {
+      "Socioekonomisk indelning": 1,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 14.9,
+      "Andel med eftergymnasial utbildning": 28.4,
+      "Andel barn i hushåll med låg inkomststandard": 22.9,
+      "Andel hyresrätter i bostadsbeståndet": 90.3,
+      "Tillgänglighetsmått": 3.4,
+      "Disponibel hushållinkomst per konsumtionsenhet": 224861,
+      "Absolut index": 52.4,
+      "Relativt index": 83.3
+    },
+    "702": {
+      "Socioekonomisk indelning": 1,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 10.3,
+      "Andel med eftergymnasial utbildning": 33.3,
+      "Andel barn i hushåll med låg inkomststandard": 16.9,
+      "Andel hyresrätter i bostadsbeståndet": 76.2,
+      "Tillgänglighetsmått": 3.2,
+      "Disponibel hushållinkomst per konsumtionsenhet": 260716,
+      "Absolut index": 46.1,
+      "Relativt index": 72.3
+    },
+    "703": {
+      "Socioekonomisk indelning": 2,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 10.4,
+      "Andel med eftergymnasial utbildning": 33.5,
+      "Andel barn i hushåll med låg inkomststandard": 9.9,
+      "Andel hyresrätter i bostadsbeståndet": 54.7,
+      "Tillgänglighetsmått": 3.4,
+      "Disponibel hushållinkomst per konsumtionsenhet": 265643,
+      "Absolut index": 43.9,
+      "Relativt index": 67.5
+    },
+    "704": {
+      "Socioekonomisk indelning": 6,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 1.3,
+      "Andel med eftergymnasial utbildning": 69.5,
+      "Andel barn i hushåll med låg inkomststandard": 1,
+      "Andel hyresrätter i bostadsbeståndet": 1.5,
+      "Tillgänglighetsmått": 2,
+      "Disponibel hushållinkomst per konsumtionsenhet": 522282,
+      "Absolut index": 10.3,
+      "Relativt index": 33
+    },
+    "705": {
+      "Socioekonomisk indelning": 4,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 1.7,
+      "Andel med eftergymnasial utbildning": 55.9,
+      "Andel barn i hushåll med låg inkomststandard": 1.1,
+      "Andel hyresrätter i bostadsbeståndet": 21.8,
+      "Tillgänglighetsmått": 2.5,
+      "Disponibel hushållinkomst per konsumtionsenhet": 404555,
+      "Absolut index": 23.1,
+      "Relativt index": 42
+    },
+    "706": {
+      "Socioekonomisk indelning": 6,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 1.4,
+      "Andel med eftergymnasial utbildning": 60.6,
+      "Andel barn i hushåll med låg inkomststandard": 0.4,
+      "Andel hyresrätter i bostadsbeståndet": 5.5,
+      "Tillgänglighetsmått": 1.9,
+      "Disponibel hushållinkomst per konsumtionsenhet": 470060,
+      "Absolut index": 16.5,
+      "Relativt index": 37.2
+    },
+    "708": {
+      "Socioekonomisk indelning": 2,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 9.3,
+      "Andel med eftergymnasial utbildning": 40.6,
+      "Andel barn i hushåll med låg inkomststandard": 9.9,
+      "Andel hyresrätter i bostadsbeståndet": 86.3,
+      "Tillgänglighetsmått": 3.5,
+      "Disponibel hushållinkomst per konsumtionsenhet": 257464,
+      "Absolut index": 42.5,
+      "Relativt index": 65.1
+    },
+    "709": {
+      "Socioekonomisk indelning": 3,
+      "Andel med ekonomiskt bistånd och/eller arbetslös": 5.5,
+      "Andel med eftergymnasial utbildning": 50,
+      "Andel barn i hushåll med låg inkomststandard": 3.9,
+      "Andel hyresrätter i bostadsbeståndet": 47.9,
+      "Tillgänglighetsmått": 3.6,
+      "Disponibel hushållinkomst per konsumtionsenhet": 324772,
+      "Absolut index": 32.4,
+      "Relativt index": 52.3
+    }
+  },
+  "summary": [
+    {
+      "group": 1,
+      "areas": 10,
+      "percent": 11
+    },
+    {
+      "group": 2,
+      "areas": 13,
+      "percent": 13
+    },
+    {
+      "group": 3,
+      "areas": 34,
+      "percent": 42
+    },
+    {
+      "group": 4,
+      "areas": 9,
+      "percent": 6
+    },
+    {
+      "group": 5,
+      "areas": 16,
+      "percent": 15
+    },
+    {
+      "group": 6,
+      "areas": 12,
+      "percent": 12
+    }
+  ],
+  "boxplots": {
+    "Andel med ekonomiskt bistånd och/eller arbetslös": [
+      {
+        "group": 1,
+        "n": 10,
+        "min": 10.3,
+        "q1": 12.7,
+        "median": 13.7,
+        "q3": 14.775,
+        "max": 18.8,
+        "low": 10.3,
+        "high": 17,
+        "outliers": [
+          {
+            "code": "613",
+            "value": 18.8
+          }
+        ]
+      },
+      {
+        "group": 2,
+        "n": 13,
+        "min": 5.7,
+        "q1": 7.5,
+        "median": 9.3,
+        "q3": 9.9,
+        "max": 11.3,
+        "low": 5.7,
+        "high": 11.3,
+        "outliers": []
+      },
+      {
+        "group": 3,
+        "n": 34,
+        "min": 1.8,
+        "q1": 3.2,
+        "median": 3.85,
+        "q3": 5.05,
+        "max": 6,
+        "low": 1.8,
+        "high": 6,
+        "outliers": []
+      },
+      {
+        "group": 4,
+        "n": 9,
+        "min": 1.7,
+        "q1": 1.8,
+        "median": 2.4,
+        "q3": 3.2,
+        "max": 7,
+        "low": 1.7,
+        "high": 3.2,
+        "outliers": [
+          {
+            "code": "605",
+            "value": 7
+          },
+          {
+            "code": "609",
+            "value": 5.7
+          }
+        ]
+      },
+      {
+        "group": 5,
+        "n": 16,
+        "min": 1.6,
+        "q1": 1.875,
+        "median": 2.15,
+        "q3": 2.375,
+        "max": 3.3,
+        "low": 1.6,
+        "high": 2.8,
+        "outliers": [
+          {
+            "code": "523",
+            "value": 3.3
+          }
+        ]
+      },
+      {
+        "group": 6,
+        "n": 12,
+        "min": 1,
+        "q1": 1.275,
+        "median": 1.4,
+        "q3": 1.5,
+        "max": 2.4,
+        "low": 1,
+        "high": 1.8,
+        "outliers": [
+          {
+            "code": "404",
+            "value": 2.4
+          }
+        ]
+      }
+    ],
+    "Andel med eftergymnasial utbildning": [
+      {
+        "group": 1,
+        "n": 10,
+        "min": 25.3,
+        "q1": 27.7,
+        "median": 28.45,
+        "q3": 32.275,
+        "max": 37.1,
+        "low": 25.3,
+        "high": 37.1,
+        "outliers": []
+      },
+      {
+        "group": 2,
+        "n": 13,
+        "min": 31.5,
+        "q1": 36.7,
+        "median": 41.4,
+        "q3": 43.6,
+        "max": 52.5,
+        "low": 31.5,
+        "high": 52.5,
+        "outliers": []
+      },
+      {
+        "group": 3,
+        "n": 34,
+        "min": 47,
+        "q1": 58.625,
+        "median": 63.55,
+        "q3": 68.2,
+        "max": 76,
+        "low": 47,
+        "high": 76,
+        "outliers": []
+      },
+      {
+        "group": 4,
+        "n": 9,
+        "min": 38.4,
+        "q1": 42,
+        "median": 45.2,
+        "q3": 51.5,
+        "max": 61.6,
+        "low": 38.4,
+        "high": 61.6,
+        "outliers": []
+      },
+      {
+        "group": 5,
+        "n": 16,
+        "min": 62.6,
+        "q1": 67.15,
+        "median": 71.35,
+        "q3": 74.1,
+        "max": 77.1,
+        "low": 62.6,
+        "high": 77.1,
+        "outliers": []
+      },
+      {
+        "group": 6,
+        "n": 12,
+        "min": 60.6,
+        "q1": 66.725,
+        "median": 71.15,
+        "q3": 74.075,
+        "max": 78.5,
+        "low": 60.6,
+        "high": 78.5,
+        "outliers": []
+      }
+    ],
+    "Andel barn i hushåll med låg inkomststandard": [
+      {
+        "group": 1,
+        "n": 10,
+        "min": 16.6,
+        "q1": 17.55,
+        "median": 18.95,
+        "q3": 21.7,
+        "max": 24.4,
+        "low": 16.6,
+        "high": 24.4,
+        "outliers": []
+      },
+      {
+        "group": 2,
+        "n": 13,
+        "min": 6.2,
+        "q1": 9.1,
+        "median": 9.9,
+        "q3": 10.8,
+        "max": 14.3,
+        "low": 8.4,
+        "high": 12.6,
+        "outliers": [
+          {
+            "code": "303",
+            "value": 13.6
+          },
+          {
+            "code": "410",
+            "value": 6.2
+          },
+          {
+            "code": "604",
+            "value": 14.3
+          }
+        ]
+      },
+      {
+        "group": 3,
+        "n": 34,
+        "min": 2.3,
+        "q1": 3.825,
+        "median": 4.3,
+        "q3": 5.325,
+        "max": 7.4,
+        "low": 2.3,
+        "high": 7.4,
+        "outliers": []
+      },
+      {
+        "group": 4,
+        "n": 9,
+        "min": 0.9,
+        "q1": 1.4,
+        "median": 2.2,
+        "q3": 2.5,
+        "max": 6.2,
+        "low": 0.9,
+        "high": 2.8,
+        "outliers": [
+          {
+            "code": "605",
+            "value": 6.2
+          }
+        ]
+      },
+      {
+        "group": 5,
+        "n": 16,
+        "min": 0.4,
+        "q1": 1.7,
+        "median": 2.6,
+        "q3": 3.225,
+        "max": 4.2,
+        "low": 0.4,
+        "high": 4.2,
+        "outliers": []
+      },
+      {
+        "group": 6,
+        "n": 12,
+        "min": 0.3,
+        "q1": 0.625,
+        "median": 0.85,
+        "q3": 1.2,
+        "max": 1.7,
+        "low": 0.3,
+        "high": 1.7,
+        "outliers": []
+      }
+    ],
+    "Andel hyresrätter i bostadsbeståndet": [
+      {
+        "group": 1,
+        "n": 10,
+        "min": 75.5,
+        "q1": 78.275,
+        "median": 80.95,
+        "q3": 88.1,
+        "max": 91.6,
+        "low": 75.5,
+        "high": 91.6,
+        "outliers": []
+      },
+      {
+        "group": 2,
+        "n": 13,
+        "min": 44.9,
+        "q1": 59.6,
+        "median": 77.7,
+        "q3": 85.7,
+        "max": 94,
+        "low": 44.9,
+        "high": 94,
+        "outliers": []
+      },
+      {
+        "group": 3,
+        "n": 34,
+        "min": 17.4,
+        "q1": 49.225,
+        "median": 59.3,
+        "q3": 68.65,
+        "max": 87.8,
+        "low": 27.7,
+        "high": 87.8,
+        "outliers": [
+          {
+            "code": "514",
+            "value": 17.4
+          }
+        ]
+      },
+      {
+        "group": 4,
+        "n": 9,
+        "min": 5.2,
+        "q1": 5.5,
+        "median": 9.2,
+        "q3": 9.9,
+        "max": 21.8,
+        "low": 5.2,
+        "high": 11.1,
+        "outliers": [
+          {
+            "code": "705",
+            "value": 21.8
+          }
+        ]
+      },
+      {
+        "group": 5,
+        "n": 16,
+        "min": 19.3,
+        "q1": 36.15,
+        "median": 40,
+        "q3": 46.225,
+        "max": 63,
+        "low": 24,
+        "high": 59.3,
+        "outliers": [
+          {
+            "code": "108",
+            "value": 63
+          },
+          {
+            "code": "416",
+            "value": 19.3
+          }
+        ]
+      },
+      {
+        "group": 6,
+        "n": 12,
+        "min": 1.5,
+        "q1": 3.975,
+        "median": 4.85,
+        "q3": 8.575,
+        "max": 24.6,
+        "low": 1.5,
+        "high": 13,
+        "outliers": [
+          {
+            "code": "503",
+            "value": 24.6
+          },
+          {
+            "code": "519",
+            "value": 17.4
+          }
+        ]
+      }
+    ],
+    "Tillgänglighetsmått": [
+      {
+        "group": 1,
+        "n": 10,
+        "min": 2.9,
+        "q1": 3.1,
+        "median": 3.2,
+        "q3": 3.275,
+        "max": 3.4,
+        "low": 2.9,
+        "high": 3.4,
+        "outliers": []
+      },
+      {
+        "group": 2,
+        "n": 13,
+        "min": 3.3,
+        "q1": 3.4,
+        "median": 3.5,
+        "q3": 3.7,
+        "max": 3.8,
+        "low": 3.3,
+        "high": 3.8,
+        "outliers": []
+      },
+      {
+        "group": 3,
+        "n": 34,
+        "min": 2.9,
+        "q1": 3.6,
+        "median": 3.7,
+        "q3": 3.875,
+        "max": 4.3,
+        "low": 3.3,
+        "high": 4.2,
+        "outliers": [
+          {
+            "code": "107",
+            "value": 4.3
+          },
+          {
+            "code": "405",
+            "value": 3.1
+          },
+          {
+            "code": "409",
+            "value": 2.9
+          }
+        ]
+      },
+      {
+        "group": 4,
+        "n": 9,
+        "min": 0.7,
+        "q1": 1.7,
+        "median": 2.3,
+        "q3": 2.5,
+        "max": 3.2,
+        "low": 0.7,
+        "high": 3.2,
+        "outliers": []
+      },
+      {
+        "group": 5,
+        "n": 16,
+        "min": 3.2,
+        "q1": 3.775,
+        "median": 3.95,
+        "q3": 4.125,
+        "max": 4.4,
+        "low": 3.7,
+        "high": 4.4,
+        "outliers": [
+          {
+            "code": "302",
+            "value": 3.2
+          },
+          {
+            "code": "523",
+            "value": 3.2
+          }
+        ]
+      },
+      {
+        "group": 6,
+        "n": 12,
+        "min": 1.9,
+        "q1": 2.575,
+        "median": 2.9,
+        "q3": 3.1,
+        "max": 3.3,
+        "low": 1.9,
+        "high": 3.3,
+        "outliers": []
+      }
+    ],
+    "Disponibel hushållinkomst per konsumtionsenhet": [
+      {
+        "group": 1,
+        "n": 10,
+        "min": 223673,
+        "q1": 227990,
+        "median": 233062,
+        "q3": 243722,
+        "max": 260716,
+        "low": 223673,
+        "high": 260716,
+        "outliers": []
+      },
+      {
+        "group": 2,
+        "n": 13,
+        "min": 251917,
+        "q1": 261063,
+        "median": 272565,
+        "q3": 293558,
+        "max": 317140,
+        "low": 251917,
+        "high": 317140,
+        "outliers": []
+      },
+      {
+        "group": 3,
+        "n": 34,
+        "min": 306444,
+        "q1": 317497.5,
+        "median": 332586,
+        "q3": 345286.25,
+        "max": 395407,
+        "low": 306444,
+        "high": 379198,
+        "outliers": [
+          {
+            "code": "118",
+            "value": 395407
+          }
+        ]
+      },
+      {
+        "group": 4,
+        "n": 9,
+        "min": 306927,
+        "q1": 368088,
+        "median": 389258,
+        "q3": 396153,
+        "max": 409891,
+        "low": 352814,
+        "high": 409891,
+        "outliers": [
+          {
+            "code": "605",
+            "value": 306927
+          }
+        ]
+      },
+      {
+        "group": 5,
+        "n": 16,
+        "min": 371549,
+        "q1": 390227.25,
+        "median": 433598.5,
+        "q3": 465196.25,
+        "max": 534812,
+        "low": 371549,
+        "high": 534812,
+        "outliers": []
+      },
+      {
+        "group": 6,
+        "n": 12,
+        "min": 417286,
+        "q1": 461153.25,
+        "median": 475194.5,
+        "q3": 509308.5,
+        "max": 656536,
+        "low": 417286,
+        "high": 579012,
+        "outliers": [
+          {
+            "code": "502",
+            "value": 656536
+          }
+        ]
+      }
+    ],
+    "Absolut index": [
+      {
+        "group": 1,
+        "n": 10,
+        "min": 46.1,
+        "q1": 48.35,
+        "median": 50.95,
+        "q3": 52.4,
+        "max": 52.6,
+        "low": 46.1,
+        "high": 52.6,
+        "outliers": []
+      },
+      {
+        "group": 2,
+        "n": 13,
+        "min": 34.8,
+        "q1": 38.3,
+        "median": 42.5,
+        "q3": 43.5,
+        "max": 46,
+        "low": 34.8,
+        "high": 46,
+        "outliers": []
+      },
+      {
+        "group": 3,
+        "n": 34,
+        "min": 23.3,
+        "q1": 25.5,
+        "median": 28.35,
+        "q3": 31.05,
+        "max": 34.9,
+        "low": 23.3,
+        "high": 34.9,
+        "outliers": []
+      },
+      {
+        "group": 4,
+        "n": 9,
+        "min": 23.1,
+        "q1": 25.7,
+        "median": 27.3,
+        "q3": 28.5,
+        "max": 37.7,
+        "low": 23.1,
+        "high": 32.1,
+        "outliers": [
+          {
+            "code": "605",
+            "value": 37.7
+          }
+        ]
+      },
+      {
+        "group": 5,
+        "n": 16,
+        "min": 8.2,
+        "q1": 15.6,
+        "median": 18.1,
+        "q3": 21.3,
+        "max": 22.9,
+        "low": 8.2,
+        "high": 22.9,
+        "outliers": []
+      },
+      {
+        "group": 6,
+        "n": 12,
+        "min": 6.8,
+        "q1": 11.05,
+        "median": 12.7,
+        "q3": 16.65,
+        "max": 20.4,
+        "low": 6.8,
+        "high": 20.4,
+        "outliers": []
+      }
+    ],
+    "Relativt index": [
+      {
+        "group": 1,
+        "n": 10,
+        "min": 72.3,
+        "q1": 76.2,
+        "median": 79.3,
+        "q3": 83.15,
+        "max": 85.7,
+        "low": 72.3,
+        "high": 85.7,
+        "outliers": []
+      },
+      {
+        "group": 2,
+        "n": 13,
+        "min": 56.7,
+        "q1": 60.6,
+        "median": 65.1,
+        "q3": 67.5,
+        "max": 70,
+        "low": 56.7,
+        "high": 70,
+        "outliers": []
+      },
+      {
+        "group": 3,
+        "n": 34,
+        "min": 42.4,
+        "q1": 44.675,
+        "median": 47.3,
+        "q3": 50.825,
+        "max": 55.7,
+        "low": 42.4,
+        "high": 55.7,
+        "outliers": []
+      },
+      {
+        "group": 4,
+        "n": 9,
+        "min": 42,
+        "q1": 44.9,
+        "median": 46.2,
+        "q3": 47.3,
+        "max": 58.9,
+        "low": 42,
+        "high": 47.3,
+        "outliers": [
+          {
+            "code": "605",
+            "value": 58.9
+          },
+          {
+            "code": "609",
+            "value": 52.3
+          }
+        ]
+      },
+      {
+        "group": 5,
+        "n": 16,
+        "min": 31.6,
+        "q1": 37.025,
+        "median": 39.6,
+        "q3": 40.225,
+        "max": 43.3,
+        "low": 33.8,
+        "high": 43.3,
+        "outliers": [
+          {
+            "code": "205",
+            "value": 31.6
+          }
+        ]
+      },
+      {
+        "group": 6,
+        "n": 12,
+        "min": 26,
+        "q1": 32.825,
+        "median": 33.8,
+        "q3": 36.975,
+        "max": 40.3,
+        "low": 29.4,
+        "high": 40.3,
+        "outliers": [
+          {
+            "code": "502",
+            "value": 26
+          }
+        ]
+      }
+    ]
+  },
+  "unmappedStatistics": ["516", "707"]
+}

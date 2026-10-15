@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sv" xml:lang="sv"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>K närmsta granne – Lägesbild segregation</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<link href="../kapitel/05-k-narmsta-granne.qmd#sec-knn-utbildning" rel="next">
+<link href="../kapitel/04-lyckoparadoxen.qmd#sec-lycko-omraden" rel="prev">
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-5c2d7eac902eb3bd004a9b2f7d8fa169.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "Inget resultat",
+    "search-matching-documents-text": "matchande dokument",
+    "search-copy-link-title": "Kopiera länk för att söka",
+    "search-hide-matches-text": "Göm ytterligare resultat",
+    "search-more-match-text": "annat resultat i detta dokument",
+    "search-more-matches-text": "fler resultat i detta dokument",
+    "search-clear-button-title": "Rensa",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Avbryt",
+    "search-submit-button-title": "Verkställ",
+    "search-label": "Sök"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<script src="../assets/js/focus-navigation.js" defer=""></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&amp;display=swap">
+
+
+
+<link rel="stylesheet" href="../assets/css/rapport.css">
+</head>
+
+<body class="nav-sidebar docked fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Skifta sidonavigering" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../kapitel/05-k-narmsta-granne.html">5. K närmsta granne</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Skifta sidonavigering" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Innehållsförteckning</a> 
+    </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/00-sammanfattning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sammanfattning</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../kapitel/01-inledning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. Inledning</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Skifta sektion">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/01-inledning.html#sec-definition-segregation" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.1 Hur definierar vi segregationen i Göteborgs stad?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/01-inledning.html#sec-syfte" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.2 Syftet med denna rapport</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/01-inledning.html#sec-avgransningar" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.3 Avgräsningar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/01-inledning.html#sec-disposition" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.4 Disposition</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/01-inledning.html#sec-begrepp" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.5 Vad menar vi med segregation?</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../kapitel/02-att-mata-segregation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. Att mäta segregation</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Skifta sektion">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/02-att-mata-segregation.html#sec-omradesanalys" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.1 Områdesanalys</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/02-att-mata-segregation.html#sec-knn" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.2 K närmsta granne</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/02-att-mata-segregation.html#sec-reflektion" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3 Avslutande reflektion</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../kapitel/03-goteborgs-socioekonomiska-omradesindelning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. Göteborgs socioekonomiska områdesindelning</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Skifta sektion">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/03-goteborgs-socioekonomiska-omradesindelning.html#sec-socio-kluster" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.1 Beskrivning av de socioekonomiska klustrena</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/03-goteborgs-socioekonomiska-omradesindelning.html#sec-socio-resultat" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.2 Resultatet 2026</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../kapitel/04-lyckoparadoxen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. Lyckoparadoxen</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Skifta sektion">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/04-lyckoparadoxen.html#sec-lycko-sammanfattning" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.1 Sammanfattning</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/04-lyckoparadoxen.html#sec-lycko-flyttningar" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.2 Flyttningar av förvärvsarbetande</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/04-lyckoparadoxen.html#sec-lycko-inkomst" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.3 Inkomstutveckling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/04-lyckoparadoxen.html#sec-lycko-omraden" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.4 Exempel på enskilda områden</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../kapitel/05-k-narmsta-granne.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">5. K närmsta granne</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Skifta sektion">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/05-k-narmsta-granne.html#sec-knn-utbildning" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.1 Förgymnasial utbildning</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/05-k-narmsta-granne.html#sec-knn-ekonomisk-standard" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.2 Låg ekonomisk standard</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/05-k-narmsta-granne.html#sec-knn-utrikesfodda" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.3 Födda utanför Sverige</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/05-k-narmsta-granne.html#sec-knn-fodda-utanfor-europa" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.4 Födda utanför Europa</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../kapitel/06-diskussion-och-slutsatser.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. Diskussion och slutsatser</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Skifta sektion">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/06-diskussion-och-slutsatser.html#sec-tolkning" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.1 Hur ska resultaten tolkas?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/06-diskussion-och-slutsatser.html#sec-slutsatser-resultat" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.2 Slutsatser</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../kapitel/07-metodbilaga.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7. Metodbilaga</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Skifta sektion">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/07-metodbilaga.html#sec-berakningar" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7.1 Definitioner och beräkningar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/07-metodbilaga.html#sec-jamforbarhet" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7.2 Hantering av jämförbarhet</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/referenser.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Referenser</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+<div id="rapport-sidhuvud" class="rapport-sidhuvud" role="banner" aria-label="Göteborgs Stad, Lägesbild segregation">
+
+  <div class="rapport-logo-rad"><img class="rapport-logotyp" src="../assets/images/goteborgs-stad.svg" alt="Göteborgs Stad" width="180" height="66"></div>
+
+  <div class="rapport-stadssiluetter" aria-hidden="true">
+
+    <img class="rapport-stadssiluett" src="../assets/images/stadssiluett.svg" alt="">
+
+    <img class="rapport-stadssiluett" src="../assets/images/stadssiluett.svg" alt="">
+
+  </div>
+
+  <div class="rapport-header-inner">
+
+    <div class="rapport-identitet">
+
+      <p class="rapport-namn">Lägesbild segregation</p>
+
+      <p class="rapport-enhet">Stadsledningskontoret <span aria-hidden="true">·</span> Statistik och analys <span aria-hidden="true">·</span> Samhällsutveckling och hållbarhet</p>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+
+(() => {
+
+  const banner = document.getElementById('rapport-sidhuvud');
+
+  const header = document.getElementById('quarto-header');
+
+  if (banner && header) header.prepend(banner);
+
+  const sidebarTitle = document.querySelector('#quarto-sidebar .sidebar-title');
+
+  if (sidebarTitle) sidebarTitle.textContent = 'Innehållsförteckning';
+
+  // Gör utfällningspilarna begripliga och användbara med tangentbord.
+
+  document.querySelectorAll('#quarto-sidebar .sidebar-item-toggle').forEach((toggle) => {
+
+    const title = toggle.parentElement.querySelector('.menu-text')?.textContent.trim() || '';
+
+    toggle.setAttribute('role', 'button');
+
+    toggle.setAttribute('tabindex', '0');
+
+    toggle.setAttribute('aria-label', `Visa eller dölj underrubriker för ${title}`);
+
+    toggle.addEventListener('keydown', (event) => {
+
+      if (event.key === 'Enter' || event.key === ' ') {
+
+        event.preventDefault();
+
+        toggle.click();
+
+      }
+
+    });
+
+  });
+
+  // Föregående/nästa ska byta kapitel, inte gå mellan ankarlänkar på samma sida.
+
+  document.addEventListener('DOMContentLoaded', () => {
+    // Följ den underrubrik som läsaren har nått på den aktuella sidan.
+    const sectionLinks = [...document.querySelectorAll('#quarto-sidebar a.sidebar-link')]
+      .map((link) => ({ link, url: new URL(link.href) }))
+      .filter(({ url }) => url.pathname === location.pathname && url.hash)
+      .map(({ link, url }) => ({ link, section: document.getElementById(decodeURIComponent(url.hash.slice(1))) }))
+      .filter(({ section }) => section);
+    const updateSection = () => {
+      const readingLine = Math.min(120, window.innerHeight * 0.2);
+      let active = null;
+      sectionLinks.forEach((item) => {
+        if (item.section.getBoundingClientRect().top <= readingLine) active = item;
+      });
+      sectionLinks.forEach(({ link }) => {
+        const selected = link === active?.link;
+        link.classList.toggle('active', selected);
+        if (selected) link.setAttribute('aria-current', 'location');
+        else link.removeAttribute('aria-current');
+      });
+      document.querySelectorAll('#quarto-sidebar a.sidebar-link').forEach((link) => {
+        const url = new URL(link.href);
+        if (url.pathname !== location.pathname || url.hash) return;
+        link.classList.toggle('active', !active);
+        if (!active) link.setAttribute('aria-current', 'page');
+        else link.removeAttribute('aria-current');
+      });
+    };
+    let scrollFrame = null;
+    const scheduleSectionUpdate = () => {
+      if (scrollFrame !== null) return;
+      scrollFrame = requestAnimationFrame(() => {
+        scrollFrame = null;
+        updateSection();
+      });
+    };
+    if (sectionLinks.length) {
+      window.addEventListener('scroll', scheduleSectionUpdate, { passive: true });
+      window.addEventListener('resize', scheduleSectionUpdate);
+      window.addEventListener('hashchange', scheduleSectionUpdate);
+      updateSection();
+    }
+    const chapters = [...document.querySelectorAll('#quarto-sidebar a.sidebar-link')]
+      .filter((link) => !new URL(link.href).hash);
+
+    const current = chapters.findIndex((link) => new URL(link.href).pathname === location.pathname);
+
+    if (current < 0) return;
+
+    [['previous', current - 1], ['next', current + 1]].forEach(([direction, index]) => {
+
+      const container = document.querySelector(`.nav-page-${direction}`);
+
+      if (!container) return;
+
+      const chapter = chapters[index];
+
+      container.replaceChildren();
+
+      if (!chapter) return;
+
+      const link = document.createElement('a');
+
+      link.className = 'pagination-link';
+
+      link.href = chapter.href;
+
+      link.setAttribute('aria-label', chapter.textContent.trim());
+
+      const text = document.createElement('span');
+
+      text.className = 'nav-page-text';
+
+      text.textContent = chapter.textContent.trim();
+
+      const icon = document.createElement('i');
+
+      icon.className = direction === 'previous' ? 'bi bi-arrow-left-short' : 'bi bi-arrow-right-short';
+
+      icon.setAttribute('aria-hidden', 'true');
+
+      link.append(...(direction === 'previous' ? [icon, text] : [text, icon]));
+
+      container.append(link);
+
+    });
+
+  });
+
+})();
+
+</script>
+
+
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">K närmsta granne</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="sec-knn-resultat" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> K närmsta granne</h1>
+<p>Här presenteras resultaten från k-närmsta-granne-metoden för ämnena; förgymnasial utbildning, låg ekonomisk standard samt personer födda utanför Sverige respektive Europa. Metoden beskrivs i avsnittet <a href="../kapitel/02-att-mata-segregation.html#sec-knn">K närmsta granne</a>. För varje ämne visar vi samma karta och diagram, så att resultaten kan jämföras mellan ämnena.</p>
+<p><strong>Grannskap av olika storlek</strong><br>
+Staden är indelad i rutor om 100 × 100 meter. För varje ruta räknar vi ut hur stor andel av de närmaste grannarna som tillhör gruppen vi studerar. Grannskapet görs successivt större: först de 100 närmaste grannarna, sedan 200, 400 och så vidare upp till 51 200. Ett litet grannskap motsvarar ungefär några hus eller ett kvarter, och de största motsvarar ungefär en stadsdel. Genom att jämföra resultaten kan vi se både <em>var</em> gruppen bor samlat och <em>hur stora</em> områdena är.</p>
+<p><strong>Kartan</strong><br>
+Kartan visar andelen i gruppen bland de närmaste grannarna för varje ruta. Med reglaget kan du ändra antalet grannar och se hur mönstret förändras när grannskapet växer. Om färgerna ligger kvar när grannskapet blir större är det stora sammanhängande delar av staden som skiljer sig åt. Om de snabbt bleknar är det mindre, lokala områden. Mittklassen är satt kring stadens genomsnitt för respektive år, så kartan visar var andelen är högre eller lägre än i staden som helhet.</p>
+<p><strong>Isoleringsindex</strong><br>
+Diagrammen visar isoleringsindex. Det besvarar frågan: <em>Hur stor är chansen att en slumpvis vald granne till en person i gruppen själv tillhör gruppen?</em> Om gruppen var jämnt utspridd över staden skulle chansen vara lika stor som gruppens andel i hela Göteborg. Den nivån visas som en streckad linje. Ju högre isoleringsindex ligger över den streckade linjen, desto mer bor gruppen samlat.</p>
+<p>Diagrammet har två flikar. Under <em>Index och genomsnitt</em> visas varje år för sig. Där ser man hur isoleringsindex förändras när grannskapet blir större: en flack kurva betyder att gruppen bor samlat över stora delar av staden, och en kurva som faller brant betyder att samlingen är lokal. Under <em>Jämför åren</em> visas skillnaden mellan isoleringsindex och stadens genomsnitt, så att åren kan jämföras även om gruppens storlek har förändrats. En kurva som ligger högre än ett tidigare år betyder att gruppen bor mer samlat än då.</p>
+<section id="sammanfattning" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="sammanfattning"><span class="header-section-number">5.1</span> Sammanfattning</h2>
+<p>I kapitlet undersöker vi hur fyra grupper bor i Göteborg: personer med förgymnasial utbildning, personer med låg ekonomisk standard, utrikes födda och utrikes födda utanför Europa. För alla fyra gäller att gruppen bor mer samlat än om den vore jämnt fördelad över staden. Men grupperna skiljer sig åt i tre avseenden: hur starkt de bor samlat, på vilken geografisk nivå det sker och hur det har utvecklats över tid.</p>
+<p><strong>Var segregationen är starkast.</strong> Grupperna är olika stora, och andelen i staden varierar mellan 9 och 30 procent. För att kunna jämföra dem använder vi ett mått som tar hänsyn till gruppens storlek. Med det måttet är boendesegregationen tydligast efter födelseland. Utrikes födda och utrikes födda utanför Europa bor mer samlat än de två socioekonomiska grupperna, både bland de närmaste grannarna och i stora grannskap. Bland de närmaste grannarna kommer låg ekonomisk standard därefter och förgymnasial utbildning sist. I de stora grannskapen ligger de två socioekonomiska grupperna på ungefär samma, betydligt lägre nivå.</p>
+<p><strong>På vilken nivå segregationen finns.</strong> Här skiljer sig grupperna mest åt. För utrikes födda finns tre fjärdedelar av skillnaden mot stadens genomsnitt kvar även när grannskapet omfattar 25 600 personer, ungefär en stadsdel. För utrikes födda utanför Europa är det ungefär två tredjedelar och för förgymnasial utbildning drygt hälften. Dessa grupper bor alltså samlat i stora, sammanhängande delar av staden. Låg ekonomisk standard är ett undantag. Där är koncentrationen tydlig bland de närmaste grannarna, men knappt en tredjedel av skillnaden finns kvar i de stora grannskapen. Låg ekonomisk standard är alltså främst koncentrerad till vissa kvarter och hus. Till det bidrar bland annat studentområden i centrala Göteborg, där låga inkomster ofta är en tillfällig livsfas.</p>
+<p><strong>Hur det har utvecklats.</strong> Utvecklingen går åt olika håll. För utrikes födda, och ännu tydligare för utrikes födda utanför Europa, har skillnaden mellan stadens större delar ökat, särskilt i de stora grannskapen. För förgymnasial utbildning har gruppen blivit mycket mindre, men den som har kort utbildning bor i dag mer samlat än för 25 år sedan. Ökningen har på senare år främst skett bland de närmaste grannarna. Låg ekonomisk standard är den enda gruppen där segregationen har minskat. Minskningen skedde mellan 2012 och 2017, främst i de områden där andelen var allra högst, och därefter har nivån legat i stort sett still.</p>
+<p><strong>Var det syns.</strong> Nordost är det område där alla fyra grupperna har högst andel, och det enda område där andelen är hög även i de största grannskapen. Hit hör främst Bergsjön, Hjällbo, Hammarkullen, Eriksbo, Rannebergen, Lövgärdet och Gårdsten. Biskopsgården på Hisingen har lika höga andelar bland de närmaste grannarna, men för de flesta grupperna sjunker andelen snabbare där när grannskapet vidgas. Utanför nordost finns lokala koncentrationer för flera av grupperna, till exempel kring Frölunda torg och Tofta i sydväst. För utrikes födda har nya koncentrationer vuxit fram på Hisingen under senare år, bland annat i Brunnsbo, Kvillebäcken och Backa.</p>
+</section>
+<section id="sec-knn-utbildning" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="sec-knn-utbildning"><span class="header-section-number">5.2</span> Förgymnasial utbildning</h2>
+<!-- Resultatunderlag: data/rapport/df_ratio_for_gym.rds.
+År: 1997, 2007, 2012, 2017 och 2024.
+Komplettera med närmare måttdefinition, källa och tolkningsstöd.
+-->
+<p>Kartan visar att andelen med förgymansial utbildning är högst i stadens nordöstra delar, bland annat i de områden som klassas som <em>områden med socioekonomiska utmaningar</em> i den socioekonomiska områdesindelningen. Utöver områdena i stadsområdet Nordost visar även Västra Biskopsgården på hisingen en hög andel med förgymnasial utbildning.</p>
+<p>I Sydväst finns en annan typ av mönster. Kring Frölunda torg, Tofta och Grevegården är andelen förhöjd bland de närmaste grannarna. Dessa områden omges dock av områden med mycket låg andel, som Hovås, Askim och Långedrag. När grannskapet vidgas närmar sig andelen därför stadens genomsnitt. Det är lokala koncentrationer snarare än en storskalig uppdelning.</p>
+<p>För att beskriva var gruppen bor mest samlat har vi pekat ut rutor med <em>hög andel</em>. Det är rutor där andelen med förgymnasial utbildning bland de 100 närmaste grannarna är minst 1,5 gånger så hög som i staden som helhet samma år. År 2024 motsvarar det en andel på cirka 14 procent eller mer, alltså de röda rutorna i kartan. Eftersom gränsen följer stadens genomsnitt kan vi jämföra åren, trots att gruppen har blivit mycket mindre.</p>
+<p>Antalet rutor med hög andel har varit ungefär detsamma under hela perioden, drygt 1 000 rutor varje år. Var de ligger har däremot förändrats. År 1997 låg hälften av dem på Hisingen och fyra av tio i nordost (Angered och Östra Göteborg). År 2024 hade bilden vänt: knappt sex av tio låg i nordost och mindre än tre av tio på Hisingen. Det är en tydlig koncentration, eftersom nordost bara har ungefär 15 procent av stadens befolkade rutor.</p>
+<p>Förskjutningen beror på att andelen med förgymnasial utbildning har minskat olika snabbt i olika delar av staden. På Hisingen och i centrala och sydvästra Göteborg har den minskat med ungefär tre fjärdedelar sedan 1997. I nordost har den ungefär halverats. Hisingen hade alltså tidigare flera områden med hög andel, men har närmat sig stadens genomsnitt. I nordost har skillnaden mot resten av staden i stället ökat. I dag har fyra av tio befolkade rutor i nordost en hög andel, jämfört med knappt en av tio på Hisingen och tre av hundra i centrala och sydvästra Göteborg.</p>
+<div id="knn-utbildning" class="knn-widget" data-source="../data/rapport/knn-utbildning/">
+  <div class="knn-map-card">
+  <h3 class="knn-map-title anchored">Andel med förgymnasial utbildning på olika k nivåer</h3>
+  <p id="knn-status" class="knn-status" role="status" aria-live="polite">Laddar karta och resultat…</p>
+  <div class="knn-toolbar"><div class="knn-controls">
+    <label>År <select id="knn-year" disabled="" aria-label="År för kartan"></select></label>
+  </div>
+  <div class="knn-slider">
+    <label for="knn-k">Antal närmaste grannar: <strong><output id="knn-k-value">100</output></strong></label>
+    <div class="knn-play-row">
+      <button id="knn-play" class="knn-play" type="button" disabled="" aria-pressed="false" aria-label="Spela k-nivåer" title="Spela k-nivåer"><span aria-hidden="true">▶</span></button>
+      <div class="knn-range-wrap"><input id="knn-k" type="range" min="0" max="9" value="0" step="1" disabled="" aria-label="Antal närmaste grannar, k">
+      <div class="knn-range-ends"><span>100</span><span>51 200</span></div></div>
+    </div>
+  </div>
+  </div>
+  <div class="knn-map-wrap">
+  <div id="karta-knn-utbildning" class="knn-map" role="region" aria-label="Karta: förgymnasial utbildning i Göteborg"></div>
+  <label class="knn-map-boundaries"><input id="knn-boundaries" type="checkbox"> Primärområdesgränser</label>
+  </div>
+  <div id="knn-legend" class="knn-legend knn-map-card-legend" aria-label="Färgskala, andel i procent"></div>
+  <p id="knn-average" class="knn-caption knn-map-average"></p>
+  <p class="knn-caption knn-instructions">Klicka på en ruta för att se andelen. Vita rutor betyder att uppgift saknas för valt år och är inte nollvärden.</p>
+  <p class="knn-caption">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p>
+  </div>
+</div>
+<p>År 2024 hade 9,2 procent av Göteborgs invånare i åldern 25–64 år förgymnasial utbildning som högsta utbildningsnivå. Bland de 100 närmaste grannarna till en person i gruppen var andelen i genomsnitt 17,4 procent, nästan dubbelt så hög. Personer med förgymnasial utbildning bor alltså i högre grad nära varandra än vad deras andel av befolkningen skulle ge.</p>
+<p>Det som utmärker Göteborg är att skillnaden ligger kvar när grannskapet vidgas. Även med de 25 600 närmaste grannarna är andelen 13,9 procent, och mer än hälften av skillnaden mot genomsnittet finns kvar. Indexet sjunker tydligt först vid de största grannskapen. Segregationen efter utbildningsnivå handlar därför främst om att stora, sammanhängande delar av staden skiljer sig från varandra. Den handlar mindre om enskilda bostadsområden eller kvarter.</p>
+<p>Andelen med förgymnasial utbildning har mer än halverats sedan 1997, från 21,4 till 9,2 procent. Det beror främst på att yngre generationer har högre utbildning än äldre. Eftersom gruppen har blivit mindre har också isoleringsindex sjunkit: en person med förgymnasial utbildning har i dag färre grannar med samma utbildningsnivå än 1997.</p>
+<p>För att se om gruppen bor mer eller mindre samlat behöver vi i stället jämföra med hur stor gruppen är i staden som helhet. Bland de 100 närmaste grannarna var andelen med förgymnasial utbildning 6,0 procentenheter högre än stadens genomsnitt 1997. År 2024 var skillnaden 8,2 procentenheter. Gruppen har alltså blivit mindre men bor samtidigt mer samlat än tidigare.</p>
+<p>Diagrammet “Jämför åren” visar också hur denna skillnad har förändrats för olika stora grannskap. Mellan 1997 och 2012 ökade skillnaden både bland de närmaste grannarna och i de stora grannskapen. Det betyder att stadens större delar, främst nordost och resten av staden, gled isär.</p>
+<p>Sedan 2012 ser utvecklingen annorlunda ut. I de stora grannskapen (k = 25 600), har skillnaden legat still. Kurvorna för 2012, 2017 och 2024 ligger där nästan ovanpå varandra. Bland de närmaste grannarna har skillnaden däremot fortsatt att öka något, från 7,3 till 8,2 procentenheter. Uppdelningen mellan stadens större delar har alltså inte förändrats under det senaste decenniet, men inom områdena bor gruppen i något högre grad samlat i vissa kvarter eller hus. Den förändringen är dock liten jämfört med den storskaliga skillnaden, som fortfarande dominerar bilden.</p>
+<section id="knn-index" class="knn-index-card" aria-labelledby="knn-index-title">
+  <div class="knn-index-heading"><h3 id="knn-index-title" class="anchored">Isoleringsindex för förgymnasial utbildning</h3><div class="knn-index-actions"></div></div>
+  <p class="knn-index-subtitle">Göteborg · 25–64 år · 1997–2024</p>
+  <div class="knn-index-tabs" role="tablist" aria-label="Visning av isoleringsindex">
+    <button type="button" role="tab" id="knn-index-tab-raw" aria-controls="knn-index-panel" aria-selected="true" data-view="raw">Index och genomsnitt</button>
+    <button type="button" role="tab" id="knn-index-tab-gap" aria-controls="knn-index-panel" aria-selected="false" tabindex="-1" data-view="gap">Jämför åren</button>
+  </div>
+  <p class="knn-index-description"></p>
+  <div id="knn-index-panel" role="tabpanel" aria-labelledby="knn-index-tab-raw"><div class="knn-index-plots"></div></div>
+  <p class="knn-index-hint">Peka eller tryck i diagrammet för värden. Med tangentbord: fokusera diagrammet och använd vänster/höger pil.</p>
+  <p class="knn-index-scale">Antal närmaste grannar, k. Varje steg fördubblar antalet grannar: 100–51 200.</p>
+  <details class="knn-index-table"><summary>Visa diagrammets värden</summary><div class="knn-index-table-scroll">
+<table class="caption-top" data-quarto-postprocess="true">
+<caption>Isoleringsindex, genomsnitt och skillnad per år och k</caption>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">År</th>
+<th data-quarto-table-cell-role="th">k</th>
+<th data-quarto-table-cell-role="th">Index</th>
+<th data-quarto-table-cell-role="th">Genomsnitt</th>
+<th data-quarto-table-cell-role="th">Skillnad (procentenheter)</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div></details>
+  <p class="knn-index-source">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p>
+  <p class="knn-index-status" role="status" aria-live="polite"></p>
+</section>
+</section>
+<section id="sec-knn-ekonomisk-standard" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="sec-knn-ekonomisk-standard"><span class="header-section-number">5.3</span> Låg ekonomisk standard</h2>
+<!-- Resultatunderlag: data/rapport/df_ratio_ek_st.rds.
+År: 2012, 2017 och 2024.
+Komplettera med närmare måttdefinition, källa och tolkningsstöd.
+-->
+<p>Vi använder samma definition av hög andel som för utbildning: rutor där andelen med låg ekonomisk standard bland de 100 närmaste grannarna är minst 1,5 gånger stadens genomsnitt samma år. År 2024 motsvarar det cirka 22 procent eller mer.</p>
+<p>I stora grannskap finns hög andel nästan bara i nordost. År 2024 hade nästan nio av tio befolkade rutor i nordost hög andel med det måttet, medan det knappt förekom i resten av staden. Skillnaden mellan nordost och övriga staden har dock minskat sedan 2012, främst på grund av minskningen i de områden som tidigare hade högst andel.</p>
+<p>Bland de närmaste grannarna ser bilden annorlunda ut. Där har rutorna med hög andel blivit fler och mer utspridda över staden. År 2012 låg ungefär hälften av dem i nordost, år 2024 knappt fyra av tio. Allt fler ligger i centrala Göteborg och på södra Hisingen. Där är andelen hög bland de närmaste grannarna, men området som helhet ligger nära stadens genomsnitt.</p>
+<p>En viktig förklaring till de lokala koncentrationerna i centrala Göteborg är studenter. Studenter har ofta låga inkomster och räknas därför som personer med låg ekonomisk standard, även om situationen för de flesta är tillfällig. Trots att analysen bara omfattar personer från 25 år finns många studenter i gruppen.</p>
+<p>Det syns tydligt i områden med många studentbostäder, som Johanneberg, Guldheden och Krokslätt nära Chalmers och universitetet, samt kring Lindholmen på Hisingen. I Johanneberg har andelen med låg ekonomisk standard bland de närmaste grannarna ökat från 19 till 22 procent sedan 2012. Det är högre än i flera områden i nordost.</p>
+<p>Det förklarar också skillnaden mellan små och stora grannskap. Studentbostäderna är få och ligger samlat, så de ger höga värden bland de närmaste grannarna men påverkar inte stadsdelen som helhet. Koncentrationen i nordost finns kvar även i de största grannskapen</p>
+<div id="knn-ekonomi" data-id-prefix="ek-" data-bundle="knnEkonomiData" data-label="låg ekonomisk standard" data-slug="lag-ekonomisk-standard" class="knn-widget" data-source="../data/rapport/knn-ekonomisk-standard/">
+  <div class="knn-map-card">
+  <h3 class="knn-map-title anchored">Andel med låg ekonomisk standard på olika k nivåer</h3>
+  <p id="ek-knn-status" class="knn-status" role="status" aria-live="polite">Laddar karta och resultat…</p>
+  <div class="knn-toolbar"><div class="knn-controls">
+    <label>År <select id="ek-knn-year" disabled="" aria-label="År för kartan"></select></label>
+  </div>
+  <div class="knn-slider">
+    <label for="ek-knn-k">Antal närmaste grannar: <strong><output id="ek-knn-k-value">100</output></strong></label>
+    <div class="knn-play-row">
+      <button id="ek-knn-play" class="knn-play" type="button" disabled="" aria-pressed="false" aria-label="Spela k-nivåer" title="Spela k-nivåer"><span aria-hidden="true">▶</span></button>
+      <div class="knn-range-wrap"><input id="ek-knn-k" type="range" min="0" max="9" value="0" step="1" disabled="" aria-label="Antal närmaste grannar, k">
+      <div class="knn-range-ends"><span>100</span><span>51 200</span></div></div>
+    </div>
+  </div>
+  </div>
+  <div class="knn-map-wrap">
+  <div id="ek-karta-knn-utbildning" class="knn-map" role="region" aria-label="Karta: låg ekonomisk standard i Göteborg"></div>
+  <label class="knn-map-boundaries"><input id="ek-knn-boundaries" type="checkbox"> Primärområdesgränser</label>
+  </div>
+  <div id="ek-knn-legend" class="knn-legend knn-map-card-legend" aria-label="Färgskala, andel i procent"></div>
+  <p id="ek-knn-average" class="knn-caption knn-map-average"></p>
+  <p class="knn-caption knn-instructions">Klicka på en ruta för att se andelen. Vita rutor betyder att uppgift saknas för valt år och är inte nollvärden.</p>
+  <p class="knn-caption">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p>
+  </div>
+</div>
+<p>År 2024 hade 14,8 procent av Göteborgs invånare i åldern 25–64 år låg ekonomisk standard, det vill säga en disponibel inkomst per konsumtionsenhet under 60 procent av medianen i riket. Bland de 100 närmaste grannarna till en person med låg ekonomisk standard var andelen i genomsnitt 26,7 procent, nästan dubbelt så hög. Chansen att en slumpvis vald granne också har låg ekonomisk standard är alltså betydligt högre än om gruppen vore jämnt fördelad över staden.</p>
+<p>Jämfört med utbildning är mönstret mer lokalt. När grannskapet vidgas sjunker isoleringsindex snabbt. Redan vid de 1 600 närmaste grannarna har ungefär en tredjedel av skillnaden mot stadens genomsnitt försvunnit, och vid de 25 600 närmaste grannarna finns bara knappt en tredjedel kvar. Låg ekonomisk standard är alltså tydligt koncentrerad till vissa kvarter och hus, medan skillnaderna mellan stadens större delar är mindre än för utbildning.</p>
+<p>Andelen med låg ekonomisk standard har varit relativt stabil, 16,0 procent 2012 och 14,8 procent 2024. Det gör att isoleringsindex och skillnaden mot genomsnittet kan jämföras direkt mellan åren.</p>
+<p>Mellan 2012 och 2017 blev gruppen mindre samlad. Bland de 100 närmaste grannarna minskade skillnaden mot stadens genomsnitt från 13,4 till 11,4 procentenheter, och minskningen syns i grannskap av alla storlekar. Förändringen skedde främst i de områden där andelen var allra högst. I Hjällbo, Östra Bergsjön, Norra Biskopsgården och Hammarkullen minskade andelen med låg ekonomisk standard med 7–11 procentenheter, medan den förändrades lite i övriga staden. De mest utsatta områdena har alltså närmat sig resten av staden.</p>
+<p>Mellan 2017 och 2024 har skillnaden legat i stort sett still. I diagrammet “Jämför åren” ligger kurvorna för 2017 och 2024 nästan ovanpå varandra, medan kurvan för 2012 ligger högre. Utvecklingen skiljer sig därmed från utbildning, där skillnaden ökade under samma period.</p>
+<section id="ek-knn-index" data-id-prefix="ek-" data-bundle="knnEkonomiData" data-slug="lag-ekonomisk-standard" class="knn-index-card" aria-labelledby="ek-knn-index-title">
+  <div class="knn-index-heading"><h3 id="ek-knn-index-title" class="anchored">Isoleringsindex för låg ekonomisk standard</h3><div class="knn-index-actions"></div></div>
+  <p class="knn-index-subtitle">Göteborg · 25–64 år · 2012–2024</p>
+  <div class="knn-index-tabs" role="tablist" aria-label="Visning av isoleringsindex">
+    <button type="button" role="tab" id="ek-knn-index-tab-raw" aria-controls="ek-knn-index-panel" aria-selected="true" data-view="raw">Index och genomsnitt</button>
+    <button type="button" role="tab" id="ek-knn-index-tab-gap" aria-controls="ek-knn-index-panel" aria-selected="false" tabindex="-1" data-view="gap">Jämför åren</button>
+  </div>
+  <p class="knn-index-description"></p>
+  <div id="ek-knn-index-panel" role="tabpanel" aria-labelledby="ek-knn-index-tab-raw"><div class="knn-index-plots"></div></div>
+  <p class="knn-index-hint">Peka eller tryck i diagrammet för värden. Med tangentbord: fokusera diagrammet och använd vänster/höger pil.</p>
+  <p class="knn-index-scale">Antal närmaste grannar, k. Varje steg fördubblar antalet grannar: 100–51 200.</p>
+  <details class="knn-index-table"><summary>Visa diagrammets värden</summary><div class="knn-index-table-scroll">
+<table class="caption-top" data-quarto-postprocess="true">
+<caption>Isoleringsindex, genomsnitt och skillnad per år och k</caption>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">År</th>
+<th data-quarto-table-cell-role="th">k</th>
+<th data-quarto-table-cell-role="th">Index</th>
+<th data-quarto-table-cell-role="th">Genomsnitt</th>
+<th data-quarto-table-cell-role="th">Skillnad (procentenheter)</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div></details>
+  <p class="knn-index-source">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p>
+  <p class="knn-index-status" role="status" aria-live="polite"></p>
+</section>
+</section>
+<section id="sec-knn-utrikesfodda" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="sec-knn-utrikesfodda"><span class="header-section-number">5.4</span> Födda utanför Sverige</h2>
+<p>Vi använder samma definition av hög andel som för de andra grupperna: rutor där andelen utrikes födda bland de 100 närmaste grannarna är minst 1,5 gånger stadens genomsnitt samma år. År 2024 motsvarar det cirka 45 procent eller mer.</p>
+<p>Antalet rutor med hög andel har ökat från knappt 700 år 1997 till knappt 1 100 år 2024. Mer än hälften av dem har legat i nordost under hela perioden, trots att nordost bara har ungefär 15 procent av stadens befolkade rutor. Inom nordost har andelen rutor med hög andel ökat från en av fyra till en av tre. Andelen utrikes födda bland de närmaste grannarna är högst i Biskopsgården, Bergsjön, Gårdsten, Eriksbo, Hammarkullen och Hjällbo, där den i genomsnitt ligger mellan 56 och 62 procent.</p>
+<p>Mönstret syns tydligast i de stora grannskapen. År 2024 hade 85 procent av rutorna i nordost hög andel bland de 25 600 närmaste grannarna. På Hisingen gällde det knappt var femte ruta, och i centrala och sydvästra Göteborg nästan ingen.</p>
+<p>Under senare år har nya lokala koncentrationer vuxit fram på Hisingen, bland annat i Brunnsbo, Kvillebäcken, Backa och Skälltorp, samt kring Frölunda torg. Där är andelen hög bland de närmaste grannarna, men området som helhet ligger närmare stadens genomsnitt.</p>
+<!-- Resultatunderlag: data/rapport/df_ratio_utrikes.rds och data/rapport/isoleringsindex_utrikesfodd.rds. -->
+<div id="knn-utrikes" data-id-prefix="utr-" data-bundle="knnUtrikesData" data-label="födda utanför Sverige" data-slug="utrikesfodda" class="knn-widget" data-source="../data/rapport/knn-utrikesfodda/">
+  <div class="knn-map-card">
+  <h3 class="knn-map-title anchored">Andel födda utanför Sverige på olika k nivåer</h3>
+  <p id="utr-knn-status" class="knn-status" role="status" aria-live="polite">Laddar karta och resultat…</p>
+  <div class="knn-toolbar"><div class="knn-controls">
+    <label>År <select id="utr-knn-year" disabled="" aria-label="År för kartan"></select></label>
+  </div>
+  <div class="knn-slider">
+    <label for="utr-knn-k">Antal närmaste grannar: <strong><output id="utr-knn-k-value">100</output></strong></label>
+    <div class="knn-play-row">
+      <button id="utr-knn-play" class="knn-play" type="button" disabled="" aria-pressed="false" aria-label="Spela k-nivåer" title="Spela k-nivåer"><span aria-hidden="true">▶</span></button>
+      <div class="knn-range-wrap"><input id="utr-knn-k" type="range" min="0" max="9" value="0" step="1" disabled="" aria-label="Antal närmaste grannar, k">
+      <div class="knn-range-ends"><span>100</span><span>51 200</span></div></div>
+    </div>
+  </div>
+  </div>
+  <div class="knn-map-wrap">
+  <div id="utr-karta-knn-utbildning" class="knn-map" role="region" aria-label="Karta: födda utanför Sverige i Göteborg"></div>
+  <label class="knn-map-boundaries"><input id="utr-knn-boundaries" type="checkbox"> Primärområdesgränser</label>
+  </div>
+  <div id="utr-knn-legend" class="knn-legend knn-map-card-legend" aria-label="Färgskala, andel i procent"></div>
+  <p id="utr-knn-average" class="knn-caption knn-map-average"></p>
+  <p class="knn-caption knn-instructions">Klicka på en ruta för att se andelen. Vita rutor betyder att uppgift saknas för valt år och är inte nollvärden.</p>
+  <p class="knn-caption">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p>
+  </div>
+</div>
+<p>År 2024 var 29,7 procent av Göteborgs invånare födda utomlands. Bland de 100 närmaste grannarna till en utrikes född person var andelen utrikes födda i genomsnitt 42,4 procent. Chansen att en slumpvis vald granne också är född utomlands är alltså betydligt högre än om gruppen vore jämnt fördelad över staden.</p>
+<p>Det som utmärker utrikes födda är hur lite andelen sjunker när grannskapet vidgas. Bland de 25 600 närmaste grannarna, ett grannskap som motsvarar ungefär en stadsdel, är andelen fortfarande 39,2 procent, och tre fjärdedelar av skillnaden mot stadens genomsnitt finns kvar. Utrikes födda bor alltså inte främst samlat i enskilda kvarter eller hus, utan i stora, sammanhängande delar av staden.</p>
+<p>Andelen utrikes födda har ökat kraftigt, från 17,9 procent 1997 till 29,7 procent 2024. När gruppen växer ökar isoleringsindex av sig självt, eftersom alla får fler utrikes födda grannar. För att se om gruppen bor mer eller mindre samlat jämför vi därför med stadens genomsnitt.</p>
+<p>Bland de 100 närmaste grannarna har skillnaden mot genomsnittet legat på ungefär samma nivå under hela perioden, 13,6 procentenheter 1997 och 12,7 procentenheter 2024. I de stora grannskapen har skillnaden däremot ökat, från 7,3 till 9,5 procentenheter bland de 25 600 närmaste grannarna. Ökningen skedde främst fram till 2012. I diagrammet “Jämför åren” syns det genom att kurvorna för de senare åren ligger högre till höger men nära varandra till vänster.</p>
+<p>Den närmaste boendemiljön har alltså inte blivit mer segregerad, men skillnaden mellan stadens större delar har blivit tydligare.</p>
+<section id="utr-knn-index" data-id-prefix="utr-" data-bundle="knnUtrikesData" data-slug="utrikesfodda" class="knn-index-card" aria-labelledby="utr-knn-index-title">
+  <div class="knn-index-heading"><h3 id="utr-knn-index-title" class="anchored">Isoleringsindex för personer födda utanför Sverige</h3><div class="knn-index-actions"></div></div>
+  <p class="knn-index-subtitle">Göteborg · 1997–2024</p>
+  <div class="knn-index-tabs" role="tablist" aria-label="Visning av isoleringsindex">
+    <button type="button" role="tab" id="utr-knn-index-tab-raw" aria-controls="utr-knn-index-panel" aria-selected="true" data-view="raw">Index och genomsnitt</button>
+    <button type="button" role="tab" id="utr-knn-index-tab-gap" aria-controls="utr-knn-index-panel" aria-selected="false" tabindex="-1" data-view="gap">Jämför åren</button>
+  </div>
+  <p class="knn-index-description"></p>
+  <div id="utr-knn-index-panel" role="tabpanel" aria-labelledby="utr-knn-index-tab-raw"><div class="knn-index-plots"></div></div>
+  <p class="knn-index-hint">Peka eller tryck i diagrammet för värden. Med tangentbord: fokusera diagrammet och använd vänster/höger pil.</p>
+  <p class="knn-index-scale">Antal närmaste grannar, k. Varje steg fördubblar antalet grannar: 100–51 200.</p>
+  <details class="knn-index-table"><summary>Visa diagrammets värden</summary><div class="knn-index-table-scroll">
+<table class="caption-top" data-quarto-postprocess="true">
+<caption>Isoleringsindex, genomsnitt och skillnad per år och k</caption>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">År</th>
+<th data-quarto-table-cell-role="th">k</th>
+<th data-quarto-table-cell-role="th">Index</th>
+<th data-quarto-table-cell-role="th">Genomsnitt</th>
+<th data-quarto-table-cell-role="th">Skillnad (procentenheter)</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div></details>
+  <p class="knn-index-source">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p>
+  <p class="knn-index-status" role="status" aria-live="polite"></p>
+</section>
+</section>
+<section id="sec-knn-fodda-utanfor-europa" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="sec-knn-fodda-utanfor-europa"><span class="header-section-number">5.5</span> Födda utanför Europa</h2>
+<p>Med samma definition av hög andel (minst 1,5 gånger stadens genomsnitt, år 2024 cirka 28 procent eller mer) har antalet rutor med hög andel ökat från cirka 640 år 1997 till cirka 1 000 år 2024. Andelen av dem som ligger i nordost har ökat från knappt hälften till knappt sex av tio, medan andelen i centrala och sydvästra Göteborg har minskat från drygt var femte till ungefär var åttonde.</p>
+<p>Andelen födda utanför Europa bland de närmaste grannarna är högst i Östra Bergsjön, Eriksbo, Hjällbo och Hammarkullen, med drygt 40 procent. Den största ökningen har skett i områden som tidigare hade en lägre andel, till exempel Rannebergen och Eriksbo.</p>
+<p>I de stora grannskapen har 87 procent av rutorna i nordost hög andel. På Hisingen gäller det var sjunde ruta, och i centrala och sydvästra Göteborg ett fåtal. Precis som för utrikes födda som helhet har nya lokala koncentrationer vuxit fram i Brunnsbo, Kvillebäcken, Backa och Skälltorp samt kring Frölunda torg, där andelen ökat från 13 till 39 procent sedan 1997.</p>
+<!-- Resultatunderlag: data/rapport/df_ratio_utrikes_europa.rds och data/rapport/isoleringsindex_utrikesfodd_europa.rds. -->
+<div id="knn-europa" data-id-prefix="eur-" data-bundle="knnEuropaData" data-label="födda utanför Europa" data-slug="fodda-utanfor-europa" class="knn-widget" data-source="../data/rapport/knn-fodda-utanfor-europa/">
+  <div class="knn-map-card">
+  <h3 class="knn-map-title anchored">Andel födda utanför Europa på olika k nivåer</h3>
+  <p id="eur-knn-status" class="knn-status" role="status" aria-live="polite">Laddar karta och resultat…</p>
+  <div class="knn-toolbar"><div class="knn-controls">
+    <label>År <select id="eur-knn-year" disabled="" aria-label="År för kartan"></select></label>
+  </div>
+  <div class="knn-slider">
+    <label for="eur-knn-k">Antal närmaste grannar: <strong><output id="eur-knn-k-value">100</output></strong></label>
+    <div class="knn-play-row">
+      <button id="eur-knn-play" class="knn-play" type="button" disabled="" aria-pressed="false" aria-label="Spela k-nivåer" title="Spela k-nivåer"><span aria-hidden="true">▶</span></button>
+      <div class="knn-range-wrap"><input id="eur-knn-k" type="range" min="0" max="9" value="0" step="1" disabled="" aria-label="Antal närmaste grannar, k">
+      <div class="knn-range-ends"><span>100</span><span>51 200</span></div></div>
+    </div>
+  </div>
+  </div>
+  <div class="knn-map-wrap">
+  <div id="eur-karta-knn-utbildning" class="knn-map" role="region" aria-label="Karta: födda utanför Europa i Göteborg"></div>
+  <label class="knn-map-boundaries"><input id="eur-knn-boundaries" type="checkbox"> Primärområdesgränser</label>
+  </div>
+  <div id="eur-knn-legend" class="knn-legend knn-map-card-legend" aria-label="Färgskala, andel i procent"></div>
+  <p id="eur-knn-average" class="knn-caption knn-map-average"></p>
+  <p class="knn-caption knn-instructions">Klicka på en ruta för att se andelen. Vita rutor betyder att uppgift saknas för valt år och är inte nollvärden.</p>
+  <p class="knn-caption">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p>
+  </div>
+</div>
+<p>År 2024 var 18,5 procent av Göteborgs invånare födda utanför Europa. Bland de 100 närmaste grannarna till en person född utanför Europa var andelen i genomsnitt 31,5 procent, ungefär 1,7 gånger så hög som i staden som helhet.</p>
+<p>Även här ligger andelen kvar när grannskapet vidgas. Bland de 25 600 närmaste grannarna är den 26,9 procent, och ungefär två tredjedelar av skillnaden mot stadens genomsnitt finns kvar. Det är alltså stora delar av staden som skiljer sig åt, inte bara enskilda kvarter.</p>
+<p>Andelen födda utanför Europa har mer än fördubblats, från 7,5 procent 1997 till 18,5 procent 2024.</p>
+<p>Bland de 100 närmaste grannarna har skillnaden mot stadens genomsnitt legat kring 12–13 procentenheter under hela perioden. I de stora grannskapen har den däremot fördubblats, från 4,2 till 8,4 procentenheter bland de 25 600 närmaste grannarna. Ökningen har pågått under hela perioden. Mellan 2017 och 2024 ökade skillnaden dessutom i grannskap av alla storlekar.</p>
+<p>Personer födda utanför Europa har alltså i allt högre grad kommit att bo i samma delar av staden. År 1997 var koncentrationen mer lokal, i dag omfattar den i högre grad hela stadsdelar.</p>
+<section id="eur-knn-index" data-id-prefix="eur-" data-bundle="knnEuropaData" data-slug="fodda-utanfor-europa" class="knn-index-card" aria-labelledby="eur-knn-index-title">
+  <div class="knn-index-heading"><h3 id="eur-knn-index-title" class="anchored">Isoleringsindex för personer födda utanför Europa</h3><div class="knn-index-actions"></div></div>
+  <p class="knn-index-subtitle">Göteborg · 1997–2024</p>
+  <div class="knn-index-tabs" role="tablist" aria-label="Visning av isoleringsindex">
+    <button type="button" role="tab" id="eur-knn-index-tab-raw" aria-controls="eur-knn-index-panel" aria-selected="true" data-view="raw">Index och genomsnitt</button>
+    <button type="button" role="tab" id="eur-knn-index-tab-gap" aria-controls="eur-knn-index-panel" aria-selected="false" tabindex="-1" data-view="gap">Jämför åren</button>
+  </div>
+  <p class="knn-index-description"></p>
+  <div id="eur-knn-index-panel" role="tabpanel" aria-labelledby="eur-knn-index-tab-raw"><div class="knn-index-plots"></div></div>
+  <p class="knn-index-hint">Peka eller tryck i diagrammet för värden. Med tangentbord: fokusera diagrammet och använd vänster/höger pil.</p>
+  <p class="knn-index-scale">Antal närmaste grannar, k. Varje steg fördubblar antalet grannar: 100–51 200.</p>
+  <details class="knn-index-table"><summary>Visa diagrammets värden</summary><div class="knn-index-table-scroll">
+<table class="caption-top" data-quarto-postprocess="true">
+<caption>Isoleringsindex, genomsnitt och skillnad per år och k</caption>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">År</th>
+<th data-quarto-table-cell-role="th">k</th>
+<th data-quarto-table-cell-role="th">Index</th>
+<th data-quarto-table-cell-role="th">Genomsnitt</th>
+<th data-quarto-table-cell-role="th">Skillnad (procentenheter)</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div></details>
+  <p class="knn-index-source">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p>
+  <p class="knn-index-status" role="status" aria-live="polite"></p>
+</section>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<link rel="stylesheet" href="../assets/vendor/leaflet/leaflet.css">
+
+<link rel="stylesheet" href="../assets/css/knn-ui.css?v=20261008-ekonomi">
+
+<script src="../assets/vendor/leaflet/leaflet.js"></script>
+
+<script src="../data/rapport/knn-utbildning/webdata.js"></script>
+
+<script src="../data/rapport/knn-ekonomisk-standard/webdata.js"></script>
+<script src="../data/rapport/knn-utrikesfodda/webdata.js"></script>
+<script src="../data/rapport/knn-fodda-utanfor-europa/webdata.js"></script>
+
+<script src="../assets/js/knn-actions.js?v=20261008-ekonomi"></script>
+
+<script src="../assets/js/knn-utbildning.js?v=20261008-ekonomi"></script>
+
+<link rel="stylesheet" href="../assets/css/knn-index.css">
+
+<script src="../assets/js/knn-index.js?v=20261008-ekonomi"></script>
+
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Kopierat!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Kopierat!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../kapitel/04-lyckoparadoxen.html#sec-lycko-omraden" class="pagination-link" aria-label="4.4 Exempel på enskilda områden">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">4.4 Exempel på enskilda områden</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../kapitel/05-k-narmsta-granne.html#sec-knn-utbildning" class="pagination-link" aria-label="5.1 Förgymnasial utbildning">
+        <span class="nav-page-text">5.1 Förgymnasial utbildning</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
