@@ -59,7 +59,6 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&amp;display=swap">
 
 
-
 <link rel="stylesheet" href="../assets/css/rapport.css">
 </head>
 
@@ -319,73 +318,40 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 <div id="rapport-sidhuvud" class="rapport-sidhuvud" role="banner" aria-label="Göteborgs Stad, Lägesbild segregation">
-
   <div class="rapport-logo-rad"><img class="rapport-logotyp" src="../assets/images/goteborgs-stad.svg" alt="Göteborgs Stad" width="180" height="66"></div>
-
   <div class="rapport-stadssiluetter" aria-hidden="true">
-
     <img class="rapport-stadssiluett" src="../assets/images/stadssiluett.svg" alt="">
-
     <img class="rapport-stadssiluett" src="../assets/images/stadssiluett.svg" alt="">
-
   </div>
-
   <div class="rapport-header-inner">
-
     <div class="rapport-identitet">
-
+      <p class="rapport-arbetsmaterial">ARBETSMATERIAL</p>
       <p class="rapport-namn">Lägesbild segregation</p>
-
       <p class="rapport-enhet">Stadsledningskontoret <span aria-hidden="true">·</span> Statistik och analys <span aria-hidden="true">·</span> Samhällsutveckling och hållbarhet</p>
-
     </div>
-
   </div>
-
 </div>
-
 <script>
-
 (() => {
-
   const banner = document.getElementById('rapport-sidhuvud');
-
   const header = document.getElementById('quarto-header');
-
   if (banner && header) header.prepend(banner);
-
   const sidebarTitle = document.querySelector('#quarto-sidebar .sidebar-title');
-
   if (sidebarTitle) sidebarTitle.textContent = 'Innehållsförteckning';
-
   // Gör utfällningspilarna begripliga och användbara med tangentbord.
-
   document.querySelectorAll('#quarto-sidebar .sidebar-item-toggle').forEach((toggle) => {
-
     const title = toggle.parentElement.querySelector('.menu-text')?.textContent.trim() || '';
-
     toggle.setAttribute('role', 'button');
-
     toggle.setAttribute('tabindex', '0');
-
     toggle.setAttribute('aria-label', `Visa eller dölj underrubriker för ${title}`);
-
     toggle.addEventListener('keydown', (event) => {
-
       if (event.key === 'Enter' || event.key === ' ') {
-
         event.preventDefault();
-
         toggle.click();
-
       }
-
     });
-
   });
-
   // Föregående/nästa ska byta kapitel, inte gå mellan ankarlänkar på samma sida.
-
   document.addEventListener('DOMContentLoaded', () => {
     // Följ den underrubrik som läsaren har nått på den aktuella sidan.
     const sectionLinks = [...document.querySelectorAll('#quarto-sidebar a.sidebar-link')]
@@ -429,56 +395,30 @@ ul.task-list li input[type="checkbox"] {
     }
     const chapters = [...document.querySelectorAll('#quarto-sidebar a.sidebar-link')]
       .filter((link) => !new URL(link.href).hash);
-
     const current = chapters.findIndex((link) => new URL(link.href).pathname === location.pathname);
-
     if (current < 0) return;
-
     [['previous', current - 1], ['next', current + 1]].forEach(([direction, index]) => {
-
       const container = document.querySelector(`.nav-page-${direction}`);
-
       if (!container) return;
-
       const chapter = chapters[index];
-
       container.replaceChildren();
-
       if (!chapter) return;
-
       const link = document.createElement('a');
-
       link.className = 'pagination-link';
-
       link.href = chapter.href;
-
       link.setAttribute('aria-label', chapter.textContent.trim());
-
       const text = document.createElement('span');
-
       text.className = 'nav-page-text';
-
       text.textContent = chapter.textContent.trim();
-
       const icon = document.createElement('i');
-
       icon.className = direction === 'previous' ? 'bi bi-arrow-left-short' : 'bi bi-arrow-right-short';
-
       icon.setAttribute('aria-hidden', 'true');
-
       link.append(...(direction === 'previous' ? [icon, text] : [text, icon]));
-
       container.append(link);
-
     });
-
   });
-
 })();
-
 </script>
-
-
 
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -499,7 +439,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Publicerad</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">7 oktober 2026</p>
+      <p class="date">XXXX</p>
     </div>
   </div>
   

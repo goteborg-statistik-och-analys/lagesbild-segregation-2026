@@ -48,6 +48,19 @@ body { padding-top: 0 !important; }
 .rapport-logotyp { display: block; width: 132px; height: auto; }
 .rapport-header-inner { max-width: 1320px; margin-inline: auto; min-height: 62px; padding: 3px 16px 10px; }
 .rapport-identitet { min-width: 0; }
+.rapport-arbetsmaterial {
+  display: inline-block;
+  margin: 4px 0 8px;
+  padding: 4px 12px;
+  border: 2px solid #ffcd37;
+  background: #ffcd37;
+  color: #1f1f1f;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.5;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
 .rapport-namn { margin: 0; font-size: 32px; font-weight: 800; line-height: 1.25; color: #3F5664; }
 .rapport-enhet { margin: 0; font-size: 13px; text-align: left; line-height: 1.6; }
 #quarto-content { max-width: 1320px; margin-inline: auto; }
