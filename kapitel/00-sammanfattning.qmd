@@ -1,0 +1,17 @@
+---
+title: ""
+pagetitle: "Sammanfattning"
+subtitle: ""
+author: "Göteborgs Stad,<br>Stadsledningskontoret"
+date: last-modified
+date-format: "D MMMM YYYY"
+language:
+  title-block-author-single: "Utgivare"
+  title-block-published: "Publicerad"
+---
+
+# Sammanfattning {.unnumbered #sec-sammanfattning}
+
+<!-- Skriv sammanfattningen här när resultaten är klara.
+Lyft de viktigaste resultaten, tidsperioden och centrala begränsningar. -->
+

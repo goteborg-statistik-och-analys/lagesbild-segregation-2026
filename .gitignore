@@ -1,0 +1,42 @@
+# Data hålls lokala. Endast mappinstruktionerna versionshanteras.
+/input/**
+!/input/README.md
+!/input/geografi/
+!/input/geografi/README.md
+/data/**
+!/data/bearbetat/
+!/data/bearbetat/README.md
+!/data/rapport/
+!/data/rapport/README.md
+
+# Genererad rapport och Quarto-cache.
+/output/
+/.quarto/
+/_freeze/
+/rapport_files/
+
+# Granskningskopior, provleveranser och tidigare layoutförsök.
+/granskningsunderlag/
+/outputs/
+/docs/sidhuvud-fore-layouttest/
+
+# Lokala beroenden och Python-cache.
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Lokala R-sessioner och editorfiler.
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+.Renviron
+.env
+.env.*
+!.env.example
+*~
+~$*
+Thumbs.db
+.DS_Store

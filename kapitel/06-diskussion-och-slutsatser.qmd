@@ -1,0 +1,15 @@
+---
+title: "Diskussion och slutsatser"
+number-offset: 5
+---
+
+# Diskussion och slutsatser {#sec-slutsatser}
+
+## Hur ska resultaten tolkas? {#sec-tolkning}
+
+<!-- Knyt resultaten till frågeställningarna och diskutera alternativa förklaringar. -->
+
+## Slutsatser {#sec-slutsatser-resultat}
+
+<!-- Skriv slutsatser som har stöd i rapportens resultat. -->
+

@@ -1,0 +1,102 @@
+<div id="rapport-sidhuvud" class="rapport-sidhuvud" role="banner" aria-label="Göteborgs Stad, Lägesbild segregation">
+  <div class="rapport-logo-rad"><img class="rapport-logotyp" src="/assets/images/goteborgs-stad.svg" alt="Göteborgs Stad" width="180" height="66"></div>
+  <div class="rapport-stadssiluetter" aria-hidden="true">
+    <img class="rapport-stadssiluett" src="/assets/images/stadssiluett.svg" alt="">
+    <img class="rapport-stadssiluett" src="/assets/images/stadssiluett.svg" alt="">
+  </div>
+  <div class="rapport-header-inner">
+    <div class="rapport-identitet">
+      <p class="rapport-namn">Lägesbild segregation</p>
+      <p class="rapport-enhet">Stadsledningskontoret <span aria-hidden="true">·</span> Statistik och analys <span aria-hidden="true">·</span> Samhällsutveckling och hållbarhet</p>
+    </div>
+  </div>
+</div>
+<script>
+(() => {
+  const banner = document.getElementById('rapport-sidhuvud');
+  const header = document.getElementById('quarto-header');
+  if (banner && header) header.prepend(banner);
+  const sidebarTitle = document.querySelector('#quarto-sidebar .sidebar-title');
+  if (sidebarTitle) sidebarTitle.textContent = 'Innehållsförteckning';
+  // Gör utfällningspilarna begripliga och användbara med tangentbord.
+  document.querySelectorAll('#quarto-sidebar .sidebar-item-toggle').forEach((toggle) => {
+    const title = toggle.parentElement.querySelector('.menu-text')?.textContent.trim() || '';
+    toggle.setAttribute('role', 'button');
+    toggle.setAttribute('tabindex', '0');
+    toggle.setAttribute('aria-label', `Visa eller dölj underrubriker för ${title}`);
+    toggle.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        toggle.click();
+      }
+    });
+  });
+  // Föregående/nästa ska byta kapitel, inte gå mellan ankarlänkar på samma sida.
+  document.addEventListener('DOMContentLoaded', () => {
+    // Följ den underrubrik som läsaren har nått på den aktuella sidan.
+    const sectionLinks = [...document.querySelectorAll('#quarto-sidebar a.sidebar-link')]
+      .map((link) => ({ link, url: new URL(link.href) }))
+      .filter(({ url }) => url.pathname === location.pathname && url.hash)
+      .map(({ link, url }) => ({ link, section: document.getElementById(decodeURIComponent(url.hash.slice(1))) }))
+      .filter(({ section }) => section);
+    const updateSection = () => {
+      const readingLine = Math.min(120, window.innerHeight * 0.2);
+      let active = null;
+      sectionLinks.forEach((item) => {
+        if (item.section.getBoundingClientRect().top <= readingLine) active = item;
+      });
+      sectionLinks.forEach(({ link }) => {
+        const selected = link === active?.link;
+        link.classList.toggle('active', selected);
+        if (selected) link.setAttribute('aria-current', 'location');
+        else link.removeAttribute('aria-current');
+      });
+      document.querySelectorAll('#quarto-sidebar a.sidebar-link').forEach((link) => {
+        const url = new URL(link.href);
+        if (url.pathname !== location.pathname || url.hash) return;
+        link.classList.toggle('active', !active);
+        if (!active) link.setAttribute('aria-current', 'page');
+        else link.removeAttribute('aria-current');
+      });
+    };
+    let scrollFrame = null;
+    const scheduleSectionUpdate = () => {
+      if (scrollFrame !== null) return;
+      scrollFrame = requestAnimationFrame(() => {
+        scrollFrame = null;
+        updateSection();
+      });
+    };
+    if (sectionLinks.length) {
+      window.addEventListener('scroll', scheduleSectionUpdate, { passive: true });
+      window.addEventListener('resize', scheduleSectionUpdate);
+      window.addEventListener('hashchange', scheduleSectionUpdate);
+      updateSection();
+    }
+    const chapters = [...document.querySelectorAll('#quarto-sidebar a.sidebar-link')]
+      .filter((link) => !new URL(link.href).hash);
+    const current = chapters.findIndex((link) => new URL(link.href).pathname === location.pathname);
+    if (current < 0) return;
+    [['previous', current - 1], ['next', current + 1]].forEach(([direction, index]) => {
+      const container = document.querySelector(`.nav-page-${direction}`);
+      if (!container) return;
+      const chapter = chapters[index];
+      container.replaceChildren();
+      if (!chapter) return;
+      const link = document.createElement('a');
+      link.className = 'pagination-link';
+      link.href = chapter.href;
+      link.setAttribute('aria-label', chapter.textContent.trim());
+      const text = document.createElement('span');
+      text.className = 'nav-page-text';
+      text.textContent = chapter.textContent.trim();
+      const icon = document.createElement('i');
+      icon.className = direction === 'previous' ? 'bi bi-arrow-left-short' : 'bi bi-arrow-right-short';
+      icon.setAttribute('aria-hidden', 'true');
+      link.append(...(direction === 'previous' ? [icon, text] : [text, icon]));
+      container.append(link);
+    });
+  });
+})();
+</script>
+

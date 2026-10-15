@@ -1,0 +1,85 @@
+---
+title: "Göteborgs socioekonomiska områdesindelning"
+number-offset: 2
+format:
+  html:
+    include-after-body: ../assets/includes/socioekonomisk-karta.html
+---
+
+# Göteborgs socioekonomiska områdesindelning {#sec-socioekonomisk-omradesindelning}
+
+Göteborgs primärområden har grupperats i sex olika kluster med hjälp av en statistisk klusteranalys. För varje primärområde har antingen ett medianvärde eller ett andelsmått beräknats. Klusteranalysen för sedan samman primärområden med liknande egenskaper sett till de variabler som ingår i modellen. Det kan finnas betydande variation inom varje primärområde beroende på vilken variabel som används.
+
+De socioekonomiska klustren benämner vi enligt följande:
+
+1.  Områdena med stora socioekonomiska utmaningar
+
+2.  Områden med socioekonomiska utmaningar
+
+3.  Socioekonomiskt blandade områden
+
+4.  Områden med goda socioekonomiska förutsättningar
+
+5.  Områden med mycket goda socioekonomiska förutsättningar
+
+6.  Områden med särskilt goda socioekonomiska förutsättningar
+
+## Beskrivning av de socioekonomiska klustrena {#sec-socio-kluster}
+
+**Kluster 1 och 2** innehåller de områden med socioekonomiska utmaningarna. Gemensamt för båda klustren är en hög andel hyresrätter och en tillgänglighet i linje med stadens genomsnitt. Områdena i kluster 1 har något sämre socioekonomiska förutsättningar än de i kluster 2. På de socioekonomiska variablerna avviker områdena tydligt i negativ riktning jämfört med genomsnittet.
+
+**Kluster 3** är framför allt lokaliserade i de centrala delarna av staden, vilket avspeglas i en god tillgänglighet och något fler hyresrätter än genomsnittet. Klustret kännetecknas av en socioekonomisk sammansättning nära stadens genomsnitt, och de ingående områdena avviker inte nämnvärt på de socioekonomiska variablerna, bortsett från utbildningsnivån som är något högre än genomsnittet.
+
+**Kluster 4** utgörs av områden med goda socioekonomiska förutsättningar. Områdena är främst lokaliserade i ytterkanten av Göteborg och präglas av låg tillgänglighet och en låg andel hyresrätter i bostadsbeståndet. På de socioekonomiska variablerna avviker områdena positivt jämfört med stadens genomsnitt, med ett undantag: andelen med eftergymnasial utbildning är lägre än genomsnittet.
+
+**Kluster 5 och 6** innehåller de områden med mycket goda respektive särskilt goda socioekonomiska förutsättningar. Den tydligaste skillnaden mellan de två klustren handlar om boendestruktur och tillgänglighet. Kluster 5 är koncentrerat till de centrala stadsdelarna, vilket innebär bättre tillgänglighet och en högre andel hyresrätter. Kluster 6 präglas i stället av ett högre andel eget ägande och en mer perifer lokalisering. Därtill har kluster 6 något bättre utfall på de socioekonomiska variablerna jämfört med kluster 5.
+
+Tabellen nedan visar att en majoritet av befolkningen bor i kluster 3 och kluster 4 är det kluster med lägst andel av befolkningen.
+
+```{=html}
+<section id="socio-summary" class="lycko-card" aria-labelledby="socio-summary-title">
+  <div class="lycko-heading"><h3 id="socio-summary-title">Socioekonomiska kluster 2026</h3><button type="button" class="lycko-csv">Ladda ner CSV</button></div>
+  <div class="lycko-table"><table class="knn-table"><thead><tr><th scope="col">Nr</th><th scope="col">Namn kluster</th><th scope="col">Antal områden</th><th scope="col">Andel av befolkning (%)</th></tr></thead><tbody>
+    <tr><th scope="row">1</th><td>Områden med stora socioekonomiska utmaningar</td><td>10</td><td>11</td></tr>
+    <tr><th scope="row">2</th><td>Områden med socioekonomiska utmaningar</td><td>13</td><td>13</td></tr>
+    <tr><th scope="row">3</th><td>Socioekonomiskt blandade områden</td><td>34</td><td>42</td></tr>
+    <tr><th scope="row">4</th><td>Områden med goda socioekonomiska förutsättningar</td><td>9</td><td>6</td></tr>
+    <tr><th scope="row">5</th><td>Områden med mycket goda socioekonomiska förutsättningar</td><td>16</td><td>15</td></tr>
+    <tr><th scope="row">6</th><td>Områden med särskilt goda socioekonomiska förutsättningar</td><td>12</td><td>12</td></tr>
+  </tbody></table></div>
+  <p class="knn-caption">Folkmängd 2026. Andelarna är avrundade till hela procent och summerar därför inte till 100.</p>
+  <p class="knn-caption">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p>
+</section>
+```
+
+Inför årets uppdatering har två index räknats fram, ett **relativt** och ett **absolut**. Det relativa indexet visar hur området förhåller sig till andra områden, medan det absoluta indexet beskriver den faktiska utveckling som skett i området över tid. Förändringar i det relativa indexet kan bero på förändringar i staden i stort och behöver inte innebära ändrade socioekonomiska förutsättningar.
+
+Skalan för indexen är 0-100 där ett högt värde innebär sämre socioekonomiska förutsättningar. För det relativa indexet sätts genomsnittet alltid till 50. Ett värde över 50 innebär alltså att området har sämre förutsättningar än genomsnittet. Indexen beräknas enbart på de fyra socioekonomiska variablerna.
+
+Syftet med indexen är att förenkla uppföljningen och analysen av den utveckling som har skett, både i staden som helhet, och i enskilda områden.
+
+## Resultatet 2026 {#sec-socio-resultat}
+
+En större analys kring resultatet 2026 och de förändringar som skedde i jämförelse den senaste analysen finns i bilagan till budgetförutsättningar. I analysen beskriver vilka områden som har bytt kluster och förändringen i de variabler som ingår i analysen.
+
+I diagrammet nedan kan du med hjälp av kartan visualisera utfallet i de variabler som ingår i modellen. Kartan visar också klusterindelningen 2026. Utöver kartan kan du även visualisera utfallet på de olika variablerna per kluster med hjälp av en boxplot. En boxplot visar även spridningen inom ett kluster samt dess median.
+
+```{=html}
+<section id="socio-map" class="knn-widget knn-map-card socio-card" aria-labelledby="socio-map-title">
+  <div class="knn-card-heading"><h3 id="socio-map-title" class="knn-map-title">Socioekonomisk indelning 2026</h3><div class="knn-actions"></div></div>
+  <p class="knn-caption">Göteborgs primärområden · Socioekonomisk indelning 2026.</p>
+  <div class="knn-controls"><label for="socio-variable">Välj variabel<select id="socio-variable"></select></label><div class="socio-view-switch knn-index-tabs" role="tablist" aria-label="Visning"><button id="socio-tab-map" type="button" role="tab" data-view="map" aria-selected="true" aria-controls="socio-panel">Karta</button><button id="socio-tab-boxplot" type="button" role="tab" data-view="boxplot" aria-selected="false" aria-controls="socio-panel" tabindex="-1">Boxplot</button></div></div>
+  <div id="socio-panel" role="tabpanel" aria-labelledby="socio-tab-map">
+    <div class="knn-map-wrap"><div class="knn-map" role="region" aria-label="Karta över Göteborgs socioekonomiska områdesindelning"></div></div>
+    <div class="socio-boxplot" hidden></div>
+  </div>
+  <div class="knn-legend" aria-label="Teckenförklaring"></div>
+  <p class="knn-caption socio-scale-note"></p>
+  <p class="knn-caption socio-instructions">Peka på ett primärområde eller använd tabbtangenten för att se dess värde. Område 516 och 707 saknar uppgifter och visas i vitt.</p>
+  <details class="knn-table-details"><summary>Visa värden</summary><button type="button" class="lycko-csv" data-csv>Ladda ner CSV</button><div class="socio-box-values" hidden></div><div class="socio-values"></div></details>
+  <p class="knn-caption">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p>
+  <p class="knn-status" role="status" aria-live="polite"></p>
+  <div class="lycko-tooltip socio-box-tooltip" role="tooltip" hidden></div>
+  <noscript>Aktivera JavaScript för att visa kartan och välja variabel.</noscript>
+</section>
+```

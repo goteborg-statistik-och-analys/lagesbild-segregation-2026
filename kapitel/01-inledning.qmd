@@ -1,0 +1,27 @@
+---
+title: "Inledning"
+number-offset: 0
+---
+
+# Inledning {#sec-inledning}
+I Göteborgs stads budget 2023 fastslogs målet att segregationen i Göteborg ska minska. Året efter, 2024, fastslogs målet att segregationen i Göteborg ska brytas. Sedan 2024 är målet riktat till samtliga förvaltningar och bolag. I KFs budget 2024 fick kommunstyrelsen i uppdrag att ta fram ett alternativt mått till Polismyndighetens lista över utsatta områden. Stadsledningskontoret tog fram Göteborgs stads socioekonomiska områdesindelning som beslutades i kommunfullmäktige 2024 och områdesindelningen har uppdaterats under 2026.  
+
+## Hur definierar vi segregationen i Göteborgs stad? {#sec-definition-segregation}
+Segregation är den rumsliga uppdelningen av grupper i staden. Det kan handla om boendesegregation (grupper bor åtskilt från varandra) och skolsegregation (elever med olika bakgrund sorteras i olika skolor), såväl som bristande möjligheter till möten. Fokus inom politikområdet berör uppdelning utifrån etnicitet och socioekonomi. Segregationen är strukturell och relationell och handlar om förhållanden mellan olika delar av staden1.  Ett område är inte segregerat utan det är relationen mellan områden det handlar om.  
+
+Segregation är inte alltid negativ. Den blir negativ när den orsakar ojämlik tillgång till resurser. Då påverkar den människors livschanser och leder till negativa effekter på den sociala sammanhållningen. 
+
+Segregationen är ett resultat av hur staden är byggd och organiserad och drivs av socioekonomi samt uppfattningar om andra grupper utifrån etnicitet och social position, samt upplevelse av tillhörighet. 
+
+## Syftet med denna rapport {#sec-syfte}
+För att kunna arbeta resultatinriktat med målet att bryta segregationen behöver vi både kunskap om hur problemet ser ut och kunna mäta om våra åtgärder får någon effekt. Olika aspekter av segregationen påverkar varandra och behöver därför vägas in. Målet har gällt under en mandatperiod och statistik har tagits fram för att förstå olika aspekter av segregationen i Göteborg.  
+
+Syftet med den här rapporten är att ge en sammansatt lägesbild över segregationen i Göteborg där såväl boendesegregation som skolsegregation och rörelser i staden beaktas. Lägesbilden utgår ifrån hur Göteborgs stads socioekonomiska områdesindelning kan användas för att förstå skillnader i förutsättningar mellan olika områden, samt hur den kan kompletteras med måttet k-närmsta granne för att bättre förstå den rumsliga uppdelningen och individens omgivning i olika geografiska skalor. För att fånga skolsegregationen och rörelse i staden används ytterligare mått. 
+
+## Avgräsningar {#sec-avgransningar}
+Denna rapport kommer inte att följa upp stadens arbete, vi kommer inte heller följa upp vilka insatser som har gjorts och dess effekter. Denna rapport är en statistisk beskrivning över hur segregationen har utvecklats och hur den ser ut i Göteborg. 
+
+## Disposition {#sec-disposition}
+<!-- Beskriv varför rapporten tas fram och vilka frågor den ska besvara. -->
+
+

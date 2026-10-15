@@ -1,0 +1,125 @@
+project:
+  type: website
+  output-dir: output
+  resources:
+    - assets/js/**
+    - assets/css/**
+    - data/rapport/knn-utbildning/**
+    - data/rapport/knn-ekonomisk-standard/**
+    - data/rapport/knn-utrikesfodda/**
+    - data/rapport/knn-fodda-utanfor-europa/**
+    - data/rapport/lyckoparadoxen/**
+    - data/rapport/socioekonomisk-indelning/**
+    - assets/vendor/leaflet/**
+  render:
+    - kapitel/*.qmd
+
+website:
+  title: "Lägesbild segregation"
+  search: false
+  page-navigation: true
+  sidebar:
+    title: "Innehållsförteckning"
+    style: docked
+    background: "#ffffff"
+    collapse-level: 1
+    contents:
+      - href: kapitel/00-sammanfattning.qmd
+        text: "Sammanfattning"
+      - section: "1. Inledning"
+        href: kapitel/01-inledning.qmd
+        contents:
+          - href: kapitel/01-inledning.qmd#sec-definition-segregation
+            text: "1.1 Hur definierar vi segregationen i Göteborgs stad?"
+          - href: kapitel/01-inledning.qmd#sec-syfte
+            text: "1.2 Syftet med denna rapport"
+          - href: kapitel/01-inledning.qmd#sec-avgransningar
+            text: "1.3 Avgräsningar"
+          - href: kapitel/01-inledning.qmd#sec-disposition
+            text: "1.4 Disposition"
+          - href: kapitel/01-inledning.qmd#sec-begrepp
+            text: "1.5 Vad menar vi med segregation?"
+      - section: "2. Att mäta segregation"
+        href: kapitel/02-att-mata-segregation.qmd
+        contents:
+          - href: kapitel/02-att-mata-segregation.qmd#sec-omradesanalys
+            text: "2.1 Områdesanalys"
+          - href: kapitel/02-att-mata-segregation.qmd#sec-knn
+            text: "2.2 K närmsta granne"
+          - href: kapitel/02-att-mata-segregation.qmd#sec-reflektion
+            text: "2.3 Avslutande reflektion"
+      - section: "3. Göteborgs socioekonomiska områdesindelning"
+        href: kapitel/03-goteborgs-socioekonomiska-omradesindelning.qmd
+        contents:
+          - href: kapitel/03-goteborgs-socioekonomiska-omradesindelning.qmd#sec-socio-kluster
+            text: "3.1 Beskrivning av de socioekonomiska klustrena"
+          - href: kapitel/03-goteborgs-socioekonomiska-omradesindelning.qmd#sec-socio-resultat
+            text: "3.2 Resultatet 2026"
+      - section: "4. Lyckoparadoxen"
+        href: kapitel/04-lyckoparadoxen.qmd
+        contents:
+          - href: kapitel/04-lyckoparadoxen.qmd#sec-lycko-sammanfattning
+            text: "4.1 Sammanfattning"
+          - href: kapitel/04-lyckoparadoxen.qmd#sec-lycko-flyttningar
+            text: "4.2 Flyttningar av förvärvsarbetande"
+          - href: kapitel/04-lyckoparadoxen.qmd#sec-lycko-inkomst
+            text: "4.3 Inkomstutveckling"
+          - href: kapitel/04-lyckoparadoxen.qmd#sec-lycko-omraden
+            text: "4.4 Exempel på enskilda områden"
+      - section: "5. K närmsta granne"
+        href: kapitel/05-k-narmsta-granne.qmd
+        contents:
+          - href: kapitel/05-k-narmsta-granne.qmd#sec-knn-utbildning
+            text: "5.1 Förgymnasial utbildning"
+          - href: kapitel/05-k-narmsta-granne.qmd#sec-knn-ekonomisk-standard
+            text: "5.2 Låg ekonomisk standard"
+          - href: kapitel/05-k-narmsta-granne.qmd#sec-knn-utrikesfodda
+            text: "5.3 Födda utanför Sverige"
+          - href: kapitel/05-k-narmsta-granne.qmd#sec-knn-fodda-utanfor-europa
+            text: "5.4 Födda utanför Europa"
+      - section: "6. Diskussion och slutsatser"
+        href: kapitel/06-diskussion-och-slutsatser.qmd
+        contents:
+          - href: kapitel/06-diskussion-och-slutsatser.qmd#sec-tolkning
+            text: "6.1 Hur ska resultaten tolkas?"
+          - href: kapitel/06-diskussion-och-slutsatser.qmd#sec-slutsatser-resultat
+            text: "6.2 Slutsatser"
+      - section: "7. Metodbilaga"
+        href: kapitel/07-metodbilaga.qmd
+        contents:
+          - href: kapitel/07-metodbilaga.qmd#sec-berakningar
+            text: "7.1 Definitioner och beräkningar"
+          - href: kapitel/07-metodbilaga.qmd#sec-jamforbarhet
+            text: "7.2 Hantering av jämförbarhet"
+      - href: kapitel/referenser.qmd
+        text: "Referenser"
+lang: sv
+format:
+  html:
+    theme: cosmo
+    css: assets/css/rapport.css
+    include-before-body: assets/includes/sidhuvud.html
+    include-in-header: assets/includes/typsnitt.html
+    toc: false
+    number-sections: true
+    number-depth: 2
+    smooth-scroll: true
+    link-external-newwindow: true
+    code-fold: true
+    code-summary: Visa kod
+    fig-cap-location: bottom
+    page-layout: article
+    grid:
+      body-width: 720px
+      sidebar-width: 280px
+      margin-width: 0px
+      gutter-width: 24px
+    respect-user-color-scheme: false
+
+execute:
+  echo: false
+  warning: true
+  error: false
+
+bibliography: references/references.bib
+

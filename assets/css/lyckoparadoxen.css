@@ -1,0 +1,63 @@
+.lycko-card { position: relative; border: 1px solid #d1d9dc; border-radius: 8px; background: #fff; padding: 18px; margin-block: 24px; color: #1f1f1f; }
+.lycko-heading { display: flex; justify-content: space-between; align-items: start; gap: 12px; }
+.lycko-heading h3 { font-size: 18px; margin: 0; color: #1f1f1f; }
+.lycko-card > details > summary { font-size: 13px; }
+.lycko-tooltip .lycko-year-row strong { display: inline; margin: 0; }
+.lycko-controls { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin: 16px 0; }
+.lycko-controls label { font-size: 13px; }
+.lycko-card input[type="checkbox"] { accent-color: #3F5664; }
+.lycko-controls select { font: inherit; font-size: 13px; padding: 5px 8px; border: 1px solid #8ca3af; border-radius: 4px; color: #1f1f1f; background: #fff; max-width: 100%; }
+.lycko-controls .knn-slider { flex: 1; min-width: 180px; margin: 0; }
+.lycko-controls .knn-play-row { margin-top: 0; align-items: center; }
+.lycko-controls .knn-range-ends { margin-top: -3px; }
+.lycko-chart { overflow-x: auto; }
+.lycko-chart svg { display: block; width: 100%; min-width: 600px; height: auto; }
+.lycko-axis-label { font-size: 11px; margin: 8px 0 0; }
+.lycko-legend { border: 0; margin: 8px 0; padding: 0 0 6px; display: block; min-width: 0; }
+.lycko-legend legend { float: none; width: 100%; font-size: 11px; margin-bottom: 8px; }
+.lycko-legend label { display: flex; align-items: start; gap: 6px; font-size: 11px; line-height: 1.5; cursor: pointer; margin: 0 0 5px; }
+.lycko-swatch { display: inline-block; width: 12px; height: 12px; border: 1px solid #1f1f1f; border-radius: 50%; flex: none; margin-top: 2px; }
+.lycko-size-legend { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; font-size: 11px; margin: 16px 0; }
+.lycko-size-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.lycko-size-legend i { display: inline-block; border-radius: 50%; border: 1px solid #3f5564; background: #fff; }
+.lycko-tooltip { position: absolute; z-index: 20; background: #fff; color: #1f1f1f; border: 1px solid #8ca3af; border-radius: 5px; padding: 8px 10px; font-size: 12px; line-height: 1.5; max-width: 260px; pointer-events: none; box-shadow: 0 3px 12px rgb(31 31 31 / 15%); }
+.lycko-tooltip strong { display: block; font-weight: 700; }
+.lycko-tooltip strong:last-of-type { margin-bottom: 4px; }
+.lycko-tooltip[hidden] { display: none; }
+.lycko-chart [data-area] { cursor: pointer; }
+.lycko-chart [data-area]:focus { outline: none; }
+html.keyboard-navigation .lycko-chart [data-area]:focus-visible circle { stroke: #1f1f1f; stroke-width: 3px; }
+.lycko-status { font-size: 12px; }
+.lycko-status:empty { display: none; }
+.lycko-cluster-plot { overflow-x: auto; margin: 14px 0; }
+.lycko-cluster-plot svg { display: block; width: 100%; min-width: 680px; height: auto; }
+.lycko-cluster-plot [data-tip]:focus { outline: none; }
+html.keyboard-navigation .lycko-cluster-plot [data-tip]:focus-visible rect,
+html.keyboard-navigation .lycko-cluster-plot [data-tip]:focus-visible circle { stroke: #1f1f1f; stroke-width: 3; }
+/* De sex tillfälliga punkterna markerar det valda året vid tangentbordsfokus. */
+html.keyboard-navigation .lycko-cluster-plot [data-year]:focus-visible rect { stroke: none; }
+.lycko-cluster-filters { border: 0; padding: 0; margin: 14px 0; display: flex; flex-wrap: wrap; gap: 6px 18px; }
+.lycko-cluster-filters legend { float: none; font-size: 12px; margin-bottom: 6px; }
+.lycko-cluster-filters .lycko-legend-item { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; }
+.lycko-cluster-filters .lycko-swatch { margin: 0; }
+.lycko-csv { background: #fff; border: 1px solid #8ca3af; border-radius: 4px; padding: 6px 10px; font: inherit; font-size: 12px; white-space: nowrap; color: #1f1f1f; }
+#lycko-cluster-table .lycko-table { margin-top: 16px; }
+#lycko-cluster-table .knn-table th:first-child { width: 72%; }
+#lycko-cluster-table .knn-table td { white-space: nowrap; text-align: right; }
+.lycko-cluster .knn-table th[scope="row"], #lycko-cluster-table th[scope="row"] { font-weight: 400; }
+.lycko-table { overflow-x: auto; }
+.lycko-table table { font-size: 12px; min-width: 640px; }
+.lycko-dialog { width: min(1250px,calc(100vw - 48px)); }
+.lycko-dialog .lycko-card { border: 0; margin: 0; padding: 16px 0; }
+.lycko-dialog .lycko-chart svg { max-height: 58dvh; }
+.lycko-area-picker { position: relative; width: 160px; flex: 0 0 160px; font-size: 12px; }
+.lycko-area-picker summary { border: 1px solid #8ca3af; border-radius: 4px; padding: 6px 8px; cursor: pointer; background: #fff; color: #1f1f1f; }
+.lycko-area-panel { position: absolute; top: calc(100% + 5px); left: 0; width: 260px; max-width: calc(100vw - 64px); padding: 12px; border: 1px solid #8ca3af; border-radius: 4px; background: #fff; color: #1f1f1f; z-index: 30; box-shadow: 0 3px 12px rgb(31 31 31 / 15%); }
+.lycko-area-panel input[type="search"] { width: 100%; font: inherit; color: #1f1f1f; border: 1px solid #8ca3af; border-radius: 4px; padding: 6px 8px; margin: 4px 0 8px; }
+.lycko-area-panel button { border: 1px solid #8ca3af; border-radius: 4px; background: #fff; color: #1f1f1f; font: inherit; padding: 4px 8px; margin-bottom: 8px; cursor: pointer; }
+.lycko-area-options { max-height: 230px; overflow-y: auto; display: grid; gap: 4px; }
+.lycko-area-options label { display: flex; align-items: start; gap: 7px; cursor: pointer; font-size: 12px; }
+.lycko-area-options label[hidden], .lycko-search-empty[hidden] { display: none; }
+.lycko-area-options label:has(input:disabled) { color: #1f1f1f; font-style: italic; }
+.lycko-search-empty { font-size: 12px; margin: 0; }
+@media (max-width: 575.98px) { .lycko-card { padding: 12px; } .lycko-controls .knn-slider { flex-basis: 100%; } .lycko-area-panel { left: 0; right: auto; } }
