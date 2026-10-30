@@ -1,0 +1,201 @@
+---
+title: "Möjligheten till möten – arbete"
+number-offset: 5
+format:
+  html:
+    number-depth: 3
+    include-after-body: ../assets/includes/moten-arbete.html
+---
+
+# Möjligheten till möten – arbete {#sec-moten}
+
+
+Tidigare kapitel visar att Göteborg är tydligt segregerat efter var människor bor. I det här kapitlet frågar vi om det också gäller på arbetet. Vilka har man möjlighet att möta på jobbet jämfört med i bostadsområdet, och ger arbetet möjlighet till möten mellan grupper? Vi följer samma två grupper som i kapitlet om k närmsta granne, personer med förgymnasial utbildning och personer födda utanför Europa. Vi kollar inte på personer med låg ekonomisk standard, då många av personer som tillhör denna grupp också står utanför arbetsmarknaden. Registret visar var människor arbetar, inte vilka de faktiskt träffar, så resultaten handlar om möjliga möten.
+
+## Sammanfattning {#sec-moten-sammanfattning}
+
+**Arbetet för de flesta ut ur bostadsområdet.** Arbetsplatserna är samlade i innerstaden och i några få verksamhetsområden. Både områdena med störst socioekonomiska utmaningar och de mest resursstarka områdena töms på dagen. Mer än fyra av fem som bor i dessa kluster arbetar i ett annat kluster.
+
+**Alla har inte en arbetsplats att gå till.** I områden med stora socioekonomiska utmaningar förvärvsarbetar inte 35 procent av invånarna i åldern 25–64 år, jämfört med 10 procent i områden med särskilt goda förutsättningar. Arbetet når alltså färst i de områden där boendesegregationen är störst.
+
+**Man arbetar ändå oftare nära hemmet och i liknande områden.** När vi tar hänsyn till var arbetsplatserna finns och antalet arbetsplatser ser vi att människor arbetar oftare än väntat i sitt eget kluster. De som bor i de mest resursstarka områdena arbetar sällan i områdena med störst utmaningar, bara en femtedel så ofta som väntat.
+
+**Arbetsplatsen jämnar ut skillnaderna mellan bostadsområdena.** Den som bor i ett område med stora utmaningar har färre kollegor ur den egna gruppen än grannar. För en person född utanför Europa som bor i kluster 1 är andelen 35 procent bland kollegorna och 63 procent bland grannarna. Arbetsplatserna är ändå inte helt blandade.
+
+**Utbildning skiljer mer på jobbet, födelseland mer i bostaden.** Arbetsplatserna är minst lika uppdelade efter utbildningsnivå som bostadsområdena. Efter födelseland är de tydligt mindre uppdelade. För personer födda utanför Europa är arbetsplatsen alltså en arena där det finns fler möjliga möten med andra än i bostadsområdet.
+
+**På dagen följer segregationen efter födelseland till stor del inte med.** En förvärvsarbetande person född utanför Europa har i genomsnitt 36 procent ur samma grupp bland sina 100 närmaste runt bostaden, men 23 procent runt arbetsplatsen. Det är nästan lika lågt som om gruppen vore jämnt fördelad, 21 procent. För personer med förgymnasial utbildning minskar avståndet till en jämn fördelning med ungefär en tredjedel. Den som inte förvärvsarbetar är kvar i bostadsområdet, och för dem gäller boendesegregationen också på dagen.
+
+**Mönstret är i stort sett detsamma som 2017.** Uppdelningen på arbetsplatserna har ökat ungefär lika mycket som i bostadsområdena.
+
+## Dag och natt {#sec-moten-dag-natt}
+
+Staden ser olika ut på dagen och på natten. På natten är människor i sina bostadsområden, och där gäller den boendesegregation som tidigare kapitel beskriver. På dagen åker många till arbetet, och då samlas människor från olika delar av staden och regionen på andra platser. För att visa hur stor den förflyttningen är jämför vi dagbefolkningen med nattbefolkningen i varje primärområde. Dagbefolkningen är de förvärvsarbetande som har sin arbetsplats i området, oavsett var de bor. Nattbefolkningen är de förvärvsarbetande som bor där. Om kvoten mellan dem är större än 1 är det fler som arbetar i området än som bor där.
+
+År 2024 hade 391 000 personer sin arbetsplats i Göteborg, medan 317 000 förvärvsarbetande bodde i staden. Skillnaden består av inpendlare från andra kommuner. Arbetsplatserna är samlade till ett fåtal områden. I hälften av stadens 94 bostadsområden är dagbefolkningen mindre än hälften så stor som nattbefolkningen. Bara i ungefär vart fjärde område är det fler som arbetar än som bor där.
+
+Innerstaden växer kraftigt på dagen. Inom Vallgraven har ungefär 15 gånger fler sin arbetsplats än det bor förvärvsarbetande där, och i Heden och Stampen är det nästan 8 gånger fler. Ännu tydligare är verksamhetsområdena Arendal och Högsbo, där ungefär 41 000 personer arbetar men nästan ingen bor.
+
+
+```{=html}
+<section class="moten-card knn-widget" id="moten-map" data-moten-chart="map" aria-labelledby="moten-map-title"><div class="lycko-heading"><h3 id="moten-map-title">Dagbefolkning i förhållande till nattbefolkning</h3><div class="moten-actions knn-actions"></div></div><p class="knn-caption">Primärområden, 2024. Kvot dag/natt. Verksamhetsområdena Arendal och Högsbo markeras separat.</p><div class="moten-content"></div><p class="knn-caption">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p><p class="moten-status" role="status"></p></section>
+```
+
+
+För klustren i den socioekonomiska områdesindelningen är mönstret tydligt. Kluster 5 har dubbelt så många som arbetar där än som bor där. I kluster 1 är det tvärtom. Där arbetar knappt 8 000 personer, men 28 000 förvärvsarbetande bor där. Kluster 6 har också få arbetsplatser i förhållande till antalet boende. De områden som skiljer sig mest åt socioekonomiskt har alltså en sak gemensamt. De töms på dagen, och de som bor där arbetar i andra delar av staden.
+
+Det betyder att arbetet för människor bort från sina bostadsområden och samlar dem på ett fåtal platser. Om de där också möter andra än sina grannar undersöker vi i resten av kapitlet.
+
+
+```{=html}
+<section class="moten-card knn-widget" id="moten-daynight" data-moten-table="daynight" aria-labelledby="moten-daynight-title"><div class="lycko-heading"><h3 id="moten-daynight-title">Förvärvsarbetande på dagen och natten</h3><div class="moten-actions knn-actions"></div></div><p class="knn-caption">Förvärvsarbetande som bor respektive arbetar i området, 2024. Ytterligare 21 700 arbetar i Göteborg i ett område som inte går att ange.</p><div class="moten-content"></div><p class="knn-caption">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p><p class="moten-status" role="status"></p></section>
+```
+
+
+## Vem har en arbetsplats? {#sec-moten-arbetsplats}
+
+Resten av kapitlet handlar om möten på arbetet. Då behöver vi först veta vilka som har en arbetsplats att gå till. Den som inte förvärvsarbetar har inga kollegor, och för den som arbetar ensam i eget företag finns det inga kollegor att möta. Avsnittet visar därför hur Göteborgs invånare i åldern 25–64 år fördelar sig mellan fyra lägen, nämligen att inte förvärvsarbeta, att arbeta på ett arbetsställe som inte går att placera, att arbeta ensam på sitt arbetsställe och att ha kollegor. Uppgifterna redovisas efter vilket kluster i den socioekonomiska områdesindelningen man bor i.
+
+År 2024 hade 73 procent av Göteborgs invånare i åldern 25–64 år en arbetsplats med kollegor. Skillnaderna mellan klustren är stora. I kluster 1, områden med stora socioekonomiska utmaningar, förvärvsarbetade inte 35 procent. I kluster 6, områden med särskilt goda förutsättningar, var andelen 10 procent. Därför har ungefär sex av tio som bor i kluster 1 kollegor, jämfört med åtta av tio i kluster 6. Redan här syns en skillnad i möjligheten till möten, eftersom arbetet når färre i de områden där boendesegregationen är störst.
+
+Skillnaderna är större i de två grupper vi följer i kapitlet. Bland personer med förgymnasial utbildning förvärvsarbetade inte 41 procent, och bland utrikes födda utanför Europa 31 procent. I båda grupperna är andelen högst i kluster 1 och lägst i kluster 6.
+
+Två små grupper förtjänar att nämnas. Ungefär 4 procent arbetar på ett arbetsställe som inte går att placera geografiskt. Andelen är något högre i kluster 1 och 2. Ungefär lika många arbetar ensamma på sitt arbetsställe, oftast som egenföretagare. Det är vanligast i kluster 5 och 6.
+
+Mellan 2017 och 2024 minskade andelen som inte förvärvsarbetar i kluster 1 från 40 till 35 procent, medan den låg still i kluster 6. Måttet på förvärvsarbete ändrades dock mellan åren, så förändringen ska läsas som en tendens.
+
+
+```{=html}
+<section class="moten-card knn-widget" id="moten-status" data-moten-table="status" aria-labelledby="moten-status-title"><div class="lycko-heading"><h3 id="moten-status-title">Vem har en arbetsplats?</h3><div class="moten-actions knn-actions"></div></div><p class="knn-caption">Invånare 25–64 år efter arbetsstatus och boendekluster, 2024.</p><div class="moten-content"></div><p class="knn-caption">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p><p class="moten-status" role="status"></p></section>
+```
+
+
+## Var man arbetar {#sec-moten-var-man-arbetar}
+
+Att arbeta någonstans handlar om mer än kollegorna. Den som pendlar till ett annat område rör sig där varje dag, på väg till och från jobbet, under lunchen och i butikerna runt omkring. Här tittar vi därför på i vilka delar av staden Göteborgs invånare arbetar. Arbetsplatserna delas in på samma sätt som bostäderna, efter kluster i den socioekonomiska områdesindelningen. Verksamhetsområdena Arendal och Högsbo redovisas för sig, eftersom där finns många arbetsplatser men nästan inga bostäder. Detsamma gäller arbetsplatser i övriga Göteborgsregionen och i resten av landet.
+
+Tänk på att klustren beskriver vilka som bor i ett område, inte vilka som arbetar där. Ett arbetsställe i kluster 1 är ett arbetsställe som ligger i ett område där de boende har stora socioekonomiska utmaningar. Det säger inget om de anställda.
+
+### Arbetsplatserna ligger inte där människor bor {#sec-moten-arbetsplatsernas-lagen}
+
+Arbetsplatserna är mycket ojämnt fördelade över staden. I kluster 5, som till stor del består av innerstaden, arbetar nästan dubbelt så många som det bor personer i åldern 25–64 år. I kluster 1 arbetar det ungefär en person för varje fem som bor där, och i kluster 6 ungefär en för varje tre. Kluster 1 och 6 är alltså båda i första hand bostadsområden, trots att de ligger i var sin ände av den socioekonomiska skalan.
+
+Det betyder att de flesta måste lämna sitt bostadsområde för att arbeta. Av de förvärvsarbetande som bor i kluster 1 arbetar 86 procent i ett annat kluster eller utanför staden. För kluster 6 är det 85 procent. Oavsett var man bor arbetar mellan en fjärdedel och en tredjedel i kluster 3 och ungefär en femtedel utanför Göteborg. Andelen som pendlar ut ur kommunen är ungefär densamma i alla kluster, 18–21 procent.
+
+
+```{=html}
+<section class="moten-card knn-widget" id="moten-workplaces" data-moten-table="workplaces" aria-labelledby="moten-workplaces-title"><div class="lycko-heading"><h3 id="moten-workplaces-title">Invånare och arbetande per område</h3><div class="moten-actions knn-actions"></div></div><p class="knn-caption">Invånare och arbetande per område, 2024. Arbetande omfattar även inpendlare.</p><div class="moten-content"></div><p class="knn-caption">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p><p class="moten-status" role="status"></p></section>
+```
+
+
+### Var man arbetar, med hänsyn till var arbetsplatserna finns {#sec-moten-forvantade-arbetsplatser}
+
+Eftersom arbetsplatserna är så ojämnt fördelade går det inte att jämföra andelar rakt av. Att många arbetar i kluster 5 beror främst på att det finns många arbetsplatser där. Vi jämför därför hur många som faktiskt arbetar i ett område med hur många vi skulle vänta oss om det inte spelade någon roll var man bor.
+
+Ett exempel visar hur måttet fungerar. Av alla Göteborgsbor som arbetar i staden arbetar knappt 3 procent i kluster 1. Om bostaden inte spelade någon roll skulle också knappt 3 procent av dem som bor i kluster 1 arbeta där. I stället är det 14 procent, ungefär fem gånger fler. Talet i tabellen är därför 5,3. Ett värde på 1 betyder att det är lika vanligt som om man valde arbetsplats oberoende av var man bor. Ett värde över 1 betyder att det är vanligare, och ett värde under 1 att det är ovanligare. Måttet tar hänsyn både till hur många som bor i varje kluster och hur många arbetsplatser som finns i varje område.
+
+Tabellen visar två mönster. Det första är att människor arbetar i sina egna områden oftare än väntat. De högsta värdena ligger längs diagonalen, alltså där bostad och arbetsställe hör till samma kluster. Starkast är det i kluster 1, 4 och 6, som är de klustren med färst arbetsplatser. En stor del av mönstret handlar troligen om närhet, eftersom många arbetar i skolan, omsorgen eller butikerna nära hemmet.
+
+Det andra mönstret är att avståndet följer den socioekonomiska skalan. Den som bor i kluster 1 arbetar sällan i kluster 5 och 6, ungefär hälften så ofta som väntat. Den som bor i kluster 5 eller 6 arbetar ännu mer sällan i kluster 1, bara en femtedel till hälften så ofta som väntat. Den svagaste förbindelsen i hela staden går alltså från de mest resursstarka områdena till områdena med störst utmaningar. Segregationen syns från båda hållen.
+
+Mönstret var i stort sett detsamma 2017. Andelen boende i kluster 1 som arbetar i kluster 5 eller 6 har minskat något, från 21 till 18 procent, men det är en tendens.
+
+
+```{=html}
+<section class="moten-card knn-widget" id="moten-flows" data-moten-table="flows" aria-labelledby="moten-flows-title"><div class="lycko-heading"><h3 id="moten-flows-title">Var man arbetar jämfört med förväntat</h3><div class="moten-actions knn-actions"></div></div><p class="knn-caption">Faktiskt antal jämfört med förväntat antal som arbetar i respektive område, efter boendekluster, 2024. 1 = som förväntat. Göteborgsbor 25–64 år som arbetar i Göteborg.</p><div class="moten-content"></div><p class="knn-caption">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p><p class="moten-status" role="status"></p></section>
+```
+
+
+### Vilka arbetar i områdena? {#sec-moten-arbetandes-bostad}
+
+Går det att vända på frågan? Eftersom registret omfattar hela landet kan vi också se var de som arbetar i ett område bor, även när de bor i en annan kommun. Det visar vilka man kan möta i området under arbetsdagen.
+
+Ungefär en tredjedel av alla som arbetar i Göteborg bor i en annan kommun, de flesta i Göteborgsregionen. Andelen inpendlare är störst i verksamhetsområdena, där fyra av tio bor utanför staden, och minst i kluster 1, där det är var femte. Arbetsplatserna i kluster 1 har alltså mest lokal personal. Av de Göteborgsbor som arbetar där bor 45 procent i kluster 1, trots att klustret bara har 11 procent av stadens invånare.
+
+Arbetsområdena är ändå mycket mer blandade än bostadsområdena. I bostadsområdet bor alla grannar i samma slags område som en själv. Den som arbetar i ett annat område rör sig under arbetsdagen bland människor som bor i alla delar av staden, på väg till jobbet, på lunchen och i butikerna. Personer från det egna klustret är något fler än väntat, men de är fortfarande en liten del av alla som arbetar i området.
+
+Verksamhetsområdena är särskilt intressanta som mötesplatser, eftersom ingen bor där. De som arbetar i Arendal och Högsbo kommer från alla delar av staden och i hög grad från andra kommuner. Boende i kluster 4 och 6 är något överrepresenterade och boende i kluster 1 något underrepresenterade, men skillnaderna är små jämfört med andra områden.
+
+
+```{=html}
+<section class="moten-card knn-widget" id="moten-origins" data-moten-table="origins" aria-labelledby="moten-origins-title"><div class="lycko-heading"><h3 id="moten-origins-title">Var de som arbetar i området bor</h3><div class="moten-actions knn-actions"></div></div><p class="knn-caption">Var de som arbetar i respektive område bor, 2024. Förvärvsarbetande 25–64 år.</p><div class="moten-content"></div><p class="knn-caption">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p><p class="moten-status" role="status"></p></section>
+```
+
+
+## Kollegor jämfört med grannar {#sec-moten-kollegor-grannar}
+
+I kapitlet om k närmsta granne mäter vi hur stor andel av grannarna som tillhör samma grupp som en själv. Här ställer vi samma fråga om arbetsplatsen, alltså hur stor andel av kollegorna som tillhör samma grupp. Kollegorna är alla som arbetar på samma arbetsställe i åldern 25–64 år, oavsett var de bor. Inpendlare från andra kommuner räknas alltså med. Precis som bland grannarna kan andelen läsas som chansen att en slumpvis vald kollega tillhör gruppen.
+
+### Så jämför vi arbetsplatsen med bostadsområdet {#sec-moten-jamforelse}
+
+För att jämförelsen ska bli rättvis jämför vi varje person med lika många grannar som hen har kollegor. Den som har 300 kollegor jämförs med sina ungefär 300 närmaste grannar. Grannskapen finns bara från 100 personer och uppåt, och små grannskap domineras av det egna hushållet. Huvudresultaten bygger därför på dem som arbetar på arbetsställen med minst 50 anställda.
+
+Det enklaste vore att direkt jämföra hur stor andel av kollegorna som tillhör gruppen med hur stor andel av grannarna som gör det. Men arbetsplatser och bostadsområden har olika utgångsläge. Personer med förgymnasial utbildning förvärvsarbetar mer sällan än andra, och de som pendlar in från andra kommuner är sällan födda utanför Europa. Grupperna är därför mindre på arbetsplatserna än i bostadsområdena redan från början. Då blir andelen bland kollegorna lägre även om arbetsplatserna inte är mindre uppdelade.
+
+Vi jämför därför personer i gruppen med personer utanför gruppen, som vi kallar övriga. För förgymnasial utbildning är övriga de som har gymnasial eller eftergymnasial utbildning. För födda utanför Europa är övriga de som är födda i Sverige eller i ett annat europeiskt land. Frågan blir då om personer med förgymnasial utbildning har fler kollegor med förgymnasial utbildning än personer med längre utbildning har. Ju större skillnaden är, desto mer arbetar de två grupperna på olika arbetsplatser. Samma skillnad räknar vi för grannarna, så att arbetsplatsen och bostadsområdet kan jämföras på lika villkor.
+
+### Arbetet jämnar ut skillnaderna mellan bostadsområdena {#sec-moten-utjamning}
+
+Vi börjar med andelarna. För båda grupperna skiljer sig kollegorna mycket mindre än grannarna mellan klustren. En person född utanför Europa som bor i kluster 1 har i genomsnitt 63 procent grannar som också är födda utanför Europa. Bland kollegorna är andelen 35 procent. För den som bor i kluster 6 är det tvärtom, med 13 procent bland grannarna och 21 procent bland kollegorna. Samma mönster syns för förgymnasial utbildning, men svagare.
+
+Arbetsplatsen ger alltså den som bor i ett område med stora utmaningar fler kollegor utanför den egna gruppen än grannar. Den som bor i ett resursstarkt område får fler kollegor ur gruppen än grannar. Arbetsplatserna är ändå inte helt blandade. Den som bor i kluster 1 har fortfarande ungefär dubbelt så många kollegor ur gruppen som den som bor i kluster 6.
+
+
+```{=html}
+<section class="moten-card knn-widget" id="moten-colleagues" data-moten-table="colleagues" aria-labelledby="moten-colleagues-title"><div class="lycko-heading"><h3 id="moten-colleagues-title">Kollegor och grannar</h3><div class="moten-actions knn-actions"></div></div><p class="knn-caption">Andel ur den egna gruppen bland kollegor och grannar för personer i respektive grupp, efter boendekluster, 2024. Arbetsställen med minst 50 anställda.</p><div class="moten-content"></div><p class="knn-caption">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p><p class="moten-status" role="status"></p></section>
+```
+
+
+### Utbildning skiljer mer på jobbet, födelseland mer i bostaden {#sec-moten-utbildning-fodelseland}
+
+Här använder vi måttet som beskrivs ovan, skillnaden mellan gruppen och övriga. Så här räknas det för förgymnasial utbildning. En person med förgymnasial utbildning har i genomsnitt 14,5 procent kollegor med förgymnasial utbildning. En person med längre utbildning har 4,5 procent sådana kollegor. Skillnaden är 10 procentenheter. Bland grannarna är motsvarande andelar 16 och 8 procent, en skillnad på 8 procentenheter. Ju större skillnaden är, desto mer lever grupperna åtskilda på just den arenan.
+
+Då syns att de två grupperna skiljer sig åt. För förgymnasial utbildning är skillnaden större bland kollegorna än bland grannarna, 10 mot 8 procentenheter. Arbetsplatserna är alltså minst lika uppdelade efter utbildningsnivå som bostadsområdena. För födda utanför Europa är det omvänt. Den som är född utanför Europa har i genomsnitt 29 procent kollegor som också är det, mot 15 procent för övriga, en skillnad på 13,5 procentenheter. Bland grannarna är andelarna 37 och 19 procent, en skillnad på 17 procentenheter. Arbetsplatserna är alltså tydligt mindre uppdelade efter födelseland än bostadsområdena.
+
+Att skillnaderna inte är noll är väntat. Utbildningen avgör i hög grad vilka arbeten man kan få, så personer med kort utbildning arbetar oftare på samma slags arbetsplatser. Det mest intressanta är därför hur skillnaden bland kollegorna förhåller sig till skillnaden bland grannarna. För utbildning är arbetsplatsen minst lika uppdelad som bostadsområdet. För födelseland är det tvärtom. Där är boendesegregationen större än uppdelningen på arbetsplatserna. För personer födda utanför Europa blir arbetet därmed en plats där det finns fler möjligheter att möta andra än i bostadsområdet.
+
+Mellan 2017 och 2024 ökade skillnaden med ungefär lika mycket på arbetsplatserna som i bostadsområdena, i båda grupperna. Arbetsplatserna har alltså följt samma utveckling som bostadsområdena.
+
+
+```{=html}
+<section class="moten-card knn-widget" id="moten-differences" data-moten-table="differences" aria-labelledby="moten-differences-title"><div class="lycko-heading"><h3 id="moten-differences-title">Skillnader mellan gruppen och övriga</h3><div class="moten-actions knn-actions"></div></div><p class="knn-caption">Skillnad i procentenheter mellan gruppen och övriga i andelen ur gruppen bland kollegor respektive grannar. Sista kolumnen visar om arbetsplatsen är mer uppdelad (plus) eller mindre uppdelad (minus) än bostadsområdet. Arbetsställen med minst 50 anställda.</p><div class="moten-content"></div><p class="knn-caption">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p><p class="moten-status" role="status"></p></section>
+```
+
+
+### De största arbetsplatserna är mest blandade {#sec-moten-storlek}
+
+Arbetsställets storlek spelar roll. På arbetsställen med 250 anställda eller fler är skillnaden mellan födda utanför Europa och övriga nästan hälften så stor som på arbetsställen med 50–249 anställda, 9,6 mot 17,6 procentenheter. Det gäller till exempel sjukhus och stora industrier. På så stora arbetsplatser träffar man dock bara en del av kollegorna, så måttet är grovt där. För förgymnasial utbildning finns ingen sådan skillnad mellan storleksklasserna.
+
+På de minsta arbetsställena, med 2–9 anställda, är andelen kollegor ur den egna gruppen hög. Personer födda utanför Europa har där i genomsnitt 59 procent kollegor som också är födda utanför Europa, medan övriga på lika små arbetsställen har 11 procent sådana kollegor. Skillnaden är 48 procentenheter, och det är den skillnaden som diagrammet visar. Diagrammet visar samma mått som tabellen ovan, skillnaden mellan gruppen och övriga, nu uppdelat efter arbetsställets storlek.  På små arbetsställen blir andelarna höga redan av slumpen, så de jämförs inte med grannarna.
+
+
+```{=html}
+<section class="moten-card knn-widget" id="moten-size" data-moten-chart="size" aria-labelledby="moten-size-title"><div class="lycko-heading"><h3 id="moten-size-title">För födda utanför Europa är de största arbetsställena mest blandade</h3><div class="moten-actions knn-actions"></div></div><p class="knn-caption">Skillnad mellan gruppen och övriga i andelen ur gruppen, procentenheter, 2024. 0 = helt blandat. Grannjämförelsen avser arbetsställen med minst 50 anställda.</p><div class="moten-content"></div><p class="knn-caption">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p><p class="moten-status" role="status"></p></section>
+```
+
+
+## Grannskapet på natten och på dagen {#sec-moten-grannskap}
+
+I kapitlet om k närmsta granne mäter vi hur stor andel av de närmaste grannarna som tillhör samma grupp som en själv, runt bostaden. Här gör vi samma beräkning för arbetsdagen. För varje förvärvsarbetande Göteborgsbo räknar vi andelen ur den egna gruppen bland de närmaste personerna dels runt bostaden, dels runt arbetsplatsen. Det är samma personer på natten och på dagen, bara platsen byts. Därför kan boendet och arbetsdagen jämföras med exakt samma mått.
+
+Måttet läses som i kapitlet om k närmsta granne. Om gruppen vore jämnt fördelad skulle andelen bland de närmaste vara lika stor som gruppens andel bland alla förvärvsarbetande Göteborgsbor. Ju högre andelen är, desto mer omges man av sin egen grupp. Grannarna kan både bo och arbeta i hela Göteborgsregionen, eftersom många arbetar i en grannkommun och många som arbetar i Göteborg bor utanför staden.
+
+För födelseland är skillnaden mellan natt och dag stor. En person född utanför Europa har i genomsnitt 36 procent ur samma grupp bland sina 100 närmaste grannar runt bostaden. Runt arbetsplatsen är andelen 23 procent, nästan lika lågt som de 21 procent det skulle vara om gruppen vore jämnt fördelad. Samma mönster syns i större grannskap.
+
+Det är anmärkningsvärt mot bakgrund av kapitlet om k närmsta granne. Där var segregationen efter födelseland den tydligaste av alla grupper, och den handlade främst om att stora delar av staden skiljer sig åt. På dagen följer den uppdelningen till stor del inte med. Det stämmer med tidigare avsnitt i det här kapitlet, som visar att de flesta lämnar sitt bostadsområde för att arbeta ([avsnitt 6.4](#sec-moten-var-man-arbetar)) och att arbetsplatserna är tydligt mindre uppdelade efter födelseland än bostadsområdena ([avsnitt 6.5](#sec-moten-kollegor-grannar)). Tillsammans tyder det på att segregationen efter födelseland i hög grad hänger ihop med var människor bor, och i mindre grad med var de arbetar.
+
+För utbildning är bilden mer sammansatt, och den visar varför det spelar roll vilken nivå man tittar på. På själva arbetsplatsen är uppdelningen efter utbildning minst lika stor som i bostadsområdet ([avsnitt 6.5](#sec-moten-kollegor-grannar)). Den som har förgymnasial utbildning har oftare kollegor med samma utbildning, eftersom utbildningen i hög grad avgör vilka arbeten man kan få. Men när vi vidgar blicken från den egna arbetsplatsen till området runt den minskar uppdelningen. Om gruppen vore jämnt fördelad skulle knappt 7 procent av de närmaste ha förgymnasial utbildning. Runt bostaden är andelen 13 procent, alltså 6 procentenheter högre. Runt arbetsplatsen är den 10 procent, knappt 4 procentenheter högre. Avståndet till en jämn fördelning krymper alltså med ungefär en tredjedel bland de 100 närmaste, och med mer än hälften i större grannskap.
+
+En trolig förklaring är att arbetsplatser med olika slags personal ofta ligger nära varandra. Ett sjukhus, ett kontor, en butik och ett lager kan finnas i samma kvarter. Man arbetar alltså ofta tillsammans med personer som har liknande utbildning, men på väg till jobbet, vid lunchen och i området runt arbetsplatsen rör man sig bland en bredare blandning av människor än där man bor. Det är just den nivån, mellan den egna arbetsplatsen och staden som helhet, som [avsnitt 6.4](#sec-moten-var-man-arbetar) pekade på.
+
+```{=html}
+<section class="moten-card knn-widget" id="moten-neighbourhood" data-moten-chart="neighbourhood" aria-labelledby="moten-neighbourhood-title"><div class="lycko-heading"><h3 id="moten-neighbourhood-title">Andelen ur den egna gruppen är lägre runt arbetsplatsen än runt bostaden</h3><div class="moten-actions knn-actions"></div></div><p class="knn-caption">Isoleringsindex för förvärvsarbetande Göteborgsbor 25–64 år, 2024, procent.</p><div class="moten-content"></div><p class="knn-caption">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p><p class="moten-status" role="status"></p></section>
+```
+
+Bilden gäller dem som arbetar. Den som inte förvärvsarbetar är kvar i bostadsområdet på dagen, och att inte förvärvsarbeta är vanligare i båda grupperna än bland andra. Bland personer med förgymnasial utbildning förvärvsarbetar inte 41 procent och bland personer födda utanför Europa 31 procent, och andelen är högst i områdena med störst socioekonomiska utmaningar ([avsnitt 6.3](#sec-moten-arbetsplats)). För dem ger arbetsdagen inga nya möjligheter till möten, och för dem gäller boendesegregationen också på dagen.
+
+
+
+
+
+Kapitlets olika mått ger en samstämmig bild, och de behöver läsas tillsammans. Arbetet för människor bort från sina bostadsområden till platser där människor från hela regionen samlas. I kvarteren runt arbetsplatserna är uppdelningen efter både födelseland och utbildning mindre än i bostadsområdena. Det betyder inte att slumpen avgör vem man möter på dagen. Kvarteren runt arbetsplatserna samlar personal från många arbetsställen och blir därför mer blandade än varje enskild arbetsplats. På själva arbetsstället består en uppdelning. Efter utbildning är den minst lika stor som i bostaden. Efter födelseland är den mindre än i bostaden, men långt ifrån borta. Uppdelningen mellan stadens olika delar följer alltså till stor del inte med till arbetsdagen, medan uppdelningen mellan arbetsplatser finns kvar. För personer födda utanför Europa ger arbetet därför fler möjligheter till möten än bostadsområdet, men inte lika många som om alla vore jämnt fördelade. För den som inte arbetar gäller boendesegregationen också på dagen.

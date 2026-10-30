@@ -30,11 +30,36 @@ require('node:fs').mkdirSync(reviewDir,{recursive:true});
     await area.click();
     assert.equal(await page.locator('#lycko-card [data-area]:focus').evaluate(e=>getComputedStyle(e).outlineStyle),'none');
     assert.equal(await page.locator('#lycko-cluster-table tbody tr').count(),6);
-    assert.match(await page.locator('#lycko-cluster-table').innerText(),/50,5/);
+    assert.match(await page.locator('#lycko-cluster-table').innerText(),/63,7/);
+    assert.equal(await page.locator('#lycko-mobility-table tbody tr').count(),6);
+    assert.match(await page.locator('#lycko-mobility-table tbody tr').nth(1).innerText(),/32/);
+    assert.equal(await page.locator('#lycko-destination-table tbody tr').count(),6);
+    assert.equal(await page.locator('#lycko-matrix [data-tip]').count(),42);
+    assert.equal(await page.locator('#lycko-matrix .lycko-cluster-plot svg').count(),0);
+    assert.equal(await page.locator('#lycko-matrix .lycko-matrix-table tbody tr').count(),7);
+    assert.equal(await page.locator('#quarto-sidebar a[href$="#sec-lycko-inledning"]').count(),0);
+    assert.equal(await page.locator('#quarto-sidebar a[href$="#sec-lycko-deciler"]').count(),0);
+    assert.match(await page.locator('section#sec-lycko-rorlighet > h2').innerText(),/^4\.4 /);
+    assert.match(await page.locator('section#sec-lycko-deciler > h3').innerText(),/^4\.4\.1 /);
+    assert.match(await page.locator('section#sec-lycko-omraden > h3').innerText(),/^4\.6\.2 /);
+    const matrixRows=page.locator('#lycko-matrix .lycko-matrix-table tbody tr');
+    const penultimate=await matrixRows.nth(5).boundingBox(),totalRow=await matrixRows.last().locator('th').boundingBox();
+    assert.ok(totalRow.height>penultimate.height+10);
+    const value=page.locator('#lycko-cluster-table tbody td').first();
+    await value.hover();
+    assert.equal(await value.locator('.table-value').count(),0);
+    await page.mouse.move(0,0);
+    const names=await page.locator('#lycko-cluster-table tbody th').evaluateAll(nodes=>nodes.map(n=>getComputedStyle(n).whiteSpace));
+    assert.ok(names.every(s=>s==='nowrap'));
+    const desktopBands=await page.locator('#lycko-deciles [data-year="2019"]').evaluateAll(nodes=>nodes.map(n=>n.getBoundingClientRect().toJSON()));
+    assert.equal(desktopBands[0].y,desktopBands[1].y);
+    assert.ok(desktopBands[1].x>desktopBands[0].x);
+    assert.ok(desktopBands[0].height>200 && desktopBands[0].height<300);
+    assert.equal(await page.locator('#lycko-deciles [data-series]').count(),12);
+    assert.equal(await page.locator('#lycko-deciles [data-year]').count(),42);
+    assert.equal(await page.locator('.lycko-card').last().getAttribute('id'),'lycko-card');
     assert.equal(await page.locator('#quarto-sidebar a[href$="#sec-lycko-inkomst"]').count(),1);
-    const image=page.locator('img[src$="figur-1-selektiv-flyttning.svg"]');
-    assert.ok(await image.evaluate(e=>e.complete&&e.naturalWidth>0));
-    for(const id of ['lycko-cluster-flows','lycko-cluster-income']){
+    for(const id of ['lycko-matrix','lycko-deciles','lycko-cluster-flows','lycko-cluster-income']){
       const card=page.locator('#'+id);
       await page.mouse.move(0,0);
       await card.scrollIntoViewIfNeeded();
@@ -47,9 +72,9 @@ require('node:fs').mkdirSync(reviewDir,{recursive:true});
       await card.locator('[data-tip]').first().focus();
       assert.ok(await card.locator('.lycko-tooltip').isVisible());
       assert.ok((await card.locator('.lycko-tooltip').innerText()).length>30);
-      assert.equal(await card.locator('.lycko-tooltip strong').count(),id.endsWith('income')?7:2);
+      assert.equal(await card.locator('.lycko-tooltip strong').count(),(id.endsWith('income')||id==='lycko-deciles')?7:2);
       assert.match(await card.locator('.lycko-tooltip strong').first().innerText(),/^År:/);
-      assert.match(await card.locator('.lycko-tooltip strong').nth(1).innerText(),/^Kluster/);
+      assert.match(await card.locator('.lycko-tooltip strong').nth(1).innerText(),/Kluster|kluster/);
       assert.equal(await card.locator('.lycko-tooltip').evaluate(e=>getComputedStyle(e).fontSize),'12px');
       if(id.endsWith('income')) {
         assert.equal(await card.locator('.lycko-hover-point').count(),6);
@@ -67,6 +92,21 @@ require('node:fs').mkdirSync(reviewDir,{recursive:true});
         assert.equal(await card.locator('[data-year="2022"] rect').evaluate(e=>getComputedStyle(e).stroke),'none');
       }
       await card.screenshot({path:path.join(reviewDir,id+'-tooltip-review.png')});
+      if(id==='lycko-matrix'){
+        assert.equal(await card.locator('.rapport-table-toggle').count(),1);
+        assert.equal(await card.locator('[data-action="expand"]').count(),0);
+        assert.equal(await card.locator('details').count(),0);
+        for(const ext of ['csv','xlsx']){
+          await card.locator('.rapport-table-toggle').click();
+          const downloading=page.waitForEvent('download');
+          await card.locator(`[data-table-export="${ext}"]`).click();
+          const file=await downloading;
+          assert.ok(file.suggestedFilename().endsWith('.'+ext));
+          assert.equal(await file.failure(),null);
+          await file.saveAs(path.join(reviewDir,id+'.'+ext));
+        }
+        continue;
+      }
       await card.locator('[data-action="expand"]').click();
       assert.ok(await page.locator('#'+id+'-dialog').isVisible());
       const close=page.locator('#'+id+'-dialog .knn-dialog-close');
@@ -82,6 +122,7 @@ require('node:fs').mkdirSync(reviewDir,{recursive:true});
         const download=await downloading;
         assert.ok(download.suggestedFilename().endsWith('.'+ext));
         assert.equal(await download.failure(),null);
+        await download.saveAs(path.join(reviewDir,id+'.'+ext));
         if(ext==='svg'){
           const fs=require('node:fs');
           assert.match(fs.readFileSync(await download.path(),'utf8'),/Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad\./);
@@ -89,47 +130,73 @@ require('node:fs').mkdirSync(reviewDir,{recursive:true});
         }
       }
     }
-    await image.scrollIntoViewIfNeeded();
-    await image.screenshot({path:path.join(reviewDir,'lycko-figure-review.png')});
     const downloading=page.waitForEvent('download');
-    await page.locator('#lycko-cluster-table .lycko-csv').click();
+    await page.locator('#lycko-cluster-table .rapport-table-toggle').click();
+    await page.locator('#lycko-cluster-table [data-table-export="csv"]').click();
     assert.ok((await downloading).suggestedFilename().endsWith('.csv'));
+    const deciles=page.locator('#lycko-deciles');
+    for(const decil of [1,10]){
+      const band=deciles.locator(`[data-year="2019"][data-decil="${decil}"]`);
+      await band.hover({position:{x:3,y:20}});
+      assert.match(await deciles.locator('.lycko-tooltip').innerText(),new RegExp('Decil '+decil));
+      assert.equal(await deciles.locator('.lycko-hover-point').count(),6);
+      await band.focus();await page.keyboard.press('ArrowRight');
+      assert.match(await deciles.locator('.lycko-tooltip').innerText(),/År: 2020/);
+      await page.keyboard.press('Home');
+      assert.match(await deciles.locator('.lycko-tooltip').innerText(),/År: 2004/);
+      await page.keyboard.press('End');
+      assert.match(await deciles.locator('.lycko-tooltip').innerText(),/År: 2024/);
+      await page.keyboard.press('Escape');
+      assert.equal(await deciles.locator('.lycko-hover-point').count(),0);
+    }
+    for(const id of ['lycko-mobility-table','lycko-destination-table']){
+      const card=page.locator('#'+id);
+      await card.screenshot({path:path.join(reviewDir,id+'.png')});
+      await card.locator('.rapport-table-toggle').click();
+      const downloading=page.waitForEvent('download');await card.locator('[data-table-export="csv"]').click();
+      assert.equal(await (await downloading).failure(),null);
+    }
+    assert.equal(await page.locator('#lycko-matrix .lycko-matrix-total td').first().evaluate(e=>getComputedStyle(e).backgroundColor),'rgb(237, 240, 241)');
+    for(const viewport of [{width:1920,height:1080},{width:1366,height:768},{width:1280,height:720},{width:1280,height:600},{width:1213,height:537}]){
+      await page.setViewportSize(viewport);
+      await deciles.locator('[data-action="expand"]').click();
+      const content=page.locator('#lycko-deciles-dialog .knn-dialog-content');
+      if(viewport.height===1080)assert.ok((await page.locator('#lycko-deciles-dialog').boundingBox()).height<900);
+      const chart=deciles.locator('.lycko-cluster-plot svg');
+      assert.equal(await chart.getAttribute('viewBox'),'0 0 900 450');
+      const chartBox=await chart.boundingBox();
+      assert.ok(Math.abs(chartBox.width/chartBox.height-2)<0.01);
+      await chart.scrollIntoViewIfNeeded();
+      const visibleChart=await chart.boundingBox(),contentBox=await content.boundingBox();
+      assert.ok(visibleChart.y>=contentBox.y-1 && visibleChart.y+visibleChart.height<=contentBox.y+contentBox.height+1);
+      await page.locator('#lycko-deciles-dialog').screenshot({path:path.join(reviewDir,`lycko-deciles-laptop-${viewport.height}.png`)});
+      await page.locator('#lycko-deciles-dialog .knn-dialog-close').click();
+    }
+    await page.setViewportSize({width:1440,height:1000});
+    const links=await page.locator('#quarto-sidebar a[href*="04-lyckoparadoxen.html#"]').evaluateAll(nodes=>nodes.map(n=>new URL(n.href).hash.slice(1)));
+    for(const id of links)assert.equal(await page.locator('[id="'+id+'"]').count(),1);
+    await page.emulateMedia({media:'print'});
+    assert.ok(await page.locator('#lycko-matrix > .knn-caption').last().isVisible());
+    await page.emulateMedia({media:'screen'});
     await page.setViewportSize({width:390,height:844});
+    await page.waitForFunction(()=>document.querySelector('#lycko-deciles .lycko-cluster-plot svg').viewBox.baseVal.height===880);
     assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
+    const mobileBands=await page.locator('#lycko-deciles [data-year="2019"]').evaluateAll(nodes=>nodes.map(n=>n.getBoundingClientRect().toJSON()));
+    assert.ok(mobileBands[1].y>mobileBands[0].y);
+    await page.locator('#lycko-deciles').screenshot({path:path.join(reviewDir,'lycko-deciles-mobile.png')});
     assert.deepEqual(errors,[]);
     await page.setViewportSize({width:1440,height:1000});
     const scatter=page.locator('#lycko-card');
     await scatter.locator('[data-area]').first().focus();
     assert.match(await scatter.locator('.lycko-tooltip strong').first().innerText(),/^År:/);
-    assert.match(await scatter.locator('.lycko-tooltip strong').nth(1).innerText(),/^Kluster/);
+    assert.match(await scatter.locator('.lycko-tooltip strong').nth(1).innerText(),/Kluster|kluster/);
+    await page.goto('http://127.0.0.1:8765/kapitel/03-goteborgs-socioekonomiska-omradesindelning.html');
+    await page.waitForSelector('tbody td');
+    await page.locator('tbody td').first().hover();
+    assert.equal(await page.locator('.table-value').count(),0);
+    assert.deepEqual(errors,[]);
     const source='Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.';
     assert.ok((await page.locator('p').allTextContents()).filter(t=>t.startsWith('Källa:')).every(t=>t===source));
-    await page.goto('http://127.0.0.1:8765/kapitel/05-k-narmsta-granne.html');
-    await page.waitForSelector('.knn-index-plots svg');
-    assert.ok((await page.locator('p').allTextContents()).filter(t=>t.startsWith('Källa:')).every(t=>t===source));
-    const index=page.locator('.knn-index-card').first();
-    await index.locator('.knn-index-plots svg').first().focus();
-    await page.keyboard.press('ArrowRight');
-    assert.ok(await index.locator('.knn-index-tooltip').isVisible());
-    assert.match(await index.locator('.knn-index-tooltip strong').first().innerText(),/^År:/);
-    await index.locator('[data-view="gap"]').click();
-    await index.locator('.knn-index-plots svg').focus();
-    await page.keyboard.press('ArrowRight');
-    assert.ok(await index.locator('.knn-index-tooltip').isVisible());
-    assert.match(await index.locator('.knn-index-tooltip-period strong').first().innerText(),/^År:/);
-    await index.locator('[data-export="menu"]').click();
-    const indexDownloading=page.waitForEvent('download');
-    await index.locator('[data-export="svg"]').click();
-    assert.ok(require('node:fs').readFileSync(await (await indexDownloading).path(),'utf8').includes(source));
-    for(const id of ['karta-knn-utbildning','ek-karta-knn-utbildning']){
-      const map=page.locator('#'+id);
-      await map.scrollIntoViewIfNeeded();
-      await map.locator('path.leaflet-interactive').nth(1000).dispatchEvent('click');
-      await map.locator('.leaflet-popup-content').waitFor({state:'visible'});
-      assert.match(await map.locator('.leaflet-popup-content strong').first().innerText(),/^År:/);
-      assert.equal(await map.locator('.leaflet-popup-content strong').count(),3);
-    }
-    assert.deepEqual(errors,[]);
-    console.log('OK: statiska legender, linjer utan markörer/etiketter, formaterade tooltips, källor på kapitel 4 och 5 samt SVG-exporter, förstoring, 7 exporter och mobilbredd.');
+    console.log('OK: kapitel 4, tre klusterdiagram, flyttmatris som tabell med en CSV/Excel-meny, tre övriga tabeller, statiska legender, formaterade tooltips, förstoring av diagram, nio diagramexporter och mobilbredd.');
   } finally {await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});

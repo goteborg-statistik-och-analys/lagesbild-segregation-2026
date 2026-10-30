@@ -11,7 +11,7 @@
 .lycko-controls .knn-play-row { margin-top: 0; align-items: center; }
 .lycko-controls .knn-range-ends { margin-top: -3px; }
 .lycko-chart { overflow-x: auto; }
-.lycko-chart svg { display: block; width: 100%; min-width: 600px; height: auto; }
+.lycko-chart > svg { display: block; width: 100%; min-width: 600px; height: auto; }
 .lycko-axis-label { font-size: 11px; margin: 8px 0 0; }
 .lycko-legend { border: 0; margin: 8px 0; padding: 0 0 6px; display: block; min-width: 0; }
 .lycko-legend legend { float: none; width: 100%; font-size: 11px; margin-bottom: 8px; }
@@ -30,7 +30,7 @@ html.keyboard-navigation .lycko-chart [data-area]:focus-visible circle { stroke:
 .lycko-status { font-size: 12px; }
 .lycko-status:empty { display: none; }
 .lycko-cluster-plot { overflow-x: auto; margin: 14px 0; }
-.lycko-cluster-plot svg { display: block; width: 100%; min-width: 680px; height: auto; }
+.lycko-cluster-plot > svg { display: block; width: 100%; min-width: 680px; height: auto; }
 .lycko-cluster-plot [data-tip]:focus { outline: none; }
 html.keyboard-navigation .lycko-cluster-plot [data-tip]:focus-visible rect,
 html.keyboard-navigation .lycko-cluster-plot [data-tip]:focus-visible circle { stroke: #1f1f1f; stroke-width: 3; }
@@ -42,7 +42,7 @@ html.keyboard-navigation .lycko-cluster-plot [data-year]:focus-visible rect { st
 .lycko-cluster-filters .lycko-swatch { margin: 0; }
 .lycko-csv { background: #fff; border: 1px solid #8ca3af; border-radius: 4px; padding: 6px 10px; font: inherit; font-size: 12px; white-space: nowrap; color: #1f1f1f; }
 #lycko-cluster-table .lycko-table { margin-top: 16px; }
-#lycko-cluster-table .knn-table th:first-child { width: 72%; }
+#lycko-cluster-table .knn-table th:first-child { width: auto; }
 #lycko-cluster-table .knn-table td { white-space: nowrap; text-align: right; }
 .lycko-cluster .knn-table th[scope="row"], #lycko-cluster-table th[scope="row"] { font-weight: 400; }
 .lycko-table { overflow-x: auto; }
@@ -61,3 +61,35 @@ html.keyboard-navigation .lycko-cluster-plot [data-year]:focus-visible rect { st
 .lycko-area-options label:has(input:disabled) { color: #1f1f1f; font-style: italic; }
 .lycko-search-empty { font-size: 12px; margin: 0; }
 @media (max-width: 575.98px) { .lycko-card { padding: 12px; } .lycko-controls .knn-slider { flex-basis: 100%; } .lycko-area-panel { left: 0; right: auto; } }
+
+/* Samma kompakta tabellstil för kapitlets nya statistiktabeller. */
+.lycko-result-table .lycko-table { margin-top: 16px; }
+.lycko-result-table .knn-table th:first-child { width: auto; }
+.lycko-result-table .knn-table td { text-align: right; white-space: nowrap; }
+.lycko-result-table .knn-table th[scope="row"] { font-weight: 400; }
+.lycko-card .lycko-cluster-filters[hidden] { display: none; }
+@media print { .lycko-tooltip { display: none !important; } .lycko-cluster-plot, .lycko-table, .lycko-chart { overflow: visible; } .lycko-cluster-plot svg, .lycko-chart svg { min-width: 0; } }
+
+/* Låt korta klusternamn stå på en rad även när kolumnrubrikerna radbryts. */
+.lycko-table th[scope="row"] { white-space: nowrap; }
+[data-chart="mobility"] .lycko-cluster-plot svg { min-width: 0; }
+.lycko-matrix-table { border-collapse: separate; border-spacing: 0; min-width: 640px; }
+.lycko-matrix-table th[scope="row"] { font-weight: 400; white-space: nowrap; }
+.lycko-matrix-table td { white-space: nowrap; }
+.lycko-matrix-total th, .lycko-matrix-total td { border-top: 16px solid #fff; background: #edf0f1; background-clip: padding-box; }
+.lycko-matrix-table [data-tip]:focus { outline: none; }
+html.keyboard-navigation .lycko-matrix-table [data-tip]:focus-visible { outline: 2px solid #1f1f1f; outline-offset: 2px; }
+
+/* Behåll samma diagramproportioner som i normalläget. Dialogen följer innehållet. */
+.lycko-dialog:has([data-chart="mobility"]) {
+  width: min(1100px, calc(100vw - 48px), max(740px, calc(200dvh - 752px)));
+  height: fit-content;
+  max-height: 92dvh;
+}
+.lycko-dialog:has([data-chart="mobility"]) .knn-dialog-content { flex: 0 1 auto; }
+.lycko-dialog [data-chart="mobility"] .lycko-cluster-plot svg { height: auto; max-height: none; }
+.lycko-dialog [data-chart="mobility"] .lycko-cluster-filters { margin-block: 8px; }
+.lycko-dialog [data-chart="mobility"] .lycko-cluster-plot { margin-block: 8px; }
+@media (max-width: 699.98px) {
+  .lycko-dialog:has([data-chart="mobility"]) { width: calc(100vw - 20px); }
+}

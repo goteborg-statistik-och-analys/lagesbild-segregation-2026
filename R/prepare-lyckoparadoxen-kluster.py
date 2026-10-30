@@ -52,9 +52,9 @@ def prepare():
     bars = []
     lines = []
     for g in range(1, 7):
-        denominator = sum(population[g, y] for y in years)
-        bars.extend({'group': g, 'category': c, 'net': sum(net[g, y, c] for y in years), 'populationYears': denominator,
-                     'rate': 1000 * sum(net[g, y, c] for y in years) / denominator} for c in categories)
+        denominator = sum(population[g, y] for y in range(2020, 2025))
+        bars.extend({'group': g, 'category': c, 'net': sum(net[g, y, c] for y in range(2020, 2025)), 'populationYears': denominator,
+                     'rate': 1000 * sum(net[g, y, c] for y in range(2020, 2025)) / denominator} for c in categories)
         lines.extend({'group': g, 'year': y, 'relativeIncome': income_sum[g, y] / population[g, y],
                       'population': population[g, y]} for y in years)
     table_defs = [('Inflyttade, alla', 'Inflyttad', 'all'),
@@ -65,8 +65,8 @@ def prepare():
     table = []
     for label, direction, subset in table_defs:
         values = {}
-        for g in (1, 6):
-            selected = [(key, n) for key, n in counts.items() if key[0] == g and key[2] == direction
+        for g in range(1, 7):
+            selected = [(key, n) for key, n in counts.items() if key[0] == g and key[1] >= 2020 and key[2] == direction
                         and (subset != 'city' or key[3] == categories[0])
                         and (subset != 'sweden' or key[3] != 'Ej folkbokförd i Sverige året före')]
             denominator = sum(n for key, n in selected)
@@ -81,12 +81,12 @@ def prepare():
             actual = sum(net[g, y, c] for c in categories)
             assert expected == actual, (g, y, expected, actual)
     assert all(math.isfinite(r['rate']) for r in bars)
-    result = {'years': years, 'bars': bars, 'lines': lines, 'table': table,
-              'source': 'lyckoparadoxen_2000_2024.xlsx', 'classificationYear': 2026}
+    result = {'years': years, 'bars': bars, 'lines': lines, 'table': table, 'tables': {'employment': {'headers': ['Kluster', 'Flyttar in från andra delar av Göteborg (%)', 'Flyttar ut till andra delar av Göteborg (%)', 'Bor kvar i området (%)'], 'rows': [[f'Kluster {g}', *[table[i]['values'][str(g)]['percent'] for i in (2, 3, 5)]] for g in range(1, 7)], 'csvHeaders': ['Kategori', 'Kluster', 'Förvärvsarbetande', 'Totalt', 'Andel (%)'], 'csvRows': [[r['label'], g, r['values'][str(g)]['employed'], r['values'][str(g)]['total'], r['values'][str(g)]['percent']] for r in table for g in range(1, 7)], 'decimals': 1}},
+              'source': 'lyckoparadoxen_2000_2024.xlsx', 'classificationYear': 2026, 'flowPeriod': '2020–2024'}
     OUT.mkdir(exist_ok=True, parents=True)
     (OUT / 'kluster-resultat.json').write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
     (OUT / 'kluster-webdata.js').write_text('window.lyckoparadoxClusterData=' + json.dumps(result, ensure_ascii=False) + ';\n', encoding='utf-8')
-    print('Avstämt: 150 klusterår, 18 staplar, 150 inkomstvärden och 12 tabellandelar.')
+    print('Avstämt: 150 klusterår, 18 staplar 2020–2024, 150 inkomstvärden och 36 kontrollandelar.')
     print('Staplar:', [(r['group'], r['category'], round(r['rate'], 1)) for r in bars])
     print('Tabell:', [(r['label'], {g: round(v['percent']) for g, v in r['values'].items()}) for r in table])
     print('Inkomst 2024:', [(r['group'], round(r['relativeIncome'])) for r in lines if r['year'] == 2024])

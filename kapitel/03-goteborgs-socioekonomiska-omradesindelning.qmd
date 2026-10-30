@@ -10,7 +10,7 @@ format:
 
 Göteborgs primärområden har grupperats i sex olika kluster med hjälp av en statistisk klusteranalys. För varje primärområde har antingen ett medianvärde eller ett andelsmått beräknats. Klusteranalysen för sedan samman primärområden med liknande egenskaper sett till de variabler som ingår i modellen. Det kan finnas betydande variation inom varje primärområde beroende på vilken variabel som används.
 
-De socioekonomiska klustren benämner vi enligt följande:
+De socioekonomiska klustren har följande benämningar.
 
 1.  Områdena med stora socioekonomiska utmaningar
 
@@ -30,7 +30,7 @@ De socioekonomiska klustren benämner vi enligt följande:
 
 **Kluster 3** är framför allt lokaliserade i de centrala delarna av staden, vilket avspeglas i en god tillgänglighet och något fler hyresrätter än genomsnittet. Klustret kännetecknas av en socioekonomisk sammansättning nära stadens genomsnitt, och de ingående områdena avviker inte nämnvärt på de socioekonomiska variablerna, bortsett från utbildningsnivån som är något högre än genomsnittet.
 
-**Kluster 4** utgörs av områden med goda socioekonomiska förutsättningar. Områdena är främst lokaliserade i ytterkanten av Göteborg och präglas av låg tillgänglighet och en låg andel hyresrätter i bostadsbeståndet. På de socioekonomiska variablerna avviker områdena positivt jämfört med stadens genomsnitt, med ett undantag: andelen med eftergymnasial utbildning är lägre än genomsnittet.
+**Kluster 4** utgörs av områden med goda socioekonomiska förutsättningar. Områdena är främst lokaliserade i ytterkanten av Göteborg och präglas av låg tillgänglighet och en låg andel hyresrätter i bostadsbeståndet. På de socioekonomiska variablerna avviker områdena positivt jämfört med stadens genomsnitt, med undantag för andelen med eftergymnasial utbildning, som är lägre än genomsnittet.
 
 **Kluster 5 och 6** innehåller de områden med mycket goda respektive särskilt goda socioekonomiska förutsättningar. Den tydligaste skillnaden mellan de två klustren handlar om boendestruktur och tillgänglighet. Kluster 5 är koncentrerat till de centrala stadsdelarna, vilket innebär bättre tillgänglighet och en högre andel hyresrätter. Kluster 6 präglas i stället av ett högre andel eget ägande och en mer perifer lokalisering. Därtill har kluster 6 något bättre utfall på de socioekonomiska variablerna jämfört med kluster 5.
 

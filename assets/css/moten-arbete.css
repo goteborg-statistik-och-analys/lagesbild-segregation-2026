@@ -1,0 +1,54 @@
+.moten-card { position:relative; margin:1.5rem 0 2rem; padding:18px; border:1px solid #d1d9dc; border-radius:8px; background:#fff; color:#1f1f1f; }
+.moten-card h3 { margin:0; font-size:18px; }
+.moten-card .lycko-heading { flex-wrap:wrap; gap:12px; }
+.moten-card .lycko-heading h3 { flex:1 1 350px; min-width:0; }
+.moten-actions { flex:0 0 auto; gap:6px; }
+.moten-actions button { white-space:nowrap; }
+.moten-card .moten-actions > .moten-csv { width:auto; height:auto; }
+.moten-content { overflow-x:auto; }
+.moten-content > svg { width:100%; height:auto; display:block; }
+.moten-content table { font-size:13px; min-width:480px; }
+#moten-flows thead th:not(:first-child):not(:last-child) { white-space:nowrap; }
+#moten-flows .moten-content { overflow:visible; }
+#moten-flows table { min-width:0; width:100%; table-layout:fixed; }
+#moten-flows th,#moten-flows td { padding:6px 4px; }
+#moten-flows th:first-child { width:13%; }
+#moten-flows thead th:not(:first-child):not(:last-child) { width:10%; }
+#moten-flows thead th:last-child { width:27%; overflow-wrap:anywhere; }
+#moten-flows tbody th { white-space:nowrap; }
+#moten-flows tbody tr:nth-child(1) td:nth-child(2),
+#moten-flows tbody tr:nth-child(2) td:nth-child(3),
+#moten-flows tbody tr:nth-child(3) td:nth-child(4),
+#moten-flows tbody tr:nth-child(4) td:nth-child(5),
+#moten-flows tbody tr:nth-child(5) td:nth-child(6),
+#moten-flows tbody tr:nth-child(6) td:nth-child(7) { background:#edf0f1; print-color-adjust:exact; }
+.moten-short-cluster { display:none; }
+.moten-map { height:600px; }
+.moten-map .leaflet-tooltip { font:12px/1.5 'Open Sans',Arial,sans-serif; max-width:260px; padding:8px 10px; white-space:normal; color:#1f1f1f; }
+.moten-map .leaflet-tooltip strong { display:block; }
+.moten-legend i.moten-dot { width:10px; height:10px; border-radius:50%; border:0; }
+.moten-legend i.moten-baseline { width:2px; height:14px; border:0; }
+.moten-card details { font-size:13px; margin-top:10px; }
+.moten-legend { display:flex; flex-wrap:wrap; gap:8px 18px; font-size:12px; margin:12px 0; }
+.moten-legend i { display:inline-block; width:18px; height:12px; border:1px solid #3f5564; margin-right:6px; vertical-align:middle; }
+.moten-tooltip { position:fixed; z-index:10000; pointer-events:none; background:#fff; color:#1f1f1f; border:1px solid #3f5564; border-radius:3px; padding:8px 10px; font:12px/1.5 'Open Sans',Arial,sans-serif; max-width:260px; box-shadow:0 2px 6px #d1d9dc; }
+.moten-tooltip strong { display:block; }
+.moten-card [data-tip]:hover path,.moten-card [data-tip]:focus-visible path { stroke:#1f1f1f; stroke-width:2; }
+.moten-card [data-tip]:focus-visible { outline:2px solid #1f1f1f; outline-offset:3px; }
+.moten-dialog { overflow:hidden; }
+.moten-dialog .moten-dialog-content { overflow:hidden; display:flex; flex-direction:column; }
+.moten-dialog .moten-card { display:flex; flex-direction:column; flex:1; min-height:0; border:0; border-radius:0; margin:0; padding:16px 0 0; }
+.moten-dialog .moten-card > :not(.moten-content) { flex-shrink:0; }
+.moten-dialog .moten-content { flex:1; min-height:0; overflow:hidden; }
+.moten-dialog .moten-content > svg { width:100%; height:100%; min-width:0; max-height:none; }
+.moten-dialog .moten-map.knn-map { height:100%; min-height:0; }
+.moten-dialog .moten-legend { margin-block:6px; }
+.moten-dialog .moten-card > details[open] { flex-shrink:1; max-height:30%; overflow:auto; }
+.moten-status:empty { display:none; }
+@media(max-width:600px) { .moten-card { padding:12px; } .moten-card h3 { font-size:16px; } .moten-actions { flex-wrap:wrap; } .moten-content > svg { min-width:560px; } #moten-map .moten-content > svg { min-width:0; } .moten-map { height:420px; } }
+@media(max-width:600px) {
+  #moten-flows .moten-full-cluster { display:none; }
+  #moten-flows .moten-short-cluster { display:inline; text-decoration:none; }
+  #moten-flows th,#moten-flows td { font-size:12px; padding-inline:3px; }
+}
+@media print { .moten-actions,.moten-status { display:none!important; } .moten-content { overflow:visible; } .moten-card { break-inside:avoid; } }

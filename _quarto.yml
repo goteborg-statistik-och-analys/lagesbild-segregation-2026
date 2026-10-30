@@ -10,7 +10,9 @@ project:
     - data/rapport/knn-fodda-utanfor-europa/**
     - data/rapport/lyckoparadoxen/**
     - data/rapport/socioekonomisk-indelning/**
+    - data/rapport/moten-arbete/**
     - assets/vendor/leaflet/**
+    - assets/vendor/jszip/**
   render:
     - kapitel/*.qmd
 
@@ -55,42 +57,63 @@ website:
             text: "3.1 Beskrivning av de socioekonomiska klustrena"
           - href: kapitel/03-goteborgs-socioekonomiska-omradesindelning.qmd#sec-socio-resultat
             text: "3.2 Resultatet 2026"
-      - section: "4. Lyckoparadoxen"
+      - section: "4. Flyttningar och ekonomisk rörlighet"
         href: kapitel/04-lyckoparadoxen.qmd
         contents:
           - href: kapitel/04-lyckoparadoxen.qmd#sec-lycko-sammanfattning
             text: "4.1 Sammanfattning"
+          - href: kapitel/04-lyckoparadoxen.qmd#sec-lycko-flyttmatris
+            text: "4.2 Flyttningar mellan områdestyperna"
           - href: kapitel/04-lyckoparadoxen.qmd#sec-lycko-flyttningar
-            text: "4.2 Flyttningar av förvärvsarbetande"
+            text: "4.3 Vilka flyttar? Förvärvsarbetande in och ut"
+          - href: kapitel/04-lyckoparadoxen.qmd#sec-lycko-rorlighet
+            text: "4.4 Inkomströrlighet: vad händer med människorna?"
           - href: kapitel/04-lyckoparadoxen.qmd#sec-lycko-inkomst
-            text: "4.3 Inkomstutveckling"
-          - href: kapitel/04-lyckoparadoxen.qmd#sec-lycko-omraden
-            text: "4.4 Exempel på enskilda områden"
+            text: "4.5 Inkomstutveckling: Vad betyder det för områdena?"
+          - href: kapitel/04-lyckoparadoxen.qmd#sec-lycko-paradox
+            text: "4.6 Lyckoparadoxen"
       - section: "5. K närmsta granne"
         href: kapitel/05-k-narmsta-granne.qmd
         contents:
+          - href: kapitel/05-k-narmsta-granne.qmd#sec-knn-sammanfattning
+            text: "5.1 Sammanfattning"
           - href: kapitel/05-k-narmsta-granne.qmd#sec-knn-utbildning
-            text: "5.1 Förgymnasial utbildning"
+            text: "5.2 Förgymnasial utbildning"
           - href: kapitel/05-k-narmsta-granne.qmd#sec-knn-ekonomisk-standard
-            text: "5.2 Låg ekonomisk standard"
+            text: "5.3 Låg ekonomisk standard"
           - href: kapitel/05-k-narmsta-granne.qmd#sec-knn-utrikesfodda
-            text: "5.3 Födda utanför Sverige"
+            text: "5.4 Födda utanför Sverige"
           - href: kapitel/05-k-narmsta-granne.qmd#sec-knn-fodda-utanfor-europa
-            text: "5.4 Födda utanför Europa"
-      - section: "6. Diskussion och slutsatser"
-        href: kapitel/06-diskussion-och-slutsatser.qmd
+            text: "5.5 Födda utanför Europa"
+      - section: "6. Möjligheten till möten – arbete"
+        href: kapitel/06-mojligheten-till-moten.qmd
         contents:
-          - href: kapitel/06-diskussion-och-slutsatser.qmd#sec-tolkning
-            text: "6.1 Hur ska resultaten tolkas?"
-          - href: kapitel/06-diskussion-och-slutsatser.qmd#sec-slutsatser-resultat
-            text: "6.2 Slutsatser"
-      - section: "7. Metodbilaga"
-        href: kapitel/07-metodbilaga.qmd
+          - href: kapitel/06-mojligheten-till-moten.qmd#sec-moten-sammanfattning
+            text: "6.1 Sammanfattning"
+          - href: kapitel/06-mojligheten-till-moten.qmd#sec-moten-dag-natt
+            text: "6.2 Dag och natt"
+          - href: kapitel/06-mojligheten-till-moten.qmd#sec-moten-arbetsplats
+            text: "6.3 Vem har en arbetsplats?"
+          - href: kapitel/06-mojligheten-till-moten.qmd#sec-moten-var-man-arbetar
+            text: "6.4 Var man arbetar"
+          - href: kapitel/06-mojligheten-till-moten.qmd#sec-moten-kollegor-grannar
+            text: "6.5 Kollegor jämfört med grannar"
+          - href: kapitel/06-mojligheten-till-moten.qmd#sec-moten-grannskap
+            text: "6.6 Grannskapet på natten och på dagen"
+      - section: "7. Diskussion och slutsatser"
+        href: kapitel/07-diskussion-och-slutsatser.qmd
         contents:
-          - href: kapitel/07-metodbilaga.qmd#sec-berakningar
-            text: "7.1 Definitioner och beräkningar"
-          - href: kapitel/07-metodbilaga.qmd#sec-jamforbarhet
-            text: "7.2 Hantering av jämförbarhet"
+          - href: kapitel/07-diskussion-och-slutsatser.qmd#sec-tolkning
+            text: "7.1 Hur ska resultaten tolkas?"
+          - href: kapitel/07-diskussion-och-slutsatser.qmd#sec-slutsatser-resultat
+            text: "7.2 Slutsatser"
+      - section: "8. Metodbilaga"
+        href: kapitel/08-metodbilaga.qmd
+        contents:
+          - href: kapitel/08-metodbilaga.qmd#sec-metod-lycko
+            text: "8.1 Lyckoparadoxen"
+          - href: kapitel/08-metodbilaga.qmd#sec-metod-moten
+            text: "8.2 Möjligheten till möten – arbete"
       - href: kapitel/referenser.qmd
         text: "Referenser"
 lang: sv
