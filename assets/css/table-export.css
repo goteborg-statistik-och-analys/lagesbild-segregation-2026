@@ -1,0 +1,15 @@
+.rapport-table-export { display:inline-flex; position:relative; flex:none; border:1px solid #d1d9dc; border-radius:6px; background:#fff; vertical-align:middle; }
+.rapport-table-export button { display:inline-flex; align-items:center; justify-content:center; gap:7px; font:12px/1.5 'Open Sans',Arial,sans-serif; color:#1f1f1f; background:#fff; border:0; cursor:pointer; }
+.rapport-table-export .rapport-table-toggle { width:34px; height:34px; padding:8px; border-radius:6px; }
+.rapport-table-export button svg { display:block; width:16px; min-width:16px; max-width:16px; height:16px; min-height:16px; max-height:16px; flex:none; }
+.rapport-table-export .rapport-table-options { position:absolute; top:calc(100% + 6px); right:0; min-width:160px; z-index:1001; padding:4px; border:1px solid #d1d9dc; border-radius:7px; background:#fff; box-shadow:0 4px 12px #d1d9dc; }
+.rapport-table-export .rapport-table-options button { display:flex; width:100%; justify-content:flex-start; padding:8px 10px; border-radius:4px; }
+.rapport-table-export button:hover { background:#f4f6f7; }
+.rapport-table-export button:focus-visible { outline:2px solid #1f1f1f; outline-offset:2px; }
+.rapport-table-export [hidden],.rapport-csv-hook { display:none!important; }
+.knn-actions > .rapport-table-export { border:0; }
+details > .rapport-table-export { display:flex; width:max-content; margin:6px 0 8px auto; }
+.lycko-cluster-plot > .rapport-table-export { display:flex; width:max-content; margin:0 0 8px auto; }
+.rapport-table-status { font-size:12px; color:#1f1f1f; }
+.rapport-table-status:empty { display:none; }
+@media print { .rapport-table-export,.rapport-csv-hook,.rapport-table-status { display:none!important; } }

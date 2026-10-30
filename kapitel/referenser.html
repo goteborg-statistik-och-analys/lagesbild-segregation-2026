@@ -44,7 +44,7 @@ div.csl-indent {
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<link href="../kapitel/07-metodbilaga.qmd#sec-jamforbarhet" rel="prev">
+<link href="../kapitel/08-metodbilaga.qmd#sec-metod-moten" rel="prev">
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -72,9 +72,19 @@ div.csl-indent {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <script src="../assets/js/focus-navigation.js" defer=""></script>
+
+<link rel="stylesheet" href="../assets/css/table-export.css">
+
+<script src="../assets/vendor/jszip/jszip.min.js" defer=""></script>
+
+<script src="../assets/js/table-export.js" defer=""></script>
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&amp;display=swap">
+
 
 
 <link rel="stylesheet" href="../assets/css/rapport.css">
@@ -208,7 +218,7 @@ div.csl-indent {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../kapitel/04-lyckoparadoxen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4. Lyckoparadoxen</span></a>
+ <span class="menu-text">4. Flyttningar och ekonomisk rörlighet</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Skifta sektion">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -222,20 +232,32 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../kapitel/04-lyckoparadoxen.html#sec-lycko-flyttmatris" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.2 Flyttningar mellan områdestyperna</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../kapitel/04-lyckoparadoxen.html#sec-lycko-flyttningar" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4.2 Flyttningar av förvärvsarbetande</span></a>
+ <span class="menu-text">4.3 Vilka flyttar? Förvärvsarbetande in och ut</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/04-lyckoparadoxen.html#sec-lycko-rorlighet" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.4 Inkomströrlighet: vad händer med människorna?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../kapitel/04-lyckoparadoxen.html#sec-lycko-inkomst" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4.3 Inkomstutveckling</span></a>
+ <span class="menu-text">4.5 Inkomstutveckling: Vad betyder det för områdena?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../kapitel/04-lyckoparadoxen.html#sec-lycko-omraden" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4.4 Exempel på enskilda områden</span></a>
+  <a href="../kapitel/04-lyckoparadoxen.html#sec-lycko-paradox" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.6 Lyckoparadoxen</span></a>
   </div>
 </li>
       </ul>
@@ -251,34 +273,40 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../kapitel/05-k-narmsta-granne.html#sec-knn-sammanfattning" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.1 Sammanfattning</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../kapitel/05-k-narmsta-granne.html#sec-knn-utbildning" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5.1 Förgymnasial utbildning</span></a>
+ <span class="menu-text">5.2 Förgymnasial utbildning</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../kapitel/05-k-narmsta-granne.html#sec-knn-ekonomisk-standard" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5.2 Låg ekonomisk standard</span></a>
+ <span class="menu-text">5.3 Låg ekonomisk standard</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../kapitel/05-k-narmsta-granne.html#sec-knn-utrikesfodda" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5.3 Födda utanför Sverige</span></a>
+ <span class="menu-text">5.4 Födda utanför Sverige</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../kapitel/05-k-narmsta-granne.html#sec-knn-fodda-utanfor-europa" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5.4 Födda utanför Europa</span></a>
+ <span class="menu-text">5.5 Födda utanför Europa</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../kapitel/06-diskussion-och-slutsatser.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">6. Diskussion och slutsatser</span></a>
+            <a href="../kapitel/06-mojligheten-till-moten.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. Möjligheten till möten – arbete</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Skifta sektion">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -286,22 +314,46 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../kapitel/06-diskussion-och-slutsatser.html#sec-tolkning" class="sidebar-item-text sidebar-link">
- <span class="menu-text">6.1 Hur ska resultaten tolkas?</span></a>
+  <a href="../kapitel/06-mojligheten-till-moten.html#sec-moten-sammanfattning" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.1 Sammanfattning</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../kapitel/06-diskussion-och-slutsatser.html#sec-slutsatser-resultat" class="sidebar-item-text sidebar-link">
- <span class="menu-text">6.2 Slutsatser</span></a>
+  <a href="../kapitel/06-mojligheten-till-moten.html#sec-moten-dag-natt" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.2 Dag och natt</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/06-mojligheten-till-moten.html#sec-moten-arbetsplats" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.3 Vem har en arbetsplats?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/06-mojligheten-till-moten.html#sec-moten-var-man-arbetar" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.4 Var man arbetar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/06-mojligheten-till-moten.html#sec-moten-kollegor-grannar" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.5 Kollegor jämfört med grannar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/06-mojligheten-till-moten.html#sec-moten-grannskap" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.6 Grannskapet på natten och på dagen</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../kapitel/07-metodbilaga.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">7. Metodbilaga</span></a>
+            <a href="../kapitel/07-diskussion-och-slutsatser.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7. Diskussion och slutsatser</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Skifta sektion">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -309,14 +361,37 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../kapitel/07-metodbilaga.html#sec-berakningar" class="sidebar-item-text sidebar-link">
- <span class="menu-text">7.1 Definitioner och beräkningar</span></a>
+  <a href="../kapitel/07-diskussion-och-slutsatser.html#sec-tolkning" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7.1 Hur ska resultaten tolkas?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../kapitel/07-metodbilaga.html#sec-jamforbarhet" class="sidebar-item-text sidebar-link">
- <span class="menu-text">7.2 Hantering av jämförbarhet</span></a>
+  <a href="../kapitel/07-diskussion-och-slutsatser.html#sec-slutsatser-resultat" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7.2 Slutsatser</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../kapitel/08-metodbilaga.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8. Metodbilaga</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Skifta sektion">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/08-metodbilaga.html#sec-metod-lycko" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8.1 Lyckoparadoxen</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/08-metodbilaga.html#sec-metod-moten" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8.2 Möjligheten till möten – arbete</span></a>
   </div>
 </li>
       </ul>
@@ -889,8 +964,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../kapitel/07-metodbilaga.html#sec-jamforbarhet" class="pagination-link" aria-label="7.2 Hantering av jämförbarhet">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">7.2 Hantering av jämförbarhet</span>
+      <a href="../kapitel/08-metodbilaga.html#sec-metod-moten" class="pagination-link" aria-label="8.2 Möjligheten till möten – arbete">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">8.2 Möjligheten till möten – arbete</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

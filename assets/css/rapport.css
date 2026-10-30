@@ -177,6 +177,8 @@ html:not(.keyboard-navigation) :focus { outline: none !important; box-shadow: no
 #quarto-sidebar .sidebar-section { padding-left: 12px; }
 main.content h2 { margin-top: 1.8rem; margin-bottom: 0.8rem; }
 
+
+
 /* Utgivare och datum på sammanfattningssidan. */
 body:has(#sec-sammanfattning) .quarto-title-meta {
   display: grid;

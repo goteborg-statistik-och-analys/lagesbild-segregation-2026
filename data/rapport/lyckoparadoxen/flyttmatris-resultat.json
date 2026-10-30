@@ -1,0 +1,312 @@
+{
+  "cells": [
+    {
+      "origin": 1,
+      "target": 1,
+      "count": 11063,
+      "total": 31729,
+      "percent": 34.867156229317025
+    },
+    {
+      "origin": 1,
+      "target": 2,
+      "count": 9239,
+      "total": 31729,
+      "percent": 29.11847206026033
+    },
+    {
+      "origin": 1,
+      "target": 3,
+      "count": 8891,
+      "total": 31729,
+      "percent": 28.021683633269248
+    },
+    {
+      "origin": 1,
+      "target": 4,
+      "count": 951,
+      "total": 31729,
+      "percent": 2.997258028932522
+    },
+    {
+      "origin": 1,
+      "target": 5,
+      "count": 1236,
+      "total": 31729,
+      "percent": 3.8954899303476314
+    },
+    {
+      "origin": 1,
+      "target": 6,
+      "count": 349,
+      "total": 31729,
+      "percent": 1.099940117873239
+    },
+    {
+      "origin": 2,
+      "target": 1,
+      "count": 7679,
+      "total": 34120,
+      "percent": 22.50586166471278
+    },
+    {
+      "origin": 2,
+      "target": 2,
+      "count": 7583,
+      "total": 34120,
+      "percent": 22.224501758499414
+    },
+    {
+      "origin": 2,
+      "target": 3,
+      "count": 14331,
+      "total": 34120,
+      "percent": 42.00175849941383
+    },
+    {
+      "origin": 2,
+      "target": 4,
+      "count": 1112,
+      "total": 34120,
+      "percent": 3.2590855803048067
+    },
+    {
+      "origin": 2,
+      "target": 5,
+      "count": 2483,
+      "total": 34120,
+      "percent": 7.27725674091442
+    },
+    {
+      "origin": 2,
+      "target": 6,
+      "count": 932,
+      "total": 34120,
+      "percent": 2.7315357561547478
+    },
+    {
+      "origin": 3,
+      "target": 1,
+      "count": 7108,
+      "total": 113253,
+      "percent": 6.276213433639727
+    },
+    {
+      "origin": 3,
+      "target": 2,
+      "count": 13209,
+      "total": 113253,
+      "percent": 11.663267198219915
+    },
+    {
+      "origin": 3,
+      "target": 3,
+      "count": 64826,
+      "total": 113253,
+      "percent": 57.23998481276434
+    },
+    {
+      "origin": 3,
+      "target": 4,
+      "count": 2867,
+      "total": 113253,
+      "percent": 2.5315002693085393
+    },
+    {
+      "origin": 3,
+      "target": 5,
+      "count": 19671,
+      "total": 113253,
+      "percent": 17.369076315859182
+    },
+    {
+      "origin": 3,
+      "target": 6,
+      "count": 5572,
+      "total": 113253,
+      "percent": 4.919957970208294
+    },
+    {
+      "origin": 4,
+      "target": 1,
+      "count": 728,
+      "total": 6608,
+      "percent": 11.016949152542374
+    },
+    {
+      "origin": 4,
+      "target": 2,
+      "count": 925,
+      "total": 6608,
+      "percent": 13.99818401937046
+    },
+    {
+      "origin": 4,
+      "target": 3,
+      "count": 2991,
+      "total": 6608,
+      "percent": 45.26331719128329
+    },
+    {
+      "origin": 4,
+      "target": 4,
+      "count": 339,
+      "total": 6608,
+      "percent": 5.130145278450363
+    },
+    {
+      "origin": 4,
+      "target": 5,
+      "count": 876,
+      "total": 6608,
+      "percent": 13.256658595641646
+    },
+    {
+      "origin": 4,
+      "target": 6,
+      "count": 749,
+      "total": 6608,
+      "percent": 11.334745762711865
+    },
+    {
+      "origin": 5,
+      "target": 1,
+      "count": 1057,
+      "total": 35718,
+      "percent": 2.9592922336077048
+    },
+    {
+      "origin": 5,
+      "target": 2,
+      "count": 2429,
+      "total": 35718,
+      "percent": 6.80049274875413
+    },
+    {
+      "origin": 5,
+      "target": 3,
+      "count": 19928,
+      "total": 35718,
+      "percent": 55.79259756985274
+    },
+    {
+      "origin": 5,
+      "target": 4,
+      "count": 878,
+      "total": 35718,
+      "percent": 2.4581443529872895
+    },
+    {
+      "origin": 5,
+      "target": 5,
+      "count": 8197,
+      "total": 35718,
+      "percent": 22.94921328181869
+    },
+    {
+      "origin": 5,
+      "target": 6,
+      "count": 3229,
+      "total": 35718,
+      "percent": 9.04025981297945
+    },
+    {
+      "origin": 6,
+      "target": 1,
+      "count": 385,
+      "total": 12472,
+      "percent": 3.086914688903143
+    },
+    {
+      "origin": 6,
+      "target": 2,
+      "count": 1116,
+      "total": 12472,
+      "percent": 8.948043617703656
+    },
+    {
+      "origin": 6,
+      "target": 3,
+      "count": 5849,
+      "total": 12472,
+      "percent": 46.897049390635026
+    },
+    {
+      "origin": 6,
+      "target": 4,
+      "count": 741,
+      "total": 12472,
+      "percent": 5.941308531109685
+    },
+    {
+      "origin": 6,
+      "target": 5,
+      "count": 2674,
+      "total": 12472,
+      "percent": 21.440025657472738
+    },
+    {
+      "origin": 6,
+      "target": 6,
+      "count": 1707,
+      "total": 12472,
+      "percent": 13.686658114175753
+    },
+    {
+      "origin": 7,
+      "target": 1,
+      "count": 28020,
+      "total": 233900,
+      "percent": 11.979478409576743
+    },
+    {
+      "origin": 7,
+      "target": 2,
+      "count": 34501,
+      "total": 233900,
+      "percent": 14.750320649850364
+    },
+    {
+      "origin": 7,
+      "target": 3,
+      "count": 116816,
+      "total": 233900,
+      "percent": 49.942710560068406
+    },
+    {
+      "origin": 7,
+      "target": 4,
+      "count": 6888,
+      "total": 233900,
+      "percent": 2.944848225737495
+    },
+    {
+      "origin": 7,
+      "target": 5,
+      "count": 35137,
+      "total": 233900,
+      "percent": 15.02223172295853
+    },
+    {
+      "origin": 7,
+      "target": 6,
+      "count": 12538,
+      "total": 233900,
+      "percent": 5.360410431808465
+    }
+  ],
+  "total": 233900,
+  "within": {
+    "3": 0,
+    "5": 0,
+    "2": 0,
+    "1": 0,
+    "6": 0,
+    "4": 0
+  },
+  "years": [
+    2021,
+    2025
+  ],
+  "url": "https://statistikdatabas.goteborg.se/api/v1/sv/1.%20G%C3%B6teborg%20och%20dess%20delomr%C3%A5den/Prim%C3%A4romr%C3%A5den/Befolkning/Flyttningar/11_PRI_PRI_Flytt.px"
+}

@@ -25,8 +25,8 @@ ul.task-list li input[type="checkbox"] {
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<link href="../kapitel/07-metodbilaga.qmd#sec-berakningar" rel="next">
-<link href="../kapitel/06-diskussion-och-slutsatser.qmd#sec-slutsatser-resultat" rel="prev">
+<link href="../kapitel/08-metodbilaga.qmd#sec-metod-lycko" rel="next">
+<link href="../kapitel/07-diskussion-och-slutsatser.qmd#sec-slutsatser-resultat" rel="prev">
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -54,9 +54,19 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <script src="../assets/js/focus-navigation.js" defer=""></script>
+
+<link rel="stylesheet" href="../assets/css/table-export.css">
+
+<script src="../assets/vendor/jszip/jszip.min.js" defer=""></script>
+
+<script src="../assets/js/table-export.js" defer=""></script>
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&amp;display=swap">
+
 
 
 <link rel="stylesheet" href="../assets/css/rapport.css">
@@ -71,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Skifta sidonavigering" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../kapitel/07-metodbilaga.html">7. Metodbilaga</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../kapitel/08-metodbilaga.html">8. Metodbilaga</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Skifta sidonavigering" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -190,7 +200,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../kapitel/04-lyckoparadoxen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4. Lyckoparadoxen</span></a>
+ <span class="menu-text">4. Flyttningar och ekonomisk rörlighet</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Skifta sektion">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -204,20 +214,32 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../kapitel/04-lyckoparadoxen.html#sec-lycko-flyttmatris" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.2 Flyttningar mellan områdestyperna</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../kapitel/04-lyckoparadoxen.html#sec-lycko-flyttningar" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4.2 Flyttningar av förvärvsarbetande</span></a>
+ <span class="menu-text">4.3 Vilka flyttar? Förvärvsarbetande in och ut</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/04-lyckoparadoxen.html#sec-lycko-rorlighet" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.4 Inkomströrlighet: vad händer med människorna?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../kapitel/04-lyckoparadoxen.html#sec-lycko-inkomst" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4.3 Inkomstutveckling</span></a>
+ <span class="menu-text">4.5 Inkomstutveckling: Vad betyder det för områdena?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../kapitel/04-lyckoparadoxen.html#sec-lycko-omraden" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4.4 Exempel på enskilda områden</span></a>
+  <a href="../kapitel/04-lyckoparadoxen.html#sec-lycko-paradox" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.6 Lyckoparadoxen</span></a>
   </div>
 </li>
       </ul>
@@ -233,34 +255,40 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../kapitel/05-k-narmsta-granne.html#sec-knn-sammanfattning" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.1 Sammanfattning</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../kapitel/05-k-narmsta-granne.html#sec-knn-utbildning" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5.1 Förgymnasial utbildning</span></a>
+ <span class="menu-text">5.2 Förgymnasial utbildning</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../kapitel/05-k-narmsta-granne.html#sec-knn-ekonomisk-standard" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5.2 Låg ekonomisk standard</span></a>
+ <span class="menu-text">5.3 Låg ekonomisk standard</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../kapitel/05-k-narmsta-granne.html#sec-knn-utrikesfodda" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5.3 Födda utanför Sverige</span></a>
+ <span class="menu-text">5.4 Födda utanför Sverige</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../kapitel/05-k-narmsta-granne.html#sec-knn-fodda-utanfor-europa" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5.4 Födda utanför Europa</span></a>
+ <span class="menu-text">5.5 Födda utanför Europa</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../kapitel/06-diskussion-och-slutsatser.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">6. Diskussion och slutsatser</span></a>
+            <a href="../kapitel/06-mojligheten-till-moten.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. Möjligheten till möten – arbete</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Skifta sektion">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -268,37 +296,84 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../kapitel/06-diskussion-och-slutsatser.html#sec-tolkning" class="sidebar-item-text sidebar-link">
- <span class="menu-text">6.1 Hur ska resultaten tolkas?</span></a>
+  <a href="../kapitel/06-mojligheten-till-moten.html#sec-moten-sammanfattning" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.1 Sammanfattning</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../kapitel/06-diskussion-och-slutsatser.html#sec-slutsatser-resultat" class="sidebar-item-text sidebar-link">
- <span class="menu-text">6.2 Slutsatser</span></a>
+  <a href="../kapitel/06-mojligheten-till-moten.html#sec-moten-dag-natt" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.2 Dag och natt</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/06-mojligheten-till-moten.html#sec-moten-arbetsplats" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.3 Vem har en arbetsplats?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/06-mojligheten-till-moten.html#sec-moten-var-man-arbetar" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.4 Var man arbetar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/06-mojligheten-till-moten.html#sec-moten-kollegor-grannar" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.5 Kollegor jämfört med grannar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/06-mojligheten-till-moten.html#sec-moten-grannskap" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.6 Grannskapet på natten och på dagen</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../kapitel/07-metodbilaga.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">7. Metodbilaga</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Skifta sektion">
+            <a href="../kapitel/07-diskussion-och-slutsatser.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7. Diskussion och slutsatser</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Skifta sektion">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../kapitel/07-metodbilaga.html#sec-berakningar" class="sidebar-item-text sidebar-link">
- <span class="menu-text">7.1 Definitioner och beräkningar</span></a>
+  <a href="../kapitel/07-diskussion-och-slutsatser.html#sec-tolkning" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7.1 Hur ska resultaten tolkas?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../kapitel/07-metodbilaga.html#sec-jamforbarhet" class="sidebar-item-text sidebar-link">
- <span class="menu-text">7.2 Hantering av jämförbarhet</span></a>
+  <a href="../kapitel/07-diskussion-och-slutsatser.html#sec-slutsatser-resultat" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7.2 Slutsatser</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../kapitel/08-metodbilaga.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">8. Metodbilaga</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Skifta sektion">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/08-metodbilaga.html#sec-metod-lycko" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8.1 Lyckoparadoxen</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/08-metodbilaga.html#sec-metod-moten" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8.2 Möjligheten till möten – arbete</span></a>
   </div>
 </li>
       </ul>
@@ -440,21 +515,26 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="sec-metodbilaga" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> Metodbilaga</h1>
-<section id="lyckoparadoxen" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="lyckoparadoxen"><span class="header-section-number">7.1</span> Lyckoparadoxen</h2>
+<section id="sec-metodbilaga" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Metodbilaga</h1>
+<section id="sec-metod-lycko" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="sec-metod-lycko"><span class="header-section-number">8.1</span> Lyckoparadoxen</h2>
 <p>Inkomsten i fasta priser beräknas som medianinkomst × KPI 2024 / KPI för valt år. KPI 2024 är 415,15 i den levererade filen. Flyttnettot summeras separat för varje område, inklusive startåret 2000. Punktarean följer folkmängden; punktradien följer därmed kvadratroten av folkmängden. Samma axelskalor används för alla år.</p>
 <p>Folkmängd per primärområde har hämtats för 2000–2024 och summerats över kön och ettårsåldrar. Socioekonomisk indelning av primärområden har hämtats med samtliga tabellvärden för det senaste indelningsåret, 2026. Inkomstfilen innehåller 96 områden; 94 har en socioekonomisk indelning. Högsbo (516) och Arendal (707) saknar indelning och ingår därför inte. Det uppdaterade underlaget har kompletta inkomst- och flyttserier för 2000–2024. Diagrammet och värdetabellen omfattar alla 94 klassificerade områden.</p>
 <p>Underlaget kommer från individdatabasen och omfattar personer 20–64 år folkbokförda i Göteborg 2000–2024. Allt som lämnat miljön är aggregerat per primärområde och år.</p>
 <ul>
-<li><p>Flytt: en person räknas som flyttad om den bor i ett annat primärområde 31 december flyttåret än 31 december året före. En flytt mellan två områden i Göteborg räknas som utflytt ur det ena och inflytt till det andra. Den som flyttar flera gånger under ett år, eller flyttar in och ut samma år, syns inte.</p></li>
-<li><p>Förvärvsarbetande: status i november året före flytten enligt registerbaserad arbetsmarknadsstatistik (SyssStat t.o.m. 2021, BASAlt fr.o.m. 2022). Den som inte var folkbokförd i Sverige året före räknas som ej förvärvsarbetande.</p></li>
-<li><p>Inkomst: median av sammanräknad förvärvsinkomst (SamRakFInk) bland boende 20–64 år i området 31 december, inklusive personer utan inkomst. I jämförelser över tid anges den i procent av Göteborgs median samma år.</p></li>
-<li><p>Områden: basområden (nyko) översätts till dagens 96 primärområden med stadens historiska nyckel, som också innehåller upphörda basområden. Det gör tidsserien jämförbar trots att indelningen reviderats. Arendal och Högsbo ingår inte eftersom de har mycket få invånare. 0,2–0,4 procent av befolkningen saknar uppgift om basområde och ingår inte.</p></li>
-<li><p>Kluster: områdena grupperas efter stadens socioekonomiska områdesindelning 2026 (10, 13, 34, 9, 16 och 12 områden i kluster 1–6), och samma indelning används för alla år. Klustrens inkomst i diagrammet är ett befolkningsvägt medelvärde av områdenas relativa median, inte klustrets egen median. Kontrollen med inkomstgrupper delar de 94 områdena i fem lika stora grupper efter medianinkomst relativt staden, i genomsnitt 2000–2002.</p></li>
-<li><p>Kvarvarande fel: när bara en del av ett basområde flyttats till ett annat primärområde kan de boende få en falsk flytt det året. Det gäller bland annat omkring 400 personer 2018.</p></li>
+<li><p>En person räknas som flyttad om den bor i ett annat primärområde 31 december flyttåret än 31 december året före. En flytt mellan två områden i Göteborg räknas som utflytt ur det ena och inflytt till det andra. Den som flyttar flera gånger under ett år, eller flyttar in och ut samma år, syns inte.</p></li>
+<li><p>Förvärvsarbetande definieras utifrån status i november året före flytten enligt registerbaserad arbetsmarknadsstatistik (SyssStat t.o.m. 2021, BASAlt fr.o.m. 2022). Den som inte var folkbokförd i Sverige året före räknas som ej förvärvsarbetande.</p></li>
+<li><p>Inkomst mäts som medianen av sammanräknad förvärvsinkomst (SamRakFInk) bland boende 20–64 år i området 31 december, inklusive personer utan inkomst. I jämförelser över tid anges den i procent av Göteborgs median samma år.</p></li>
+<li><p>Basområden (nyko) översätts till dagens 96 primärområden med stadens historiska nyckel, som också innehåller upphörda basområden. Det gör tidsserien jämförbar trots att indelningen reviderats. Arendal och Högsbo ingår inte eftersom de har mycket få invånare. 0,2–0,4 procent av befolkningen saknar uppgift om basområde och ingår inte.</p></li>
+<li><p>Områdena grupperas efter stadens socioekonomiska områdesindelning 2026 (10, 13, 34, 9, 16 och 12 områden i kluster 1–6), och samma indelning används för alla år. Klustrens inkomst i diagrammet är ett befolkningsvägt medelvärde av områdenas relativa median, inte klustrets egen median. Kontrollen med inkomstgrupper delar de 94 områdena i fem lika stora grupper efter medianinkomst relativt staden, i genomsnitt 2000–2002.</p></li>
+<li><p>Ett kvarvarande fel är att de boende kan få en falsk flytt när bara en del av ett basområde flyttats till ett annat primärområde. Det gäller bland annat omkring 400 personer 2018.</p></li>
 </ul>
+</section>
+<section id="sec-metod-moten" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="sec-metod-moten"><span class="header-section-number">8.2</span> Möjligheten till möten – arbete</h2>
+<p>Dag- och nattbefolkningen avser 2024 och har hämtats per primärområde från Göteborgs Stads statistikdatabas. Dagbefolkningen omfattar 16–74 år, nattbefolkningen 18–74 år. Klusterkvoten beräknas som summan av dagbefolkningen dividerad med summan av nattbefolkningen i klustrets primärområden. Arendal och Högsbo redovisas separat som verksamhetsområden.</p>
+<p>Övriga tabeller bygger på levererade aggregat för 25–64-åringar. Kollegors och grannars gruppandelar viktas med antalet personer i respektive aggregat. Vid jämförelser mellan kollegor och grannar används arbetsställen med minst 50 anställda och grannskap som matchar antalet kollegor. Skillnader beräknas före avrundning. Grannskapsdiagrammen för dag och natt använder det levererade isoleringsindexet. Jämförelser med 2017 berörs av bytet av mått på förvärvsarbete mellan SyssStat och BASAlt.</p>
 
 
 </section>
@@ -885,13 +965,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../kapitel/06-diskussion-och-slutsatser.html#sec-slutsatser-resultat" class="pagination-link" aria-label="6.2 Slutsatser">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">6.2 Slutsatser</span>
+      <a href="../kapitel/07-diskussion-och-slutsatser.html#sec-slutsatser-resultat" class="pagination-link" aria-label="7.2 Slutsatser">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">7.2 Slutsatser</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../kapitel/07-metodbilaga.html#sec-berakningar" class="pagination-link" aria-label="7.1 Definitioner och beräkningar">
-        <span class="nav-page-text">7.1 Definitioner och beräkningar</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../kapitel/08-metodbilaga.html#sec-metod-lycko" class="pagination-link" aria-label="8.1 Lyckoparadoxen">
+        <span class="nav-page-text">8.1 Lyckoparadoxen</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

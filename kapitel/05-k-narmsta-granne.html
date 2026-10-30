@@ -25,8 +25,8 @@ ul.task-list li input[type="checkbox"] {
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<link href="../kapitel/05-k-narmsta-granne.qmd#sec-knn-utbildning" rel="next">
-<link href="../kapitel/04-lyckoparadoxen.qmd#sec-lycko-omraden" rel="prev">
+<link href="../kapitel/05-k-narmsta-granne.qmd#sec-knn-sammanfattning" rel="next">
+<link href="../kapitel/04-lyckoparadoxen.qmd#sec-lycko-paradox" rel="prev">
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -54,9 +54,19 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <script src="../assets/js/focus-navigation.js" defer=""></script>
+
+<link rel="stylesheet" href="../assets/css/table-export.css">
+
+<script src="../assets/vendor/jszip/jszip.min.js" defer=""></script>
+
+<script src="../assets/js/table-export.js" defer=""></script>
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&amp;display=swap">
+
 
 
 <link rel="stylesheet" href="../assets/css/rapport.css">
@@ -190,7 +200,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../kapitel/04-lyckoparadoxen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4. Lyckoparadoxen</span></a>
+ <span class="menu-text">4. Flyttningar och ekonomisk rörlighet</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Skifta sektion">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -204,20 +214,32 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../kapitel/04-lyckoparadoxen.html#sec-lycko-flyttmatris" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.2 Flyttningar mellan områdestyperna</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../kapitel/04-lyckoparadoxen.html#sec-lycko-flyttningar" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4.2 Flyttningar av förvärvsarbetande</span></a>
+ <span class="menu-text">4.3 Vilka flyttar? Förvärvsarbetande in och ut</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/04-lyckoparadoxen.html#sec-lycko-rorlighet" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.4 Inkomströrlighet: vad händer med människorna?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../kapitel/04-lyckoparadoxen.html#sec-lycko-inkomst" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4.3 Inkomstutveckling</span></a>
+ <span class="menu-text">4.5 Inkomstutveckling: Vad betyder det för områdena?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../kapitel/04-lyckoparadoxen.html#sec-lycko-omraden" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4.4 Exempel på enskilda områden</span></a>
+  <a href="../kapitel/04-lyckoparadoxen.html#sec-lycko-paradox" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.6 Lyckoparadoxen</span></a>
   </div>
 </li>
       </ul>
@@ -233,34 +255,40 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../kapitel/05-k-narmsta-granne.html#sec-knn-sammanfattning" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.1 Sammanfattning</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../kapitel/05-k-narmsta-granne.html#sec-knn-utbildning" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5.1 Förgymnasial utbildning</span></a>
+ <span class="menu-text">5.2 Förgymnasial utbildning</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../kapitel/05-k-narmsta-granne.html#sec-knn-ekonomisk-standard" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5.2 Låg ekonomisk standard</span></a>
+ <span class="menu-text">5.3 Låg ekonomisk standard</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../kapitel/05-k-narmsta-granne.html#sec-knn-utrikesfodda" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5.3 Födda utanför Sverige</span></a>
+ <span class="menu-text">5.4 Födda utanför Sverige</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../kapitel/05-k-narmsta-granne.html#sec-knn-fodda-utanfor-europa" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5.4 Födda utanför Europa</span></a>
+ <span class="menu-text">5.5 Födda utanför Europa</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../kapitel/06-diskussion-och-slutsatser.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">6. Diskussion och slutsatser</span></a>
+            <a href="../kapitel/06-mojligheten-till-moten.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. Möjligheten till möten – arbete</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Skifta sektion">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -268,22 +296,46 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../kapitel/06-diskussion-och-slutsatser.html#sec-tolkning" class="sidebar-item-text sidebar-link">
- <span class="menu-text">6.1 Hur ska resultaten tolkas?</span></a>
+  <a href="../kapitel/06-mojligheten-till-moten.html#sec-moten-sammanfattning" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.1 Sammanfattning</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../kapitel/06-diskussion-och-slutsatser.html#sec-slutsatser-resultat" class="sidebar-item-text sidebar-link">
- <span class="menu-text">6.2 Slutsatser</span></a>
+  <a href="../kapitel/06-mojligheten-till-moten.html#sec-moten-dag-natt" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.2 Dag och natt</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/06-mojligheten-till-moten.html#sec-moten-arbetsplats" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.3 Vem har en arbetsplats?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/06-mojligheten-till-moten.html#sec-moten-var-man-arbetar" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.4 Var man arbetar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/06-mojligheten-till-moten.html#sec-moten-kollegor-grannar" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.5 Kollegor jämfört med grannar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/06-mojligheten-till-moten.html#sec-moten-grannskap" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.6 Grannskapet på natten och på dagen</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../kapitel/07-metodbilaga.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">7. Metodbilaga</span></a>
+            <a href="../kapitel/07-diskussion-och-slutsatser.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7. Diskussion och slutsatser</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Skifta sektion">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -291,14 +343,37 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../kapitel/07-metodbilaga.html#sec-berakningar" class="sidebar-item-text sidebar-link">
- <span class="menu-text">7.1 Definitioner och beräkningar</span></a>
+  <a href="../kapitel/07-diskussion-och-slutsatser.html#sec-tolkning" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7.1 Hur ska resultaten tolkas?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../kapitel/07-metodbilaga.html#sec-jamforbarhet" class="sidebar-item-text sidebar-link">
- <span class="menu-text">7.2 Hantering av jämförbarhet</span></a>
+  <a href="../kapitel/07-diskussion-och-slutsatser.html#sec-slutsatser-resultat" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7.2 Slutsatser</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../kapitel/08-metodbilaga.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8. Metodbilaga</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Skifta sektion">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/08-metodbilaga.html#sec-metod-lycko" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8.1 Lyckoparadoxen</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/08-metodbilaga.html#sec-metod-moten" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8.2 Möjligheten till möten – arbete</span></a>
   </div>
 </li>
       </ul>
@@ -442,32 +517,28 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="sec-knn-resultat" class="level1" data-number="5">
 <h1 data-number="5"><span class="header-section-number">5</span> K närmsta granne</h1>
-<p>Här presenteras resultaten från k-närmsta-granne-metoden för ämnena; förgymnasial utbildning, låg ekonomisk standard samt personer födda utanför Sverige respektive Europa. Metoden beskrivs i avsnittet <a href="../kapitel/02-att-mata-segregation.html#sec-knn">K närmsta granne</a>. För varje ämne visar vi samma karta och diagram, så att resultaten kan jämföras mellan ämnena.</p>
+<p>Här presenteras resultaten från k-närmsta-granne-metoden för ämnena; förgymnasial utbildning, låg ekonomisk standard samt personer födda utanför Sverige respektive Europa. Analysen omfattar personer i åldern 25–64 år för samtliga ämnen. Metoden beskrivs i avsnittet <a href="../kapitel/02-att-mata-segregation.html#sec-knn">K närmsta granne</a>. För varje ämne visar vi samma karta och diagram, så att resultaten kan jämföras mellan ämnena.</p>
 <p><strong>Grannskap av olika storlek</strong><br>
-Staden är indelad i rutor om 100 × 100 meter. För varje ruta räknar vi ut hur stor andel av de närmaste grannarna som tillhör gruppen vi studerar. Grannskapet görs successivt större: först de 100 närmaste grannarna, sedan 200, 400 och så vidare upp till 51 200. Ett litet grannskap motsvarar ungefär några hus eller ett kvarter, och de största motsvarar ungefär en stadsdel. Genom att jämföra resultaten kan vi se både <em>var</em> gruppen bor samlat och <em>hur stora</em> områdena är.</p>
+Staden är indelad i rutor om 100 × 100 meter. För varje ruta räknar vi ut hur stor andel av de närmaste grannarna som tillhör gruppen vi studerar. Grannskapet görs successivt större genom att vi först räknar de 100 närmaste grannarna, sedan 200, 400 och så vidare upp till 51 200. Ett litet grannskap motsvarar ungefär några hus eller ett kvarter, och de största motsvarar ungefär en stadsdel. Genom att jämföra resultaten kan vi se både var gruppen bor samlat och hur stora områdena är.</p>
 <p><strong>Kartan</strong><br>
 Kartan visar andelen i gruppen bland de närmaste grannarna för varje ruta. Med reglaget kan du ändra antalet grannar och se hur mönstret förändras när grannskapet växer. Om färgerna ligger kvar när grannskapet blir större är det stora sammanhängande delar av staden som skiljer sig åt. Om de snabbt bleknar är det mindre, lokala områden. Mittklassen är satt kring stadens genomsnitt för respektive år, så kartan visar var andelen är högre eller lägre än i staden som helhet.</p>
 <p><strong>Isoleringsindex</strong><br>
-Diagrammen visar isoleringsindex. Det besvarar frågan: <em>Hur stor är chansen att en slumpvis vald granne till en person i gruppen själv tillhör gruppen?</em> Om gruppen var jämnt utspridd över staden skulle chansen vara lika stor som gruppens andel i hela Göteborg. Den nivån visas som en streckad linje. Ju högre isoleringsindex ligger över den streckade linjen, desto mer bor gruppen samlat.</p>
-<p>Diagrammet har två flikar. Under <em>Index och genomsnitt</em> visas varje år för sig. Där ser man hur isoleringsindex förändras när grannskapet blir större: en flack kurva betyder att gruppen bor samlat över stora delar av staden, och en kurva som faller brant betyder att samlingen är lokal. Under <em>Jämför åren</em> visas skillnaden mellan isoleringsindex och stadens genomsnitt, så att åren kan jämföras även om gruppens storlek har förändrats. En kurva som ligger högre än ett tidigare år betyder att gruppen bor mer samlat än då.</p>
-<section id="sammanfattning" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="sammanfattning"><span class="header-section-number">5.1</span> Sammanfattning</h2>
-<p>I kapitlet undersöker vi hur fyra grupper bor i Göteborg: personer med förgymnasial utbildning, personer med låg ekonomisk standard, utrikes födda och utrikes födda utanför Europa. För alla fyra gäller att gruppen bor mer samlat än om den vore jämnt fördelad över staden. Men grupperna skiljer sig åt i tre avseenden: hur starkt de bor samlat, på vilken geografisk nivå det sker och hur det har utvecklats över tid.</p>
-<p><strong>Var segregationen är starkast.</strong> Grupperna är olika stora, och andelen i staden varierar mellan 9 och 30 procent. För att kunna jämföra dem använder vi ett mått som tar hänsyn till gruppens storlek. Med det måttet är boendesegregationen tydligast efter födelseland. Utrikes födda och utrikes födda utanför Europa bor mer samlat än de två socioekonomiska grupperna, både bland de närmaste grannarna och i stora grannskap. Bland de närmaste grannarna kommer låg ekonomisk standard därefter och förgymnasial utbildning sist. I de stora grannskapen ligger de två socioekonomiska grupperna på ungefär samma, betydligt lägre nivå.</p>
-<p><strong>På vilken nivå segregationen finns.</strong> Här skiljer sig grupperna mest åt. För utrikes födda finns tre fjärdedelar av skillnaden mot stadens genomsnitt kvar även när grannskapet omfattar 25 600 personer, ungefär en stadsdel. För utrikes födda utanför Europa är det ungefär två tredjedelar och för förgymnasial utbildning drygt hälften. Dessa grupper bor alltså samlat i stora, sammanhängande delar av staden. Låg ekonomisk standard är ett undantag. Där är koncentrationen tydlig bland de närmaste grannarna, men knappt en tredjedel av skillnaden finns kvar i de stora grannskapen. Låg ekonomisk standard är alltså främst koncentrerad till vissa kvarter och hus. Till det bidrar bland annat studentområden i centrala Göteborg, där låga inkomster ofta är en tillfällig livsfas.</p>
-<p><strong>Hur det har utvecklats.</strong> Utvecklingen går åt olika håll. För utrikes födda, och ännu tydligare för utrikes födda utanför Europa, har skillnaden mellan stadens större delar ökat, särskilt i de stora grannskapen. För förgymnasial utbildning har gruppen blivit mycket mindre, men den som har kort utbildning bor i dag mer samlat än för 25 år sedan. Ökningen har på senare år främst skett bland de närmaste grannarna. Låg ekonomisk standard är den enda gruppen där segregationen har minskat. Minskningen skedde mellan 2012 och 2017, främst i de områden där andelen var allra högst, och därefter har nivån legat i stort sett still.</p>
+Diagrammen visar isoleringsindex. Det visar hur stor chansen är att en slumpvis vald granne till en person i gruppen själv tillhör gruppen. Om gruppen var jämnt utspridd över staden skulle chansen vara lika stor som gruppens andel i hela Göteborg. Den nivån visas som en streckad linje. Ju högre isoleringsindex ligger över den streckade linjen, desto mer bor gruppen samlat.</p>
+<p>Diagrammet har två flikar. Under Index och genomsnitt visas varje år för sig. Där ser man hur isoleringsindex förändras när grannskapet blir större. En flack kurva betyder att gruppen bor samlat över stora delar av staden, och en kurva som faller brant betyder att samlingen är lokal. Under Jämför åren visas skillnaden mellan isoleringsindex och stadens genomsnitt, så att åren kan jämföras även om gruppens storlek har förändrats. En kurva som ligger högre än ett tidigare år betyder att gruppen bor mer samlat än då.</p>
+<section id="sec-knn-sammanfattning" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="sec-knn-sammanfattning"><span class="header-section-number">5.1</span> Sammanfattning</h2>
+<p>I kapitlet undersöker vi hur personer med förgymnasial utbildning, personer med låg ekonomisk standard, utrikes födda och utrikes födda utanför Europa bor i Göteborg. För alla fyra gäller att gruppen bor mer samlat än om den vore jämnt fördelad över staden. Men grupperna skiljer sig åt när det gäller hur starkt de bor samlat, på vilken geografisk nivå det sker och hur det har utvecklats över tid.</p>
+<p><strong>Var segregationen är starkast.</strong> Grupperna är olika stora, och andelen i staden varierar mellan 9 och 38 procent. För att kunna jämföra dem använder vi ett mått som tar hänsyn till gruppens storlek. Med det måttet är boendesegregationen tydligast efter födelseland. Utrikes födda och utrikes födda utanför Europa bor mer samlat än de två socioekonomiska grupperna, både bland de närmaste grannarna och i stora grannskap. Bland de närmaste grannarna kommer låg ekonomisk standard därefter och förgymnasial utbildning sist. I de stora grannskapen ligger de två socioekonomiska grupperna på ungefär samma, betydligt lägre nivå.</p>
+<p><strong>På vilken nivå segregationen finns.</strong> Här skiljer sig grupperna mest åt. För utrikes födda finns knappt två tredjedelar av skillnaden mot stadens genomsnitt kvar även när grannskapet omfattar 25 600 personer, ungefär en stadsdel. För utrikes födda utanför Europa och för förgymnasial utbildning är det knappt sex av tio. Dessa grupper bor alltså samlat i stora, sammanhängande delar av staden. Låg ekonomisk standard är ett undantag. Där är koncentrationen tydlig bland de närmaste grannarna, men bara en tredjedel av skillnaden finns kvar i de stora grannskapen. Låg ekonomisk standard är alltså främst koncentrerad till vissa kvarter och hus. Till det bidrar troligen studentområden i centrala Göteborg, där låga inkomster ofta är en tillfällig livsfas.</p>
+<p><strong>Hur det har utvecklats.</strong> Utvecklingen går åt olika håll. För utrikes födda utanför Europa har skillnaden mellan stadens större delar ökat under hela perioden och ungefär fördubblats sedan 1997. För utrikes födda som helhet ökade segregationen fram till 2012. Därefter har den minskat något bland de närmaste grannarna och legat still i de stora grannskapen. För förgymnasial utbildning har gruppen blivit mycket mindre, men den som har kort utbildning bor i dag mer samlat än för 25 år sedan. Ökningen har på senare år främst skett bland de närmaste grannarna. För låg ekonomisk standard minskade segregationen tydligt mellan 2012 och 2017, främst i de områden där andelen var allra högst, och därefter har nivån legat i stort sett still.</p>
 <p><strong>Var det syns.</strong> Nordost är det område där alla fyra grupperna har högst andel, och det enda område där andelen är hög även i de största grannskapen. Hit hör främst Bergsjön, Hjällbo, Hammarkullen, Eriksbo, Rannebergen, Lövgärdet och Gårdsten. Biskopsgården på Hisingen har lika höga andelar bland de närmaste grannarna, men för de flesta grupperna sjunker andelen snabbare där när grannskapet vidgas. Utanför nordost finns lokala koncentrationer för flera av grupperna, till exempel kring Frölunda torg och Tofta i sydväst. För utrikes födda har nya koncentrationer vuxit fram på Hisingen under senare år, bland annat i Brunnsbo, Kvillebäcken och Backa.</p>
 </section>
 <section id="sec-knn-utbildning" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="sec-knn-utbildning"><span class="header-section-number">5.2</span> Förgymnasial utbildning</h2>
-<!-- Resultatunderlag: data/rapport/df_ratio_for_gym.rds.
-År: 1997, 2007, 2012, 2017 och 2024.
-Komplettera med närmare måttdefinition, källa och tolkningsstöd.
--->
-<p>Kartan visar att andelen med förgymansial utbildning är högst i stadens nordöstra delar, bland annat i de områden som klassas som <em>områden med socioekonomiska utmaningar</em> i den socioekonomiska områdesindelningen. Utöver områdena i stadsområdet Nordost visar även Västra Biskopsgården på hisingen en hög andel med förgymnasial utbildning.</p>
+<p>Kartan visar att andelen med förgymnasial utbildning är högst i stadens nordöstra delar, bland annat i de områden som klassas som områden med socioekonomiska utmaningar i den socioekonomiska områdesindelningen. Utöver områdena i stadsområdet Nordost visar även Biskopsgården på Hisingen en hög andel med förgymnasial utbildning.</p>
 <p>I Sydväst finns en annan typ av mönster. Kring Frölunda torg, Tofta och Grevegården är andelen förhöjd bland de närmaste grannarna. Dessa områden omges dock av områden med mycket låg andel, som Hovås, Askim och Långedrag. När grannskapet vidgas närmar sig andelen därför stadens genomsnitt. Det är lokala koncentrationer snarare än en storskalig uppdelning.</p>
-<p>För att beskriva var gruppen bor mest samlat har vi pekat ut rutor med <em>hög andel</em>. Det är rutor där andelen med förgymnasial utbildning bland de 100 närmaste grannarna är minst 1,5 gånger så hög som i staden som helhet samma år. År 2024 motsvarar det en andel på cirka 14 procent eller mer, alltså de röda rutorna i kartan. Eftersom gränsen följer stadens genomsnitt kan vi jämföra åren, trots att gruppen har blivit mycket mindre.</p>
-<p>Antalet rutor med hög andel har varit ungefär detsamma under hela perioden, drygt 1 000 rutor varje år. Var de ligger har däremot förändrats. År 1997 låg hälften av dem på Hisingen och fyra av tio i nordost (Angered och Östra Göteborg). År 2024 hade bilden vänt: knappt sex av tio låg i nordost och mindre än tre av tio på Hisingen. Det är en tydlig koncentration, eftersom nordost bara har ungefär 15 procent av stadens befolkade rutor.</p>
+<p>För att beskriva var gruppen bor mest samlat har vi pekat ut rutor med hög andel. Det är rutor där andelen med förgymnasial utbildning bland de 100 närmaste grannarna är minst 1,5 gånger så hög som i staden som helhet samma år. År 2024 motsvarar det en andel på cirka 14 procent eller mer, alltså de röda rutorna i kartan. Eftersom gränsen följer stadens genomsnitt kan vi jämföra åren, trots att gruppen har blivit mycket mindre.</p>
+<p>Antalet rutor med hög andel har varit ungefär detsamma under hela perioden, drygt 1 000 rutor varje år. Var de ligger har däremot förändrats. År 1997 låg hälften av dem på Hisingen och fyra av tio i nordost (Angered och Östra Göteborg). År 2024 hade bilden vänt, så att knappt sex av tio låg i nordost och mindre än tre av tio på Hisingen. Det är en tydlig koncentration, eftersom nordost bara har ungefär 15 procent av stadens befolkade rutor.</p>
 <p>Förskjutningen beror på att andelen med förgymnasial utbildning har minskat olika snabbt i olika delar av staden. På Hisingen och i centrala och sydvästra Göteborg har den minskat med ungefär tre fjärdedelar sedan 1997. I nordost har den ungefär halverats. Hisingen hade alltså tidigare flera områden med hög andel, men har närmat sig stadens genomsnitt. I nordost har skillnaden mot resten av staden i stället ökat. I dag har fyra av tio befolkade rutor i nordost en hög andel, jämfört med knappt en av tio på Hisingen och tre av hundra i centrala och sydvästra Göteborg.</p>
 <div id="knn-utbildning" class="knn-widget" data-source="../data/rapport/knn-utbildning/">
   <div class="knn-map-card">
@@ -497,7 +568,7 @@ Komplettera med närmare måttdefinition, källa och tolkningsstöd.
 </div>
 <p>År 2024 hade 9,2 procent av Göteborgs invånare i åldern 25–64 år förgymnasial utbildning som högsta utbildningsnivå. Bland de 100 närmaste grannarna till en person i gruppen var andelen i genomsnitt 17,4 procent, nästan dubbelt så hög. Personer med förgymnasial utbildning bor alltså i högre grad nära varandra än vad deras andel av befolkningen skulle ge.</p>
 <p>Det som utmärker Göteborg är att skillnaden ligger kvar när grannskapet vidgas. Även med de 25 600 närmaste grannarna är andelen 13,9 procent, och mer än hälften av skillnaden mot genomsnittet finns kvar. Indexet sjunker tydligt först vid de största grannskapen. Segregationen efter utbildningsnivå handlar därför främst om att stora, sammanhängande delar av staden skiljer sig från varandra. Den handlar mindre om enskilda bostadsområden eller kvarter.</p>
-<p>Andelen med förgymnasial utbildning har mer än halverats sedan 1997, från 21,4 till 9,2 procent. Det beror främst på att yngre generationer har högre utbildning än äldre. Eftersom gruppen har blivit mindre har också isoleringsindex sjunkit: en person med förgymnasial utbildning har i dag färre grannar med samma utbildningsnivå än 1997.</p>
+<p>Andelen med förgymnasial utbildning har mer än halverats sedan 1997, från 21,4 till 9,2 procent. Det beror främst på att yngre generationer har högre utbildning än äldre. Eftersom gruppen har blivit mindre har också isoleringsindex sjunkit. Det innebär att en person med förgymnasial utbildning i dag har färre grannar med samma utbildningsnivå än 1997.</p>
 <p>För att se om gruppen bor mer eller mindre samlat behöver vi i stället jämföra med hur stor gruppen är i staden som helhet. Bland de 100 närmaste grannarna var andelen med förgymnasial utbildning 6,0 procentenheter högre än stadens genomsnitt 1997. År 2024 var skillnaden 8,2 procentenheter. Gruppen har alltså blivit mindre men bor samtidigt mer samlat än tidigare.</p>
 <p>Diagrammet “Jämför åren” visar också hur denna skillnad har förändrats för olika stora grannskap. Mellan 1997 och 2012 ökade skillnaden både bland de närmaste grannarna och i de stora grannskapen. Det betyder att stadens större delar, främst nordost och resten av staden, gled isär.</p>
 <p>Sedan 2012 ser utvecklingen annorlunda ut. I de stora grannskapen (k = 25 600), har skillnaden legat still. Kurvorna för 2012, 2017 och 2024 ligger där nästan ovanpå varandra. Bland de närmaste grannarna har skillnaden däremot fortsatt att öka något, från 7,3 till 8,2 procentenheter. Uppdelningen mellan stadens större delar har alltså inte förändrats under det senaste decenniet, men inom områdena bor gruppen i något högre grad samlat i vissa kvarter eller hus. Den förändringen är dock liten jämfört med den storskaliga skillnaden, som fortfarande dominerar bilden.</p>
@@ -510,8 +581,8 @@ Komplettera med närmare måttdefinition, källa och tolkningsstöd.
   </div>
   <p class="knn-index-description"></p>
   <div id="knn-index-panel" role="tabpanel" aria-labelledby="knn-index-tab-raw"><div class="knn-index-plots"></div></div>
-  <p class="knn-index-hint">Peka eller tryck i diagrammet för värden. Med tangentbord: fokusera diagrammet och använd vänster/höger pil.</p>
-  <p class="knn-index-scale">Antal närmaste grannar, k. Varje steg fördubblar antalet grannar: 100–51 200.</p>
+  <p class="knn-index-hint">Peka eller tryck i diagrammet för värden. För att använda tangentbordet fokuserar du diagrammet och använder vänster/höger pil.</p>
+  <p class="knn-index-scale">Antal närmaste grannar, k. Varje steg fördubblar antalet grannar från 100 till 51 200.</p>
   <details class="knn-index-table"><summary>Visa diagrammets värden</summary><div class="knn-index-table-scroll">
 <table class="caption-top" data-quarto-postprocess="true">
 <caption>Isoleringsindex, genomsnitt och skillnad per år och k</caption>
@@ -534,16 +605,12 @@ Komplettera med närmare måttdefinition, källa och tolkningsstöd.
 </section>
 <section id="sec-knn-ekonomisk-standard" class="level2" data-number="5.3">
 <h2 data-number="5.3" class="anchored" data-anchor-id="sec-knn-ekonomisk-standard"><span class="header-section-number">5.3</span> Låg ekonomisk standard</h2>
-<!-- Resultatunderlag: data/rapport/df_ratio_ek_st.rds.
-År: 2012, 2017 och 2024.
-Komplettera med närmare måttdefinition, källa och tolkningsstöd.
--->
-<p>Vi använder samma definition av hög andel som för utbildning: rutor där andelen med låg ekonomisk standard bland de 100 närmaste grannarna är minst 1,5 gånger stadens genomsnitt samma år. År 2024 motsvarar det cirka 22 procent eller mer.</p>
-<p>I stora grannskap finns hög andel nästan bara i nordost. År 2024 hade nästan nio av tio befolkade rutor i nordost hög andel med det måttet, medan det knappt förekom i resten av staden. Skillnaden mellan nordost och övriga staden har dock minskat sedan 2012, främst på grund av minskningen i de områden som tidigare hade högst andel.</p>
-<p>Bland de närmaste grannarna ser bilden annorlunda ut. Där har rutorna med hög andel blivit fler och mer utspridda över staden. År 2012 låg ungefär hälften av dem i nordost, år 2024 knappt fyra av tio. Allt fler ligger i centrala Göteborg och på södra Hisingen. Där är andelen hög bland de närmaste grannarna, men området som helhet ligger nära stadens genomsnitt.</p>
-<p>En viktig förklaring till de lokala koncentrationerna i centrala Göteborg är studenter. Studenter har ofta låga inkomster och räknas därför som personer med låg ekonomisk standard, även om situationen för de flesta är tillfällig. Trots att analysen bara omfattar personer från 25 år finns många studenter i gruppen.</p>
-<p>Det syns tydligt i områden med många studentbostäder, som Johanneberg, Guldheden och Krokslätt nära Chalmers och universitetet, samt kring Lindholmen på Hisingen. I Johanneberg har andelen med låg ekonomisk standard bland de närmaste grannarna ökat från 19 till 22 procent sedan 2012. Det är högre än i flera områden i nordost.</p>
-<p>Det förklarar också skillnaden mellan små och stora grannskap. Studentbostäderna är få och ligger samlat, så de ger höga värden bland de närmaste grannarna men påverkar inte stadsdelen som helhet. Koncentrationen i nordost finns kvar även i de största grannskapen</p>
+<p>Precis som för utbildning räknar vi en andel som hög i rutor där andelen med låg ekonomisk standard bland de 100 närmaste grannarna är minst 1,5 gånger stadens genomsnitt samma år. År 2024 motsvarar det cirka 21 procent eller mer.</p>
+<p>I stora grannskap finns hög andel nästan bara i nordost. År 2024 hade nästan nio av tio befolkade rutor i nordost hög andel med det måttet, medan det knappt förekom i resten av staden. Skillnaden mellan nordost och övriga staden har dock minskat något sedan 2012, främst på grund av minskningen i de områden som tidigare hade högst andel.</p>
+<p>Bland de närmaste grannarna ser bilden annorlunda ut. Där har rutorna med hög andel blivit fler och mer utspridda över staden. År 2012 låg ungefär hälften av dem i nordost, år 2024 ungefär fyra av tio. Allt fler ligger i centrala Göteborg och på södra Hisingen. Där är andelen hög bland de närmaste grannarna, men området som helhet ligger nära stadens genomsnitt.</p>
+<p>En trolig förklaring till de lokala koncentrationerna i centrala Göteborg är studenter. Studenter har ofta låga inkomster och räknas därför som personer med låg ekonomisk standard, även om situationen för de flesta är tillfällig. Även om analysen bara omfattar personer från 25 år finns det studenter i gruppen, till exempel på masternivå och doktorander.</p>
+<p>Det syns i områden med många studentbostäder, som Johanneberg, Guldheden och Krokslätt nära Chalmers och universitetet. I Johanneberg är andelen med låg ekonomisk standard bland de närmaste grannarna cirka 19 procent, i nivå med flera områden i nordost.</p>
+<p>Det bidrar också till skillnaden mellan små och stora grannskap. Studentbostäderna är få och ligger samlat, så de ger höga värden bland de närmaste grannarna men påverkar inte stadsdelen som helhet. Koncentrationen i nordost finns däremot kvar även i de största grannskapen.</p>
 <div id="knn-ekonomi" data-id-prefix="ek-" data-bundle="knnEkonomiData" data-label="låg ekonomisk standard" data-slug="lag-ekonomisk-standard" class="knn-widget" data-source="../data/rapport/knn-ekonomisk-standard/">
   <div class="knn-map-card">
   <h3 class="knn-map-title anchored">Andel med låg ekonomisk standard på olika k nivåer</h3>
@@ -570,10 +637,10 @@ Komplettera med närmare måttdefinition, källa och tolkningsstöd.
   <p class="knn-caption">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p>
   </div>
 </div>
-<p>År 2024 hade 14,8 procent av Göteborgs invånare i åldern 25–64 år låg ekonomisk standard, det vill säga en disponibel inkomst per konsumtionsenhet under 60 procent av medianen i riket. Bland de 100 närmaste grannarna till en person med låg ekonomisk standard var andelen i genomsnitt 26,7 procent, nästan dubbelt så hög. Chansen att en slumpvis vald granne också har låg ekonomisk standard är alltså betydligt högre än om gruppen vore jämnt fördelad över staden.</p>
-<p>Jämfört med utbildning är mönstret mer lokalt. När grannskapet vidgas sjunker isoleringsindex snabbt. Redan vid de 1 600 närmaste grannarna har ungefär en tredjedel av skillnaden mot stadens genomsnitt försvunnit, och vid de 25 600 närmaste grannarna finns bara knappt en tredjedel kvar. Låg ekonomisk standard är alltså tydligt koncentrerad till vissa kvarter och hus, medan skillnaderna mellan stadens större delar är mindre än för utbildning.</p>
-<p>Andelen med låg ekonomisk standard har varit relativt stabil, 16,0 procent 2012 och 14,8 procent 2024. Det gör att isoleringsindex och skillnaden mot genomsnittet kan jämföras direkt mellan åren.</p>
-<p>Mellan 2012 och 2017 blev gruppen mindre samlad. Bland de 100 närmaste grannarna minskade skillnaden mot stadens genomsnitt från 13,4 till 11,4 procentenheter, och minskningen syns i grannskap av alla storlekar. Förändringen skedde främst i de områden där andelen var allra högst. I Hjällbo, Östra Bergsjön, Norra Biskopsgården och Hammarkullen minskade andelen med låg ekonomisk standard med 7–11 procentenheter, medan den förändrades lite i övriga staden. De mest utsatta områdena har alltså närmat sig resten av staden.</p>
+<p>År 2024 hade 13,9 procent av Göteborgs invånare i åldern 25–64 år låg ekonomisk standard, det vill säga en disponibel inkomst per konsumtionsenhet under 60 procent av medianen i riket. Bland de 100 närmaste grannarna till en person med låg ekonomisk standard var andelen i genomsnitt 25,1 procent, nästan dubbelt så hög. Chansen att en slumpvis vald granne också har låg ekonomisk standard är alltså betydligt högre än om gruppen vore jämnt fördelad över staden.</p>
+<p>Jämfört med utbildning är mönstret mer lokalt. När grannskapet vidgas sjunker isoleringsindex snabbt. Redan vid de 1 600 närmaste grannarna har ungefär en tredjedel av skillnaden mot stadens genomsnitt försvunnit, och vid de 25 600 närmaste grannarna finns bara en tredjedel kvar. Låg ekonomisk standard är alltså tydligt koncentrerad till vissa kvarter och hus, medan skillnaderna mellan stadens större delar är mindre än för utbildning.</p>
+<p>Andelen med låg ekonomisk standard har varit relativt stabil, 15,0 procent 2012 och 13,9 procent 2024. Det gör att isoleringsindex och skillnaden mot genomsnittet kan jämföras direkt mellan åren.</p>
+<p>Mellan 2012 och 2017 blev gruppen mindre samlad. Bland de 100 närmaste grannarna minskade skillnaden mot stadens genomsnitt från 13,5 till 11,1 procentenheter, och minskningen syns i grannskap av alla storlekar. Förändringen skedde främst i de områden där andelen var allra högst. I Norra Biskopsgården, Östra Bergsjön, Hjällbo och Hammarkullen minskade andelen med låg ekonomisk standard bland de närmaste grannarna med 5–13 procentenheter, medan den i stort sett var oförändrad i övriga staden. De mest utsatta områdena har alltså närmat sig resten av staden.</p>
 <p>Mellan 2017 och 2024 har skillnaden legat i stort sett still. I diagrammet “Jämför åren” ligger kurvorna för 2017 och 2024 nästan ovanpå varandra, medan kurvan för 2012 ligger högre. Utvecklingen skiljer sig därmed från utbildning, där skillnaden ökade under samma period.</p>
 <section id="ek-knn-index" data-id-prefix="ek-" data-bundle="knnEkonomiData" data-slug="lag-ekonomisk-standard" class="knn-index-card" aria-labelledby="ek-knn-index-title">
   <div class="knn-index-heading"><h3 id="ek-knn-index-title" class="anchored">Isoleringsindex för låg ekonomisk standard</h3><div class="knn-index-actions"></div></div>
@@ -584,8 +651,8 @@ Komplettera med närmare måttdefinition, källa och tolkningsstöd.
   </div>
   <p class="knn-index-description"></p>
   <div id="ek-knn-index-panel" role="tabpanel" aria-labelledby="ek-knn-index-tab-raw"><div class="knn-index-plots"></div></div>
-  <p class="knn-index-hint">Peka eller tryck i diagrammet för värden. Med tangentbord: fokusera diagrammet och använd vänster/höger pil.</p>
-  <p class="knn-index-scale">Antal närmaste grannar, k. Varje steg fördubblar antalet grannar: 100–51 200.</p>
+  <p class="knn-index-hint">Peka eller tryck i diagrammet för värden. För att använda tangentbordet fokuserar du diagrammet och använder vänster/höger pil.</p>
+  <p class="knn-index-scale">Antal närmaste grannar, k. Varje steg fördubblar antalet grannar från 100 till 51 200.</p>
   <details class="knn-index-table"><summary>Visa diagrammets värden</summary><div class="knn-index-table-scroll">
 <table class="caption-top" data-quarto-postprocess="true">
 <caption>Isoleringsindex, genomsnitt och skillnad per år och k</caption>
@@ -608,9 +675,9 @@ Komplettera med närmare måttdefinition, källa och tolkningsstöd.
 </section>
 <section id="sec-knn-utrikesfodda" class="level2" data-number="5.4">
 <h2 data-number="5.4" class="anchored" data-anchor-id="sec-knn-utrikesfodda"><span class="header-section-number">5.4</span> Födda utanför Sverige</h2>
-<p>Vi använder samma definition av hög andel som för de andra grupperna: rutor där andelen utrikes födda bland de 100 närmaste grannarna är minst 1,5 gånger stadens genomsnitt samma år. År 2024 motsvarar det cirka 45 procent eller mer.</p>
-<p>Antalet rutor med hög andel har ökat från knappt 700 år 1997 till knappt 1 100 år 2024. Mer än hälften av dem har legat i nordost under hela perioden, trots att nordost bara har ungefär 15 procent av stadens befolkade rutor. Inom nordost har andelen rutor med hög andel ökat från en av fyra till en av tre. Andelen utrikes födda bland de närmaste grannarna är högst i Biskopsgården, Bergsjön, Gårdsten, Eriksbo, Hammarkullen och Hjällbo, där den i genomsnitt ligger mellan 56 och 62 procent.</p>
-<p>Mönstret syns tydligast i de stora grannskapen. År 2024 hade 85 procent av rutorna i nordost hög andel bland de 25 600 närmaste grannarna. På Hisingen gällde det knappt var femte ruta, och i centrala och sydvästra Göteborg nästan ingen.</p>
+<p>Precis som för de andra grupperna räknar vi en andel som hög i rutor där andelen utrikes födda bland de 100 närmaste grannarna är minst 1,5 gånger stadens genomsnitt samma år. År 2024 motsvarar det cirka 57 procent eller mer.</p>
+<p>Antalet rutor med hög andel har ökat från knappt 800 år 1997 till drygt 1 100 år 2024. Mer än hälften av dem har legat i nordost under hela perioden, trots att nordost bara har ungefär 15 procent av stadens befolkade rutor. Inom nordost har andelen rutor med hög andel ökat från ungefär en av tre till fyra av tio. Andelen utrikes födda bland de närmaste grannarna är högst i Bergsjön, Gårdsten, Biskopsgården, Hammarkullen, Eriksbo och Hjällbo, där den i genomsnitt ligger mellan 77 och 82 procent.</p>
+<p>Mönstret syns tydligast i de stora grannskapen. År 2024 hade 84 procent av rutorna i nordost hög andel bland de 25 600 närmaste grannarna. På Hisingen gällde det ungefär var sjätte ruta, och i centrala och sydvästra Göteborg nästan ingen.</p>
 <p>Under senare år har nya lokala koncentrationer vuxit fram på Hisingen, bland annat i Brunnsbo, Kvillebäcken, Backa och Skälltorp, samt kring Frölunda torg. Där är andelen hög bland de närmaste grannarna, men området som helhet ligger närmare stadens genomsnitt.</p>
 <!-- Resultatunderlag: data/rapport/df_ratio_utrikes.rds och data/rapport/isoleringsindex_utrikesfodd.rds. -->
 <div id="knn-utrikes" data-id-prefix="utr-" data-bundle="knnUtrikesData" data-label="födda utanför Sverige" data-slug="utrikesfodda" class="knn-widget" data-source="../data/rapport/knn-utrikesfodda/">
@@ -639,22 +706,22 @@ Komplettera med närmare måttdefinition, källa och tolkningsstöd.
   <p class="knn-caption">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p>
   </div>
 </div>
-<p>År 2024 var 29,7 procent av Göteborgs invånare födda utomlands. Bland de 100 närmaste grannarna till en utrikes född person var andelen utrikes födda i genomsnitt 42,4 procent. Chansen att en slumpvis vald granne också är född utomlands är alltså betydligt högre än om gruppen vore jämnt fördelad över staden.</p>
-<p>Det som utmärker utrikes födda är hur lite andelen sjunker när grannskapet vidgas. Bland de 25 600 närmaste grannarna, ett grannskap som motsvarar ungefär en stadsdel, är andelen fortfarande 39,2 procent, och tre fjärdedelar av skillnaden mot stadens genomsnitt finns kvar. Utrikes födda bor alltså inte främst samlat i enskilda kvarter eller hus, utan i stora, sammanhängande delar av staden.</p>
-<p>Andelen utrikes födda har ökat kraftigt, från 17,9 procent 1997 till 29,7 procent 2024. När gruppen växer ökar isoleringsindex av sig självt, eftersom alla får fler utrikes födda grannar. För att se om gruppen bor mer eller mindre samlat jämför vi därför med stadens genomsnitt.</p>
-<p>Bland de 100 närmaste grannarna har skillnaden mot genomsnittet legat på ungefär samma nivå under hela perioden, 13,6 procentenheter 1997 och 12,7 procentenheter 2024. I de stora grannskapen har skillnaden däremot ökat, från 7,3 till 9,5 procentenheter bland de 25 600 närmaste grannarna. Ökningen skedde främst fram till 2012. I diagrammet “Jämför åren” syns det genom att kurvorna för de senare åren ligger högre till höger men nära varandra till vänster.</p>
-<p>Den närmaste boendemiljön har alltså inte blivit mer segregerad, men skillnaden mellan stadens större delar har blivit tydligare.</p>
+<p>År 2024 var 38,1 procent av Göteborgs invånare i åldern 25–64 år födda utomlands. Bland de 100 närmaste grannarna till en utrikes född person var andelen utrikes födda i genomsnitt 53,6 procent. Chansen att en slumpvis vald granne också är född utomlands är alltså betydligt högre än om gruppen vore jämnt fördelad över staden.</p>
+<p>Det som utmärker utrikes födda är hur lite andelen sjunker när grannskapet vidgas. Bland de 25 600 närmaste grannarna, ett grannskap som motsvarar ungefär en stadsdel, är andelen fortfarande 48,1 procent, och knappt två tredjedelar av skillnaden mot stadens genomsnitt finns kvar. Utrikes födda bor alltså inte främst samlat i enskilda kvarter eller hus, utan i stora, sammanhängande delar av staden.</p>
+<p>Andelen utrikes födda har ökat kraftigt, från 23,2 procent 1997 till 38,1 procent 2024. När gruppen växer ökar isoleringsindex av sig självt, eftersom alla får fler utrikes födda grannar. För att se om gruppen bor mer eller mindre samlat jämför vi därför med stadens genomsnitt.</p>
+<p>Fram till 2012 ökade skillnaden mot genomsnittet i grannskap av alla storlekar. Bland de 100 närmaste grannarna ökade den från 17,4 till 18,6 procentenheter och bland de 25 600 närmaste grannarna från 8,9 till 11,0 procentenheter. Därefter har utvecklingen vänt. Bland de 100 närmaste grannarna har skillnaden minskat till 15,6 procentenheter 2024, medan den i de stora grannskapen har legat i stort sett still på 10,0 procentenheter. I diagrammet “Jämför åren” ligger kurvan för 2024 under kurvan för 2012 till vänster, men kurvorna närmar sig varandra till höger.</p>
+<p>En del av minskningen beror på att gruppen har vuxit. När mer än var tredje invånare är utrikes född finns det mindre utrymme att ligga över genomsnittet. Men inte heller med ett mått som tar hänsyn till gruppens storlek har segregationen ökat sedan 2012. Den närmaste boendemiljön har alltså blivit något mindre segregerad, medan uppdelningen mellan stadens större delar ligger kvar på samma nivå som för drygt tio år sedan.</p>
 <section id="utr-knn-index" data-id-prefix="utr-" data-bundle="knnUtrikesData" data-slug="utrikesfodda" class="knn-index-card" aria-labelledby="utr-knn-index-title">
   <div class="knn-index-heading"><h3 id="utr-knn-index-title" class="anchored">Isoleringsindex för personer födda utanför Sverige</h3><div class="knn-index-actions"></div></div>
-  <p class="knn-index-subtitle">Göteborg · 1997–2024</p>
+  <p class="knn-index-subtitle">Göteborg · 25–64 år · 1997–2024</p>
   <div class="knn-index-tabs" role="tablist" aria-label="Visning av isoleringsindex">
     <button type="button" role="tab" id="utr-knn-index-tab-raw" aria-controls="utr-knn-index-panel" aria-selected="true" data-view="raw">Index och genomsnitt</button>
     <button type="button" role="tab" id="utr-knn-index-tab-gap" aria-controls="utr-knn-index-panel" aria-selected="false" tabindex="-1" data-view="gap">Jämför åren</button>
   </div>
   <p class="knn-index-description"></p>
   <div id="utr-knn-index-panel" role="tabpanel" aria-labelledby="utr-knn-index-tab-raw"><div class="knn-index-plots"></div></div>
-  <p class="knn-index-hint">Peka eller tryck i diagrammet för värden. Med tangentbord: fokusera diagrammet och använd vänster/höger pil.</p>
-  <p class="knn-index-scale">Antal närmaste grannar, k. Varje steg fördubblar antalet grannar: 100–51 200.</p>
+  <p class="knn-index-hint">Peka eller tryck i diagrammet för värden. För att använda tangentbordet fokuserar du diagrammet och använder vänster/höger pil.</p>
+  <p class="knn-index-scale">Antal närmaste grannar, k. Varje steg fördubblar antalet grannar från 100 till 51 200.</p>
   <details class="knn-index-table"><summary>Visa diagrammets värden</summary><div class="knn-index-table-scroll">
 <table class="caption-top" data-quarto-postprocess="true">
 <caption>Isoleringsindex, genomsnitt och skillnad per år och k</caption>
@@ -677,9 +744,9 @@ Komplettera med närmare måttdefinition, källa och tolkningsstöd.
 </section>
 <section id="sec-knn-fodda-utanfor-europa" class="level2" data-number="5.5">
 <h2 data-number="5.5" class="anchored" data-anchor-id="sec-knn-fodda-utanfor-europa"><span class="header-section-number">5.5</span> Födda utanför Europa</h2>
-<p>Med samma definition av hög andel (minst 1,5 gånger stadens genomsnitt, år 2024 cirka 28 procent eller mer) har antalet rutor med hög andel ökat från cirka 640 år 1997 till cirka 1 000 år 2024. Andelen av dem som ligger i nordost har ökat från knappt hälften till knappt sex av tio, medan andelen i centrala och sydvästra Göteborg har minskat från drygt var femte till ungefär var åttonde.</p>
-<p>Andelen födda utanför Europa bland de närmaste grannarna är högst i Östra Bergsjön, Eriksbo, Hjällbo och Hammarkullen, med drygt 40 procent. Den största ökningen har skett i områden som tidigare hade en lägre andel, till exempel Rannebergen och Eriksbo.</p>
-<p>I de stora grannskapen har 87 procent av rutorna i nordost hög andel. På Hisingen gäller det var sjunde ruta, och i centrala och sydvästra Göteborg ett fåtal. Precis som för utrikes födda som helhet har nya lokala koncentrationer vuxit fram i Brunnsbo, Kvillebäcken, Backa och Skälltorp samt kring Frölunda torg, där andelen ökat från 13 till 39 procent sedan 1997.</p>
+<p>Med samma definition av hög andel (minst 1,5 gånger stadens genomsnitt, år 2024 cirka 37 procent eller mer) har antalet rutor med hög andel ökat från drygt 650 år 1997 till drygt 1 050 år 2024. Andelen av dem som ligger i nordost har ökat från hälften till sex av tio, medan andelen i centrala och sydvästra Göteborg har minskat från knappt var femte till ungefär var åttonde.</p>
+<p>Andelen födda utanför Europa bland de närmaste grannarna är högst i Hammarkullen, Eriksbo, Östra Bergsjön och Hjällbo, med drygt 60 procent. Den största ökningen har skett i områden som tidigare hade en lägre andel, till exempel Rannebergen, Eriksbo och Linnarhult.</p>
+<p>I de stora grannskapen har 89 procent av rutorna i nordost hög andel. På Hisingen gäller det ungefär var sjätte ruta, och i centrala och sydvästra Göteborg nästan ingen. Precis som för utrikes födda som helhet har nya lokala koncentrationer vuxit fram i Brunnsbo, Kvillebäcken, Backa och Skälltorp samt kring Frölunda torg, där andelen ökat från 17 till 50 procent sedan 1997.</p>
 <!-- Resultatunderlag: data/rapport/df_ratio_utrikes_europa.rds och data/rapport/isoleringsindex_utrikesfodd_europa.rds. -->
 <div id="knn-europa" data-id-prefix="eur-" data-bundle="knnEuropaData" data-label="födda utanför Europa" data-slug="fodda-utanfor-europa" class="knn-widget" data-source="../data/rapport/knn-fodda-utanfor-europa/">
   <div class="knn-map-card">
@@ -707,22 +774,22 @@ Komplettera med närmare måttdefinition, källa och tolkningsstöd.
   <p class="knn-caption">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p>
   </div>
 </div>
-<p>År 2024 var 18,5 procent av Göteborgs invånare födda utanför Europa. Bland de 100 närmaste grannarna till en person född utanför Europa var andelen i genomsnitt 31,5 procent, ungefär 1,7 gånger så hög som i staden som helhet.</p>
-<p>Även här ligger andelen kvar när grannskapet vidgas. Bland de 25 600 närmaste grannarna är den 26,9 procent, och ungefär två tredjedelar av skillnaden mot stadens genomsnitt finns kvar. Det är alltså stora delar av staden som skiljer sig åt, inte bara enskilda kvarter.</p>
-<p>Andelen födda utanför Europa har mer än fördubblats, från 7,5 procent 1997 till 18,5 procent 2024.</p>
-<p>Bland de 100 närmaste grannarna har skillnaden mot stadens genomsnitt legat kring 12–13 procentenheter under hela perioden. I de stora grannskapen har den däremot fördubblats, från 4,2 till 8,4 procentenheter bland de 25 600 närmaste grannarna. Ökningen har pågått under hela perioden. Mellan 2017 och 2024 ökade skillnaden dessutom i grannskap av alla storlekar.</p>
-<p>Personer födda utanför Europa har alltså i allt högre grad kommit att bo i samma delar av staden. År 1997 var koncentrationen mer lokal, i dag omfattar den i högre grad hela stadsdelar.</p>
+<p>År 2024 var 24,7 procent av Göteborgs invånare i åldern 25–64 år födda utanför Europa. Bland de 100 närmaste grannarna till en person född utanför Europa var andelen i genomsnitt 40,9 procent, ungefär 1,7 gånger så hög som i staden som helhet.</p>
+<p>Även här ligger andelen kvar när grannskapet vidgas. Bland de 25 600 närmaste grannarna är den 34,1 procent, och knappt sex av tio av skillnaden mot stadens genomsnitt finns kvar. Det är alltså stora delar av staden som skiljer sig åt, inte bara enskilda kvarter.</p>
+<p>Andelen födda utanför Europa har nästan tredubblats, från 9,3 procent 1997 till 24,7 procent 2024.</p>
+<p>Bland de 100 närmaste grannarna har skillnaden mot stadens genomsnitt legat kring 16 procentenheter under hela perioden. I de stora grannskapen har den däremot ungefär fördubblats, från 4,7 till 9,3 procentenheter bland de 25 600 närmaste grannarna. Ökningen har pågått under hela perioden. Mellan 2017 och 2024 ökade skillnaden dessutom i grannskap av alla storlekar, men bland de närmaste grannarna bara marginellt.</p>
+<p>Personer födda utanför Europa har alltså i allt högre grad kommit att bo i samma delar av staden. År 1997 var koncentrationen mer lokal, i dag omfattar den i högre grad hela stadsdelar. Utvecklingen skiljer sig därmed från utrikes födda som helhet, där segregationen inte har ökat sedan 2012.</p>
 <section id="eur-knn-index" data-id-prefix="eur-" data-bundle="knnEuropaData" data-slug="fodda-utanfor-europa" class="knn-index-card" aria-labelledby="eur-knn-index-title">
   <div class="knn-index-heading"><h3 id="eur-knn-index-title" class="anchored">Isoleringsindex för personer födda utanför Europa</h3><div class="knn-index-actions"></div></div>
-  <p class="knn-index-subtitle">Göteborg · 1997–2024</p>
+  <p class="knn-index-subtitle">Göteborg · 25–64 år · 1997–2024</p>
   <div class="knn-index-tabs" role="tablist" aria-label="Visning av isoleringsindex">
     <button type="button" role="tab" id="eur-knn-index-tab-raw" aria-controls="eur-knn-index-panel" aria-selected="true" data-view="raw">Index och genomsnitt</button>
     <button type="button" role="tab" id="eur-knn-index-tab-gap" aria-controls="eur-knn-index-panel" aria-selected="false" tabindex="-1" data-view="gap">Jämför åren</button>
   </div>
   <p class="knn-index-description"></p>
   <div id="eur-knn-index-panel" role="tabpanel" aria-labelledby="eur-knn-index-tab-raw"><div class="knn-index-plots"></div></div>
-  <p class="knn-index-hint">Peka eller tryck i diagrammet för värden. Med tangentbord: fokusera diagrammet och använd vänster/höger pil.</p>
-  <p class="knn-index-scale">Antal närmaste grannar, k. Varje steg fördubblar antalet grannar: 100–51 200.</p>
+  <p class="knn-index-hint">Peka eller tryck i diagrammet för värden. För att använda tangentbordet fokuserar du diagrammet och använder vänster/höger pil.</p>
+  <p class="knn-index-scale">Antal närmaste grannar, k. Varje steg fördubblar antalet grannar från 100 till 51 200.</p>
   <details class="knn-index-table"><summary>Visa diagrammets värden</summary><div class="knn-index-table-scroll">
 <table class="caption-top" data-quarto-postprocess="true">
 <caption>Isoleringsindex, genomsnitt och skillnad per år och k</caption>
@@ -1184,13 +1251,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../kapitel/04-lyckoparadoxen.html#sec-lycko-omraden" class="pagination-link" aria-label="4.4 Exempel på enskilda områden">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">4.4 Exempel på enskilda områden</span>
+      <a href="../kapitel/04-lyckoparadoxen.html#sec-lycko-paradox" class="pagination-link" aria-label="4.6 Lyckoparadoxen">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">4.6 Lyckoparadoxen</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../kapitel/05-k-narmsta-granne.html#sec-knn-utbildning" class="pagination-link" aria-label="5.1 Förgymnasial utbildning">
-        <span class="nav-page-text">5.1 Förgymnasial utbildning</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../kapitel/05-k-narmsta-granne.html#sec-knn-sammanfattning" class="pagination-link" aria-label="5.1 Sammanfattning">
+        <span class="nav-page-text">5.1 Sammanfattning</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

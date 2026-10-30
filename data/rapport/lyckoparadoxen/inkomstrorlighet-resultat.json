@@ -1,0 +1,2557 @@
+{
+  "lines": [
+    {
+      "year": 2004,
+      "group": 1,
+      "decil": 1,
+      "count": 6123,
+      "population": 35251,
+      "percent": 17.369720007943037
+    },
+    {
+      "year": 2004,
+      "group": 1,
+      "decil": 10,
+      "count": 726,
+      "population": 35251,
+      "percent": 2.0595160420980965
+    },
+    {
+      "year": 2005,
+      "group": 1,
+      "decil": 1,
+      "count": 6429,
+      "population": 35266,
+      "percent": 18.230023251857315
+    },
+    {
+      "year": 2005,
+      "group": 1,
+      "decil": 10,
+      "count": 674,
+      "population": 35266,
+      "percent": 1.9111892474337888
+    },
+    {
+      "year": 2006,
+      "group": 1,
+      "decil": 1,
+      "count": 6897,
+      "population": 35840,
+      "percent": 19.243861607142858
+    },
+    {
+      "year": 2006,
+      "group": 1,
+      "decil": 10,
+      "count": 608,
+      "population": 35840,
+      "percent": 1.6964285714285714
+    },
+    {
+      "year": 2007,
+      "group": 1,
+      "decil": 1,
+      "count": 7167,
+      "population": 35921,
+      "percent": 19.95211714595919
+    },
+    {
+      "year": 2007,
+      "group": 1,
+      "decil": 10,
+      "count": 528,
+      "population": 35921,
+      "percent": 1.4698922635784082
+    },
+    {
+      "year": 2008,
+      "group": 1,
+      "decil": 1,
+      "count": 7017,
+      "population": 36065,
+      "percent": 19.456536808540136
+    },
+    {
+      "year": 2008,
+      "group": 1,
+      "decil": 10,
+      "count": 509,
+      "population": 36065,
+      "percent": 1.4113406349646471
+    },
+    {
+      "year": 2009,
+      "group": 1,
+      "decil": 1,
+      "count": 7093,
+      "population": 36533,
+      "percent": 19.415323132510334
+    },
+    {
+      "year": 2009,
+      "group": 1,
+      "decil": 10,
+      "count": 499,
+      "population": 36533,
+      "percent": 1.3658883748939314
+    },
+    {
+      "year": 2010,
+      "group": 1,
+      "decil": 1,
+      "count": 7311,
+      "population": 37126,
+      "percent": 19.69239885794322
+    },
+    {
+      "year": 2010,
+      "group": 1,
+      "decil": 10,
+      "count": 462,
+      "population": 37126,
+      "percent": 1.2444109249582502
+    },
+    {
+      "year": 2011,
+      "group": 1,
+      "decil": 1,
+      "count": 7413,
+      "population": 37774,
+      "percent": 19.624609519775507
+    },
+    {
+      "year": 2011,
+      "group": 1,
+      "decil": 10,
+      "count": 435,
+      "population": 37774,
+      "percent": 1.151585746809975
+    },
+    {
+      "year": 2012,
+      "group": 1,
+      "decil": 1,
+      "count": 7426,
+      "population": 38005,
+      "percent": 19.539534271806343
+    },
+    {
+      "year": 2012,
+      "group": 1,
+      "decil": 10,
+      "count": 424,
+      "population": 38005,
+      "percent": 1.1156426785949216
+    },
+    {
+      "year": 2013,
+      "group": 1,
+      "decil": 1,
+      "count": 6989,
+      "population": 38035,
+      "percent": 18.37518075456816
+    },
+    {
+      "year": 2013,
+      "group": 1,
+      "decil": 10,
+      "count": 418,
+      "population": 38035,
+      "percent": 1.098987774418299
+    },
+    {
+      "year": 2014,
+      "group": 1,
+      "decil": 1,
+      "count": 7179,
+      "population": 38318,
+      "percent": 18.735320215042538
+    },
+    {
+      "year": 2014,
+      "group": 1,
+      "decil": 10,
+      "count": 418,
+      "population": 38318,
+      "percent": 1.09087113106112
+    },
+    {
+      "year": 2015,
+      "group": 1,
+      "decil": 1,
+      "count": 7214,
+      "population": 38703,
+      "percent": 18.639381960054777
+    },
+    {
+      "year": 2015,
+      "group": 1,
+      "decil": 10,
+      "count": 459,
+      "population": 38703,
+      "percent": 1.185954577164561
+    },
+    {
+      "year": 2016,
+      "group": 1,
+      "decil": 1,
+      "count": 7264,
+      "population": 39099,
+      "percent": 18.578480268037545
+    },
+    {
+      "year": 2016,
+      "group": 1,
+      "decil": 10,
+      "count": 532,
+      "population": 39099,
+      "percent": 1.360648609938873
+    },
+    {
+      "year": 2017,
+      "group": 1,
+      "decil": 1,
+      "count": 7417,
+      "population": 39804,
+      "percent": 18.6338056476736
+    },
+    {
+      "year": 2017,
+      "group": 1,
+      "decil": 10,
+      "count": 516,
+      "population": 39804,
+      "percent": 1.2963521254145312
+    },
+    {
+      "year": 2018,
+      "group": 1,
+      "decil": 1,
+      "count": 7806,
+      "population": 40505,
+      "percent": 19.271694852487347
+    },
+    {
+      "year": 2018,
+      "group": 1,
+      "decil": 10,
+      "count": 504,
+      "population": 40505,
+      "percent": 1.2442908282928034
+    },
+    {
+      "year": 2019,
+      "group": 1,
+      "decil": 1,
+      "count": 8041,
+      "population": 40965,
+      "percent": 19.628951544000977
+    },
+    {
+      "year": 2019,
+      "group": 1,
+      "decil": 10,
+      "count": 490,
+      "population": 40965,
+      "percent": 1.1961430489442206
+    },
+    {
+      "year": 2020,
+      "group": 1,
+      "decil": 1,
+      "count": 8568,
+      "population": 40867,
+      "percent": 20.96557124330144
+    },
+    {
+      "year": 2020,
+      "group": 1,
+      "decil": 10,
+      "count": 481,
+      "population": 40867,
+      "percent": 1.1769887684439768
+    },
+    {
+      "year": 2021,
+      "group": 1,
+      "decil": 1,
+      "count": 8342,
+      "population": 40438,
+      "percent": 20.629111232009496
+    },
+    {
+      "year": 2021,
+      "group": 1,
+      "decil": 10,
+      "count": 470,
+      "population": 40438,
+      "percent": 1.162273109451506
+    },
+    {
+      "year": 2022,
+      "group": 1,
+      "decil": 1,
+      "count": 8279,
+      "population": 40983,
+      "percent": 20.20105897567284
+    },
+    {
+      "year": 2022,
+      "group": 1,
+      "decil": 10,
+      "count": 469,
+      "population": 40983,
+      "percent": 1.1443769367786643
+    },
+    {
+      "year": 2023,
+      "group": 1,
+      "decil": 1,
+      "count": 8517,
+      "population": 41278,
+      "percent": 20.633267115654828
+    },
+    {
+      "year": 2023,
+      "group": 1,
+      "decil": 10,
+      "count": 398,
+      "population": 41278,
+      "percent": 0.9641940016473667
+    },
+    {
+      "year": 2024,
+      "group": 1,
+      "decil": 1,
+      "count": 8688,
+      "population": 41358,
+      "percent": 21.00681851153344
+    },
+    {
+      "year": 2024,
+      "group": 1,
+      "decil": 10,
+      "count": 394,
+      "population": 41358,
+      "percent": 0.9526572851685284
+    },
+    {
+      "year": 2004,
+      "group": 2,
+      "decil": 1,
+      "count": 5202,
+      "population": 37976,
+      "percent": 13.698125131662103
+    },
+    {
+      "year": 2004,
+      "group": 2,
+      "decil": 10,
+      "count": 1434,
+      "population": 37976,
+      "percent": 3.7760690962713293
+    },
+    {
+      "year": 2005,
+      "group": 2,
+      "decil": 1,
+      "count": 5398,
+      "population": 38442,
+      "percent": 14.041933302117476
+    },
+    {
+      "year": 2005,
+      "group": 2,
+      "decil": 10,
+      "count": 1312,
+      "population": 38442,
+      "percent": 3.4129337703553406
+    },
+    {
+      "year": 2006,
+      "group": 2,
+      "decil": 1,
+      "count": 5737,
+      "population": 39091,
+      "percent": 14.676012381366554
+    },
+    {
+      "year": 2006,
+      "group": 2,
+      "decil": 10,
+      "count": 1252,
+      "population": 39091,
+      "percent": 3.2027832493412807
+    },
+    {
+      "year": 2007,
+      "group": 2,
+      "decil": 1,
+      "count": 5808,
+      "population": 39211,
+      "percent": 14.812170054321491
+    },
+    {
+      "year": 2007,
+      "group": 2,
+      "decil": 10,
+      "count": 1207,
+      "population": 39211,
+      "percent": 3.0782178470327204
+    },
+    {
+      "year": 2008,
+      "group": 2,
+      "decil": 1,
+      "count": 6044,
+      "population": 39738,
+      "percent": 15.20962303085208
+    },
+    {
+      "year": 2008,
+      "group": 2,
+      "decil": 10,
+      "count": 1199,
+      "population": 39738,
+      "percent": 3.017263073128995
+    },
+    {
+      "year": 2009,
+      "group": 2,
+      "decil": 1,
+      "count": 6083,
+      "population": 39986,
+      "percent": 15.212824488571
+    },
+    {
+      "year": 2009,
+      "group": 2,
+      "decil": 10,
+      "count": 1124,
+      "population": 39986,
+      "percent": 2.810983844345521
+    },
+    {
+      "year": 2010,
+      "group": 2,
+      "decil": 1,
+      "count": 6087,
+      "population": 40405,
+      "percent": 15.064967207028833
+    },
+    {
+      "year": 2010,
+      "group": 2,
+      "decil": 10,
+      "count": 1076,
+      "population": 40405,
+      "percent": 2.6630367528771193
+    },
+    {
+      "year": 2011,
+      "group": 2,
+      "decil": 1,
+      "count": 6377,
+      "population": 41009,
+      "percent": 15.550245068155771
+    },
+    {
+      "year": 2011,
+      "group": 2,
+      "decil": 10,
+      "count": 1089,
+      "population": 41009,
+      "percent": 2.6555146431271184
+    },
+    {
+      "year": 2012,
+      "group": 2,
+      "decil": 1,
+      "count": 6365,
+      "population": 41549,
+      "percent": 15.319261594743557
+    },
+    {
+      "year": 2012,
+      "group": 2,
+      "decil": 10,
+      "count": 1109,
+      "population": 41549,
+      "percent": 2.669137644708657
+    },
+    {
+      "year": 2013,
+      "group": 2,
+      "decil": 1,
+      "count": 6364,
+      "population": 41954,
+      "percent": 15.168994613147733
+    },
+    {
+      "year": 2013,
+      "group": 2,
+      "decil": 10,
+      "count": 1120,
+      "population": 41954,
+      "percent": 2.6695905038852077
+    },
+    {
+      "year": 2014,
+      "group": 2,
+      "decil": 1,
+      "count": 6453,
+      "population": 42492,
+      "percent": 15.186388025981362
+    },
+    {
+      "year": 2014,
+      "group": 2,
+      "decil": 10,
+      "count": 1145,
+      "population": 42492,
+      "percent": 2.694624870563871
+    },
+    {
+      "year": 2015,
+      "group": 2,
+      "decil": 1,
+      "count": 6415,
+      "population": 42963,
+      "percent": 14.931452645299444
+    },
+    {
+      "year": 2015,
+      "group": 2,
+      "decil": 10,
+      "count": 1182,
+      "population": 42963,
+      "percent": 2.7512045248236854
+    },
+    {
+      "year": 2016,
+      "group": 2,
+      "decil": 1,
+      "count": 6530,
+      "population": 43880,
+      "percent": 14.881494986326345
+    },
+    {
+      "year": 2016,
+      "group": 2,
+      "decil": 10,
+      "count": 1297,
+      "population": 43880,
+      "percent": 2.955788514129444
+    },
+    {
+      "year": 2017,
+      "group": 2,
+      "decil": 1,
+      "count": 6759,
+      "population": 44693,
+      "percent": 15.123173651354799
+    },
+    {
+      "year": 2017,
+      "group": 2,
+      "decil": 10,
+      "count": 1230,
+      "population": 44693,
+      "percent": 2.7521088313606157
+    },
+    {
+      "year": 2018,
+      "group": 2,
+      "decil": 1,
+      "count": 6926,
+      "population": 45538,
+      "percent": 15.209275769686855
+    },
+    {
+      "year": 2018,
+      "group": 2,
+      "decil": 10,
+      "count": 1282,
+      "population": 45538,
+      "percent": 2.815231235451711
+    },
+    {
+      "year": 2019,
+      "group": 2,
+      "decil": 1,
+      "count": 7035,
+      "population": 46458,
+      "percent": 15.142709544104353
+    },
+    {
+      "year": 2019,
+      "group": 2,
+      "decil": 10,
+      "count": 1281,
+      "population": 46458,
+      "percent": 2.7573292005682553
+    },
+    {
+      "year": 2020,
+      "group": 2,
+      "decil": 1,
+      "count": 7673,
+      "population": 46394,
+      "percent": 16.53877656593525
+    },
+    {
+      "year": 2020,
+      "group": 2,
+      "decil": 10,
+      "count": 1273,
+      "population": 46394,
+      "percent": 2.743889296029659
+    },
+    {
+      "year": 2021,
+      "group": 2,
+      "decil": 1,
+      "count": 7804,
+      "population": 46988,
+      "percent": 16.60849578615817
+    },
+    {
+      "year": 2021,
+      "group": 2,
+      "decil": 10,
+      "count": 1321,
+      "population": 46988,
+      "percent": 2.81135609091683
+    },
+    {
+      "year": 2022,
+      "group": 2,
+      "decil": 1,
+      "count": 7706,
+      "population": 47770,
+      "percent": 16.131463261461167
+    },
+    {
+      "year": 2022,
+      "group": 2,
+      "decil": 10,
+      "count": 1263,
+      "population": 47770,
+      "percent": 2.643918777475403
+    },
+    {
+      "year": 2023,
+      "group": 2,
+      "decil": 1,
+      "count": 7912,
+      "population": 48703,
+      "percent": 16.24540582715644
+    },
+    {
+      "year": 2023,
+      "group": 2,
+      "decil": 10,
+      "count": 1336,
+      "population": 48703,
+      "percent": 2.743157505697801
+    },
+    {
+      "year": 2024,
+      "group": 2,
+      "decil": 1,
+      "count": 8226,
+      "population": 49912,
+      "percent": 16.481006571565956
+    },
+    {
+      "year": 2024,
+      "group": 2,
+      "decil": 10,
+      "count": 1363,
+      "population": 49912,
+      "percent": 2.730806218945344
+    },
+    {
+      "year": 2004,
+      "group": 3,
+      "decil": 1,
+      "count": 15412,
+      "population": 131465,
+      "percent": 11.723272353858441
+    },
+    {
+      "year": 2004,
+      "group": 3,
+      "decil": 10,
+      "count": 9729,
+      "population": 131465,
+      "percent": 7.400448788650972
+    },
+    {
+      "year": 2005,
+      "group": 3,
+      "decil": 1,
+      "count": 15881,
+      "population": 133348,
+      "percent": 11.909439961604223
+    },
+    {
+      "year": 2005,
+      "group": 3,
+      "decil": 10,
+      "count": 9722,
+      "population": 133348,
+      "percent": 7.290698023217446
+    },
+    {
+      "year": 2006,
+      "group": 3,
+      "decil": 1,
+      "count": 15646,
+      "population": 134850,
+      "percent": 11.602521319985168
+    },
+    {
+      "year": 2006,
+      "group": 3,
+      "decil": 10,
+      "count": 9657,
+      "population": 134850,
+      "percent": 7.161290322580645
+    },
+    {
+      "year": 2007,
+      "group": 3,
+      "decil": 1,
+      "count": 15246,
+      "population": 136223,
+      "percent": 11.191942623492361
+    },
+    {
+      "year": 2007,
+      "group": 3,
+      "decil": 10,
+      "count": 9644,
+      "population": 136223,
+      "percent": 7.079568061193778
+    },
+    {
+      "year": 2008,
+      "group": 3,
+      "decil": 1,
+      "count": 15430,
+      "population": 138175,
+      "percent": 11.166998371630179
+    },
+    {
+      "year": 2008,
+      "group": 3,
+      "decil": 10,
+      "count": 9676,
+      "population": 138175,
+      "percent": 7.002713949701466
+    },
+    {
+      "year": 2009,
+      "group": 3,
+      "decil": 1,
+      "count": 16093,
+      "population": 140699,
+      "percent": 11.437892238040071
+    },
+    {
+      "year": 2009,
+      "group": 3,
+      "decil": 10,
+      "count": 9429,
+      "population": 140699,
+      "percent": 6.701540167307515
+    },
+    {
+      "year": 2010,
+      "group": 3,
+      "decil": 1,
+      "count": 16352,
+      "population": 143053,
+      "percent": 11.430728471265894
+    },
+    {
+      "year": 2010,
+      "group": 3,
+      "decil": 10,
+      "count": 9495,
+      "population": 143053,
+      "percent": 6.637400124429408
+    },
+    {
+      "year": 2011,
+      "group": 3,
+      "decil": 1,
+      "count": 16251,
+      "population": 145097,
+      "percent": 11.200093730401042
+    },
+    {
+      "year": 2011,
+      "group": 3,
+      "decil": 10,
+      "count": 9482,
+      "population": 145097,
+      "percent": 6.534938696182554
+    },
+    {
+      "year": 2012,
+      "group": 3,
+      "decil": 1,
+      "count": 15160,
+      "population": 146080,
+      "percent": 10.377875136911282
+    },
+    {
+      "year": 2012,
+      "group": 3,
+      "decil": 10,
+      "count": 9720,
+      "population": 146080,
+      "percent": 6.6538882803943045
+    },
+    {
+      "year": 2013,
+      "group": 3,
+      "decil": 1,
+      "count": 15420,
+      "population": 148114,
+      "percent": 10.410899712383705
+    },
+    {
+      "year": 2013,
+      "group": 3,
+      "decil": 10,
+      "count": 9837,
+      "population": 148114,
+      "percent": 6.641505867102367
+    },
+    {
+      "year": 2014,
+      "group": 3,
+      "decil": 1,
+      "count": 15785,
+      "population": 150791,
+      "percent": 10.468131387151754
+    },
+    {
+      "year": 2014,
+      "group": 3,
+      "decil": 10,
+      "count": 10181,
+      "population": 150791,
+      "percent": 6.751729214608299
+    },
+    {
+      "year": 2015,
+      "group": 3,
+      "decil": 1,
+      "count": 15588,
+      "population": 152675,
+      "percent": 10.209923039135418
+    },
+    {
+      "year": 2015,
+      "group": 3,
+      "decil": 10,
+      "count": 10346,
+      "population": 152675,
+      "percent": 6.776485999672507
+    },
+    {
+      "year": 2016,
+      "group": 3,
+      "decil": 1,
+      "count": 15493,
+      "population": 154841,
+      "percent": 10.005747831646657
+    },
+    {
+      "year": 2016,
+      "group": 3,
+      "decil": 10,
+      "count": 10645,
+      "population": 154841,
+      "percent": 6.874794143669958
+    },
+    {
+      "year": 2017,
+      "group": 3,
+      "decil": 1,
+      "count": 16136,
+      "population": 156856,
+      "percent": 10.287142347120927
+    },
+    {
+      "year": 2017,
+      "group": 3,
+      "decil": 10,
+      "count": 10593,
+      "population": 156856,
+      "percent": 6.753327893099403
+    },
+    {
+      "year": 2018,
+      "group": 3,
+      "decil": 1,
+      "count": 16451,
+      "population": 158486,
+      "percent": 10.380096664689626
+    },
+    {
+      "year": 2018,
+      "group": 3,
+      "decil": 10,
+      "count": 10668,
+      "population": 158486,
+      "percent": 6.731193922491577
+    },
+    {
+      "year": 2019,
+      "group": 3,
+      "decil": 1,
+      "count": 16945,
+      "population": 160665,
+      "percent": 10.54678990445959
+    },
+    {
+      "year": 2019,
+      "group": 3,
+      "decil": 10,
+      "count": 10694,
+      "population": 160665,
+      "percent": 6.6560856440419505
+    },
+    {
+      "year": 2020,
+      "group": 3,
+      "decil": 1,
+      "count": 17842,
+      "population": 162377,
+      "percent": 10.98800938556569
+    },
+    {
+      "year": 2020,
+      "group": 3,
+      "decil": 10,
+      "count": 10326,
+      "population": 162377,
+      "percent": 6.359275020477038
+    },
+    {
+      "year": 2021,
+      "group": 3,
+      "decil": 1,
+      "count": 17593,
+      "population": 164706,
+      "percent": 10.68145665610239
+    },
+    {
+      "year": 2021,
+      "group": 3,
+      "decil": 10,
+      "count": 10594,
+      "population": 164706,
+      "percent": 6.432066834237975
+    },
+    {
+      "year": 2022,
+      "group": 3,
+      "decil": 1,
+      "count": 18203,
+      "population": 169254,
+      "percent": 10.754841835348056
+    },
+    {
+      "year": 2022,
+      "group": 3,
+      "decil": 10,
+      "count": 10587,
+      "population": 169254,
+      "percent": 6.255095891382183
+    },
+    {
+      "year": 2023,
+      "group": 3,
+      "decil": 1,
+      "count": 18174,
+      "population": 171994,
+      "percent": 10.56664767375606
+    },
+    {
+      "year": 2023,
+      "group": 3,
+      "decil": 10,
+      "count": 10419,
+      "population": 171994,
+      "percent": 6.057769457074084
+    },
+    {
+      "year": 2024,
+      "group": 3,
+      "decil": 1,
+      "count": 18155,
+      "population": 173536,
+      "percent": 10.461806195832565
+    },
+    {
+      "year": 2024,
+      "group": 3,
+      "decil": 10,
+      "count": 10965,
+      "population": 173536,
+      "percent": 6.318573667711599
+    },
+    {
+      "year": 2004,
+      "group": 4,
+      "decil": 1,
+      "count": 1285,
+      "population": 18646,
+      "percent": 6.891558511208839
+    },
+    {
+      "year": 2004,
+      "group": 4,
+      "decil": 10,
+      "count": 2345,
+      "population": 18646,
+      "percent": 12.576423897886947
+    },
+    {
+      "year": 2005,
+      "group": 4,
+      "decil": 1,
+      "count": 1265,
+      "population": 19001,
+      "percent": 6.657544339771591
+    },
+    {
+      "year": 2005,
+      "group": 4,
+      "decil": 10,
+      "count": 2369,
+      "population": 19001,
+      "percent": 12.467764854481343
+    },
+    {
+      "year": 2006,
+      "group": 4,
+      "decil": 1,
+      "count": 1259,
+      "population": 19303,
+      "percent": 6.522302232813552
+    },
+    {
+      "year": 2006,
+      "group": 4,
+      "decil": 10,
+      "count": 2433,
+      "population": 19303,
+      "percent": 12.604258405429208
+    },
+    {
+      "year": 2007,
+      "group": 4,
+      "decil": 1,
+      "count": 1260,
+      "population": 19603,
+      "percent": 6.427587614140693
+    },
+    {
+      "year": 2007,
+      "group": 4,
+      "decil": 10,
+      "count": 2373,
+      "population": 19603,
+      "percent": 12.105290006631638
+    },
+    {
+      "year": 2008,
+      "group": 4,
+      "decil": 1,
+      "count": 1195,
+      "population": 19659,
+      "percent": 6.078640826084745
+    },
+    {
+      "year": 2008,
+      "group": 4,
+      "decil": 10,
+      "count": 2478,
+      "population": 19659,
+      "percent": 12.604913779948115
+    },
+    {
+      "year": 2009,
+      "group": 4,
+      "decil": 1,
+      "count": 1300,
+      "population": 19800,
+      "percent": 6.565656565656566
+    },
+    {
+      "year": 2009,
+      "group": 4,
+      "decil": 10,
+      "count": 2450,
+      "population": 19800,
+      "percent": 12.373737373737374
+    },
+    {
+      "year": 2010,
+      "group": 4,
+      "decil": 1,
+      "count": 1323,
+      "population": 19792,
+      "percent": 6.684518997574778
+    },
+    {
+      "year": 2010,
+      "group": 4,
+      "decil": 10,
+      "count": 2410,
+      "population": 19792,
+      "percent": 12.17663702506063
+    },
+    {
+      "year": 2011,
+      "group": 4,
+      "decil": 1,
+      "count": 1349,
+      "population": 19827,
+      "percent": 6.803853331315882
+    },
+    {
+      "year": 2011,
+      "group": 4,
+      "decil": 10,
+      "count": 2403,
+      "population": 19827,
+      "percent": 12.119836586472992
+    },
+    {
+      "year": 2012,
+      "group": 4,
+      "decil": 1,
+      "count": 1327,
+      "population": 19846,
+      "percent": 6.686485941751487
+    },
+    {
+      "year": 2012,
+      "group": 4,
+      "decil": 10,
+      "count": 2470,
+      "population": 19846,
+      "percent": 12.445832913433437
+    },
+    {
+      "year": 2013,
+      "group": 4,
+      "decil": 1,
+      "count": 1436,
+      "population": 19911,
+      "percent": 7.212093817487821
+    },
+    {
+      "year": 2013,
+      "group": 4,
+      "decil": 10,
+      "count": 2476,
+      "population": 19911,
+      "percent": 12.435337250765908
+    },
+    {
+      "year": 2014,
+      "group": 4,
+      "decil": 1,
+      "count": 1415,
+      "population": 20067,
+      "percent": 7.051377884088304
+    },
+    {
+      "year": 2014,
+      "group": 4,
+      "decil": 10,
+      "count": 2523,
+      "population": 20067,
+      "percent": 12.572880849155329
+    },
+    {
+      "year": 2015,
+      "group": 4,
+      "decil": 1,
+      "count": 1424,
+      "population": 20145,
+      "percent": 7.0687515512534125
+    },
+    {
+      "year": 2015,
+      "group": 4,
+      "decil": 10,
+      "count": 2404,
+      "population": 20145,
+      "percent": 11.933482253660959
+    },
+    {
+      "year": 2016,
+      "group": 4,
+      "decil": 1,
+      "count": 1373,
+      "population": 20440,
+      "percent": 6.717221135029354
+    },
+    {
+      "year": 2016,
+      "group": 4,
+      "decil": 10,
+      "count": 2576,
+      "population": 20440,
+      "percent": 12.602739726027398
+    },
+    {
+      "year": 2017,
+      "group": 4,
+      "decil": 1,
+      "count": 1468,
+      "population": 20358,
+      "percent": 7.210924452303763
+    },
+    {
+      "year": 2017,
+      "group": 4,
+      "decil": 10,
+      "count": 2536,
+      "population": 20358,
+      "percent": 12.457019353571077
+    },
+    {
+      "year": 2018,
+      "group": 4,
+      "decil": 1,
+      "count": 1436,
+      "population": 20527,
+      "percent": 6.995664247089199
+    },
+    {
+      "year": 2018,
+      "group": 4,
+      "decil": 10,
+      "count": 2621,
+      "population": 20527,
+      "percent": 12.768548740683002
+    },
+    {
+      "year": 2019,
+      "group": 4,
+      "decil": 1,
+      "count": 1479,
+      "population": 20754,
+      "percent": 7.126337091644984
+    },
+    {
+      "year": 2019,
+      "group": 4,
+      "decil": 10,
+      "count": 2658,
+      "population": 20754,
+      "percent": 12.807169702226076
+    },
+    {
+      "year": 2020,
+      "group": 4,
+      "decil": 1,
+      "count": 1532,
+      "population": 20784,
+      "percent": 7.371054657428791
+    },
+    {
+      "year": 2020,
+      "group": 4,
+      "decil": 10,
+      "count": 2627,
+      "population": 20784,
+      "percent": 12.63953040800616
+    },
+    {
+      "year": 2021,
+      "group": 4,
+      "decil": 1,
+      "count": 1535,
+      "population": 20809,
+      "percent": 7.376615887356432
+    },
+    {
+      "year": 2021,
+      "group": 4,
+      "decil": 10,
+      "count": 2580,
+      "population": 20809,
+      "percent": 12.398481426305926
+    },
+    {
+      "year": 2022,
+      "group": 4,
+      "decil": 1,
+      "count": 1485,
+      "population": 20826,
+      "percent": 7.130509939498704
+    },
+    {
+      "year": 2022,
+      "group": 4,
+      "decil": 10,
+      "count": 2622,
+      "population": 20826,
+      "percent": 12.590031691155287
+    },
+    {
+      "year": 2023,
+      "group": 4,
+      "decil": 1,
+      "count": 1522,
+      "population": 20922,
+      "percent": 7.274639135837874
+    },
+    {
+      "year": 2023,
+      "group": 4,
+      "decil": 10,
+      "count": 2660,
+      "population": 20922,
+      "percent": 12.713889685498518
+    },
+    {
+      "year": 2024,
+      "group": 4,
+      "decil": 1,
+      "count": 1580,
+      "population": 20809,
+      "percent": 7.592868470373396
+    },
+    {
+      "year": 2024,
+      "group": 4,
+      "decil": 10,
+      "count": 2723,
+      "population": 20809,
+      "percent": 13.085684079004277
+    },
+    {
+      "year": 2004,
+      "group": 5,
+      "decil": 1,
+      "count": 5448,
+      "population": 48024,
+      "percent": 11.344327836081959
+    },
+    {
+      "year": 2004,
+      "group": 5,
+      "decil": 10,
+      "count": 8167,
+      "population": 48024,
+      "percent": 17.00608029318674
+    },
+    {
+      "year": 2005,
+      "group": 5,
+      "decil": 1,
+      "count": 5407,
+      "population": 48482,
+      "percent": 11.152592714821996
+    },
+    {
+      "year": 2005,
+      "group": 5,
+      "decil": 10,
+      "count": 8188,
+      "population": 48482,
+      "percent": 16.88874221360505
+    },
+    {
+      "year": 2006,
+      "group": 5,
+      "decil": 1,
+      "count": 5058,
+      "population": 48987,
+      "percent": 10.325188315267315
+    },
+    {
+      "year": 2006,
+      "group": 5,
+      "decil": 10,
+      "count": 8396,
+      "population": 48987,
+      "percent": 17.139241023128584
+    },
+    {
+      "year": 2007,
+      "group": 5,
+      "decil": 1,
+      "count": 4878,
+      "population": 49111,
+      "percent": 9.932601657469814
+    },
+    {
+      "year": 2007,
+      "group": 5,
+      "decil": 10,
+      "count": 8485,
+      "population": 49111,
+      "percent": 17.27718840992853
+    },
+    {
+      "year": 2008,
+      "group": 5,
+      "decil": 1,
+      "count": 5196,
+      "population": 50691,
+      "percent": 10.250340297094159
+    },
+    {
+      "year": 2008,
+      "group": 5,
+      "decil": 10,
+      "count": 8622,
+      "population": 50691,
+      "percent": 17.008936497603123
+    },
+    {
+      "year": 2009,
+      "group": 5,
+      "decil": 1,
+      "count": 5073,
+      "population": 51560,
+      "percent": 9.839022498060512
+    },
+    {
+      "year": 2009,
+      "group": 5,
+      "decil": 10,
+      "count": 8763,
+      "population": 51560,
+      "percent": 16.995733126454617
+    },
+    {
+      "year": 2010,
+      "group": 5,
+      "decil": 1,
+      "count": 5019,
+      "population": 52052,
+      "percent": 9.64228079612695
+    },
+    {
+      "year": 2010,
+      "group": 5,
+      "decil": 10,
+      "count": 8693,
+      "population": 52052,
+      "percent": 16.70060708522247
+    },
+    {
+      "year": 2011,
+      "group": 5,
+      "decil": 1,
+      "count": 5025,
+      "population": 52673,
+      "percent": 9.539992026275321
+    },
+    {
+      "year": 2011,
+      "group": 5,
+      "decil": 10,
+      "count": 8799,
+      "population": 52673,
+      "percent": 16.70495320183016
+    },
+    {
+      "year": 2012,
+      "group": 5,
+      "decil": 1,
+      "count": 4969,
+      "population": 53355,
+      "percent": 9.313091556555149
+    },
+    {
+      "year": 2012,
+      "group": 5,
+      "decil": 10,
+      "count": 8942,
+      "population": 53355,
+      "percent": 16.759441476900008
+    },
+    {
+      "year": 2013,
+      "group": 5,
+      "decil": 1,
+      "count": 5058,
+      "population": 54003,
+      "percent": 9.366146325204156
+    },
+    {
+      "year": 2013,
+      "group": 5,
+      "decil": 10,
+      "count": 9139,
+      "population": 54003,
+      "percent": 16.92313389996852
+    },
+    {
+      "year": 2014,
+      "group": 5,
+      "decil": 1,
+      "count": 4955,
+      "population": 54354,
+      "percent": 9.116164403723737
+    },
+    {
+      "year": 2014,
+      "group": 5,
+      "decil": 10,
+      "count": 9362,
+      "population": 54354,
+      "percent": 17.224123339588623
+    },
+    {
+      "year": 2015,
+      "group": 5,
+      "decil": 1,
+      "count": 5003,
+      "population": 54734,
+      "percent": 9.140570760404866
+    },
+    {
+      "year": 2015,
+      "group": 5,
+      "decil": 10,
+      "count": 9379,
+      "population": 54734,
+      "percent": 17.135601271604486
+    },
+    {
+      "year": 2016,
+      "group": 5,
+      "decil": 1,
+      "count": 4897,
+      "population": 55235,
+      "percent": 8.865755408708246
+    },
+    {
+      "year": 2016,
+      "group": 5,
+      "decil": 10,
+      "count": 9537,
+      "population": 55235,
+      "percent": 17.26622612473975
+    },
+    {
+      "year": 2017,
+      "group": 5,
+      "decil": 1,
+      "count": 4977,
+      "population": 55836,
+      "percent": 8.913604126370084
+    },
+    {
+      "year": 2017,
+      "group": 5,
+      "decil": 10,
+      "count": 9439,
+      "population": 55836,
+      "percent": 16.904864245289776
+    },
+    {
+      "year": 2018,
+      "group": 5,
+      "decil": 1,
+      "count": 5134,
+      "population": 56109,
+      "percent": 9.150047229499723
+    },
+    {
+      "year": 2018,
+      "group": 5,
+      "decil": 10,
+      "count": 9466,
+      "population": 56109,
+      "percent": 16.870733750378726
+    },
+    {
+      "year": 2019,
+      "group": 5,
+      "decil": 1,
+      "count": 5115,
+      "population": 56306,
+      "percent": 9.084289418534437
+    },
+    {
+      "year": 2019,
+      "group": 5,
+      "decil": 10,
+      "count": 9522,
+      "population": 56306,
+      "percent": 16.911163996732142
+    },
+    {
+      "year": 2020,
+      "group": 5,
+      "decil": 1,
+      "count": 5263,
+      "population": 56359,
+      "percent": 9.338348799659327
+    },
+    {
+      "year": 2020,
+      "group": 5,
+      "decil": 10,
+      "count": 9149,
+      "population": 56359,
+      "percent": 16.233432104898952
+    },
+    {
+      "year": 2021,
+      "group": 5,
+      "decil": 1,
+      "count": 4942,
+      "population": 55998,
+      "percent": 8.825315189828208
+    },
+    {
+      "year": 2021,
+      "group": 5,
+      "decil": 10,
+      "count": 9107,
+      "population": 55998,
+      "percent": 16.263080824315153
+    },
+    {
+      "year": 2022,
+      "group": 5,
+      "decil": 1,
+      "count": 5346,
+      "population": 56682,
+      "percent": 9.431565576373451
+    },
+    {
+      "year": 2022,
+      "group": 5,
+      "decil": 10,
+      "count": 9097,
+      "population": 56682,
+      "percent": 16.049186690660175
+    },
+    {
+      "year": 2023,
+      "group": 5,
+      "decil": 1,
+      "count": 5434,
+      "population": 57455,
+      "percent": 9.457836567748673
+    },
+    {
+      "year": 2023,
+      "group": 5,
+      "decil": 10,
+      "count": 9164,
+      "population": 57455,
+      "percent": 15.949873814289443
+    },
+    {
+      "year": 2024,
+      "group": 5,
+      "decil": 1,
+      "count": 5500,
+      "population": 58082,
+      "percent": 9.469370889432183
+    },
+    {
+      "year": 2024,
+      "group": 5,
+      "decil": 10,
+      "count": 9732,
+      "population": 58082,
+      "percent": 16.755621362900726
+    },
+    {
+      "year": 2004,
+      "group": 6,
+      "decil": 1,
+      "count": 3000,
+      "population": 33132,
+      "percent": 9.054690329590729
+    },
+    {
+      "year": 2004,
+      "group": 6,
+      "decil": 10,
+      "count": 8634,
+      "population": 33132,
+      "percent": 26.059398768562115
+    },
+    {
+      "year": 2005,
+      "group": 6,
+      "decil": 1,
+      "count": 2950,
+      "population": 33368,
+      "percent": 8.840805562215296
+    },
+    {
+      "year": 2005,
+      "group": 6,
+      "decil": 10,
+      "count": 8668,
+      "population": 33368,
+      "percent": 25.976983936705825
+    },
+    {
+      "year": 2006,
+      "group": 6,
+      "decil": 1,
+      "count": 2736,
+      "population": 33536,
+      "percent": 8.158396946564885
+    },
+    {
+      "year": 2006,
+      "group": 6,
+      "decil": 10,
+      "count": 8887,
+      "population": 33536,
+      "percent": 26.499880725190838
+    },
+    {
+      "year": 2007,
+      "group": 6,
+      "decil": 1,
+      "count": 2596,
+      "population": 33862,
+      "percent": 7.666410725887426
+    },
+    {
+      "year": 2007,
+      "group": 6,
+      "decil": 10,
+      "count": 9023,
+      "population": 33862,
+      "percent": 26.646388281849863
+    },
+    {
+      "year": 2008,
+      "group": 6,
+      "decil": 1,
+      "count": 2586,
+      "population": 34265,
+      "percent": 7.547059681891143
+    },
+    {
+      "year": 2008,
+      "group": 6,
+      "decil": 10,
+      "count": 9384,
+      "population": 34265,
+      "percent": 27.386546038231433
+    },
+    {
+      "year": 2009,
+      "group": 6,
+      "decil": 1,
+      "count": 2599,
+      "population": 34527,
+      "percent": 7.527442291539955
+    },
+    {
+      "year": 2009,
+      "group": 6,
+      "decil": 10,
+      "count": 9447,
+      "population": 34527,
+      "percent": 27.36119558606308
+    },
+    {
+      "year": 2010,
+      "group": 6,
+      "decil": 1,
+      "count": 2556,
+      "population": 34618,
+      "percent": 7.383442139927205
+    },
+    {
+      "year": 2010,
+      "group": 6,
+      "decil": 10,
+      "count": 9477,
+      "population": 34618,
+      "percent": 27.375931596279393
+    },
+    {
+      "year": 2011,
+      "group": 6,
+      "decil": 1,
+      "count": 2591,
+      "population": 34896,
+      "percent": 7.424919761577258
+    },
+    {
+      "year": 2011,
+      "group": 6,
+      "decil": 10,
+      "count": 9835,
+      "population": 34896,
+      "percent": 28.18374598807886
+    },
+    {
+      "year": 2012,
+      "group": 6,
+      "decil": 1,
+      "count": 2515,
+      "population": 34884,
+      "percent": 7.209608989794749
+    },
+    {
+      "year": 2012,
+      "group": 6,
+      "decil": 10,
+      "count": 10081,
+      "population": 34884,
+      "percent": 28.898635477582847
+    },
+    {
+      "year": 2013,
+      "group": 6,
+      "decil": 1,
+      "count": 2552,
+      "population": 35087,
+      "percent": 7.273349103656625
+    },
+    {
+      "year": 2013,
+      "group": 6,
+      "decil": 10,
+      "count": 10155,
+      "population": 35087,
+      "percent": 28.94234331803802
+    },
+    {
+      "year": 2014,
+      "group": 6,
+      "decil": 1,
+      "count": 2537,
+      "population": 35390,
+      "percent": 7.168691720825092
+    },
+    {
+      "year": 2014,
+      "group": 6,
+      "decil": 10,
+      "count": 10342,
+      "population": 35390,
+      "percent": 29.222944334557784
+    },
+    {
+      "year": 2015,
+      "group": 6,
+      "decil": 1,
+      "count": 2395,
+      "population": 35731,
+      "percent": 6.7028630600878785
+    },
+    {
+      "year": 2015,
+      "group": 6,
+      "decil": 10,
+      "count": 10321,
+      "population": 35731,
+      "percent": 28.885281688169936
+    },
+    {
+      "year": 2016,
+      "group": 6,
+      "decil": 1,
+      "count": 2529,
+      "population": 36121,
+      "percent": 7.0014672904958335
+    },
+    {
+      "year": 2016,
+      "group": 6,
+      "decil": 10,
+      "count": 10190,
+      "population": 36121,
+      "percent": 28.210736136873287
+    },
+    {
+      "year": 2017,
+      "group": 6,
+      "decil": 1,
+      "count": 2387,
+      "population": 36260,
+      "percent": 6.583011583011583
+    },
+    {
+      "year": 2017,
+      "group": 6,
+      "decil": 10,
+      "count": 10194,
+      "population": 36260,
+      "percent": 28.113623827909542
+    },
+    {
+      "year": 2018,
+      "group": 6,
+      "decil": 1,
+      "count": 2471,
+      "population": 36655,
+      "percent": 6.741235847769745
+    },
+    {
+      "year": 2018,
+      "group": 6,
+      "decil": 10,
+      "count": 10592,
+      "population": 36655,
+      "percent": 28.89646705770018
+    },
+    {
+      "year": 2019,
+      "group": 6,
+      "decil": 1,
+      "count": 2479,
+      "population": 37121,
+      "percent": 6.678160609897363
+    },
+    {
+      "year": 2019,
+      "group": 6,
+      "decil": 10,
+      "count": 10731,
+      "population": 37121,
+      "percent": 28.90816518951537
+    },
+    {
+      "year": 2020,
+      "group": 6,
+      "decil": 1,
+      "count": 2626,
+      "population": 37405,
+      "percent": 7.02045181125518
+    },
+    {
+      "year": 2020,
+      "group": 6,
+      "decil": 10,
+      "count": 10771,
+      "population": 37405,
+      "percent": 28.79561555941719
+    },
+    {
+      "year": 2021,
+      "group": 6,
+      "decil": 1,
+      "count": 2443,
+      "population": 37368,
+      "percent": 6.537679297794905
+    },
+    {
+      "year": 2021,
+      "group": 6,
+      "decil": 10,
+      "count": 10838,
+      "population": 37368,
+      "percent": 29.003425390708628
+    },
+    {
+      "year": 2022,
+      "group": 6,
+      "decil": 1,
+      "count": 2520,
+      "population": 37475,
+      "percent": 6.724482988659106
+    },
+    {
+      "year": 2022,
+      "group": 6,
+      "decil": 10,
+      "count": 10896,
+      "population": 37475,
+      "percent": 29.075383589059374
+    },
+    {
+      "year": 2023,
+      "group": 6,
+      "decil": 1,
+      "count": 2417,
+      "population": 38066,
+      "percent": 6.349498239899122
+    },
+    {
+      "year": 2023,
+      "group": 6,
+      "decil": 10,
+      "count": 11439,
+      "population": 38066,
+      "percent": 30.050438711711237
+    },
+    {
+      "year": 2024,
+      "group": 6,
+      "decil": 1,
+      "count": 2475,
+      "population": 38160,
+      "percent": 6.485849056603773
+    },
+    {
+      "year": 2024,
+      "group": 6,
+      "decil": 10,
+      "count": 11683,
+      "population": 38160,
+      "percent": 30.615828092243188
+    }
+  ],
+  "years": [
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "tables": {
+    "mobility": {
+      "headers": [
+        "Kluster vid start",
+        "Kvar i decil 1, start 2004 (%)",
+        "Kvar i decil 1, start 2019 (%)",
+        "Till övre halvan, start 2004 (%)",
+        "Till övre halvan, start 2019 (%)"
+      ],
+      "rows": [
+        [
+          "Kluster 1",
+          33.39323150643905,
+          47.013445007714346,
+          11.350703803533992,
+          9.279259422525898
+        ],
+        [
+          "Kluster 2",
+          32.483847810480974,
+          45.86173320350535,
+          14.429289303661163,
+          11.92794547224927
+        ],
+        [
+          "Kluster 3",
+          32.298136645962735,
+          40.836236933797906,
+          25.59259728736215,
+          20.83623693379791
+        ],
+        [
+          "Kluster 4",
+          35.703918722786646,
+          41.584158415841586,
+          19.88388969521045,
+          21.287128712871286
+        ],
+        [
+          "Kluster 5",
+          32.92433537832311,
+          43.30357142857143,
+          28.868438991138376,
+          24.416208791208792
+        ],
+        [
+          "Kluster 6",
+          36.320754716981135,
+          42.325949367088604,
+          27.2911051212938,
+          25.2373417721519
+        ]
+      ],
+      "csvHeaders": [
+        "Kluster",
+        "Startår",
+        "Slutår",
+        "Utfall",
+        "Antal",
+        "Nämnare",
+        "Andel (%)"
+      ],
+      "csvRows": [
+        [
+          1,
+          2004,
+          2009,
+          "Decil 1",
+          1115,
+          3339,
+          33.39323150643905
+        ],
+        [
+          1,
+          2019,
+          2024,
+          "Decil 1",
+          2133,
+          4537,
+          47.013445007714346
+        ],
+        [
+          1,
+          2004,
+          2009,
+          "Decil 6–10",
+          379,
+          3339,
+          11.350703803533992
+        ],
+        [
+          1,
+          2019,
+          2024,
+          "Decil 6–10",
+          421,
+          4537,
+          9.279259422525898
+        ],
+        [
+          2,
+          2004,
+          2009,
+          "Decil 1",
+          905,
+          2786,
+          32.483847810480974
+        ],
+        [
+          2,
+          2019,
+          2024,
+          "Decil 1",
+          1884,
+          4108,
+          45.86173320350535
+        ],
+        [
+          2,
+          2004,
+          2009,
+          "Decil 6–10",
+          402,
+          2786,
+          14.429289303661163
+        ],
+        [
+          2,
+          2019,
+          2024,
+          "Decil 6–10",
+          490,
+          4108,
+          11.92794547224927
+        ],
+        [
+          3,
+          2004,
+          2009,
+          "Decil 1",
+          2548,
+          7889,
+          32.298136645962735
+        ],
+        [
+          3,
+          2019,
+          2024,
+          "Decil 1",
+          4102,
+          10045,
+          40.836236933797906
+        ],
+        [
+          3,
+          2004,
+          2009,
+          "Decil 6–10",
+          2019,
+          7889,
+          25.59259728736215
+        ],
+        [
+          3,
+          2019,
+          2024,
+          "Decil 6–10",
+          2093,
+          10045,
+          20.83623693379791
+        ],
+        [
+          4,
+          2004,
+          2009,
+          "Decil 1",
+          246,
+          689,
+          35.703918722786646
+        ],
+        [
+          4,
+          2019,
+          2024,
+          "Decil 1",
+          336,
+          808,
+          41.584158415841586
+        ],
+        [
+          4,
+          2004,
+          2009,
+          "Decil 6–10",
+          137,
+          689,
+          19.88388969521045
+        ],
+        [
+          4,
+          2019,
+          2024,
+          "Decil 6–10",
+          172,
+          808,
+          21.287128712871286
+        ],
+        [
+          5,
+          2004,
+          2009,
+          "Decil 1",
+          966,
+          2934,
+          32.92433537832311
+        ],
+        [
+          5,
+          2019,
+          2024,
+          "Decil 1",
+          1261,
+          2912,
+          43.30357142857143
+        ],
+        [
+          5,
+          2004,
+          2009,
+          "Decil 6–10",
+          847,
+          2934,
+          28.868438991138376
+        ],
+        [
+          5,
+          2019,
+          2024,
+          "Decil 6–10",
+          711,
+          2912,
+          24.416208791208792
+        ],
+        [
+          6,
+          2004,
+          2009,
+          "Decil 1",
+          539,
+          1484,
+          36.320754716981135
+        ],
+        [
+          6,
+          2019,
+          2024,
+          "Decil 1",
+          535,
+          1264,
+          42.325949367088604
+        ],
+        [
+          6,
+          2004,
+          2009,
+          "Decil 6–10",
+          405,
+          1484,
+          27.2911051212938
+        ],
+        [
+          6,
+          2019,
+          2024,
+          "Decil 6–10",
+          319,
+          1264,
+          25.2373417721519
+        ]
+      ],
+      "decimals": 0
+    },
+    "destination": {
+      "headers": [
+        "Kluster vid start",
+        "Samma kluster (%)",
+        "Annat område i Göteborg (%)",
+        "Övriga Göteborgsregionen (%)",
+        "Övriga Sverige (%)"
+      ],
+      "rows": [
+        [
+          "Kluster 1",
+          49.60926973861493,
+          31.13715979520345,
+          8.084074373484237,
+          11.169496092697386
+        ],
+        [
+          "Kluster 2",
+          45.656125045438024,
+          33.00617957106507,
+          8.518114624984854,
+          12.819580758512057
+        ],
+        [
+          "Kluster 3",
+          51.471462079749806,
+          18.17670054730258,
+          11.646598905394839,
+          18.705238467552775
+        ],
+        [
+          "Kluster 4",
+          61.755624172915745,
+          20.379355977062197,
+          8.381120423467138,
+          9.483899426554919
+        ],
+        [
+          "Kluster 5",
+          46.73777185234564,
+          24.622948087659363,
+          10.565786184484626,
+          18.073493875510373
+        ],
+        [
+          "Kluster 6",
+          61.34267797860568,
+          21.744743637034304,
+          6.123201770564368,
+          10.789376613795648
+        ]
+      ],
+      "csvHeaders": [
+        "Kluster",
+        "Destination",
+        "Antal",
+        "Nämnare",
+        "Andel (%)"
+      ],
+      "csvRows": [
+        [
+          1,
+          "Samma kluster",
+          3682,
+          7422,
+          49.60926973861493
+        ],
+        [
+          1,
+          "Annat område i Göteborg",
+          2311,
+          7422,
+          31.13715979520345
+        ],
+        [
+          1,
+          "Övriga GR",
+          600,
+          7422,
+          8.084074373484237
+        ],
+        [
+          1,
+          "Övriga Sverige",
+          829,
+          7422,
+          11.169496092697386
+        ],
+        [
+          2,
+          "Samma kluster",
+          3768,
+          8253,
+          45.656125045438024
+        ],
+        [
+          2,
+          "Annat område i Göteborg",
+          2724,
+          8253,
+          33.00617957106507
+        ],
+        [
+          2,
+          "Övriga GR",
+          703,
+          8253,
+          8.518114624984854
+        ],
+        [
+          2,
+          "Övriga Sverige",
+          1058,
+          8253,
+          12.819580758512057
+        ],
+        [
+          3,
+          "Samma kluster",
+          16458,
+          31975,
+          51.471462079749806
+        ],
+        [
+          3,
+          "Annat område i Göteborg",
+          5812,
+          31975,
+          18.17670054730258
+        ],
+        [
+          3,
+          "Övriga GR",
+          3724,
+          31975,
+          11.646598905394839
+        ],
+        [
+          3,
+          "Övriga Sverige",
+          5981,
+          31975,
+          18.705238467552775
+        ],
+        [
+          4,
+          "Samma kluster",
+          1400,
+          2267,
+          61.755624172915745
+        ],
+        [
+          4,
+          "Annat område i Göteborg",
+          462,
+          2267,
+          20.379355977062197
+        ],
+        [
+          4,
+          "Övriga GR",
+          190,
+          2267,
+          8.381120423467138
+        ],
+        [
+          4,
+          "Övriga Sverige",
+          215,
+          2267,
+          9.483899426554919
+        ],
+        [
+          5,
+          "Samma kluster",
+          5609,
+          12001,
+          46.73777185234564
+        ],
+        [
+          5,
+          "Annat område i Göteborg",
+          2955,
+          12001,
+          24.622948087659363
+        ],
+        [
+          5,
+          "Övriga GR",
+          1268,
+          12001,
+          10.565786184484626
+        ],
+        [
+          5,
+          "Övriga Sverige",
+          2169,
+          12001,
+          18.073493875510373
+        ],
+        [
+          6,
+          "Samma kluster",
+          3326,
+          5422,
+          61.34267797860568
+        ],
+        [
+          6,
+          "Annat område i Göteborg",
+          1179,
+          5422,
+          21.744743637034304
+        ],
+        [
+          6,
+          "Övriga GR",
+          332,
+          5422,
+          6.123201770564368
+        ],
+        [
+          6,
+          "Övriga Sverige",
+          585,
+          5422,
+          10.789376613795648
+        ]
+      ],
+      "decimals": 0
+    }
+  }
+}

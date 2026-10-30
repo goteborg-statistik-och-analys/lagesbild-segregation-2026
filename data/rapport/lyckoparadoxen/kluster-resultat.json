@@ -30,128 +30,128 @@
     {
       "group": 1,
       "category": "Annat område i Göteborg",
-      "net": -14669,
-      "populationYears": 946812,
-      "rate": -15.4930440256355
+      "net": -3037,
+      "populationYears": 204927,
+      "rate": -14.819911480673605
     },
     {
       "group": 1,
       "category": "Ej folkbokförd i Sverige",
-      "net": -2425,
-      "populationYears": 946812,
-      "rate": -2.5612265159292447
+      "net": -736,
+      "populationYears": 204927,
+      "rate": -3.591522834960742
     },
     {
       "group": 1,
       "category": "Övriga Sverige",
-      "net": -2319,
-      "populationYears": 946812,
-      "rate": -2.4492718723463582
+      "net": -35,
+      "populationYears": 204927,
+      "rate": -0.17079252611905704
     },
     {
       "group": 2,
       "category": "Annat område i Göteborg",
-      "net": -6044,
-      "populationYears": 1053816,
-      "rate": -5.735346588019161
+      "net": -929,
+      "populationYears": 239772,
+      "rate": -3.874514121748995
     },
     {
       "group": 2,
       "category": "Ej folkbokförd i Sverige",
-      "net": -3450,
-      "populationYears": 1053816,
-      "rate": -3.2738163018971056
+      "net": -993,
+      "populationYears": 239772,
+      "rate": -4.141434362644512
     },
     {
       "group": 2,
       "category": "Övriga Sverige",
-      "net": -3491,
-      "populationYears": 1053816,
-      "rate": -3.3127225246153027
+      "net": -569,
+      "populationYears": 239772,
+      "rate": -2.3730877667117096
     },
     {
       "group": 3,
       "category": "Annat område i Göteborg",
-      "net": 946,
-      "populationYears": 3682665,
-      "rate": 0.25687918939137827
+      "net": 1506,
+      "populationYears": 841867,
+      "rate": 1.7888811415579895
     },
     {
       "group": 3,
       "category": "Ej folkbokförd i Sverige",
-      "net": -14974,
-      "populationYears": 3682665,
-      "rate": -4.066077147934987
+      "net": -3847,
+      "populationYears": 841867,
+      "rate": -4.569605412731465
     },
     {
       "group": 3,
       "category": "Övriga Sverige",
-      "net": -7683,
-      "populationYears": 3682665,
-      "rate": -2.086260900733572
+      "net": -1418,
+      "populationYears": 841867,
+      "rate": -1.6843515662212678
     },
     {
       "group": 4,
       "category": "Annat område i Göteborg",
-      "net": 5276,
-      "populationYears": 493120,
-      "rate": 10.699221284879949
+      "net": 553,
+      "populationYears": 104157,
+      "rate": 5.30929270236278
     },
     {
       "group": 4,
       "category": "Ej folkbokförd i Sverige",
-      "net": -1295,
-      "populationYears": 493120,
-      "rate": -2.6261356262167426
+      "net": -317,
+      "populationYears": 104157,
+      "rate": -3.0434824351699836
     },
     {
       "group": 4,
       "category": "Övriga Sverige",
-      "net": -2877,
-      "populationYears": 493120,
-      "rate": -5.834279688513952
+      "net": -889,
+      "populationYears": 104157,
+      "rate": -8.535192065823708
     },
     {
       "group": 5,
       "category": "Annat område i Göteborg",
-      "net": 4494,
-      "populationYears": 1312524,
-      "rate": 3.4239373908591384
+      "net": 135,
+      "populationYears": 284576,
+      "rate": 0.47438996963904195
     },
     {
       "group": 5,
       "category": "Ej folkbokförd i Sverige",
-      "net": -6818,
-      "populationYears": 1312524,
-      "rate": -5.194571680213086
+      "net": -1617,
+      "populationYears": 284576,
+      "rate": -5.6821376363431915
     },
     {
       "group": 5,
       "category": "Övriga Sverige",
-      "net": -1573,
-      "populationYears": 1312524,
-      "rate": -1.1984542758837171
+      "net": -389,
+      "populationYears": 284576,
+      "rate": -1.3669459125154615
     },
     {
       "group": 6,
       "category": "Annat område i Göteborg",
-      "net": 9375,
-      "populationYears": 879164,
-      "rate": 10.663539453389811
+      "net": 1534,
+      "populationYears": 188474,
+      "rate": 8.139053662574149
     },
     {
       "group": 6,
       "category": "Ej folkbokförd i Sverige",
-      "net": -3360,
-      "populationYears": 879164,
-      "rate": -3.8218125400949083
+      "net": -661,
+      "populationYears": 188474,
+      "rate": -3.5071150397402295
     },
     {
       "group": 6,
       "category": "Övriga Sverige",
-      "net": -2890,
-      "populationYears": 879164,
-      "rate": -3.2872137621649657
+      "net": -969,
+      "populationYears": 188474,
+      "rate": -5.141292698197099
     }
   ],
   "lines": [
@@ -1061,14 +1061,34 @@
       "label": "Inflyttade, alla",
       "values": {
         "1": {
-          "employed": 61265,
-          "total": 149858,
-          "percent": 40.88203499312683
+          "employed": 18418,
+          "total": 34279,
+          "percent": 53.72968873070976
+        },
+        "2": {
+          "employed": 24254,
+          "total": 41900,
+          "percent": 57.885441527446304
+        },
+        "3": {
+          "employed": 109014,
+          "total": 166426,
+          "percent": 65.50298631223487
+        },
+        "4": {
+          "employed": 6647,
+          "total": 9403,
+          "percent": 70.69020525364246
+        },
+        "5": {
+          "employed": 34841,
+          "total": 51023,
+          "percent": 68.28489112753073
         },
         "6": {
-          "employed": 53574,
-          "total": 73354,
-          "percent": 73.03487199062083
+          "employed": 12513,
+          "total": 16896,
+          "percent": 74.05894886363636
         }
       }
     },
@@ -1076,14 +1096,34 @@
       "label": "Inflyttade som bodde i Sverige året före",
       "values": {
         "1": {
-          "employed": 61265,
-          "total": 121316,
-          "percent": 50.50034620330377
+          "employed": 18418,
+          "total": 29615,
+          "percent": 62.19145703190951
+        },
+        "2": {
+          "employed": 24254,
+          "total": 36038,
+          "percent": 67.30118208557634
+        },
+        "3": {
+          "employed": 109014,
+          "total": 149903,
+          "percent": 72.72302755782073
+        },
+        "4": {
+          "employed": 6647,
+          "total": 8372,
+          "percent": 79.3956043956044
+        },
+        "5": {
+          "employed": 34841,
+          "total": 45041,
+          "percent": 77.35396638618148
         },
         "6": {
-          "employed": 53574,
-          "total": 65703,
-          "percent": 81.53965572348295
+          "employed": 12513,
+          "total": 15191,
+          "percent": 82.3711408070568
         }
       }
     },
@@ -1091,14 +1131,34 @@
       "label": "Inflyttade från andra delar av Göteborg",
       "values": {
         "1": {
-          "employed": 42059,
-          "total": 82059,
-          "percent": 51.25458511558757
+          "employed": 13322,
+          "total": 20915,
+          "percent": 63.69591202486254
+        },
+        "2": {
+          "employed": 17841,
+          "total": 25952,
+          "percent": 68.7461467324291
+        },
+        "3": {
+          "employed": 71685,
+          "total": 95735,
+          "percent": 74.87857105551784
+        },
+        "4": {
+          "employed": 4624,
+          "total": 5606,
+          "percent": 82.48305387085266
+        },
+        "5": {
+          "employed": 22884,
+          "total": 28540,
+          "percent": 80.18220042046251
         },
         "6": {
-          "employed": 40878,
-          "total": 47852,
-          "percent": 85.42589651425227
+          "employed": 9162,
+          "total": 10558,
+          "percent": 86.77779882553514
         }
       }
     },
@@ -1106,14 +1166,34 @@
       "label": "Utflyttade till andra delar av Göteborg",
       "values": {
         "1": {
-          "employed": 56728,
-          "total": 102519,
-          "percent": 55.33413318506813
+          "employed": 16359,
+          "total": 24959,
+          "percent": 65.54349132577427
+        },
+        "2": {
+          "employed": 18770,
+          "total": 26454,
+          "percent": 70.95335299009602
+        },
+        "3": {
+          "employed": 70179,
+          "total": 92885,
+          "percent": 75.55471819992464
+        },
+        "4": {
+          "employed": 4071,
+          "total": 5278,
+          "percent": 77.13148920045472
+        },
+        "5": {
+          "employed": 22749,
+          "total": 28892,
+          "percent": 78.73805897826388
         },
         "6": {
-          "employed": 31503,
-          "total": 42651,
-          "percent": 73.86227755503974
+          "employed": 7628,
+          "total": 9963,
+          "percent": 76.56328415136004
         }
       }
     },
@@ -1121,14 +1201,34 @@
       "label": "Utflyttade, alla",
       "values": {
         "1": {
-          "employed": 80678,
-          "total": 151926,
-          "percent": 53.10348459118255
+          "employed": 22226,
+          "total": 35861,
+          "percent": 61.978193580770196
+        },
+        "2": {
+          "employed": 26745,
+          "total": 39488,
+          "percent": 67.72943679092383
+        },
+        "3": {
+          "employed": 112773,
+          "total": 152467,
+          "percent": 73.96551384889845
+        },
+        "4": {
+          "employed": 7300,
+          "total": 9768,
+          "percent": 74.73382473382473
+        },
+        "5": {
+          "employed": 36712,
+          "total": 48181,
+          "percent": 76.19601087565638
         },
         "6": {
-          "employed": 50449,
-          "total": 71248,
-          "percent": 70.8076016168875
+          "employed": 12609,
+          "total": 17114,
+          "percent": 73.67652214561178
         }
       }
     },
@@ -1136,18 +1236,349 @@
       "label": "Kvarboende",
       "values": {
         "1": {
-          "employed": 433386,
-          "total": 796956,
-          "percent": 54.38016653366058
+          "employed": 107790,
+          "total": 170648,
+          "percent": 63.16511180910412
+        },
+        "2": {
+          "employed": 139553,
+          "total": 197872,
+          "percent": 70.52690628284952
+        },
+        "3": {
+          "employed": 533093,
+          "total": 675441,
+          "percent": 78.92517629222982
+        },
+        "4": {
+          "employed": 82731,
+          "total": 94754,
+          "percent": 87.31135361040167
+        },
+        "5": {
+          "employed": 194360,
+          "total": 233553,
+          "percent": 83.21879830274071
         },
         "6": {
-          "employed": 698713,
-          "total": 805810,
-          "percent": 86.70939799704645
+          "employed": 151474,
+          "total": 171578,
+          "percent": 88.28288008952197
         }
       }
     }
   ],
+  "tables": {
+    "employment": {
+      "headers": [
+        "Kluster",
+        "Flyttar in från andra delar av Göteborg (%)",
+        "Flyttar ut till andra delar av Göteborg (%)",
+        "Bor kvar i området (%)"
+      ],
+      "rows": [
+        [
+          "Kluster 1",
+          63.69591202486254,
+          65.54349132577427,
+          63.16511180910412
+        ],
+        [
+          "Kluster 2",
+          68.7461467324291,
+          70.95335299009602,
+          70.52690628284952
+        ],
+        [
+          "Kluster 3",
+          74.87857105551784,
+          75.55471819992464,
+          78.92517629222982
+        ],
+        [
+          "Kluster 4",
+          82.48305387085266,
+          77.13148920045472,
+          87.31135361040167
+        ],
+        [
+          "Kluster 5",
+          80.18220042046251,
+          78.73805897826388,
+          83.21879830274071
+        ],
+        [
+          "Kluster 6",
+          86.77779882553514,
+          76.56328415136004,
+          88.28288008952197
+        ]
+      ],
+      "csvHeaders": [
+        "Kategori",
+        "Kluster",
+        "Förvärvsarbetande",
+        "Totalt",
+        "Andel (%)"
+      ],
+      "csvRows": [
+        [
+          "Inflyttade, alla",
+          1,
+          18418,
+          34279,
+          53.72968873070976
+        ],
+        [
+          "Inflyttade, alla",
+          2,
+          24254,
+          41900,
+          57.885441527446304
+        ],
+        [
+          "Inflyttade, alla",
+          3,
+          109014,
+          166426,
+          65.50298631223487
+        ],
+        [
+          "Inflyttade, alla",
+          4,
+          6647,
+          9403,
+          70.69020525364246
+        ],
+        [
+          "Inflyttade, alla",
+          5,
+          34841,
+          51023,
+          68.28489112753073
+        ],
+        [
+          "Inflyttade, alla",
+          6,
+          12513,
+          16896,
+          74.05894886363636
+        ],
+        [
+          "Inflyttade som bodde i Sverige året före",
+          1,
+          18418,
+          29615,
+          62.19145703190951
+        ],
+        [
+          "Inflyttade som bodde i Sverige året före",
+          2,
+          24254,
+          36038,
+          67.30118208557634
+        ],
+        [
+          "Inflyttade som bodde i Sverige året före",
+          3,
+          109014,
+          149903,
+          72.72302755782073
+        ],
+        [
+          "Inflyttade som bodde i Sverige året före",
+          4,
+          6647,
+          8372,
+          79.3956043956044
+        ],
+        [
+          "Inflyttade som bodde i Sverige året före",
+          5,
+          34841,
+          45041,
+          77.35396638618148
+        ],
+        [
+          "Inflyttade som bodde i Sverige året före",
+          6,
+          12513,
+          15191,
+          82.3711408070568
+        ],
+        [
+          "Inflyttade från andra delar av Göteborg",
+          1,
+          13322,
+          20915,
+          63.69591202486254
+        ],
+        [
+          "Inflyttade från andra delar av Göteborg",
+          2,
+          17841,
+          25952,
+          68.7461467324291
+        ],
+        [
+          "Inflyttade från andra delar av Göteborg",
+          3,
+          71685,
+          95735,
+          74.87857105551784
+        ],
+        [
+          "Inflyttade från andra delar av Göteborg",
+          4,
+          4624,
+          5606,
+          82.48305387085266
+        ],
+        [
+          "Inflyttade från andra delar av Göteborg",
+          5,
+          22884,
+          28540,
+          80.18220042046251
+        ],
+        [
+          "Inflyttade från andra delar av Göteborg",
+          6,
+          9162,
+          10558,
+          86.77779882553514
+        ],
+        [
+          "Utflyttade till andra delar av Göteborg",
+          1,
+          16359,
+          24959,
+          65.54349132577427
+        ],
+        [
+          "Utflyttade till andra delar av Göteborg",
+          2,
+          18770,
+          26454,
+          70.95335299009602
+        ],
+        [
+          "Utflyttade till andra delar av Göteborg",
+          3,
+          70179,
+          92885,
+          75.55471819992464
+        ],
+        [
+          "Utflyttade till andra delar av Göteborg",
+          4,
+          4071,
+          5278,
+          77.13148920045472
+        ],
+        [
+          "Utflyttade till andra delar av Göteborg",
+          5,
+          22749,
+          28892,
+          78.73805897826388
+        ],
+        [
+          "Utflyttade till andra delar av Göteborg",
+          6,
+          7628,
+          9963,
+          76.56328415136004
+        ],
+        [
+          "Utflyttade, alla",
+          1,
+          22226,
+          35861,
+          61.978193580770196
+        ],
+        [
+          "Utflyttade, alla",
+          2,
+          26745,
+          39488,
+          67.72943679092383
+        ],
+        [
+          "Utflyttade, alla",
+          3,
+          112773,
+          152467,
+          73.96551384889845
+        ],
+        [
+          "Utflyttade, alla",
+          4,
+          7300,
+          9768,
+          74.73382473382473
+        ],
+        [
+          "Utflyttade, alla",
+          5,
+          36712,
+          48181,
+          76.19601087565638
+        ],
+        [
+          "Utflyttade, alla",
+          6,
+          12609,
+          17114,
+          73.67652214561178
+        ],
+        [
+          "Kvarboende",
+          1,
+          107790,
+          170648,
+          63.16511180910412
+        ],
+        [
+          "Kvarboende",
+          2,
+          139553,
+          197872,
+          70.52690628284952
+        ],
+        [
+          "Kvarboende",
+          3,
+          533093,
+          675441,
+          78.92517629222982
+        ],
+        [
+          "Kvarboende",
+          4,
+          82731,
+          94754,
+          87.31135361040167
+        ],
+        [
+          "Kvarboende",
+          5,
+          194360,
+          233553,
+          83.21879830274071
+        ],
+        [
+          "Kvarboende",
+          6,
+          151474,
+          171578,
+          88.28288008952197
+        ]
+      ],
+      "decimals": 1
+    }
+  },
   "source": "lyckoparadoxen_2000_2024.xlsx",
-  "classificationYear": 2026
+  "classificationYear": 2026,
+  "flowPeriod": "2020–2024"
 }

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lyckoparadoxen – Lägesbild segregation</title>
+<title>Flyttningar och ekonomisk rörlighet – Lägesbild segregation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -54,9 +54,19 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <script src="../assets/js/focus-navigation.js" defer=""></script>
+
+<link rel="stylesheet" href="../assets/css/table-export.css">
+
+<script src="../assets/vendor/jszip/jszip.min.js" defer=""></script>
+
+<script src="../assets/js/table-export.js" defer=""></script>
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&amp;display=swap">
+
 
 
 <link rel="stylesheet" href="../assets/css/rapport.css">
@@ -71,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Skifta sidonavigering" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../kapitel/04-lyckoparadoxen.html">4. Lyckoparadoxen</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../kapitel/04-lyckoparadoxen.html">4. Flyttningar och ekonomisk rörlighet</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Skifta sidonavigering" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -190,7 +200,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../kapitel/04-lyckoparadoxen.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">4. Lyckoparadoxen</span></a>
+ <span class="menu-text">4. Flyttningar och ekonomisk rörlighet</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Skifta sektion">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -204,20 +214,32 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../kapitel/04-lyckoparadoxen.html#sec-lycko-flyttmatris" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.2 Flyttningar mellan områdestyperna</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../kapitel/04-lyckoparadoxen.html#sec-lycko-flyttningar" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4.2 Flyttningar av förvärvsarbetande</span></a>
+ <span class="menu-text">4.3 Vilka flyttar? Förvärvsarbetande in och ut</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/04-lyckoparadoxen.html#sec-lycko-rorlighet" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.4 Inkomströrlighet: vad händer med människorna?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../kapitel/04-lyckoparadoxen.html#sec-lycko-inkomst" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4.3 Inkomstutveckling</span></a>
+ <span class="menu-text">4.5 Inkomstutveckling: Vad betyder det för områdena?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../kapitel/04-lyckoparadoxen.html#sec-lycko-omraden" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4.4 Exempel på enskilda områden</span></a>
+  <a href="../kapitel/04-lyckoparadoxen.html#sec-lycko-paradox" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.6 Lyckoparadoxen</span></a>
   </div>
 </li>
       </ul>
@@ -233,34 +255,40 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../kapitel/05-k-narmsta-granne.html#sec-knn-sammanfattning" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.1 Sammanfattning</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../kapitel/05-k-narmsta-granne.html#sec-knn-utbildning" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5.1 Förgymnasial utbildning</span></a>
+ <span class="menu-text">5.2 Förgymnasial utbildning</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../kapitel/05-k-narmsta-granne.html#sec-knn-ekonomisk-standard" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5.2 Låg ekonomisk standard</span></a>
+ <span class="menu-text">5.3 Låg ekonomisk standard</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../kapitel/05-k-narmsta-granne.html#sec-knn-utrikesfodda" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5.3 Födda utanför Sverige</span></a>
+ <span class="menu-text">5.4 Födda utanför Sverige</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../kapitel/05-k-narmsta-granne.html#sec-knn-fodda-utanfor-europa" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5.4 Födda utanför Europa</span></a>
+ <span class="menu-text">5.5 Födda utanför Europa</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../kapitel/06-diskussion-och-slutsatser.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">6. Diskussion och slutsatser</span></a>
+            <a href="../kapitel/06-mojligheten-till-moten.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. Möjligheten till möten – arbete</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Skifta sektion">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -268,22 +296,46 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../kapitel/06-diskussion-och-slutsatser.html#sec-tolkning" class="sidebar-item-text sidebar-link">
- <span class="menu-text">6.1 Hur ska resultaten tolkas?</span></a>
+  <a href="../kapitel/06-mojligheten-till-moten.html#sec-moten-sammanfattning" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.1 Sammanfattning</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../kapitel/06-diskussion-och-slutsatser.html#sec-slutsatser-resultat" class="sidebar-item-text sidebar-link">
- <span class="menu-text">6.2 Slutsatser</span></a>
+  <a href="../kapitel/06-mojligheten-till-moten.html#sec-moten-dag-natt" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.2 Dag och natt</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/06-mojligheten-till-moten.html#sec-moten-arbetsplats" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.3 Vem har en arbetsplats?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/06-mojligheten-till-moten.html#sec-moten-var-man-arbetar" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.4 Var man arbetar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/06-mojligheten-till-moten.html#sec-moten-kollegor-grannar" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.5 Kollegor jämfört med grannar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/06-mojligheten-till-moten.html#sec-moten-grannskap" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.6 Grannskapet på natten och på dagen</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../kapitel/07-metodbilaga.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">7. Metodbilaga</span></a>
+            <a href="../kapitel/07-diskussion-och-slutsatser.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7. Diskussion och slutsatser</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Skifta sektion">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -291,14 +343,37 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../kapitel/07-metodbilaga.html#sec-berakningar" class="sidebar-item-text sidebar-link">
- <span class="menu-text">7.1 Definitioner och beräkningar</span></a>
+  <a href="../kapitel/07-diskussion-och-slutsatser.html#sec-tolkning" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7.1 Hur ska resultaten tolkas?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../kapitel/07-metodbilaga.html#sec-jamforbarhet" class="sidebar-item-text sidebar-link">
- <span class="menu-text">7.2 Hantering av jämförbarhet</span></a>
+  <a href="../kapitel/07-diskussion-och-slutsatser.html#sec-slutsatser-resultat" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7.2 Slutsatser</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../kapitel/08-metodbilaga.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8. Metodbilaga</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Skifta sektion">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/08-metodbilaga.html#sec-metod-lycko" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8.1 Lyckoparadoxen</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kapitel/08-metodbilaga.html#sec-metod-moten" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8.2 Möjligheten till möten – arbete</span></a>
   </div>
 </li>
       </ul>
@@ -423,7 +498,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lyckoparadoxen</h1>
+<h1 class="title">Flyttningar och ekonomisk rörlighet</h1>
 </div>
 
 
@@ -441,52 +516,67 @@ ul.task-list li input[type="checkbox"] {
 
 
 <section id="sec-lyckoparadoxen" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Lyckoparadoxen</h1>
-<p>I detta avsnitt kommer vi att analysera det som kallas för lyckoparadoxen och hur det ser ut i Göteborg. Lyckoparadoxen innebär att satsningar i socioekonomiskt utsatta områden kan hjälpa människorna som bor där, utan att det syns i områdets statistik. Det kan hända om de som får det bättre flyttar från området. Förloppet kan beskrivas i fyra steg:</p>
-<ol type="1">
-<li><p>Satsningar i området bidrar till att fler av de boende får arbete eller högre inkomst.</p></li>
-<li><p>Med större ekonomiska resurser ökar möjligheterna att välja bostad, och en del av dem som fått det bättre flyttar till andra områden.</p></li>
-<li><p>Bostäderna som blir lediga tas över av nya hushåll. Om de som flyttar in i genomsnitt har lägre inkomst eller svagare förankring på arbetsmarknaden än de som flyttade ut, förändras områdets sammansättning lite.</p></li>
-<li><p>Områdets statistik beskriver dem som bor där vid mättillfället. Andelen med arbete och medianinkomsten blir därför ungefär som tidigare, trots att många av dem som bodde där har fått det bättre.</p></li>
-</ol>
-<p><img src="../assets/images/lyckoparadoxen/figur-1-selektiv-flyttning.svg" class="img-fluid" style="width:100.0%" alt="Sex av tio invånare får arbete. Tre flyttar och ersätts av personer utan arbete, så områdets andel med arbete återgår till 30 procent."></p>
-<p>I skissen har sex av de tio ursprungliga invånarna arbete efter insatserna. Tre av dem flyttar och ersätts av inflyttare utan arbete, så områdets andel med arbete är tillbaka på 30 procent. I forskningen kallas mekanismen selektiv flyttning. Flyttningar är en naturlig del av människors liv och inget problem i sig. Problemet uppstår när satsningar bedöms enbart utifrån områdets statistik. En oförändrad statistik behöver inte betyda att insatserna saknar effekt, och en förbättrad statistik kan bero på att andra har flyttat in snarare än på att de boende fått det bättre. För att se effekten av en satsning behöver man därför också följa människorna, inte bara platsen.</p>
+<h1 data-number="4"><span class="header-section-number">4</span> Flyttningar och ekonomisk rörlighet</h1>
+<p>Det här kapitlet handlar om hur flyttningar och inkomster hänger ihop med segregationen i Göteborg. Ett områdes statistik beskriver dem som bor där ett visst år. Den förändras både när de boende får högre eller lägre inkomster och när människor flyttar in och ut. Därför följer kapitlet både områdena och människorna.</p>
+<p>Kapitlet börjar med att undersöka vart människor flyttar inom staden och vilka som flyttar. Därefter följer vi enskilda personers inkomster under fem år och ser var de bor efteråt. Sist kopplar vi ihop resultaten med hur inkomsterna i områdena har utvecklats och med det som ibland kallas lyckoparadoxen.</p>
+<p>Områdena är grupperade i sex kluster enligt Göteborgs Stads socioekonomiska indelning 2026. Kluster 1 har stora socioekonomiska utmaningar och kluster 6 särskilt goda förutsättningar.</p>
 <section id="sec-lycko-sammanfattning" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="sec-lycko-sammanfattning"><span class="header-section-number">4.1</span> Sammanfattning</h2>
-<p>De tio primärområden som i stadens socioekonomiska områdesindelning 2026 har stora socioekonomiska utmaningar (kluster 1) förlorade 2000–2024 netto 19 400 förvärvsarbetande genom flyttningar, ungefär 21 per 1 000 boende 20–64 år och år. Tre fjärdedelar av förlusten (14 700) gick till andra delar av Göteborg. Områdena med särskilt goda förutsättningar (kluster 6) vann netto 9 400 förvärvsarbetande från resten av staden.</p>
-<p>De som flyttar ut ur kluster 1 är oftare förvärvsarbetande än de som flyttar in, 53 mot 41 procent. Skillnaden beror till stor del på att 28 500 av inflyttarna inte bodde i Sverige året före och därför inte kan ha arbetat här. Bland flyttningar inom staden är skillnaden mindre, 55 mot 51 procent. I kluster 6 är det tvärtom: inflyttare från resten av staden är oftare förvärvsarbetande än utflyttare, 85 mot 74 procent.</p>
-<p>Kluster 1 hade en medianinkomst på 64 procent av stadens år 2000, 53 procent 2010 och 69 procent 2024. Kluster 6 gick under samma tid från 130 till 143 procent, så avståndet mellan ytterligheterna har ökat. Bland dem som bodde kvar i kluster 1 steg andelen förvärvsarbetande från 44 till 67 procent, men det syns bara delvis i områdenas statistik, eftersom många av dem som får det bättre flyttar.</p>
+<ul>
+<li>De flesta flyttar till ett område som liknar det de lämnade. Under 2021–2025 gick nästan två av tre flyttningar från kluster 1 till kluster 1 eller 2, mot 54 procent under 2001–2005.</li>
+<li>Fler förvärvsarbetande flyttar från kluster 1 till resten av staden än åt andra hållet. Kluster 4 och 6 har fler förvärvsarbetande som flyttar in än ut.</li>
+<li>Personer med låga och höga inkomster bor allt mer åtskilda. Andelen med de lägsta inkomsterna ökade i kluster 1 från 17 till 21 procent mellan 2004 och 2024. Andelen med de högsta inkomsterna ökade i kluster 6 från 26 till 31 procent.</li>
+<li>Den som har låg inkomst i kluster 1 når mer sällan högre inkomster. Av dem som började 2019 hade 9 procent nått den övre halvan fem år senare, mot 25 procent i kluster 6.</li>
+<li>Den som får högre inkomst flyttar oftare från kluster 1. Av dem som tagit sig från decil 1 till den övre halvan bor 50 procent kvar i klustret fem år senare, mot 70 procent av dem som blev kvar i decil 1.</li>
+<li>Avståndet i medianinkomst mellan kluster 1 och kluster 6 har ökat sedan 2000, från 66 till 74 procentenheter av stadens median.</li>
+<li>Resultaten ger delvis stöd för lyckoparadoxen. Fler flyttar ut från kluster 1 än in, men de som flyttar ut har ungefär lika ofta arbete som de som flyttar in.</li>
+</ul>
 </section>
-<section id="sec-lycko-flyttningar" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="sec-lycko-flyttningar"><span class="header-section-number">4.2</span> Flyttningar av förvärvsarbetande</h2>
-<p>Områdena med stora socioekonomiska utmaningar förlorar förvärvsarbetande till resten av staden, och områdena med goda förutsättningar vinner dem. Områdena grupperas här efter stadens socioekonomiska områdesindelning 2026, och samma indelning används för alla år. Flyttningarna räknas per 1 000 boende, så att kluster av olika storlek kan jämföras.</p>
-<p>Summerat över alla 25 år har 14 700 fler förvärvsarbetande flyttat från kluster 1 till andra delar av Göteborg än åt andra hållet. Det är i genomsnitt knappt 600 per år, eller 15,5 per 1 000 boende och år. Flyttningar mellan två områden inom kluster 1 tar ut varandra och påverkar inte summan. Kluster 6 visar det omvända mönstret. Dit har 9 400 fler förvärvsarbetande flyttat från resten av staden än de som flyttat därifrån. För personer utan arbete går nettot åt andra hållet: 4 200 fler har flyttat från kluster 6 till resten av staden än dit.</p>
-<p>etande i kategorin utvandrade och avlidna, eftersom den som invandrar inte kan ha arbetat i Sverige året före och därför aldrig väger upp. Det säger mer om definitionen än om områdena. Det som skiljer klustren åt är hur många som kommer: kluster 1 tog emot 28 500 personer som inte var folkbokförda i Sverige året före, kluster 6 7 700, trots att kluster 6 har ungefär lika många invånare.</p>
-<section id="lycko-cluster-flows" class="lycko-card lycko-cluster knn-widget" data-chart="flows" aria-labelledby="lycko-flows-title">
-  <div class="lycko-heading"><h3 id="lycko-flows-title" class="anchored">Kluster 1 förlorar förvärvsarbetande till resten av staden, kluster 4 och 6 vinner</h3><div class="lycko-actions knn-actions"></div></div>
-  <p class="knn-caption">Nettoflyttning av förvärvsarbetande per 1 000 boende 20–64 år och år, 2000–2024. Socioekonomisk indelning 2026.</p>
+<section id="sec-lycko-flyttmatris" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="sec-lycko-flyttmatris"><span class="header-section-number">4.2</span> Flyttningar mellan områdestyperna</h2>
+<p>De flesta som flyttar inom Göteborg flyttar till ett område av samma eller närliggande typ. Under 2021–2025 gick nästan två av tre flyttningar från områden med stora socioekonomiska utmaningar (kluster 1) till ett annat område i kluster 1 eller 2.</p>
+<p>Under 2021–2025 gjordes 233 900 flyttningar mellan Göteborgs primärområden bland personer i åldern 18–64 år, i genomsnitt 46 800 per år. Matrisen nedan visar vart de gick. Varje rad är ett kluster som människor flyttar från, och varje ruta visar hur stor andel av flyttningarna från det klustret som gick till respektive kluster. Den grå raden längst ned visar hur alla flyttningar i staden fördelar sig. Den fungerar som jämförelse. Om det inte spelade någon roll var man bodde innan skulle varje rad se ut ungefär som den grå.</p>
+<p>Kluster 1 tar emot 12 procent av alla flyttningar i staden, men 35 procent av flyttningarna från andra områden i kluster 1. Det är nästan tre gånger så mycket som om flyttningarna fördelats som i staden i stort. I andra änden går 14 procent av flyttningarna från kluster 6 till ett annat område i kluster 6, mot 5 procent i staden som helhet. Långa steg är ovanliga åt båda hållen. Bara 8 procent av flyttningarna från kluster 1 går till kluster 4–6, och 12 procent av flyttningarna från kluster 6 går till kluster 1–2.</p>
+<p>Matrisen räknar bara flyttningar mellan primärområden. Därutöver gjordes 56 200 flyttningar inom samma primärområde under 2021–2025, ungefär var femte flytt i staden. Räknas de med stannar 72 procent av flyttningarna från kluster 1 i kluster 1 eller 2. Att många flyttar inom sitt eget område förstärker alltså mönstret.</p>
+<p>Mönstret har blivit starkare över tid. Andelen av flyttningarna från kluster 1 som gick till kluster 1 eller 2 var 54 procent 2001–2005, 58 procent 2006–2010, 62 procent både 2011–2015 och 2016–2020, och 64 procent 2021–2025. Varje andel är räknad på alla flyttningar under femårsperioden.</p>
+<section id="lycko-matrix" class="lycko-card lycko-cluster knn-widget" data-chart="matrix" data-table-export-root="" aria-labelledby="lycko-matrix-title">
+  <div class="lycko-heading"><h3 id="lycko-matrix-title" class="anchored">De flesta flyttar till liknande områden</h3><div class="lycko-actions knn-actions"></div></div>
+  <p class="knn-caption">Flyttningar mellan primärområden, 18–64 år, 2021–2025. Andel av flyttningarna från respektive kluster (%). Den grå raden visar hela staden.</p>
+  <fieldset class="lycko-cluster-filters"><legend>Socioekonomisk indelning 2026</legend></fieldset>
+  <div class="lycko-cluster-plot"></div>
+  <p class="knn-caption">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p>
+  <p class="lycko-status" role="status"></p>
+</section>
+<p>Fler flyttar från kluster 1 till resten av staden än åt andra hållet. Skillnaden mellan hur många som flyttar in till ett område och hur många som flyttar ut kallas nettoflyttning, eller netto. Under 2021–2025 hade kluster 1 ett negativt netto på 3 700 vuxna, drygt 700 per år, och nio av tio av dem gick till kluster 2 och 3. Barnfamiljer flyttar i en annan riktning, mot kluster 4 och 6 med många villor och radhus. De två klustren hade tillsammans ett positivt netto på 2 800 barn, medan kluster 3 och 5 hade ett negativt netto. För vuxna har kluster 6 i dag ett netto nära noll och kluster 5 ett negativt netto, trots att kluster 4, 5 och 6 alla hade ett positivt netto av vuxna under 2000–2010.</p>
+<p>Flyttningarna gör alltså inte områdena mer blandade. De flesta som flyttar hamnar i ett område som liknar det de lämnade, och därför ändras sammansättningen i områdena lite. En förklaring kan vara att de flesta flyttar kort och att områden av samma typ ofta ligger nära varandra, till exempel i Nordost. Matrisen kan inte visa hur mycket som beror på avstånd och hur mycket som beror på att människor väljer en viss typ av område. Oavsett orsak bidrar flyttningarna till att skillnaderna mellan områdena består.</p>
+</section>
+<section id="sec-lycko-flyttningar" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="sec-lycko-flyttningar"><span class="header-section-number">4.3</span> Vilka flyttar? Förvärvsarbetande in och ut</h2>
+<p>Kluster 1 har fler förvärvsarbetande personer som flyttar ut till resten av staden än som flyttar in därifrån, medan kluster 4 och 6 har fler som flyttar in än ut. Under 2020–2024 flyttade 4 000 fler personer i åldern 20–64 år från kluster 1 till resten av staden än åt andra hållet. 3 000 av dem hade arbete året före flytten, alltså ungefär tre av fyra.</p>
+<p>Diagrammet nedan visar nettot för förvärvsarbetande, alltså personer som hade arbete året före flytten. Nettot är summerat för perioden 2020–2024 och räknat per 1 000 boende och år, så att kluster av olika storlek kan jämföras. Den blå stapeln är flyttningar inom Göteborg. De ljusgröna staplarna är flyttningar till och från övriga Sverige och de grå är utvandring och dödsfall. Ett negativt värde betyder att fler förvärvsarbetande lämnade klustret än kom dit.</p>
+<p>Inom staden har kluster 1 ett netto på −14,8 förvärvsarbetande per 1 000 boende och år, och kluster 2 −3,9. Kluster 6 har +8,1 och kluster 4 +5,3, medan kluster 3 och 5 ligger nära noll. Jämfört med hela perioden 2000–2024 är nettot för kluster 1 nästan oförändrat, medan det positiva nettot för kluster 4, 5 och 6 har minskat. Det stämmer med flyttningarna för alla vuxna i föregående avsnitt. Utvandring och dödsfall ger ett negativt netto för alla kluster. Det beror på att den som invandrar enligt definitionen inte kan ha haft arbete i Sverige året före och därför aldrig väger upp dem som utvandrar eller avlider.</p>
+<section id="lycko-cluster-flows" class="lycko-card lycko-cluster knn-widget" data-chart="flows" aria-labelledby="lycko-cluster-flows-title">
+  <div class="lycko-heading"><h3 id="lycko-cluster-flows-title" class="anchored">Kluster 1 förlorar förvärvsarbetande till resten av staden, kluster 4 och 6 vinner</h3><div class="lycko-actions knn-actions"></div></div>
+  <p class="knn-caption">Nettoflyttning av förvärvsarbetande per 1 000 boende 20–64 år och år, 2020–2024. Socioekonomisk indelning 2026.</p>
   <fieldset class="lycko-cluster-filters"><legend>Flyttningar</legend></fieldset>
   <div class="lycko-cluster-plot"></div>
   <details><summary>Visa diagrammets värden</summary><div class="lycko-table"></div></details>
   <p class="knn-caption">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p>
   <p class="lycko-status" role="status"></p>
 </section>
-<p>Inom staden är de som lämnar kluster 1 något oftare förvärvsarbetande än de som kommer, 55 mot 51 procent. Den större skillnaden ligger i kluster 6, dit förvärvsarbetande flyttar i högre grad än de som flyttar därifrån. Lyckoparadoxen syns alltså mest i hur många som flyttar ut ur kluster 1 och vilka som ersätter dem, och i att områden med goda förutsättningar drar till sig de förvärvsarbetande.</p>
-<section id="lycko-cluster-table" class="lycko-card" aria-labelledby="lycko-table-title">
-  <div class="lycko-heading"><h3 id="lycko-table-title" class="anchored">Andel förvärvsarbetande året före, 2000–2024</h3><button type="button" class="lycko-csv">Ladda ner CSV</button></div>
-  <div class="lycko-table" data-cluster-table=""></div>
-  <p class="knn-caption">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p>
-  <noscript>Aktivera JavaScript för att visa den beräknade tabellen.</noscript>
 </section>
-</section>
-<section id="sec-lycko-inkomst" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="sec-lycko-inkomst"><span class="header-section-number">4.3</span> Inkomstutveckling</h2>
-<p>Kluster 1 ligger i dag bara något högre i förhållande till staden än år 2000, medan kluster 6 har dragit ifrån. Diagrammet visar medianinkomsten i procent av stadens median, så att inflationen och den allmänna löneutvecklingen räknas bort.</p>
-<p>Utvecklingen har tre faser. Under 2000–2010 halkade kluster 1 efter, från 64 till 53 procent av stadens median, samtidigt som kluster 6 gick från 130 till 140 procent. Under 2010–2020 kom kluster 1 tillbaka till 63 procent, och 2024 låg det på 69 procent. Kluster 2 följer samma mönster men på en högre nivå, medan kluster 3–5 har legat nästan still.</p>
-<p>Avståndet mellan kluster 1 och kluster 6 har därför ökat, från 66 till 74 procentenheter av stadens median. Det stämmer med bilden från flyttningarna: kluster 6 tar emot förvärvsarbetande från resten av staden, medan kluster 1 förlorar dem.</p>
-<section id="lycko-cluster-income" class="lycko-card lycko-cluster knn-widget" data-chart="income" aria-labelledby="lycko-income-title">
-  <div class="lycko-heading"><h3 id="lycko-income-title" class="anchored">Avståndet mellan kluster 1 och kluster 6 har ökat sedan 2000</h3><div class="lycko-actions knn-actions"></div></div>
-  <p class="knn-caption">Medianinkomst 20–64 år i procent av Göteborgs median, 2000–2024. Socioekonomisk indelning 2026.</p>
+<section id="sec-lycko-rorlighet" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="sec-lycko-rorlighet"><span class="header-section-number">4.4</span> Inkomströrlighet: vad händer med människorna?</h2>
+<p>Avsnitten ovan följer flyttningarna. Här följer vi i stället hur människornas inkomster förändras under fem år och var de bor efteråt. Det visar om personer med låg inkomst i kluster 1 lika ofta får högre inkomst som personer i andra kluster, och om de som får det flyttar därifrån.</p>
+<p>Inkomsten mäts som individens disponibla inkomst, alltså inkomsten efter skatt och med bidrag inräknade. Varje år delas alla folkbokförda i Sverige in i tio lika stora grupper efter inkomst, så kallade deciler. Vi räknar bara med personer som är 20–64 år. Decil 1 är den tiondel som har lägst inkomst, och decil 10 den tiondel som har högst. Gränserna mellan grupperna räknas om varje år. Därför påverkas jämförelsen över tid inte av inflation eller av att lönerna i allmänhet stiger.</p>
+<p>Vi följer alla som var 20–59 år och folkbokförda i Göteborg ett visst år och ser var de befinner sig fem år senare, även om de har flyttat. Huvudresultaten gäller 25–59-åringar. Många 20–24-åringar studerar och har låg inkomst under en kort tid, och det skulle annars påverka bilden.</p>
+<section id="sec-lycko-deciler" class="level3" data-number="4.4.1">
+<h3 data-number="4.4.1" class="anchored" data-anchor-id="sec-lycko-deciler"><span class="header-section-number">4.4.1</span> Var bor de med lägst och högst inkomster?</h3>
+<p>Personer med låga och höga inkomster bor allt mer åtskilda. I kluster 1 hade 21 procent av de boende i åldern 20–64 år en inkomst i decil 1 år 2024, mot 17 procent 2004. I kluster 6 minskade andelen från 9 till 7 procent. Andelen i decil 10 ökade i kluster 6, från 26 till 31 procent, medan den i kluster 1 låg kvar på en låg nivå, omkring 1–2 procent.</p>
+<p>Göteborg som helhet har inte förändrats på samma sätt. Ungefär 12 procent av göteborgarna 20–64 år tillhör decil 1 och 10 procent decil 10, både 2004 och 2024. Det är fördelningen mellan områdena som har ändrats. Kluster 1 har 11 procent av stadens invånare men nästan 20 procent av dem i decil 1. Kluster 6 har 10 procent av invånarna men 32 procent av dem i decil 10. Mönstret är detsamma om 20–24-åringarna räknas bort.</p>
+<section id="lycko-deciles" class="lycko-card lycko-cluster knn-widget" data-chart="mobility" aria-labelledby="lycko-deciles-title">
+  <div class="lycko-heading"><h3 id="lycko-deciles-title" class="anchored">Låga och höga inkomster blir mer geografiskt åtskilda</h3><div class="lycko-actions knn-actions"></div></div>
+  <p class="knn-caption">Andel boende 20–64 år i rikets lägsta respektive högsta inkomstdecil, 2004–2024 (%). Individens disponibla inkomst.</p>
   <fieldset class="lycko-cluster-filters"><legend>Socioekonomisk indelning 2026</legend></fieldset>
   <div class="lycko-cluster-plot"></div>
   <details><summary>Visa diagrammets värden</summary><div class="lycko-table"></div></details>
@@ -494,11 +584,71 @@ ul.task-list li input[type="checkbox"] {
   <p class="lycko-status" role="status"></p>
 </section>
 </section>
-<section id="sec-lycko-omraden" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="sec-lycko-omraden"><span class="header-section-number">4.4</span> Exempel på enskilda områden</h2>
-<p>Bland områdena med låg inkomst år 2000 skiljer sig utvecklingen mycket åt. I Hjällbo, Hammarkullen och Norra Biskopsgården, som alla tillhör kluster 1, försvinner netto drygt 20 förvärvsarbetande per 1 000 boende och år. Frölunda Torg och Gamlestaden ligger kring noll och tillhör i dag kluster 2 respektive 3.</p>
-<p>De områden som har klarat sig bäst har vuxit kraftigt. Frölunda Torg, Gamlestaden och Kvillebäcken har ungefär fördubblat antalet boende i arbetsför ålder, deras inkomst har stigit mot stadens nivå och de tillhör i dag kluster 2 eller 3. En möjlig förklaring är att nybyggda bostäder lockar inflyttare med arbete och högre inkomst. Det har dock inte prövats här. Eriksbo går i motsatt riktning: området har den största nettoförlusten av förvärvsarbetande och har gått från 85 till 64 procent av stadens medianinkomst. Området är litet, så enskilda år kan väga tungt.</p>
-<p>I diagrammet nedan kan du se hur varje område har utvecklats över tid på variablerna kumulativt flyttnetto av förvärvsarbetande personer och medianinkomsten.Varje punkt är ett primärområde. På den vågräta axeln visas medianförvärvsinkomsten för valt år, omräknad till 2024 års prisnivå. På den lodräta axeln visas flyttnettot av förvärvsarbetande, summerat från 2000 till och med valt år. Positiva värden innebär sammantaget fler inflyttare än utflyttare med arbete. Negativa värden innebär fler utflyttare än inflyttare med arbete.Färgerna visar den socioekonomiska indelningen <strong>2026</strong> för hela perioden. Indelningen bygger på statistik från 2024 och beskriver alltså inte områdets grupp det år som väljs i diagrammet. Folkmängden avser samtliga åldrar vid slutet av respektive år.</p>
+<section id="sec-lycko-lamna-decil" class="level3" data-number="4.4.2">
+<h3 data-number="4.4.2" class="anchored" data-anchor-id="sec-lycko-lamna-decil"><span class="header-section-number">4.4.2</span> Hur många tar sig ur den lägsta inkomstgruppen?</h3>
+<p>I Göteborg som helhet tar sig ungefär var femte person med låg inkomst till den övre halvan inom fem år. Av 25–59-åringar i decil 1 år 2004 hade 22 procent nått decil 6–10 fem år senare. För dem som började 2019 var andelen 18 procent, ungefär 4 200 personer, alltså en liten minskning. Samtidigt har andelen som blivit kvar i decil 1 ökat från 33 till 44 procent.</p>
+<p>Den som har låg inkomst och bor i kluster 1 har svårare att nå den övre halvan än den som har låg inkomst i andra kluster. Av 25–59-åringar i decil 1 i kluster 1 år 2019 hade 9 procent nått decil 6–10 fem år senare. I kluster 6 var andelen 25 procent. Skillnaden har funnits under hela perioden. Siffrorna visar ett samband men inte orsaken, eftersom de som bor i olika kluster också skiljer sig på andra sätt, till exempel i utbildning.</p>
+<p>Andelen som är kvar i decil 1 efter fem år har ökat i alla kluster, och det gäller också riket som helhet. Ökningen har ändå varit störst i kluster 1 och 2. I kluster 1 gick andelen från 33 procent för dem som började 2004 till 47 procent för dem som började 2019. I kluster 6 gick den från 36 till 42 procent.</p>
+<p>Tabellen räknar bara dem som bodde i Sverige fem år senare. Mellan 12 och 20 procent av dem som började i decil 1 hade utvandrat eller avlidit. Den sista perioden, 2019–2024, omfattar även pandemiåren.</p>
+<section id="lycko-mobility-table" class="lycko-card lycko-result-table" data-result-table="mobility" aria-labelledby="lycko-mobility-table-title">
+<div class="lycko-heading"><h3 id="lycko-mobility-table-title" class="anchored">Fler blir kvar i den lägsta inkomstgruppen</h3><button type="button" class="lycko-csv">Ladda ner CSV</button></div>
+<p class="knn-caption">25–59 år i decil 1 vid start. Andel fem år senare bland dem som bodde i Sverige (%).</p><div class="lycko-table"></div>
+<p class="knn-caption">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p>
+</section>
+</section>
+<section id="sec-lycko-kvar" class="level3" data-number="4.4.3">
+<h3 data-number="4.4.3" class="anchored" data-anchor-id="sec-lycko-kvar"><span class="header-section-number">4.4.3</span> Bor de kvar när de fått det bättre?</h3>
+<p>Ungefär hälften av dem som gått från decil 1 till den övre halvan bor kvar i samma kluster fem år senare. Av 25–59-åringar i kluster 1 som gjort den resan bodde 50 procent kvar i samma kluster. 31 procent hade flyttat till ett annat område i Göteborg och 19 procent hade lämnat staden. Bland dem från kluster 1 som var kvar i decil 1 bodde 70 procent kvar i kluster 1.</p>
+<p>Att få högre inkomst hänger alltså ihop med att flytta, men långt ifrån alla flyttar. Den som flyttar från kluster 1 till ett annat område i Göteborg hamnar alltid i ett kluster med bättre förutsättningar, eftersom inget kluster har sämre. Andelarna har varit ungefär desamma under hela perioden.</p>
+<p>För dem med högst inkomster ser det annorlunda ut. Av 25–59-åringar i decil 10 som bodde i kluster 6 var 78–80 procent kvar i decil 10 fem år senare, och nio av tio av dem bodde kvar i kluster 6.</p>
+<p>Sammantaget betyder det för kluster 1 att en del av dem som får högre inkomst flyttar, men att hälften bor kvar. Det ger visst stöd för lyckoparadoxen, som beskrivs längre fram i kapitlet.</p>
+<section id="lycko-destination-table" class="lycko-card lycko-result-table" data-result-table="destination" aria-labelledby="lycko-destination-table-title">
+<div class="lycko-heading"><h3 id="lycko-destination-table-title" class="anchored">Hälften av dem som fått högre inkomst bor kvar i kluster 1</h3><button type="button" class="lycko-csv">Ladda ner CSV</button></div>
+<p class="knn-caption">Från decil 1 till decil 6–10, 25–59 år vid start. Samtliga startår 2004–2019, bostadsort fem år senare (%).</p><div class="lycko-table"></div>
+<p class="knn-caption">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p>
+</section>
+</section>
+</section>
+<section id="sec-lycko-inkomst" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="sec-lycko-inkomst"><span class="header-section-number">4.5</span> Inkomstutveckling: Vad betyder det för områdena?</h2>
+<p>Avsnitten ovan har följt människorna. Här vänder vi tillbaka till områdena. Ett områdes statistik påverkas samtidigt av hur inkomsterna utvecklas för dem som bor kvar och av vilka som flyttar in och ut. I kluster 1 drar båda åt samma håll. Färre än i andra kluster tar sig från de lägsta inkomsterna till den övre halvan, och hälften av dem som gör det har flyttat fem år senare.</p>
+<p>Det syns i medianinkomsten. Diagrammet visar medianinkomsten i varje kluster i procent av stadens median, så att inflation och allmän löneutveckling räknas bort, på samma sätt som för decilerna. Kluster 1 ligger i dag bara något högre i förhållande till staden än år 2000, medan kluster 6 har dragit ifrån.</p>
+<p>Medianen är den inkomst som delar befolkningen i två lika stora delar, där hälften har mer och hälften har mindre. Stadens median för 20–64-åringar var 392 600 kronor per år före skatt 2024, ungefär 32 700 kronor i månaden. I kluster 6 låg medianen på 143 procent av stadens, alltså omkring 562 000 kronor per år eller 46 800 kronor i månaden. I kluster 1 låg den på 69 procent, omkring 270 000 kronor per år eller 22 500 kronor i månaden.</p>
+<p>Utvecklingen har tre faser. Under 2000–2010 halkade kluster 1 efter, från 64 till 53 procent av stadens median, samtidigt som kluster 6 gick från 130 till 140 procent. Under 2010–2020 kom kluster 1 tillbaka till 63 procent, och 2024 låg det på 69 procent. Kluster 2 följer samma mönster men på en högre nivå, medan kluster 3–5 har legat nästan still.</p>
+<p>Avståndet mellan kluster 1 och kluster 6 har därför ökat, från 66 till 74 procentenheter av stadens median. 2024 motsvarade skillnaden knappt 300 000 kronor per år. Det stämmer med resultaten ovan. Andelen med de lägsta inkomsterna har ökat i kluster 1 och andelen med de högsta i kluster 6, och kluster 6 tar emot förvärvsarbetande från resten av staden.</p>
+<section id="lycko-cluster-income" class="lycko-card lycko-cluster knn-widget" data-chart="income" aria-labelledby="lycko-cluster-income-title">
+  <div class="lycko-heading"><h3 id="lycko-cluster-income-title" class="anchored">Avståndet mellan kluster 1 och kluster 6 har ökat sedan 2000</h3><div class="lycko-actions knn-actions"></div></div>
+  <p class="knn-caption">Medianinkomst 20–64 år i procent av Göteborgs median, 2000–2024. Socioekonomisk indelning 2026.</p>
+  <fieldset class="lycko-cluster-filters"><legend>Socioekonomisk indelning 2026</legend></fieldset>
+  <div class="lycko-cluster-plot"></div>
+  <details><summary>Visa diagrammets värden</summary><div class="lycko-table"></div></details>
+  <p class="knn-caption">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p>
+  <p class="lycko-status" role="status"></p>
+</section>
+<p>Att medianen i kluster 1 har stigit sedan 2010, samtidigt som andelen i decil 1 har ökat, kan verka motsägelsefullt. Måtten beskriver dock olika delar av befolkningen. Medianen visar den som ligger i mitten, medan decil 1 visar dem med lägst inkomst. Medianen bygger dessutom på förvärvsinkomst och decilerna på disponibel inkomst. Tillsammans tyder de på att skillnaderna i inkomst inom kluster 1 har vuxit.</p>
+<p>Klustren bygger på hur områdena ser ut i dag, och det påverkar bilden. Om områdena i stället grupperas efter inkomsten 2000–2002 har de 19 områden som då hade lägst inkomst gått från 72 till 82 procent av stadens median, och avståndet till de rikaste områdena är oförändrat. Skillnaden beror på att flera områden med låg inkomst 2000, som Gamlestaden, Kvillebäcken, Rambergsstaden och Krokslätt, i dag tillhör kluster 3. De områden som har förbättrats mest har alltså lämnat de mest utsatta klustren, och de som är kvar i kluster 1 är de som utvecklats svagast. Båda bilderna är riktiga och kompletterar varandra. De visar också att samma mönster gäller för både människor och områden. Både de personer och de områden som får det bättre lämnar ofta kluster 1. Därför kan kluster 1 se ungefär oförändrat ut, trots att många har fått det bättre.</p>
+</section>
+<section id="sec-lycko-paradox" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="sec-lycko-paradox"><span class="header-section-number">4.6</span> Lyckoparadoxen</h2>
+<p>Resultaten i kapitlet hänger ihop med ett fenomen som ibland kallas lyckoparadoxen. Det innebär att satsningar i socioekonomiskt utsatta områden kan hjälpa de människor som bor där, utan att det syns i områdets statistik. Det kan hända om de som får det bättre flyttar därifrån och ersätts av nya invånare med lägre inkomster eller svagare förankring på arbetsmarknaden. Områdets statistik beskriver dem som bor där vid mättillfället. Den kan därför se ungefär likadan ut som tidigare, trots att många av dem som bodde där har fått det bättre.</p>
+<p>I forskningen kallas mekanismen selektiv flyttning. Flyttningar är en naturlig del av människors liv och inget problem i sig. Problemet uppstår när satsningar bedöms enbart utifrån områdets statistik. En oförändrad statistik behöver inte betyda att insatserna saknar effekt, och en förbättrad statistik kan bero på att andra har flyttat in snarare än på att de boende fått det bättre. För att se effekten av en satsning behöver man därför också följa människorna, inte bara platsen.</p>
+<section id="sec-lycko-arbete" class="level3" data-number="4.6.1">
+<h3 data-number="4.6.1" class="anchored" data-anchor-id="sec-lycko-arbete"><span class="header-section-number">4.6.1</span> Har de som flyttar ut oftare arbete?</h3>
+<p>Om lyckoparadoxen stämmer borde de som flyttar ut från kluster 1 oftare ha arbete än de som flyttar in. Tabellen nedan prövar det. Den jämför hur stor andel som hade arbete året före bland dem som flyttade in, dem som flyttade ut och dem som bodde kvar under 2020–2024. Den gäller bara flyttningar inom Göteborg, så att in- och utflyttare jämförs på samma villkor. Om andelen är högre bland dem som flyttar ut än bland dem som flyttar in, har de som lämnar området oftare arbete än de som kommer dit.</p>
+<p>I kluster 1 är skillnaden liten. De som flyttar ut har arbete ungefär lika ofta som de som flyttar in, 66 mot 64 procent. Bland dem som bor kvar är andelen 63 procent. Nettot beror alltså mest på att fler flyttar ut än in, inte på att de som flyttar ut skiljer sig från dem som kommer.</p>
+<p>I kluster 6 är skillnaden större. 87 procent av dem som flyttar in från andra delar av staden har arbete, mot 77 procent av dem som flyttar ut. De som flyttar ut har arbete mer sällan än de som bor kvar (88 procent). En möjlig förklaring är att många av dem är unga vuxna som lämnar föräldrahemmet, men det har inte prövats.</p>
+<p>Räknas även flyttningar till och från övriga Sverige och utlandet blir skillnaden i kluster 1 större. Då hade 54 procent av alla inflyttare arbete året före, mot 62 procent av alla utflyttare. Det beror främst på att 4 700 av inflyttarna bodde utomlands året före och därför inte kan ha haft arbete här enligt måttet. Bland inflyttare som bodde i Sverige året före hade 62 procent arbete, samma andel som bland utflyttarna.</p>
+<p>Resultaten ger alltså bara delvis stöd för lyckoparadoxen. Kluster 1 har fler förvärvsarbetande som flyttar ut än in, och de flesta som flyttar därifrån hamnar i områden med bättre förutsättningar. Men de som flyttar ut har ungefär lika ofta arbete som de som flyttar in. Skillnaden ligger främst i hur många som flyttar, och i att en del av inflyttarna kommer direkt från utlandet.</p>
+<section id="lycko-cluster-table" class="lycko-card lycko-result-table" data-result-table="employment" aria-labelledby="lycko-cluster-table-title">
+<div class="lycko-heading"><h3 id="lycko-cluster-table-title" class="anchored">Andel med arbete året före, 2020–2024</h3><button type="button" class="lycko-csv">Ladda ner CSV</button></div>
+<p class="knn-caption">Flyttar inom Göteborg samt kvarboende, 20–64 år (%).</p><div class="lycko-table"></div>
+<p class="knn-caption">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p>
+</section>
+</section>
+<section id="sec-lycko-omraden" class="level3" data-number="4.6.2">
+<h3 data-number="4.6.2" class="anchored" data-anchor-id="sec-lycko-omraden"><span class="header-section-number">4.6.2</span> Flyttnetto och inkomst per område</h3>
+<p>Spridningsdiagrammet nedan visar sambandet mellan flyttningar och inkomst per område. Varje cirkel är ett primärområde, färgad efter kluster och med storlek efter antal invånare. Den vågräta axeln visar medianinkomsten 2024 och den lodräta det sammanlagda nettot av förvärvsarbetande genom flyttningar 2000–2024. Områden under nollinjen har haft fler förvärvsarbetande som flyttat ut än in. Med play-knappen visas varje år för sig.</p>
+<p>Områdena med lägst medianinkomst ligger nästan alla under nollinjen, medan flera av områdena med högst inkomst ligger över. Sambandet är inte entydigt, eftersom en del områden i kluster 3 och 5 har lika stort negativt netto som områden i kluster 1. Nettot räknas i antal personer, så stora områden får större värden. Diagrammet visar ett samband, inte en orsak, eftersom medianinkomsten 2024 själv påverkas av vilka som flyttat in och ut.</p>
 <section id="lycko-card" class="lycko-card knn-widget" aria-labelledby="lycko-title">
   <div class="lycko-heading"><h3 id="lycko-title" class="anchored">Medianinkomst och kumulativt flyttnetto</h3><div class="lycko-actions knn-actions"></div></div>
   <p class="lycko-period knn-caption"></p>
@@ -532,26 +682,29 @@ ul.task-list li input[type="checkbox"] {
   <p class="lycko-status" role="status" aria-live="polite"></p>
   <div class="lycko-tooltip" hidden=""></div>
 </section>
-<p><strong>Osäkerheter och vad som kan ändra slutsatserna</strong></p>
-<ul>
-<li><p>Förvärvsarbetande är ett grovt mått på framgång. Den som har ett lågt betalt jobb räknas likadant som den med hög lön. Lyckoparadoxen kan vara starkare i inkomst än i sysselsättning. Det kan prövas genom att jämföra inkomsten året före flytten mellan in- och utflyttare.</p></li>
-<li><p>Ålder och livsfas styr flyttningarna. Unga flyttar ofta till billigare områden och vidare när de får jobb och familj. En del av mönstret kan därför vara vanlig livscykel snarare än segregation. Uttaget kan delas upp på åldersgrupper för att pröva det.</p></li>
-<li><p>Vart utflyttarna flyttar är okänt. Uttaget visar att de flyttar till andra delar av staden men inte till vilka områden. En matris över från- och till-område skulle visa om de förvärvsarbetande flyttar till områden med högre inkomst.</p></li>
-<li><p>Tidsseriebrott i sysselsättningen. Måttet byttes från SyssStat till BASAlt mellan 2021 och 2022, vilket påverkar flyttåren 2023–2024. Andelen förvärvsarbetande bland kvarboende i kluster 1 steg från 62 till 66 procent just det året, och en del av det kan vara måttbytet.</p></li>
-<li><p>Klustren bygger på hur områdena ser ut i dag. Ett område kan ligga i kluster 1 delvis för att förvärvsarbetande har flyttat därifrån, och områden som förbättrats har hamnat i högre kluster. Det gör skillnaderna mellan klustren något större än om grupperna bestämts i början av perioden. Som kontroll har områdena också grupperats efter inkomst 2000–2002: flyttmönstret blir detsamma, men då har de fattigaste områdena närmat sig staden i stället för att halka efter.</p></li>
-</ul>
 
 
+</section>
 </section>
 </section>
 
 </main> <!-- /main -->
 <link rel="stylesheet" href="../assets/css/knn-ui.css">
+
 <link rel="stylesheet" href="../assets/css/lyckoparadoxen.css">
+
 <script src="../data/rapport/lyckoparadoxen/webdata.js"></script>
+
 <script src="../assets/js/lyckoparadoxen.js"></script>
+
 <script src="../data/rapport/lyckoparadoxen/kluster-webdata.js"></script>
-<script src="../assets/js/lyckoparadoxen-kluster.js"></script>
+
+<script src="../data/rapport/lyckoparadoxen/inkomstrorlighet-webdata.js"></script>
+
+<script src="../data/rapport/lyckoparadoxen/flyttmatris-webdata.js"></script>
+
+<script src="../assets/js/lyckoparadoxen-kluster.js?v=20261030-matris-tabell"></script>
+
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
