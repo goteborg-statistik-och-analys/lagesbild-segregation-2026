@@ -9,3 +9,6 @@ Använd exempelvis `01-forbered-diagramdata.R` och relativa sökvägar:
 Rapportbygget ska använda färdiga resultat. Det gör att en textändring
 inte kräver att data bearbetas igen. Mallen kräver inga R-paket och
 renderar utan R. Paketmiljö och eventuellt renv sätts upp när skript behövs.
+
+Kapitel 7 förbereds med `python R/prepare-skolsegregation.py`. Underlag,
+urval, beräkningar och kontroller dokumenteras i `skolsegregation-underlag.md`.

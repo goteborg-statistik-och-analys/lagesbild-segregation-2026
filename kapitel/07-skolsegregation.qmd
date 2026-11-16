@@ -1,0 +1,142 @@
+---
+title: "Skolsegregation"
+number-offset: 6
+format:
+  html:
+    number-depth: 3
+    include-after-body: ../assets/includes/skolsegregation.html
+---
+
+# Skolsegregation {#sec-skolsegregation}
+
+Skolan är en av få platser där barn från olika delar av staden kan mötas. Om skolorna är lika uppdelade som bostadsområdena förs boendesegregationen vidare till nästa generation. Om de blandar barnen mer kan skolan motverka den. Elevsammansättningen påverkar också skolornas förutsättningar. Därför har Grundskolenämnden beslutat om en resursfördelningsmodell som tar hänsyn till elevernas bakgrund.
+
+Vilken elevsammansättning skolorna har avgörs av två saker, var barnen bor och vilken skola de går i. Om alla barn gick i en skola nära hemmet skulle skolorna i stort sett spegla bostadsområdena. Det är när barn går i skolor längre bort, kommunala eller fristående, som skolorna kan bli mer eller mindre blandade än områdena. Därför följer kapitlet både vilka barn som går i skolorna och var skolorna ligger i förhållande till barnens hem.
+
+Skolplaceringen i Göteborg utgår i första hand från vårdnadshavarens önskemål och sedan från avståndet mellan hemmet och skolan. Enligt Grundskolenämndens regler ligger en skola nära hemmet om skolvägen är högst 2 km i årskurs F–3, 4 km i årskurs 4–6 och 6 km i årskurs 7–9. När fler söker en skola än det finns platser går syskon före, därefter barn som har långt till nästa alternativa skola (relativ närhet) och sist barn med kortast väg. Om ingen skola ligger inom avståndet garanteras en plats på den närmaste skolan. Fristående skolor har egna köer som baseras på andra placeringsgrunder. Kapitlet använder samma avståndsgränser för både fristående och kommunala skolor för att avgöra om ett barn går i en skola nära hemmet.
+
+Vilka barn som möts i skolan beskrivs med föräldrarnas utbildning, den högsta nivån bland barnets mor och far. Vårdnadshavarnas utbildning är, tillsammans med nyligen genomförd invandring och hushållets inkomst, en av de bakgrundsfaktorer som väger tyngst i Grundskolenämndens resursfördelningsmodell. Den är också den variabel som rapportens övriga kapitel följer.
+
+Kapitlet tar sig an frågan i fyra steg:
+
+1. Hur olika elevsammansättningen är mellan de kommunala skolorna.
+2. Om barnen är mer eller mindre uppdelade efter skola än efter bostad. Det mäts med ett entropiindex för samma barn, grupperade på båda sätten.
+3. Var barnen går i skolan i förhållande till hemmet, och vilka som går i en skola längre bort.
+4. Hur spridningen i skolornas beräknade index har utvecklats sedan 2020.
+
+Statistiken visar var barnen går i skolan, inte varför. Att ett barn inte går i en skola nära hemmet kan bero på familjens val, men också på att skolan var full, på syskonförtur eller på att skolan saknar barnets årskurs. Kapitlet skriver därför att barn *går i* en viss skola, inte att familjer *väljer bort* en skola.
+
+## Sammanfattning {#sec-skola-sammanfattning}
+
+Göteborgs grundskolor speglar i stort sett boendesegregationen, men två krafter drar åt olika håll. De kommunala skolorna blandar barn med olika bakgrund mer än bostadsområdena gör. Barn som går i fristående skola har oftare högutbildade föräldrar, och skillnaden är störst i de områden som har störst socioekonomiska utmaningar.
+
+Skillnaderna mellan skolorna är stora. I de kommunala skolorna varierar andelen elever vars föräldrar har högst gymnasial utbildning från 5 till 75 procent.
+
+Mätt med ett segregationsindex är skolorna ungefär lika segregerade som bostäderna när man jämför enheter av samma storlek. Bland elever i kommunala skolor är skolorna däremot mindre segregerade än bostadsområdena, tydligast på högstadiet. Segregationen efter föräldrarnas utbildning minskade svagt 2019–2024, både i skolorna och i bostadsområdena.
+
+Tre av fyra barn i lågstadiet går i en kommunal skola nära hemmet, enligt de avstånd som Grundskolenämndens regler för skolplacering anger. Var sjätte går i en fristående skola. På högstadiet går nästan var tredje i en fristående skola.
+
+I kluster 1, områdena med störst socioekonomiska utmaningar, har 35 procent av lågstadiebarnen i en kommunal skola nära hemmet föräldrar med eftergymnasial utbildning. Bland barnen från samma områden som går i fristående skola är andelen 54 procent. Barnen som går i skolan nära hemmet får därmed en svagare elevsammansättning än området som helhet.
+
+I områden med bättre förutsättningar är mönstret ett annat. Där har barn som går i en kommunal skola längre bort mer sällan högutbildade föräldrar. Det tyder på att platsbrist och placering spelar in, inte bara familjernas val. Statistiken visar var barnen går i skolan, inte varför.
+
+Skillnaderna i det index som styr resursfördelningen till de kommunala skolorna har minskat sedan 2020.
+
+## Elevsammansättningen i de kommunala skolorna {#sec-skola-elevsammansattning}
+
+Diagrammet nedan visar en stapel per kommunal skolenhet. Varje stapel delar skolans elever efter föräldrarnas högsta utbildning, från förgymnasial längst ned till forskarutbildning längst upp. Blått är förgymnasial och gymnasial utbildning. Skolorna är sorterade efter hur stor andel av eleverna som har föräldrar med högst gymnasial utbildning, med den högsta andelen till vänster. Stapeln längst till vänster visar alla kommunala skolor tillsammans. De streckade linjerna drar ut gränserna mellan utbildningsnivåerna i den stapeln, så att varje skola kan jämföras med genomsnittet.
+
+30 procent av eleverna i de kommunala skolorna har föräldrar med högst gymnasial utbildning, men andelen skiljer sig kraftigt mellan skolorna. Den varierar från 5 till 75 procent. I 34 av 127 skolenheter har mer än hälften av eleverna föräldrar med högst gymnasial utbildning. Hälften av skolorna ligger under 26 procent.
+
+I hela staden har 30 procent av eleverna föräldrar med högst gymnasial utbildning. Få skolor ligger nära den nivån. I stället delar sig skolorna i två grupper, en med klart lägre och en med klart högre andel än staden. 55 skolor har 10–30 procent elever med föräldrar med högst gymnasial utbildning och 33 skolor har 50–70 procent. Endast 21 skolor ligger däremellan, på 30–50 procent.
+
+Underlaget kommer från grundskoleförvaltningen och omfattar bara kommunala skolor, 2025. Definitionerna kan skilja sig något från resten av kapitlet, som bygger på SCB:s register.
+
+```{=html}
+<section class="skol-card moten-card knn-widget" id="skola-composition" data-skol-chart="composition" aria-labelledby="skola-composition-title"><div class="lycko-heading"><h3 id="skola-composition-title">Elevernas bakgrund skiljer sig kraftigt mellan de kommunala skolorna</h3><div class="moten-actions knn-actions"></div></div><p class="knn-caption">Föräldrarnas högsta utbildning, 127 kommunala skolenheter, 2025. Varje skolenhet har samma stapelbredd.</p><div class="moten-content"></div><p class="knn-caption" data-chart-source>Källa: Grundskoleförvaltningen, med bearbetning av stadsledningskontoret i Göteborgs stad.</p><p class="moten-status" role="status"></p></section>
+```
+
+## Hur segregerade är skolorna jämfört med bostadsområdena? {#sec-skola-jamforelse}
+
+Skolorna är ungefär lika segregerade som bostadsområdena av motsvarande storlek. Bland elever i kommunala skolor är skolorna däremot mindre segregerade än områdena barnen bor i.
+
+### Ett mått på hur blandade skolorna är {#sec-skola-matt}
+
+För att jämföra skolor med bostadsområden använder kapitlet ett segregationsindex, Theils H. Det mäter hur mycket mindre blandade skolorna är än staden som helhet, när det gäller föräldrarnas utbildning. Indexet är 0 om varje skola har samma sammansättning som staden och 1 om varje skola bara har barn ur en utbildningsgrupp. Exempelvis om 30 procent av stadens barn har föräldrar med högst gymnasial utbildning, och hälften av skolorna har 14 procent medan den andra hälften har 46 procent, blir H ungefär 0,10. Ett index på 0,10 innebär alltså tydliga skillnader mellan skolorna.
+
+Indexet kan också läsas som en andel. En del av skillnaderna finns mellan skolorna, vissa skolor har många barn med högutbildade föräldrar, andra få. Resten finns inom skolorna, eftersom barn i samma skola också har föräldrar med olika utbildning. Ett H på 0,10 betyder ungefär att 10 procent av skillnaderna finns mellan skolorna och 90 procent inom dem. Det betyder inte att en skola har 10 procent fler barn ur en viss grupp.
+
+Två index kan jämföras i procent. Alla skolor har 0,111 och primärområdena 0,098, en skillnad på 0,013. Skolorna är alltså omkring 13 procent mer uppdelade än primärområdena.
+
+Indexet räknas för samma barn två gånger, en gång grupperade efter den skola de går i, och en gång efter området de bor i. På så vis går det att se om skolorna blandar barnen mer eller mindre än bostäderna gör.
+
+Segregationen ser högre ut ju mindre enheterna är, eftersom små enheter fångar lokala koncentrationer. Samma sak syntes i kapitlet om k närmaste granne. En skola har i genomsnitt omkring 140 av Göteborgs elever, ett primärområde omkring 580 och ett basområde omkring 70. Skolorna jämförs därför med båda, en bostadsenhet som är större än skolorna och en som är mindre.
+
+### Skolorna speglar boendet, men de kommunala skolorna blandar mer {#sec-skola-blandning}
+
+För alla elever i årskurs 1–9 är indexet 0,111 för skolorna, 0,098 för primärområdena och 0,135 för basområdena (2024). Skolorna hamnar mellan de två bostadsmåtten, liksom de gör i storlek. De är alltså ungefär så segregerade som bostadsområden av samma storlek.
+
+Bland elever i kommunala skolor ser det annorlunda ut. Där är indexet 0,103 för skolorna och 0,109 för barnens primärområden, trots att skolorna är de mindre enheterna. Tydligast är det på högstadiet, 0,092 mot 0,107. De kommunala skolorna tar emot barn från flera bostadsområden och blandar dem, och högstadieskolorna har större upptagningsområden än lågstadieskolorna.
+
+När de fristående skolorna räknas in blir skolorna mer segregerade än primärområdena. Det tyder på att de fristående skolorna drar åt andra hållet, men de två jämförelserna gäller inte riktigt samma barn. Nästa avsnitt visar mer direkt vilka barn som går i fristående skolor.
+
+I diagrammet är varje rad en grupp elever. Den gröna punkten är indexet för primärområdena och den röda indexet för basområdena. Linjen mellan dem visar hur segregerat boendet är vid en större och en mindre enhet än skolan. Den blå punkten är skolorna. En blå punkt till vänster om den gröna betyder att skolorna är mindre segregerade än båda bostadsmåtten.
+
+```{=html}
+<section class="skol-card moten-card knn-widget" id="skola-comparison" data-skol-chart="comparison" aria-labelledby="skola-comparison-title"><div class="lycko-heading"><h3 id="skola-comparison-title">De kommunala skolorna är mindre segregerade än barnens bostadsområden</h3><div class="moten-actions knn-actions"></div></div><p class="knn-caption">Segregationsindex (Theils H) efter föräldrarnas utbildning, korrigerat för slumpen, 2024.</p><div class="moten-content"></div><p class="knn-caption">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p><p class="moten-status" role="status"></p></section>
+```
+
+### Utvecklingen 2019–2024 {#sec-skola-utveckling}
+
+Segregationen minskade svagt. Indexet för skolorna sjönk från 0,115 till 0,111 och för primärområdena från 0,103 till 0,098. I de kommunala skolorna var minskningen något större, från 0,113 till 0,103. På högstadiet kom det mesta av minskningen 2024, så den bör följas ett år till innan någon slutsats dras.
+
+## Var går barnen i skolan? {#sec-skola-skolgang}
+
+Tre av fyra barn i årskurs 1–6 går i en kommunal skola nära hemmet. På högstadiet går 63 procent i en kommunal skola nära hemmet och 32 procent i en fristående skola.
+
+Nära hemmet betyder att skolan ligger inom de avstånd som Grundskolenämndens regler anger, 2 km i årskurs 1–3, 4 km i årskurs 4–6 och 6 km i årskurs 7–9. Avstånden mäts här som fågelväg. Nästan alla barn har minst en kommunal skola inom det avståndet. Undantaget är de glest bebyggda områdena i kluster 4, där 86 procent av lågstadiebarnen har det. Eftersom gränsen är längre för högre årskurser går andelen nära hemmet inte att jämföra rakt av mellan stadierna.
+
+Skillnaderna mellan klustren är stora. I kluster 4 går 84–86 procent i en kommunal skola nära hemmet och få går i fristående skola. I kluster 2 går bara 58 procent av lågstadiebarnen i en kommunal skola nära hemmet, och 17 procent går i en kommunal skola längre bort. Den andelen har ökat från 13 procent 2019. Om det beror på platsbrist eller på familjernas val går inte att se i statistiken.
+
+Andelen i fristående skola ökar med åldern i alla kluster, men i kluster 4 stannar den under 10 procent. På högstadiet är den högst i kluster 5, 46 procent, och i kluster 2, 39 procent.
+
+I diagrammet är varje stapel alla elever i ett kluster och ett stadium. Det mörkgrå fältet till vänster är andelen i en kommunal skola nära hemmet och det blå fältet till höger andelen i fristående skola. Raden längst ned är hela Göteborg.
+
+```{=html}
+<section class="skol-card moten-card knn-widget" id="skola-selection" data-skol-chart="selection" aria-labelledby="skola-selection-title"><div class="lycko-heading"><h3 id="skola-selection-title">På högstadiet går var tredje elev i en fristående skola</h3><div class="moten-actions knn-actions"></div></div><p class="knn-caption">Var barnen går i skolan, andel av eleverna i stadiet och klustret, 2024. Nära hemmet = inom 2, 4 eller 6 km eller närmaste kommunala skolan.</p><div class="moten-content"></div><p class="knn-caption">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p><p class="moten-status" role="status"></p></section>
+```
+
+## Vilka går inte i en kommunal skola nära hemmet? {#sec-skola-foraldrautbildning}
+
+Elever i fristående skola har oftare högutbildade föräldrar än eleverna i den kommunala skolan nära hemmet, i alla kluster och alla stadier. Skillnaden är störst där föräldrarnas utbildningsnivå är lägst. I kluster 2 har 71 procent av lågstadieeleverna i fristående skola en förälder med eftergymnasial utbildning, mot 46 procent av dem i en kommunal skola nära hemmet.
+
+Mönstret skiljer sig mellan klustren:
+
+- **Kluster 1 och 2.** De som går i en skola längre bort, kommunal eller fristående, har högre utbildade föräldrar än de som går i en kommunal skola nära hemmet. I kluster 1 har 23 procent av lågstadieeleverna i den närliggande kommunala skolan föräldrar med högst förgymnasial utbildning. Bland dem i fristående skola är andelen 11 procent.
+- **Kluster 3–6.** Eleverna i fristående skola har bara något högre utbildade föräldrar än eleverna i den närliggande kommunala skolan. De som går i en kommunal skola längre bort har i stället lägre utbildade föräldrar.&#32;
+
+Avstånden skiljer sig också. Elever i kommunal skola har i mittenvärde 0,5–1,4 km till skolan. Elever från kluster 1 som går i fristående skola har 4,3 km i lågstadiet och 7,5 km i högstadiet. I kluster 4, med glesare bebyggelse, är avståndet till fristående skola ännu längre, 9–11 km.
+
+Statistiken visar var eleverna går, inte varför. En del av skillnaderna beror på omständigheter som familjerna inte själva väljer, till exempel att en skola är full, syskonförtur eller att en skola har en särskild inriktning. Det går inte att kontrollera för i registren.
+
+I diagrammet visar varje rad ett kluster. Avståndet mellan punkterna visar hur olika föräldrarnas utbildningsnivå är beroende på var eleverna går i skolan.
+
+```{=html}
+<section class="skol-card moten-card knn-widget" id="skola-parents" data-skol-chart="parents" aria-labelledby="skola-parents-title"><div class="lycko-heading"><h3 id="skola-parents-title">I kluster 1 och 2 är skillnaden störst mellan fristående och närliggande kommunal skola</h3><div class="moten-actions knn-actions"></div></div><p class="knn-caption">Andel elever med minst en förälder med eftergymnasial utbildning, 2019–2024 sammanslaget. Okänd föräldrautbildning exkluderas.</p><div class="moten-content"></div><p class="knn-caption">Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.</p><p class="moten-status" role="status"></p></section>
+```
+
+## Skolindex 2020–2026: spridningen mellan de kommunala skolorna {#sec-skola-skolindex}
+
+Skillnaderna i beräknat stödbehov mellan de kommunala skolorna har minskat sedan 2020. Skolan på 90:e percentilen hade 2020 ett index som var 5,0 gånger högre än skolan på 10:e percentilen. År 2026 var kvoten 3,9.
+
+Skolindex kommer från Grundskoleförvaltningens resursfördelningsmodell. Modellen beräknar hur stor andel av eleverna på varje skola som riskerar att inte bli behöriga till gymnasiet, utifrån elevernas bakgrund. Ett index över 100 betyder ett större behov än genomsnittet och ett index under 100 ett mindre.
+
+Minskningen kommer från båda håll. De skolor som har lägst behov har fått något högre index, och de som har högst behov har fått lägre. Variationskoefficienten, standardavvikelsen i förhållande till medelvärdet, sjönk från 0,62 till 0,50. Samma mönster syns om alla skolor tas med, inte bara de 76 som finns med alla år.
+
+Indexet visar skolornas behov i förhållande till varandra. Modellen skattas om varje år och genomsnittet sätts alltid till 100. Det går därför inte att säga om behovet har ökat eller minskat i staden som helhet, bara att skolorna har blivit mindre olika.
+
+I diagrammet visar varje stapel ett år. Den grå rutan omfattar de mittersta 50 procenten av skolorna, linjen räcker från 10:e till 90:e percentilen och det blå strecket är medianen. Talen överst är kvoten mellan 90:e och 10:e percentilen.
+
+```{=html}
+<section class="skol-card moten-card knn-widget" id="skola-spread" data-skol-chart="spread" aria-labelledby="skola-spread-title"><div class="lycko-heading"><h3 id="skola-spread-title">Skillnaden mellan skolorna har minskat: P90/P10 föll från 5,0 till 3,9</h3><div class="moten-actions knn-actions"></div></div><p class="knn-caption">Skolindex för 76 kommunala skolenheter med index alla år 2020–2026. Linjen visar P10–P90, rutan P25–P75 och strecket medianen. Genomsnitt = 100.</p><div class="moten-content"></div><p class="knn-caption" data-chart-source>Källa: Grundskoleförvaltningen, med bearbetning av stadsledningskontoret i Göteborgs stad.</p><p class="moten-status" role="status"></p></section>
+```

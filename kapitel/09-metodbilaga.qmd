@@ -1,6 +1,6 @@
 ---
 title: "Metodbilaga"
-number-offset: 7
+number-offset: 8
 ---
 
 # Metodbilaga {#sec-metodbilaga}

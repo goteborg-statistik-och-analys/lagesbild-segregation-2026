@@ -95,6 +95,9 @@ body:has(main > section.level1):not(:has(#sec-sammanfattning)) #title-block-head
   line-height: 1.5;
   color: #3F5664;
 }
+/* Menyn visar bara kapitel och en nivå av underrubriker, som i kapitel 6. */
+#quarto-sidebar .sidebar-section .sidebar-item-toggle { display: none; }
+#quarto-sidebar .sidebar-section .sidebar-section { display: none !important; }
 #quarto-sidebar .sidebar-item-text {
   display: block;
   padding: 6px 12px;
@@ -146,6 +149,22 @@ main a { color: #3F5664; text-decoration: underline; }
 .diagramyta { width: 100%; min-width: 0; }
 :focus-visible { outline: 3px solid #3F5664; outline-offset: 3px; }
 html:not(.keyboard-navigation) :focus { outline: none !important; box-shadow: none !important; }
+
+/* Samma diskreta markering i stapel-, punkt- och skolfigurer.
+   Kartor och linjediagram behåller sina befintliga markeringar.
+   Skärmstilen följer inte med till bildexporter eller utskrift. */
+@media screen {
+  :is(
+    .lycko-chart [data-area],
+    .lycko-cluster[data-chart="flows"] .lycko-cluster-plot [data-tip],
+    .moten-card:not([data-moten-chart="map"]) .moten-content [data-tip]
+  ):hover,
+  html.keyboard-navigation :is(
+    .lycko-chart [data-area],
+    .lycko-cluster[data-chart="flows"] .lycko-cluster-plot [data-tip],
+    .moten-card:not([data-moten-chart="map"]) .moten-content [data-tip]
+  ):focus-visible { filter: drop-shadow(0 0 1px #1f1f1f); }
+}
 @media (max-width: 991.98px) {
   .rapport-header-inner { padding: 3px 20px 10px; }
   .rapport-enhet { text-align: left; }

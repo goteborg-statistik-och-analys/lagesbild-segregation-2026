@@ -1,13 +1,14 @@
 (() => {
   'use strict';
-  // Exporterar enbart rapportens tabeller. Läser aldrig rutkartornas data eller geometri.
+  // Exporterar rapportens värdetabeller, även från diagrammens huvudmenyer.
+  // Läser aldrig rutkartornas data eller geometri.
   const source='Källa: SCB, med bearbetning av Stadsledningskontoret i Göteborgs stad.';
   const xml=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c])).replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f]/g,'');
   const save=(blob,name)=>{const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),30000);};
   const icon='<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2v10m-3-3 3 3 3-3M4 12v4h12v-4"/></svg>';
   const entries=new WeakMap();let sequence=0;
   const column=n=>{let s='';for(n++;n;n=Math.floor((n-1)/26))s=String.fromCharCode(65+(n-1)%26)+s;return s;};
-  const cellText=cell=>(cell.querySelector('abbr[aria-label]')?.getAttribute('aria-label')||cell.innerText).replace(/\s+/g,' ').trim();
+  const cellText=cell=>(cell.querySelector('abbr[aria-label]')?.getAttribute('aria-label')||cell.innerText||cell.textContent).replace(/\s+/g,' ').trim();
   function numeric(text){
     const clean=text.replace(/[\s\u00a0\u202f]/g,'').replace(/−/g,'-');
     if(!/^[+-]?\d+(?:[,.]\d+)?%?$/.test(clean))return null;
@@ -25,7 +26,8 @@
     const title=card.querySelector('h3,h2')?.textContent.replace(/Anchor\s*$/,'').trim()||table.caption?.textContent.trim()||document.title;
     const context=[...card.querySelectorAll(':scope > .knn-caption,:scope > .lycko-caption,:scope > .knn-index-subtitle,:scope > .knn-index-description')].map(p=>p.textContent.trim()).filter(s=>s&&!s.startsWith('Källa:'));
     const stem=(card.id||'rapport-tabell')+(scope.tagName==='DETAILS'?'-varden':'');
-    return {headers,rows,title,context,stem};
+    const cardSource=card.querySelector('[data-chart-source]')?.textContent.trim()||source;
+    return {headers,rows,title,context,stem,source:cardSource};
   }
   async function xlsx(data){
     if(!window.JSZip)throw Error('Excelbiblioteket kunde inte laddas.');
@@ -42,7 +44,7 @@
     };
     const all=[data.headers,...data.rows];
     let sheet=all.map((row,i)=>`<row r="${i+1}"${i===0?' ht="48" customHeight="1"':''}>${row.map((v,j)=>cell(v,i+1,j,i===0)).join('')}</row>`).join('');
-    const footer=[['Tabell',data.title],...data.context.map(s=>['Beskrivning',s]),[source]];
+    const footer=[['Tabell',data.title],...data.context.map(s=>['Beskrivning',s]),[data.source]];
     sheet+=footer.map((row,i)=>`<row r="${all.length+3+i}">${row.map((v,j)=>cell(v,all.length+3+i,j)).join('')}</row>`).join('');
     const widths=data.headers.map((h,i)=>Math.max(12,Math.min(48,Math.max(h.length,...data.rows.map(r=>String(r[i]??'').length))+2)));
     zip.file('[Content_Types].xml','<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/><Override PartName="/xl/worksheets/sheet1.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/><Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/></Types>');
@@ -54,6 +56,37 @@
     const normal='<xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0"/>';
     zip.file('xl/styles.xml',`<?xml version="1.0" encoding="UTF-8"?><styleSheet xmlns="${ns}"><numFmts count="${formats.length-1}">${formats.slice(1).map((f,i)=>`<numFmt numFmtId="${164+i}" formatCode="${xml(f)}"/>`).join('')}</numFmts><fonts count="2">${font}${font.replace('<font>','<font><b/>')}</fonts><fills count="3"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill><fill><patternFill patternType="solid"><fgColor rgb="FFD1D9DC"/><bgColor indexed="64"/></patternFill></fill></fills><borders count="1"><border/></borders><cellStyleXfs count="1">${normal}</cellStyleXfs><cellXfs count="${formats.length+1}">${normal}<xf numFmtId="0" fontId="1" fillId="2" borderId="0" xfId="0" applyFont="1" applyFill="1" applyAlignment="1"><alignment wrapText="1" vertical="center"/></xf>${formats.slice(1).map((f,i)=>`<xf numFmtId="${164+i}" fontId="0" fillId="0" borderId="0" xfId="0" applyNumberFormat="1"/>`).join('')}</cellXfs><cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles></styleSheet>`);
     save(await zip.generateAsync({type:'blob',mimeType:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',compression:'DEFLATE'}),data.stem+'.xlsx');
+  }
+  async function downloadTable(scope,format){
+    const data=snapshot(scope);
+    if(format==='xlsx')await xlsx(data);
+    else save(new Blob(['\ufeff'+[data.headers,...data.rows,[data.source]].map(r=>r.map(v=>'"'+String(v).replace(/"/g,'""')+'"').join(';')).join('\r\n')],{type:'text/csv;charset=utf-8'}),data.stem+'.csv');
+  }
+  const chartScope=card=>card.id==='socio-map'?card.querySelector(card.dataset.view==='boxplot'?'.socio-box-values':'.socio-values'):card;
+  function enhanceChartMenus(){
+    // Endast diagram med aggregerade värdetabeller. 100-meterskartornas
+    // .knn-map-card ingår inte; deras isoleringsindex har egna diagramkort.
+    document.querySelectorAll('.lycko-card,.moten-card,.knn-index-card,#socio-map').forEach(card=>{
+      const menu=card.querySelector('.knn-export-options');
+      if(!menu||!chartScope(card)?.querySelector('table'))return;
+      menu.querySelectorAll('[data-action="csv"],[data-export="csv"]').forEach(button=>button.remove());
+      if(menu.querySelector('[data-chart-export]'))return;
+      const status=document.createElement('p');status.className='rapport-table-status';status.setAttribute('role','status');card.append(status);
+      for(const [format,label] of [['csv','CSV'],['xlsx','Excel (.xlsx)']]){
+        const button=document.createElement('button');button.type='button';button.dataset.chartExport=format;
+        button.innerHTML=icon+'<span>'+label+'</span>';
+        const print=menu.querySelector('[data-action="print"],[data-export="print"]');
+        if(print)print.before(button);else menu.append(button);
+        button.addEventListener('click',async event=>{
+          event.preventDefault();event.stopPropagation();menu.hidden=true;
+          menu.parentElement.querySelector('[aria-controls]')?.setAttribute('aria-expanded','false');
+          status.textContent='';button.disabled=true;
+          try{await downloadTable(chartScope(card),format);}
+          catch(error){status.textContent='Nedladdningen misslyckades: '+error.message;status.setAttribute('role','alert');}
+          finally{button.disabled=false;}
+        });
+      }
+    });
   }
   function enhance(table){
     if(table.closest('.knn-map,.knn-compare-panel,[data-no-data-export]'))return;
@@ -79,14 +112,12 @@
       e.stopPropagation();close();status.textContent='';button.disabled=true;
       try{
         if(button.dataset.tableExport==='csv'&&hook){hook.click();return;}
-        const data=snapshot(scope);
-        if(button.dataset.tableExport==='xlsx')await xlsx(data);
-        else save(new Blob(['\ufeff'+[data.headers,...data.rows,[source]].map(r=>r.map(v=>'"'+String(v).replace(/"/g,'""')+'"').join(';')).join('\r\n')],{type:'text/csv;charset=utf-8'}),data.stem+'.csv');
+        await downloadTable(scope,button.dataset.tableExport);
       }catch(error){status.textContent='Nedladdningen misslyckades: '+error.message;status.setAttribute('role','alert');}
       finally{button.disabled=false;}
     });
   }
-  function scan(){document.querySelectorAll('main table').forEach(enhance);}
+  function scan(){document.querySelectorAll('main table').forEach(enhance);enhanceChartMenus();}
   function init(){scan();let scheduled=false;new MutationObserver(()=>{if(scheduled)return;scheduled=true;queueMicrotask(()=>{scheduled=false;scan();});}).observe(document.querySelector('main')||document.body,{childList:true,subtree:true});}
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();

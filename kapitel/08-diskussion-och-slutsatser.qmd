@@ -1,6 +1,6 @@
 ---
 title: "Diskussion och slutsatser"
-number-offset: 6
+number-offset: 7
 ---
 
 # Diskussion och slutsatser {#sec-slutsatser}

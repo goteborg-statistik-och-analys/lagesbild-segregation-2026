@@ -118,7 +118,7 @@ require('node:fs').mkdirSync(reviewDir,{recursive:true});
       for(const ext of ['svg','png','csv']){
         await card.locator('[data-action="menu"]').click();
         const downloading=page.waitForEvent('download');
-        await card.locator('[data-action="'+ext+'"]').click();
+        await card.locator(ext==='csv'?'[data-chart-export="csv"]':'[data-action="'+ext+'"]').click();
         const download=await downloading;
         assert.ok(download.suggestedFilename().endsWith('.'+ext));
         assert.equal(await download.failure(),null);

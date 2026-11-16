@@ -1,6 +1,7 @@
 """Exportera aktuell rapporttext utan diagram till ett gemensamt granskningsdokument."""
 from pathlib import Path
 from html import unescape
+from datetime import date
 import hashlib
 import json
 import re
@@ -38,7 +39,8 @@ def visual(match):
     if not title:
         raise ValueError('Visualisering utan identifierbar rubrik: ' + html[:100])
     title = clean_html(title[1])
-    if 'id="socio-summary"' in html or 'id="lycko-cluster-table"' in html:
+    if ('id="socio-summary"' in html or 'data-result-table=' in html
+            or 'data-moten-table=' in html or 'data-table-export-root' in html):
         label = f'[TABELL: {title}]'
     elif 'id="socio-map"' in html:
         label = f'[DIAGRAM: {title}, karta och boxplot]'
@@ -93,8 +95,11 @@ markdown = '\n\n'.join(blocks) + '\n'
 md_file = QA / 'rapporttext.md'
 md_file.write_text(markdown, encoding='utf-8')
 intermediate = QA / 'rapporttext-pandoc.docx'
-subprocess.run([str(PANDOC), str(md_file), '--from=markdown', '--to=docx',
-                '--metadata=lang:sv-SE', '--output', str(intermediate)], check=True, cwd=ROOT)
+command = [str(PANDOC), str(md_file), '--from=markdown', '--to=docx',
+           '--metadata=lang:sv-SE', '--output', str(intermediate)]
+if OUTPUT.exists():
+    command.extend(['--reference-doc', str(OUTPUT)])
+subprocess.run(command, check=True, cwd=ROOT)
 doc = Document(intermediate)
 styles = doc.styles
 for style in styles:
@@ -153,7 +158,10 @@ p.style.font.bold = True
 p.paragraph_format.space_after = Pt(18)
 first.insert_paragraph_before('Rapporttext för genomläsning', style='Subtitle')
 first.insert_paragraph_before('Göteborgs Stad\nStadsledningskontoret')
-first.insert_paragraph_before('Textversion 15 oktober 2026')
+months = ['januari', 'februari', 'mars', 'april', 'maj', 'juni',
+          'juli', 'augusti', 'september', 'oktober', 'november', 'december']
+today = date.today()
+first.insert_paragraph_before(f'Textversion {today.day} {months[today.month - 1]} {today.year}')
 first.insert_paragraph_before('Här finns rapportens kapiteltext för kommentarer och ändringar. Diagram, kartor, tabeller och illustrationer är markerade på sina platser och kan ses i webbrapporten.')
 toc_title = first.insert_paragraph_before('Innehåll')
 toc_title.paragraph_format.page_break_before = True
@@ -162,7 +170,7 @@ toc_title.runs[0].bold = True
 toc_title.runs[0].font.size = Pt(19)
 toc_p = first.insert_paragraph_before()
 field = OxmlElement('w:fldSimple')
-field.set(qn('w:instr'), 'TOC \\o "1-3" \\h \\z \\u')
+field.set(qn('w:instr'), 'TOC \\o "1-2" \\h \\z \\u')
 toc_p._p.append(field)
 for n in range(1, 4):
     style_name = f'TOC {n}'
@@ -176,6 +184,7 @@ for n in range(1, 4):
 
 # Sidnummer förenklar hänvisningar mellan granskare och författare.
 footer = doc.sections[0].footer.paragraphs[0]
+footer.clear()
 footer.alignment = 2
 run = footer.add_run()
 field = OxmlElement('w:fldSimple')
@@ -193,7 +202,12 @@ final_texts = [p.text for p in doc.paragraphs]
 offset = len(final_texts) - len(converted.paragraphs)
 assert final_texts[offset:] == [p.text for p in converted.paragraphs]
 assert [p.text for p in doc.paragraphs if p.style.name.startswith('Heading ')] == [h['text'] for h in headings]
-assert len(placeholders) == 16, len(placeholders)
+assert len(placeholders) == sum(
+    len(re.findall(r'```\{=html\}\s*\n(?:(?!\n```).)*?<h[1-6]\b',
+                   file.read_text(encoding='utf-8-sig'), flags=re.S))
+    + len(re.findall(r'!\[[^\]]*\]\([^)]+\)', file.read_text(encoding='utf-8-sig')))
+    for file in (ROOT / 'kapitel').glob('*.qmd')
+), len(placeholders)
 assert not doc.inline_shapes
 assert not doc.tables
 for file, digest in source_hashes.items():
